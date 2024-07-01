@@ -45,6 +45,22 @@ You are now in this dir.
 npm run install
 ```
 
+Look up xrefs:
+
+```
+npm run xrefs
+```
+
+Now the references to external specs are generated.
+
+Create index.html:
+
+```
+npm run render
+```
+
+Now an index.html file is created in the `docs` directory. This is the default directory, specified in the `specs.json` file.
+
 Now you have a basic Spec-Up-T install with the following content:
 
 - a `specs.json` file

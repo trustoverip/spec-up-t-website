@@ -6,6 +6,8 @@ sidebar_position: 1
 
 Let's discover **Spec-Up-T in less than 5 minutes**.
 
+<video src={require('/static/video/installer-spec-up-t.mp4').default} controls muted autoplay loop></video>
+
 ## Getting Started
 
 Get started by **creating a new site**.

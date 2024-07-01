@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-## Term References
+# Term References
 
-### Definition Lists
+## Definition Lists
 
 Many specs may want to include a section for terminology references, and Definition Lists are a great way to do that. Here's how to leverage Spec-Up's automatic term reference features via Definition List markup:
 
@@ -30,7 +30,7 @@ Many specs may want to include a section for terminology references, and Definit
 
 Now let's refer to some of the terms defined above to show how the auto-linking of terms works: [[ref: Term 1]], [[ref: Term Two]], [[ref: Term 3]]. Additionally, as long as you define your terms using Definition Lists (as seen in the markdown above), you will be able to hover any reference to a term to see a tooltip with its definition.
 
-### Table-defined Terms
+## Table-defined Terms
 
 You can also reference table-oriented terms and definitions which are decomposed into heading-titled attributes in distinct cells:
 

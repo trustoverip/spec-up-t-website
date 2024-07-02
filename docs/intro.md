@@ -19,6 +19,10 @@ Get started by **creating a new site**.
 
 ## Generate a new site
 
+### General info
+
+Installing Spec-Up-T works similarly to installing any other npm package. You install it locally (not globally) and then you run it.
+
 ### Generate a new Spec-Up-T site
 
 ```bash

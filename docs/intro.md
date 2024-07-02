@@ -83,7 +83,12 @@ Now you have a basic Spec-Up-T install with the following content:
 
 - a `specs.json` file
 - a `spec/` directory with a sample markdown files
-- (and more)
+- a `docs` directory with a sample index.html file
+- a `node_modules` directory, a `package.json` file and a `package-lock.json` file (these three elements belong to the `npm` system)
+
+## More info
+
+### The `specs.json` file
 
 The`specs.json` file **in the root folder of your repository** specifies configuration values used in the generation of your spec documents. The values in your `specs.json` file include things like where your spec's markdown files are located, where to output the generated spec document, and various metadata values used in rendering, such as the title, logo, and repo links for each of your specs. The following are the required/optional fields supported in the `specs.json` config file:
 
@@ -108,7 +113,7 @@ The`specs.json` file **in the root folder of your repository** specifies configu
 
 You're ready to start rendering specs as HTML sites locally and/or pushing them to github pages however you see fit to automate.
 
-## Running the scripts locally
+### Running the scripts locally
 
 If your `spec.json` and `package.json` and `package-lock.json` files are in working order and in the root folder of the repo from which it will be deployed, Spec-up can be called by command line (from the root of your repo) in three different modes:
 
@@ -118,11 +123,11 @@ If your `spec.json` and `package.json` and `package-lock.json` files are in work
 |`npm run render`|this renders the site once and does not keep a gulpy watch on the underlying files.|
 |`npm run dev`|this enables debugging features.|
 
-## Automation
+### Automation
 
 The above scripts can easily be triggered by github actions.  See [this repo's example](https://github.com/decentralized-identity/spec-up/blob/master/.github/workflows/render-specs.yml)
 
-## Troubleshooting
+### Troubleshooting
 
 - WSL2 users are recommended to use the `bash` option rather than `PowerShell` in the terminal of Visual Studio Code.
 - Some users have reported problems using spec-up with node versions 15+; to pin to an older version, simple run:

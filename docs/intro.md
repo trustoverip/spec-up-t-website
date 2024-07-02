@@ -16,6 +16,7 @@ Get started by **creating a new site**.
 
 - [Node.js](https://nodejs.org/en/download/):
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- A [webbrowser](https://en.wikipedia.org/wiki/Web_browser). You are probably reading this in a browser, so you already have one.
 
 ## Generate a new site
 

@@ -31,7 +31,7 @@ npx create-spec-up-t my-spec-up-t-website
 
 *my-spec-up-t-website* can be anything you want it to be (however it is recommended to not use spaces or special characters in directory names).
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor. It should work on any operating system (not tested yet).
 
 This will create a working Spec-Up-T installation in a new directory called `my-spec-up-t-website`
 
@@ -89,6 +89,12 @@ Now you have a basic Spec-Up-T install with the following content:
 - a `spec/` directory with a sample markdown files
 - a `docs` directory with a sample index.html file
 - a `node_modules` directory, a `package.json` file and a `package-lock.json` file (these three elements belong to the `npm` system)
+
+### View your specification
+
+So the `index.html` is the endresult. You should view it in a browser. The simplest way to do so is go to the file with your Explorer, Finder or other file manager, and double-click on it. Usually it now opens in your browser.
+
+If not, go to the browser, and try to open the file from the browser menu.
 
 ## More info
 

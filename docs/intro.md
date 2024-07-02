@@ -38,15 +38,15 @@ This will create a working Spec-Up-T installation in a new directory called `my-
 
 You should now have a directory called `my-spec-up-t-website`.
 
-### Go into this dir
+### Go into the directory
 
-- Go into this dir:
+- Go into this directory (folder) that was just created:
 
 ```bash
 cd my-spec-up-t-website
 ```
 
-You are now in this dir.
+You are now in this directory.
 
 ### Install all dependencies
 

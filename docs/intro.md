@@ -19,7 +19,7 @@ Get started by **creating a new site**.
 
 ## Generate a new site
 
-Generate a new Spec-Up-T site.
+### Generate a new Spec-Up-T site
 
 ```bash
 npx create-spec-up-t my-spec-up-t-website
@@ -31,6 +31,10 @@ You can type this command into Command Prompt, Powershell, Terminal, or any othe
 
 This will create a working Spec-Up-T installation in a new directory called `my-spec-up-t-website`
 
+You should now have a directory called `my-spec-up-t-website`.
+
+### Go into this dir
+
 - Go into this dir:
 
 ```bash
@@ -39,27 +43,41 @@ cd my-spec-up-t-website
 
 You are now in this dir.
 
+### Install all dependencies
+
 - Install all dependencies:
 
 ```
 npm run install
 ```
 
-Look up xrefs:
+It can take some time, and you should see multiple lines of output during installation.
+
+When the prompt is visible again, you should now have a directory called `node_modules`.
+
+### Look up xrefs
+
+- Look up xrefs:
 
 ```
 npm run xrefs
 ```
 
-Now the references to external specs are generated.
+Now the references to external specs are generated, if any.
 
-Create index.html:
+### Create index.html
+
+The final result should be just one file: `index.html`.
+
+- Create index.html:
 
 ```
 npm run render
 ```
 
 Now an index.html file is created in the `docs` directory. This is the default directory, specified in the `specs.json` file.
+
+### You are ready
 
 Now you have a basic Spec-Up-T install with the following content:
 

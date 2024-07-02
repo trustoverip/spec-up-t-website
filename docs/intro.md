@@ -2,29 +2,29 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Installation
 
-Let's discover **Spec-Up-T in less than 5 minutes**.
+Let's install **Spec-Up-T**. This short video shows the process.
 
 <video src={require('/static/video/installer-spec-up-t.mp4').default} controls muted autoplay loop></video>
 
 ## Getting Started
 
-Get started by **creating a new site**.
+Now let's do it ourselves. Get started by **creating a new site**.
 
-### What you'll need
+## What you'll need
 
 - [Node.js](https://nodejs.org/en/download/):
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 - A [webbrowser](https://en.wikipedia.org/wiki/Web_browser). You are probably reading this in a browser, so you already have one.
 
-## Generate a new site
+## Install a new site
 
 ### General info
 
 Installing Spec-Up-T works similarly to installing any other npm package. You install it locally (not globally) and then you run it.
 
-### Generate a new Spec-Up-T site
+### Install a new Spec-Up-T site
 
 ```bash
 npx create-spec-up-t my-spec-up-t-website

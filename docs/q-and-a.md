@@ -1,0 +1,85 @@
+---
+sidebar_position: 4
+---
+
+# Q & A
+
+## When I use Spec-Up-T do I get all the updates of Spec-Up too?
+
+Yes. The administrator team behind Spec-Up-T will keep [Spec-Up of DIF](https://github.com/decentralized-identity/spec-up) as a strict subset of code and features.
+
+## Can't we wait with the split up until because it might mess up thing for people curating the documents?
+
+Splitting Spec-Up content over files is not an issue for people working on the content and looking at the github.io pages of the specification. It won't affect them. They see the same generated one-page document as a result. The index.html only has enhanced features. They can offer PRs as they always could.
+
+## I don't want Spec-Up-T, I want the original Spec-Up, but then with their improvements to be able to xref, and keep track of history etc. Is this possible?
+
+Some improvements have been incorporated into Spec-Up. Spec-Up will remain a subset of Spec-Up-T. The extensions you will find only in Spec-Up-T are listed in the [Readme.md](https://github.com/blockchainbird/spec-up-t/blob/master/readme.md#extension).
+
+## Where to find Spec-Up-T?
+
+- Spec-Up-T is a github.com repo under Blockchainbird user: [https://github.com/blockchainbird/spec-up-t](https://github.com/blockchainbird/spec-up-t). You can find the source code there. The **Readme.md** tells you about:
+
+1. all about the repo, who has the user rights, what you should do when you wish to fork the repo
+2. also about the project at ToIP, the git governance agreements and how the dependency from Spec-Up works out (the DIF repo is a strict subset of Spec-Up-T).
+
+- **BEWARE / ATTENTION !!** The repo Spec-Up-T **DOES NOT generate an example specification on github.io**.  DIF Spec-Up does generate one, but we don't. Your example site will pop up when “spec-up-t” is installed in `node_modules` of `spec-up-t-starterpack` when you run `npm install`.
+
+- Spec-Up-T is **documented in its [Docusaurus site](https://blockchainbird.github.io/spec-up-t-website/)**, it's the user manual, that tries not to duplicate info from the Readme.md nor the generated Spec-Up-T site on github.io.
+You can explore Spec-Up-T's design decisions, the inner workings, the configuration option and to its full extent examples of the versioning of term definitions, references en x-references.
+
+- On the **command line** you can find Spec-Up-T as follows:
+
+1. Open your terminal and go to the target directory
+
+2. Run `npx create-spec-up-starterpack@latest` This will create a working Spec-Up-T installation in a new directory called `spec-up-t-starter-pack`.
+
+3. Now run `npx spec-up-t --help` and the available commands will be listed.
+
+## Why do I need to put commands on the command line?
+
+Brief answer: because Spec-Up-T is based on NPM packaging and version control.
+
+To understand why more thoroughly: Spec-Up-T is team-work tooling based on NPM, git versioning and (automated) github deployment. Therefore participants incept and maintain local version of specifications on their computer, manage updates to and fro github.com and generate local test and finally production sites (github actions github.io site).
+With this type of creation and collegial management of versions and updates come commands on the command line.
+
+## npx Spec-Up-T --help gives all commands I can give?
+
+Yes, in brief. The documentation of Spec-Up-T is available in its [Docusaurus site](https://blockchainbird.github.io/spec-up-t-website/)
+
+## Spec-Up was simple, Spec-Up-T looks complicated, why?
+
+Spec-Up is a subset of Spec-Up-T. The expansion "T" complicates the handling of term definitions, - references and external references (xrefs) of term in other repo's glossaries.
+ToIP added functionality as well: diff tooling, search bar, and navigation aids.
+On the other hand, Spec-Up-T is installable via just a single command `npx create-spec-up-t-starterpack@latest`
+
+## For who is Spec-Up-T?
+
+->
+The **repo, command-line tools and the Docusaurus User guide is for Authors, Curators and Administrators** of repo's that use Spec-Up-T to run there specification effort in text, images, terms & definitions, etc.
+
+The **resulting github.io site is intended for any user** interested in the content of the specification.
+
+## Do you have a how-to video to get started with Spec-Up-T?
+
+[Instruction starter package](https://www.dropbox.com/scl/fi/15e0t0er8rt692xp3u9z6/Screen-Recording-2024-06-11-at-17.53.16.mp4?rlkey=pxihtq5teug31d3eohc429l24&e=1&dl=0)
+
+## Where can I find the motivation of this move to create the Spec-Up bolt on "Spec-Up-T"?
+
+Our enhancement proposal and git governance strategy is here: [https://hackmd.io/s1TEBBluQBSL10ZT5yRVPw](https://hackmd.io/s1TEBBluQBSL10ZT5yRVPw)
+
+## Why doesn't the Spec-Up-T repo generate a github.io-served specification itself?
+
+The repo Spec-Up-T doesn't generate an example specification on github.io. because it's not the purpose of this repo. Your example site will pop up when “spec-up-t” is installed in node_modules of spec-up-t-starterpack when you run npm install.
+
+## We already have a Docusaurus (or Jekyll, etc) site. Is it possible to have a Spec-Up-T specification inside this site?
+
+Yes and No.
+
+No:
+Installing Spec-Up-T inside Docusaurus (or Jekyll, etc) is possible, however it is not recommended practice to have nested node_modules directories. Docusaurus (or Jekyll, etc) have their own node_modules directory. You can install Spec-Up-T in a sub directory in which it will get it's own node_modules directory after installation but this is not recommended.
+
+Yes:
+You can install Spec-Up-T in it's own separate directory in your file system and generate the index.html file. This file can be moved around freely and live in it's own directory, for example in the /static directory of your Docusaurus site. You can rename index.html to foo.html or whatever you like. You could link to this file from other files in your Docusaurus site.
+
+However, the Spec-Up-T file (a one-page website) will have it's own menu and have no connection to your Docusaurus site.

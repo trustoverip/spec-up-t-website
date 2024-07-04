@@ -4,20 +4,20 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'A tool for writing specifications',
+    title: 'Simple',
     Svg: require('@site/static/img/specup_logo.svg').default,
     description: (
       <>
-        Spec-Up-T is a tool for writing specifications.
+        Only one index.html file. Simple hosting.
       </>
     ),
   },
   {
-    title: 'In a user-friendly format',
+    title: 'User-friendly',
     Svg: require('@site/static/img/specup_logo.svg').default,
     description: (
       <>
-        Spec-Up-T is written in markdown.
+        Written in markdown.
       </>
     ),
   },

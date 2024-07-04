@@ -4,6 +4,8 @@ sidebar_position: 6
 
 # Q & A
 
+Questions and answers about Spec-Up-T.
+
 ## When I use Spec-Up-T do I get all the updates of Spec-Up too?
 
 Yes. The administrator team behind Spec-Up-T will keep [Spec-Up of DIF](https://github.com/decentralized-identity/spec-up) as a strict subset of code and features.

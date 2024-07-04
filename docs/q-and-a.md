@@ -62,7 +62,7 @@ The **resulting github.io site is intended for any user** interested in the cont
 
 ## Do you have a how-to video to get started with Spec-Up-T?
 
-[Instruction starter package](https://www.dropbox.com/scl/fi/15e0t0er8rt692xp3u9z6/Screen-Recording-2024-06-11-at-17.53.16.mp4?rlkey=pxihtq5teug31d3eohc429l24&e=1&dl=0)
+[Instruction starter package](https://blockchainbird.github.io/spec-up-t-website/docs/installation#short-video)
 
 ## Where can I find the motivation of this move to create the Spec-Up bolt on "Spec-Up-T"?
 

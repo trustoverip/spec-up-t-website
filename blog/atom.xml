@@ -18,8 +18,5 @@
             <name>Henk van Cann</name>
             <uri>https://github.com/henkvancann</uri>
         </author>
-        <category label="ssi" term="ssi"/>
-        <category label="keri" term="keri"/>
-        <category label="toip" term="toip"/>
     </entry>
 </feed>

@@ -1,32 +1,34 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link'; // Import Link component
+
 
 const FeatureList = [
   {
-    title: 'Simple',
+    title: 'Content Authors',
     Svg: require('@site/static/img/specup_logo.svg').default,
     description: (
       <>
-        Only one index.html file. Simple hosting.
+        <Link to="/docs/content-author-guide/introduction">→ Content Authors guide</Link>.
       </>
     ),
   },
   {
-    title: 'User-friendly',
+    title: 'Termsdef Authors',
     Svg: require('@site/static/img/specup_logo.svg').default,
     description: (
       <>
-        Written in markdown.
+        <Link to="/docs/termsdef-author-guide/introduction">→ Termsdef Authors guide</Link>
       </>
     ),
   },
   {
-    title: 'Powered by Node.js',
+    title: 'Curators',
     Svg: require('@site/static/img/specup_logo.svg').default,
     description: (
       <>
-        Spec-Up-T is written in Node.js.
+        <Link to="/docs/curator-guide/introduction">→ Curators Guide</Link>
       </>
     ),
   },

@@ -1,8 +1,8 @@
 {
-  "label": "Authors Guide",
-  "position": 3,
+  "label": "Content Authors Guide",
+  "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Authors Guide."
+    "description": "Content Authors Guide."
   }
 }

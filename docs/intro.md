@@ -12,23 +12,18 @@ Spec-Up-T is a tool that helps you write specifications. It is a tool for writin
 
 The following roles can be distinguished:
 
-- content author
-- termsdef author
-- curator
-- admin
+- [Content Author](content-author-guide/introduction), focusses on content and concepts of the group he/she belongs to.
+- [Terminology Author](terminology-author-guide/introduction), focusses on term definitions covering concepts of the group he/she belongs to.
+- [Curator](curator-guide/introduction), checks logical consistency & meaning of term definition in a certain context.
+- [Reader](reader-guide/introduction.md), reads concepts in text and terminology in glossaries.
+- [Admin](admin-guide), installs, updates and maintains Spec-Up-T.
 
-### content author
+## Markdown
 
-Uses: an IDE, git and a browser extension, to edit Spec-Up markdown files for his/her specific context (mental model) in a version managed environment, authenticated, to write the concept and specification and offer this as a PR. He/she uses browser extensions to check technical consistency of the links in the text and harvests a personal collection of term definitions.
+Authors must write in Markdown.
 
-### termsdef author
+Spec-Up-T is a simple tool that auto-generates specs from markdown. The version of markdown Spec-Up-T uses contains all the same features you might expect from common implementations, like GitHub, but adds much more, including notice blocks, complex tables, charts, advanced syntax highlighting, UML diagrams, etc.
 
-*To be written.*
+> Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Created by John Gruber in 2004, Markdown is now one of the world’s most popular markup languages.
 
-### curator
-
-Uses an IDE and git and browser extensions, to check logical consistency & meaning of term definition in a certain context and uses browser extensions to harvest a personal collection of term definitions, based on those recommended by the specification authors.
-
-### admin
-
-*To be written.*
+Read more about [Markdown](https://www.markdownguide.org/getting-started/)

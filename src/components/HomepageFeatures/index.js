@@ -19,7 +19,7 @@ const FeatureList = [
     Svg: require('@site/static/img/specup_logo.svg').default,
     description: (
       <>
-        <Link to="/docs/termsdef-author-guide/introduction">→ Termsdef Authors guide</Link>
+        <Link to="/docs/terminology-author-guide/introduction">→ Termsdef Authors guide</Link>
       </>
     ),
   },

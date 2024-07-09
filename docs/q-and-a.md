@@ -32,7 +32,7 @@ Some improvements have been incorporated into Spec-Up. Spec-Up will remain a sub
 - Spec-Up-T is **documented in its [Docusaurus site](https://blockchainbird.github.io/spec-up-t-website/)**, it's the user manual, that tries not to duplicate info from the Readme.md nor the generated Spec-Up-T site on github.io.
 You can explore Spec-Up-T's design decisions, the inner workings, the configuration option and to its full extent examples of the versioning of term definitions, references en x-references.
 
-- [How to install Spec-Up-T](installation.md)
+- [How to install Spec-Up-T](docs/admin-guide.md)
 
 ## Why do I need to put commands on the command line?
 

@@ -62,7 +62,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Spec-Up-T',
+        title: 'Home',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -74,6 +74,7 @@ const config = {
           //   position: 'left',
           //   label: 'Admin section',
           // },
+          { to: '/docs/intro', label: 'Enter Documentation', position: 'left' },
           { to: '/docs/admin-guide', label: 'Admin section', position: 'left' },
           {
             href: 'https://github.com/blockchainbird/spec-up-t-website',

@@ -6,7 +6,7 @@ sidebar_position: 6
 
 Questions and answers about Spec-Up-T.
 
-## When I use Spec-Up-T do I get all the updates of Spec-Up too?
+## When I use *Spec-Up-T* do I get all the updates of *Spec-Up* too?
 
 Yes. The administrator team behind Spec-Up-T will keep [Spec-Up of DIF](https://github.com/decentralized-identity/spec-up) as a strict subset of code and features.
 
@@ -14,9 +14,9 @@ Yes. The administrator team behind Spec-Up-T will keep [Spec-Up of DIF](https://
 
 Splitting Spec-Up content over files is not an issue for people working on the content and looking at the github.io pages of the specification. It won't affect them. They see the same generated one-page document as a result. The index.html only has enhanced features. They can offer PRs as they always could.
 
-## How to get the original Spec-Up?
+## How to get the original *Spec-Up*?
 
-I don't want Spec-Up-T, I want the original Spec-Up, but then with their improvements to be able to xref, and keep track of history etc. Is this possible?
+I don't want *Spec-Up-T*, I want the original *Spec-Up*, but then with their improvements to be able to xref, and keep track of history etc. Is this possible?
 
 Some improvements have been incorporated into Spec-Up. Spec-Up will remain a subset of Spec-Up-T. The extensions you will find only in Spec-Up-T are listed in the [Readme.md](https://github.com/blockchainbird/spec-up-t/blob/master/readme.md#extension).
 
@@ -43,9 +43,7 @@ With this type of creation and collegial management of versions and updates come
 
 ## What is the command for help?
 
-npx Spec-Up-T --help gives all commands I can give.
-
-Yes, in brief. The documentation of Spec-Up-T is available in its [Docusaurus site](https://blockchainbird.github.io/spec-up-t-website/)
+TODO: npx Spec-Up-T --help gives all commands I can give.
 
 ## Why does Spec-Up-T look so complicated?
 
@@ -53,7 +51,12 @@ Spec-Up was simple, Spec-Up-T looks complicated, why?
 
 Spec-Up is a subset of Spec-Up-T. The expansion "T" complicates the handling of term definitions, - references and external references (xrefs) of term in other repo's glossaries.
 ToIP added functionality as well: diff tooling, search bar, and navigation aids.
-On the other hand, Spec-Up-T is installable via just a single command `npx create-spec-up-t-starterpack@latest`
+
+On the other hand, Spec-Up-T is installable via just a single command:
+
+```
+npx create-spec-up-t
+```
 
 ## For who is Spec-Up-T?
 

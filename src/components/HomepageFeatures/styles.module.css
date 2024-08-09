@@ -1,11 +1,16 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 0rem 0;
   width: 100%;
 }
 
+.features a {
+  text-decoration: none;
+}
+
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  /* height: 200px; */
+  width: 100px;
+  height: auto;
 }

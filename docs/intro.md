@@ -8,6 +8,8 @@ sidebar_position: 1
 
 *Spec-Up-T* is a tool that helps you write specifications. It is a tool for writing in Markdown and creates *one* `index.html` file. This `index.html` file is stand-alone and can be hosted on any webserver. Or double click it and it will open.
 
+The code is available [on Github](https://github.com/blockchainbird/spec-up-t).
+
 *Spec-Up-T* works on *Github*. The specification is stored in a Github repo. Editing can be done locally in a suitable editor (Visual Studio Code is widely used), or can be done web-based via the editor provided by Github if you are logged in.
 
 *Github Actions* is a convenient way to automate things within Github by creating *workflows*. For example, you can create a workflow that generates an updated version of the specification.

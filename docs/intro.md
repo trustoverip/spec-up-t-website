@@ -35,7 +35,7 @@ The following roles can be distinguished:
 - [Terminology Author](terminology-author-guide/introduction), focusses on term definitions covering concepts of the group he/she belongs to.
 - [Curator](curator-guide/introduction), checks logical consistency & meaning of term definition in a certain context.
 - [Reader](reader-guide/introduction.md), reads concepts in text and terminology in glossaries.
-- [Admin](admin-guide), installs, updates and maintains Spec-Up-T.
+- [Admin](admin-guide.md), installs, updates and maintains Spec-Up-T.
 
 ## Markdown
 

@@ -23,6 +23,7 @@ The code is available [on Github](https://github.com/blockchainbird/spec-up-t).
 Spec-Up-T stays in sync with Spec-Up, and currently adds the following extra functionality:
 1. Search & Find
 2. Splitter for Terms and Definition section following the [Termininology Governance Guide](https://trustoverip.github.io/ctwg-terminology-governance-guide/) and various meeting report since [CTWG April 2024](https://wiki.trustoverip.org/display/HOME/2024-04-22+CTWG+Meeting+Notes)
+3. External Reference (xref) functionality (link to be added)
 
 
 

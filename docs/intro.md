@@ -8,6 +8,9 @@ sidebar_position: 1
 
 Spec-Up-T is a tool that helps you write specifications. It is a tool for writing in Markdown and creates *one* `index.html` file. This `index.html` file is stand-alone and can be hosted on any webserver. Or double click it and it will open.
 
+Spec-Up-T works on Github. The specification is stored in a Github repo. Editing can be done locally in a suitable editor (Visual Studio Code is widely used), or can be done web-based via the editor provided by Github if you are logged in.
+
+
 ## Roles
 
 The following roles can be distinguished:

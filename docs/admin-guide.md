@@ -26,8 +26,14 @@ Spec-Up-T stays in sync with Spec-Up, and currently adds the following extra fun
 
 Let's install **Spec-Up-T**. This short video shows the process.
 
-[The video](https://blockchainbird.github.io/spec-up-t-website/video/installer-spec-up-t.mp4)
 
+
+<video controls>
+  <source src={require('@site/static/video/installer-spec-up-t.mp4').default} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+[Link to the video](/video/installer-spec-up-t.mp4)
 
 ### Getting Started
 

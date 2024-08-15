@@ -27,7 +27,7 @@ How to publish an updated package version to NPM:
   `"version": "0.11.29"` to `"version": "0.11.30"`
 - Run `npm publish`
 
-Note: The The Spec-Up-T installer repo has two `package.json`'s. One in the root, it belongs to the repo itself. The other inside the directory that contains a full Spec-Up-T installation. This is the `package.json` that will be used later. The first one is only used for the installation itself. For simplicity, keep both version numbers the same.
+Note: The The Spec-Up-T installer repo has two `package.json`s. One in the root, it belongs to the repo itself. The other inside the directory that contains a full Spec-Up-T installation. This is the `package.json` that will be used later. The first one is only used for the installation itself. For simplicity, keep both version numbers the same.
 
 The new package will usually be available as soon as it is uploaded.
 

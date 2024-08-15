@@ -31,11 +31,11 @@ Spec-Up-T stays in sync with Spec-Up, and currently adds the following extra fun
 
 The following roles can be distinguished:
 
-- [Content Author](content-author-guide/introduction), focusses on content and concepts of the group he/she belongs to.
-- [Terminology Author](terminology-author-guide/introduction), focusses on term definitions covering concepts of the group he/she belongs to.
-- [Curator](curator-guide/introduction), checks logical consistency & meaning of term definition in a certain context.
-- [Reader](reader-guide/introduction.md), reads concepts in text and terminology in glossaries.
-- [Admin](admin-guide.md), installs, updates and maintains Spec-Up-T.
+- [Content Author](content-authors-guide/introduction), focusses on content and concepts of the group he/she belongs to.
+- [Terminology Author](terminology-authors-guide/introduction), focusses on term definitions covering concepts of the group he/she belongs to.
+- [Curator](curators-guide/introduction), checks logical consistency & meaning of term definition in a certain context.
+- [Reader](readers-guide/introduction.md), reads concepts in text and terminology in glossaries.
+- [Admin](admins-guide.md), installs, updates and maintains Spec-Up-T.
 
 ## Markdown
 

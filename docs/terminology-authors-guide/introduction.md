@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Terminology Author Guide
+# Terminology Authors Guide
 
 Focusses on term definitions covering concepts of the group he/she belongs to.
 

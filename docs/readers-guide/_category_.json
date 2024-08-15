@@ -1,8 +1,8 @@
 {
-  "label": "Reader Guide",
+  "label": "Readers Guide",
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "Reader Guide."
+    "description": "Readers Guide."
   }
 }

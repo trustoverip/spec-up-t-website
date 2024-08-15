@@ -2,9 +2,9 @@
 sidebar_position: 20
 ---
 
-# Developer Guide
+# Developers Guide
 
-This is the developer guide for the Spec-Up-T system.
+This is the developers guide for the Spec-Up-T system.
 
 The repo can be found [here](https://github.com/blockchainbird/spec-up-t).
 

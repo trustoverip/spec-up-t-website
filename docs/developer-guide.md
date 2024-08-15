@@ -36,11 +36,9 @@ Client-side JavaScript and CSS can be found in these directories: `/assets/js` a
 
 This code must first be “compiled” before it enters `index.html`. Compiling in this case means that it will end up in the directory `/assets/compiled`. If it is there, it will end up in a newly generated `index.html` via the `render` step. For rendering, see the admin section.
 
-Dit is het commando om te compileren: `gulp compile`
+This is the command to compile: `gulp compile`
 
-Dus, als je client-side JavaScript hebt geschreven, of custom CSS moet je de volgende stappen nemen om deze code werkend te krijgen:
-
-However to compile the code, you need to use a Gulp command through the terminal (the “$” at the beginning is the command prompt, and you should not type it):
+So, if you have written client-side JavaScript, or custom CSS you need to take the following steps to get this code working (the “$” at the beginning is the command prompt, and you should not type it):
 
 
 ```

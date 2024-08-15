@@ -47,6 +47,13 @@ npx create-spec-up-t my-spec-up-t-website
 
 *my-spec-up-t-website* can be anything you want it to be (however it is recommended to not use spaces or special characters in directory names).
 
+Sometimes you want to force the latest version to be installed. Then you can do the following:
+
+```bash
+npx create-spec-up-t@latest my-spec-up-t-website
+```
+
+
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor. It should work on any operating system (not tested yet).
 
 This will create a working Spec-Up-T installation in a new directory called `my-spec-up-t-website`

@@ -18,21 +18,13 @@ Splitting Spec-Up content over files is not an issue for people working on the c
 
 I don't want *Spec-Up-T*, I want the original *Spec-Up*, but then with their improvements to be able to xref, and keep track of history etc. Is this possible?
 
-Some improvements have been incorporated into Spec-Up. Spec-Up will remain a subset of Spec-Up-T. The extensions you will find only in Spec-Up-T are listed in the [Readme.md](https://github.com/blockchainbird/spec-up-t/blob/master/readme.md#extension).
+Some improvements have been incorporated into Spec-Up. Spec-Up will remain a subset of Spec-Up-T. The extensions you will find only in Spec-Up-T are listed in the [introduction](intro#extension).
 
 ## Where to find Spec-Up-T?
 
-- Spec-Up-T is a github.com repo under Blockchainbird user: [https://github.com/blockchainbird/spec-up-t](https://github.com/blockchainbird/spec-up-t). You can find the source code there. The **Readme.md** tells you about:
+- Spec-Up-T is a github.com repo under Blockchainbird user: [https://github.com/blockchainbird/spec-up-t](https://github.com/blockchainbird/spec-up-t). You can find the source code there.
 
-    1. all about the repo, who has the user rights, what you should do when you wish to fork the repo
-    2. also about the project at ToIP, the git governance agreements and how the dependency from Spec-Up works out (the DIF repo is a strict subset of Spec-Up-T).
-
-- **BEWARE / ATTENTION !!** The repo Spec-Up-T **DOES NOT generate an example specification on github.io**.  DIF Spec-Up does generate one, but we don't. Your example site will pop up when “spec-up-t” is installed in `node_modules` of `spec-up-t-starterpack` when you run `npm install`.
-
-- Spec-Up-T is **documented in its [Docusaurus site](https://blockchainbird.github.io/spec-up-t-website/)**, it's the user manual, that tries not to duplicate info from the Readme.md nor the generated Spec-Up-T site on github.io.
-You can explore Spec-Up-T's design decisions, the inner workings, the configuration option and to its full extent examples of the versioning of term definitions, references en x-references.
-
-- [How to install Spec-Up-T](docs/admin-guide.md)
+- **BEWARE / ATTENTION !!** The repo Spec-Up-T **DOES NOT generate an example specification on github.io**.  DIF Spec-Up does generate one, but we don't. This has moved to the Spec-Up-T installer, see [the installation section in the admins guide](admins-guide.md#installation)
 
 ## Why do I need to put commands on the command line?
 
@@ -55,7 +47,7 @@ ToIP added functionality as well: diff tooling, search bar, and navigation aids.
 On the other hand, Spec-Up-T is installable via just a single command:
 
 ```
-npx create-spec-up-t
+$ npx create-spec-up-t my-spec-up-t-website
 ```
 
 ## For who is Spec-Up-T?

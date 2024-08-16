@@ -52,6 +52,15 @@ Wait for the code to finish. Then:
 ```
 $ npm run render
 ```
+Now your `index.html` file should be created or updated.
+
+## Gulp
+
+Of course, you can only use Gulp if you have it [installed](https://gulpjs.com/docs/en/getting-started/quick-start).
+
+:::warning
+If Gulp suddenly stops working even though it worked before, it could be because you are using NVM and have a different Node.js version active.
+:::
 
 ## Adding server-side functionality
 

@@ -36,3 +36,19 @@ video {
 .image-small img {
   width: 5em;
 }
+
+.image-medium img {
+  width: 10em;
+}
+
+.image-large img {
+  width: 15em;
+}
+
+.image-xlarge img {
+  width: 20em;
+}
+
+.center {
+  text-align: center;
+}

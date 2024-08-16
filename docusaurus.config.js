@@ -64,7 +64,7 @@ const config = {
       navbar: {
         title: 'Home',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Spec-Up-T Logo',
           src: 'img/logo.svg',
         },
         items: [

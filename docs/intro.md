@@ -24,7 +24,7 @@ From the Spec-Up documentation: “*Spec-Up* is a technical specification develo
 | [Spec-Up on Github](https://github.com/decentralized-identity/spec-up) | [Spec-Up-T on Github](https://github.com/blockchainbird/spec-up-t) |
 | [Organisation website](https://identity.foundation/)  | [Organisation website](https://trustoverip.org/)  |
 
-*Spec-Up-T* is an expansion of [DIF's Spec-Up](https://github.com/decentralized-identity/spec-up) specifically for the needs of the Trust-over-IP foundation. Read more in the elaborate motivation in this technical article [Spec-Up-T, the ToIP Terms extension of Spec-Up](https://hackmd.io/s1TEBBluQBSL10ZT5yRVPw).
+*Spec-Up-T* is an expansion of [DIF's Spec-Up](https://github.com/decentralized-identity/spec-up) specifically for the needs of the Trust-over-IP foundation. Read more in the elaborate motivation in this technical article: [How it came to be](how-it-came-to-be.md).
 
 ## Spec-Up-T
 

@@ -75,7 +75,7 @@ const config = {
           //   label: 'Admin section',
           // },
           { to: '/docs/intro', label: 'Enter Documentation', position: 'left' },
-          { to: '/docs/admins-guide', label: 'Admin section', position: 'left' },
+          // { to: '/docs/admins-guide', label: 'Admin section', position: 'left' },
           {
             href: 'https://github.com/blockchainbird/spec-up-t-website',
             label: 'GitHub',

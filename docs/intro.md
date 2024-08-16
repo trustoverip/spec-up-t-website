@@ -45,12 +45,15 @@ Spec-Up-T stays in sync with Spec-Up, and currently adds the following extra fun
 
 The following roles can be distinguished:
 
-- [Content Author](content-authors-guide/introduction), focusses on content and concepts of the group he/she belongs to.
-- [Terminology Author](terminology-authors-guide/introduction), focusses on term definitions covering concepts of the group he/she belongs to.
-- [Curator](curators-guide/introduction), checks logical consistency & meaning of term definition in a certain context.
-- [Reader](readers-guide/introduction.md), reads concepts in text and terminology in glossaries.
-- [Admin](admins-guide.md), installs, updates and maintains Spec-Up-T.
-- [Developer](developers-guide.md), adds new functionality to Spec-Up-T.
+| Role               | Description                                                                                       | Guide Link                                               |
+|--------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| Content Author     | Focusses on content and concepts of the group he/she belongs to.                                  | [Content Author Guide](content-authors-guide/introduction) |
+| Terminology Author | Focusses on term definitions covering concepts of the group he/she belongs to.                    | [Terminology Author Guide](terminology-authors-guide/introduction) |
+| Curator            | Checks logical consistency & meaning of term definition in a certain context.                      | [Curator Guide](curators-guide/introduction)             |
+| Reader             | Reads concepts in text and terminology in glossaries.                                             | [Reader Guide](readers-guide/introduction.md)            |
+| Admin              | Installs, updates and maintains Spec-Up-T.                                                        | [Admin Guide](admins-guide.md)                           |
+| Developer          | Adds new functionality to Spec-Up-T.                                                              | [Developer Guide](developers-guide.md)                   |
+
 
 ## Markdown
 

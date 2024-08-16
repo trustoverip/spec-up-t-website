@@ -16,6 +16,10 @@ Spec-Up-T is based on Spec-Up ([Spec-Up on Github](https://github.com/decentrali
 
 Spec-Up is a tool provided by [DIF](https://github.com/decentralized-identity) (Decentralized Identity Foundation) and created by [Daniel Buchner](https://github.com/csuwildcat).
 
+<div class='image-medium center'>
+![Logo ToIP and DIF combined](/img/logo.svg)
+</div>
+
 From the Spec-Up documentation: “*Spec-Up* is a technical specification development tool that enables you to create rich specification documents for standards bodies and engineering projects by writing in an extended version of markdown that features all the bells and whistles - for example: advanced syntax highlighting, notice blocks, complex tables, charts, UML diagrams, and more.”
 | Spec-Up | Spec-Up-T |
 |----------------|----------------|

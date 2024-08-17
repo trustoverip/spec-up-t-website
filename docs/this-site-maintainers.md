@@ -2,7 +2,7 @@
 sidebar_position: 21
 ---
 
-# Maintain this site
+# Maintaining this site
 
 Here you will find information about things specific to this site.
 

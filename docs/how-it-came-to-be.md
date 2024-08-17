@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # How it came to be
 
-**the ToIP Terms extension of Spec-Up**
+## The ToIP Terms extension of Spec-Up
 
 This article is meant for technical experts in Spec-Up and git.
 

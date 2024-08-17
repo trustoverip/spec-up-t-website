@@ -6,7 +6,7 @@ sidebar_position: 21
 
 Here you will find information about things specific to this site.
 
-## Updating the Demo Site.
+## Updating the Demo Site
 
 The [demo page](spec-up-t-demo-site.mdx) contains an example of a Spec-Up-T installation in an iFrame. This `index.html` file is in `/static/spec-up-t-demo/docs/`.
 

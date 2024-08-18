@@ -139,13 +139,3 @@ If your `spec.json` and `package.json` and `package-lock.json` files are in work
 
 The above scripts can easily be triggered by github actions.  See [this repo's example](https://github.com/decentralized-identity/spec-up/blob/master/.github/workflows/render-specs.yml)
 
-#### Troubleshooting
-
-- WSL2 users are recommended to use the `bash` option rather than `PowerShell` in the terminal of Visual Studio Code.
-- Some users have reported problems using spec-up with node versions 15+; to pin to an older version, simple run:
-
-```
-nvm install 14
-nvm use 14
-npm i npm@6.14.16 -g
-```

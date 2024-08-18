@@ -85,10 +85,17 @@ npm run install
 
 It can take some time, and you should see multiple lines of output during installation.
 
-When the prompt is visible again, you should now have a directory called `node_modules`.
+When the prompt is visible again, you should now have a basic Spec-Up-T install:
 
-You now have a `Spec-Up-T` install.
+- a `specs.json` file
+- a `spec/` directory with a sample markdown files
+- a `node_modules` directory, a `package.json` file and a `package-lock.json` file (these three elements belong to the `npm` system)
 
+What you don't have yet is the following:
+
+- a `docs` directory with a sample index.html file
+
+How to do this, go to the [General Instructions](general-guide.md).
 
 
 ### More info

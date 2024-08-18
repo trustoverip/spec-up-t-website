@@ -22,9 +22,17 @@ Some improvements have been incorporated into Spec-Up. Spec-Up will remain a sub
 
 ## Where to find Spec-Up-T?
 
-- Spec-Up-T is a github.com repo under Blockchainbird user: [https://github.com/blockchainbird/spec-up-t](https://github.com/blockchainbird/spec-up-t). You can find the source code there.
+Spec-Up-T is a github.com repo under Blockchainbird user: [https://github.com/blockchainbird/spec-up-t](https://github.com/blockchainbird/spec-up-t). You can find the source code there.
 
-- **BEWARE / ATTENTION !!** The repo Spec-Up-T **DOES NOT generate an example specification on github.io**.  DIF Spec-Up does generate one, but we don't. This has moved to the Spec-Up-T installer, see [the installation section in the admins guide](admins-guide.md#installation)
+:::warning
+
+Unlike the DIF Spec-Up repository, the Spec-Up-T repository **does not generate an example specification on github.io**.
+
+This functionality has been moved to the Spec-Up-T *installer*.
+
+For more details, refer to [the installation section in the admin guide](admins-guide.md#installation).
+
+:::
 
 ## Why do I need to put commands on the command line?
 

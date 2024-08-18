@@ -61,12 +61,9 @@ Sometimes you want to force the latest version to be installed. Then you can do 
 npx create-spec-up-t@latest my-spec-up-t-website
 ```
 
-
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor. It should work on any operating system (not tested yet).
 
-This will create a working Spec-Up-T installation in a new directory called `my-spec-up-t-website`
-
-You should now have a directory called `my-spec-up-t-website`.
+You should now have a directory called `my-spec-up-t-website` (or `spec-up-t-starterpack` if you did not specify a name).
 
 #### Go into the directory
 

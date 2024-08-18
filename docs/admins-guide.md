@@ -124,18 +124,3 @@ The`specs.json` file **in the root folder of your repository** specifies configu
             ```
 
 You're ready to start rendering specs as HTML sites locally and/or pushing them to github pages however you see fit to automate.
-
-#### Running the scripts locally
-
-If your `spec.json` and `package.json` and `package-lock.json` files are in working order and in the root folder of the repo from which it will be deployed, Spec-up can be called by command line (from the root of your repo) in three different modes:
-
-|command|behavior|
-|---|---|
-|`npm run edit`|after rendering, this will stay running and the `gulp` library will watch the source files in your spec directory/ies for changes and re-render any time you save a file. Opening these rendered files in a browser and refreshing them will keep you up to date.|
-|`npm run render`|this renders the site once and does not keep a gulpy watch on the underlying files.|
-|`npm run dev`|this enables debugging features.|
-
-#### Automation
-
-The above scripts can easily be triggered by github actions.  See [this repo's example](https://github.com/decentralized-identity/spec-up/blob/master/.github/workflows/render-specs.yml)
-

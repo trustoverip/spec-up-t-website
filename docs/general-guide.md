@@ -8,7 +8,7 @@ These are general instructions.
 
 #### Look up xrefs
 
-- Look up xrefs:
+Xrefs are [To Do: write explanation]
 
 ```
 npm run xrefs
@@ -18,9 +18,7 @@ Now the references to external specs are generated, if any.
 
 #### Create index.html
 
-The final result should be just one file: `index.html`.
-
-- Create index.html:
+The final result will be just one file: `index.html`. This file is rendered or rerendered with the following command:
 
 ```
 npm run render
@@ -30,7 +28,7 @@ Now an index.html file is created in the `docs` directory. This is the default d
 
 #### You are ready
 
-Now you have a basic Spec-Up-T install with the following content:
+Now you have a basic Spec-Up-T specification file (`index.html`) with the following content:
 
 - a `specs.json` file
 - a `spec/` directory with a sample markdown files

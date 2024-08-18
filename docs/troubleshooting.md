@@ -4,6 +4,8 @@ sidebar_position: 21
 
 # Troubleshooting
 
+Some tips in case of problems:
+
 ## WSL2 users
 
 WSL2 users are recommended to use the `bash` option rather than `PowerShell` in the terminal of Visual Studio Code.

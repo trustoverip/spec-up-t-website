@@ -18,7 +18,7 @@ Splitting Spec-Up content over files is not an issue for people working on the c
 
 I don't want *Spec-Up-T*, I want the original *Spec-Up*, but then with their improvements to be able to xref, and keep track of history etc. Is this possible?
 
-Some improvements have been incorporated into Spec-Up. Spec-Up will remain a subset of Spec-Up-T. The extensions you will find only in Spec-Up-T are listed in the [introduction](intro#extension).
+Some improvements have been incorporated into Spec-Up. Spec-Up will remain a subset of Spec-Up-T. The extensions you will find only in Spec-Up-T are listed in the [introduction](intro).
 
 ## Where to find Spec-Up-T?
 

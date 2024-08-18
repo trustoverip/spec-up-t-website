@@ -87,6 +87,9 @@ It can take some time, and you should see multiple lines of output during instal
 
 When the prompt is visible again, you should now have a directory called `node_modules`.
 
+You now have a `Spec-Up-T` install.
+
+
 #### Look up xrefs
 
 - Look up xrefs:

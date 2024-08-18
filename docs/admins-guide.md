@@ -93,7 +93,7 @@ When the prompt is visible again, you should now have a basic Spec-Up-T install:
 
 What you don't have yet is the following:
 
-- a `docs` directory with a sample index.html file
+- a `docs` directory with a sample `index.html` file (which is the actual specification file that is the goal of it all).
 
 How to do this, go to the [General Instructions](general-guide.md).
 

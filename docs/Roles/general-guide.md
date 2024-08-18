@@ -68,4 +68,4 @@ HTTP stands for HyperText Transfer Protocol. It is the foundation of any data ex
 
 #### Automation
 
-The above scripts can easily be triggered by [github actions](glossary#github-actions).  See [this repo's example](https://github.com/decentralized-identity/spec-up/blob/master/.github/workflows/render-specs.yml)
+The above scripts can easily be triggered by [github actions](../glossary#github-actions).  See [this repo's example](https://github.com/decentralized-identity/spec-up/blob/master/.github/workflows/render-specs.yml)

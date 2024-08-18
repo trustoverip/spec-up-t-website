@@ -15,6 +15,12 @@ The code is available [on Github](https://github.com/blockchainbird/spec-up-t).
 
 **Spec-Up-T** is based on **Spec-Up** and some of the content on this website is taken from the [Spec-Up website](https://identity.foundation/spec-up/).
 
+:::tip
+
+In order to start using Spec-Up-T you will have to install it. Go straight to the [admin section](roles/admins-guide.md) for instructions.
+
+:::
+
 ## History
 
 Spec-Up-T is based on Spec-Up ([Spec-Up on Github](https://github.com/decentralized-identity/spec-up)).
@@ -54,12 +60,12 @@ The following roles can be distinguished:
 
 | Role               | Description                                                                                       | Guide Link                                               |
 |--------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| Content Author     | Focusses on content and concepts of the group he/she belongs to.                                  | [Content Author Guide](content-authors-guide/introduction) |
-| Terminology Author | Focusses on term definitions covering concepts of the group he/she belongs to.                    | [Terminology Author Guide](terminology-authors-guide/introduction) |
-| Curator            | Checks logical consistency & meaning of term definition in a certain context.                      | [Curator Guide](curators-guide/introduction)             |
-| Reader             | Reads concepts in text and terminology in glossaries.                                             | [Reader Guide](readers-guide/introduction.md)            |
-| Admin              | Installs, updates and maintains Spec-Up-T.                                                        | [Admin Guide](admins-guide.md)                           |
-| Developer          | Adds new functionality to Spec-Up-T.                                                              | [Developer Guide](developers-guide.md)                   |
+| Content Author     | Focusses on content and concepts of the group he/she belongs to.                                  | [Content Author Guide](roles/content-authors-guide/introduction) |
+| Terminology Author | Focusses on term definitions covering concepts of the group he/she belongs to.                    | [Terminology Author Guide](roles/terminology-authors-guide/introduction) |
+| Curator            | Checks logical consistency & meaning of term definition in a certain context.                      | [Curator Guide](roles/curators-guide/introduction)             |
+| Reader             | Reads concepts in text and terminology in glossaries.                                             | [Reader Guide](roles/readers-guide/introduction.md)            |
+| Admin              | Installs, updates and maintains Spec-Up-T.                                                        | [Admin Guide](roles/admins-guide.md)                           |
+| Developer          | Adds new functionality to Spec-Up-T.                                                              | [Developer Guide](roles/developers-guide.md)                   |
 
 ## Markdown
 

@@ -47,6 +47,14 @@ npx create-spec-up-t my-spec-up-t-website
 
 *my-spec-up-t-website* can be anything you want it to be (however it is recommended to not use spaces or special characters in directory names).
 
+You can also omit the last part:
+
+```bash
+npx create-spec-up-t
+```
+
+If you omit `my-spec-up-t-website` a default directory name is used, namely `spec-up-t-starterpack`.
+
 Sometimes you want to force the latest version to be installed. Then you can do the following:
 
 ```bash

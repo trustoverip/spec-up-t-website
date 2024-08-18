@@ -10,9 +10,11 @@ sidebar_position: 1
 
 The code is available [on Github](https://github.com/blockchainbird/spec-up-t).
 
-Spec-Up-T is based on Spec-Up ([Spec-Up on Github](https://github.com/decentralized-identity/spec-up)).
+Spec-Up-T is based on Spec-Up.
 
 ## History
+
+Spec-Up-T is based on Spec-Up ([Spec-Up on Github](https://github.com/decentralized-identity/spec-up)).
 
 Spec-Up is a tool provided by [DIF](https://github.com/decentralized-identity) (Decentralized Identity Foundation) and created by [Daniel Buchner](https://github.com/csuwildcat).
 

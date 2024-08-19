@@ -30,7 +30,7 @@ Unlike the DIF Spec-Up repository, the Spec-Up-T repository **does not generate 
 
 This functionality has been moved to the Spec-Up-T *installer*.
 
-For more details, refer to [the installation section in the admin guide](roles/admins-guide.md#installation).
+For more details, refer to [the installation section in the admin guide](various-roles/admins-guide.md#installation).
 
 :::
 
@@ -66,7 +66,7 @@ The **resulting github.io site is intended for any user** interested in the cont
 
 ## Do you have a how-to video to get started with Spec-Up-T?
 
-Yes. Find it here: [Instruction starter package](roles/admins-guide.md#short-video)
+Yes. Find it here: [Instruction starter package](various-roles/admins-guide.md#short-video)
 
 ## Where can I find the motivation of this move to create the Spec-Up bolt on "Spec-Up-T"?
 

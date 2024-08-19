@@ -12,7 +12,7 @@ const FeatureList = [
     description: (
       <></>
     ),
-    url: './docs/roles/content-authors-guide/introduction',
+    url: './docs/various-roles/content-authors-guide/introduction',
   },
   {
     title: 'Terminology Authors',
@@ -21,7 +21,7 @@ const FeatureList = [
     description: (
       <></>
     ),
-    url: './docs/roles/terminology-authors-guide/introduction',
+    url: './docs/various-roles/terminology-authors-guide/introduction',
   },
   {
     title: 'Curators',
@@ -30,7 +30,7 @@ const FeatureList = [
     description: (
       <></>
     ),
-    url: './docs/roles/curators-guide/introduction',
+    url: './docs/various-roles/curators-guide/introduction',
   },
 ];
 

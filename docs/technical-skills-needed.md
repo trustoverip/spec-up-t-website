@@ -51,7 +51,9 @@ The `specs.json` file plays a pivotal role in Spec-Up-T, as it contains configur
 
 ## 4. Markdown Language Proficiency
 
-Markdown is a lightweight markup language with plain text formatting syntax, often used for creating formatted text using a plain text editor. Spec-Up-T utilizes Markdown files to define the content of the specifications that will be rendered into HTML.
+> Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Created by John Gruber in 2004, Markdown is now one of the world’s most popular markup languages.
+
+Read more about [Markdown](https://www.markdownguide.org/getting-started/)
 
 **Required Knowledge:**
 

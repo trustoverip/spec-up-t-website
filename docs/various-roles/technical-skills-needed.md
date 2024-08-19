@@ -21,7 +21,9 @@ Not everyone needs all the knowledge described here. Different roles are identif
 | 7. Debugging and Development Tools | Admin |
 
 
-## 1. Familiarity with Node.js and npm
+## 1
+
+### Familiarity with Node.js and npm
 
 At the core of Spec-Up-T's installation and operation lies the Node.js environment, coupled with npm (Node Package Manager). Node.js is a popular JavaScript runtime that allows developers to execute JavaScript code outside of a web browser, making it a critical tool for server-side and command-line interface (CLI) applications. npm, on the other hand, is a package manager for Node.js that facilitates the installation and management of software packages.
 
@@ -31,7 +33,9 @@ At the core of Spec-Up-T's installation and operation lies the Node.js environme
 - **Command-Line Interface (CLI) Proficiency:** Users should be comfortable using a CLI, as many operations, including installing Spec-Up-T, running npm commands, and managing directories, are executed via terminal commands.
 - **Understanding npm Scripts:** Familiarity with npm scripts, such as `npm run install`, `npm run render`, and `npm run dev`, is crucial. These scripts automate various tasks in Spec-Up-T, from installing dependencies to rendering the final HTML output.
 
-## 2. Basic Understanding of File System Navigation and Directory Management
+## 2
+
+### Basic Understanding of File System Navigation and Directory Management
 
 Spec-Up-T users need to navigate through the file system, create and manage directories, and understand relative paths. These tasks are fundamental to setting up and maintaining a Spec-Up-T project.
 
@@ -40,7 +44,9 @@ Spec-Up-T users need to navigate through the file system, create and manage dire
 - **Directory Navigation:** Users should know how to move between directories using the command line (`cd` command) and understand the importance of directory structures in project management.
 - **File Management:** The creation of new directories, such as the site directory (`my-spec-up-t-website`), and the management of project files like `specs.json`, `spec.md`, and the `docs` directory, are routine tasks that require basic file system knowledge.
 
-## 3. JSON Configuration Files
+## 3
+
+### JSON Configuration Files
 
 The `specs.json` file plays a pivotal role in Spec-Up-T, as it contains configuration details that dictate how the tool generates and outputs the specification documents. JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate.
 
@@ -49,7 +55,9 @@ The `specs.json` file plays a pivotal role in Spec-Up-T, as it contains configur
 - **Editing JSON Files:** Users must be able to open, read, and edit JSON files to customize their Spec-Up-T setup. This includes setting paths, defining titles, adding logos, and configuring output options.
 - **Understanding JSON Structure:** A basic understanding of JSON structure—such as key-value pairs, arrays, and nested objects—is necessary to modify the `specs.json` file effectively. This knowledge enables users to customize their specifications to fit their project requirements.
 
-## 4. Markdown Language Proficiency
+## 4
+
+### Markdown Language Proficiency
 
 > Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Created by John Gruber in 2004, Markdown is now one of the world’s most popular markup languages.
 
@@ -60,7 +68,9 @@ Read more about [Markdown](https://www.markdownguide.org/getting-started/)
 - **Markdown Syntax:** Users should be comfortable with Markdown syntax, including headers, lists, links, and code blocks. This proficiency allows them to structure the content of their specifications clearly and concisely.
 - **Multi-File Markdown Management:** Spec-Up-T allows users to specify multiple Markdown files to be combined into a single output document. Users need to know how to reference these files in the `specs.json` file using the `markdown_paths` array.
 
-## 5. Basic Web Development Concepts
+## 5
+
+### Basic Web Development Concepts
 
 Since Spec-Up-T ultimately renders HTML files that are intended for web viewing, a foundational understanding of web development is beneficial.
 
@@ -70,7 +80,9 @@ Since Spec-Up-T ultimately renders HTML files that are intended for web viewing,
 - **HTTP vs. File Protocol:** Understanding the difference between accessing files via the `file:///` protocol (locally) and `http://` protocol (over a web server) is important for viewing and sharing the generated specifications.
 - **Browser Usage:** Users should be familiar with opening files in a web browser, either by double-clicking the `index.html` file in a file manager or by navigating to the file via the browser’s menu.
 
-## 6. Version Control and Automation
+## 6
+
+### Version Control and Automation
 
 Spec-Up-T integrates well with version control systems like Git and offers automation capabilities via GitHub Actions. This allows users to automate the rendering and deployment of their specifications.
 
@@ -79,7 +91,9 @@ Spec-Up-T integrates well with version control systems like Git and offers autom
 - **Basic Git Operations:** Users should understand how to commit changes, push them to a remote repository, and manage branches within a Git version control system. This is crucial for maintaining a history of changes and collaborating with others.
 - **GitHub Actions:** Familiarity with GitHub Actions or similar CI/CD (Continuous Integration/Continuous Deployment) tools is beneficial for users who want to automate the rendering process. This knowledge allows users to set up workflows that trigger rendering and deployment automatically upon certain events, such as commits or pull requests.
 
-## 7. Debugging and Development Tools
+## 7
+
+### Debugging and Development Tools
 
 Spec-Up-T provides different modes for rendering specifications, including a development mode that enables debugging features.
 

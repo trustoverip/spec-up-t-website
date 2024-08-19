@@ -53,17 +53,3 @@ Spec-Up-T stays in sync with Spec-Up, and currently adds the following extra fun
 *Spec-Up* and *Spec-Up-T* work on *Github*. The specification is stored in a Github repo. Editing can be done locally in a suitable editor (Visual Studio Code is widely used), or can be done web-based via the editor provided by Github if you are logged in.
 
 *[Github Actions](glossary#github-actions)* is a convenient way to automate things within Github by creating *workflows*. For example, you can create a workflow that generates an updated version of the specification.
-
-## Roles
-
-The following roles can be distinguished:
-
-| Role               | Description                                                                                       | Guide Link                                               |
-|--------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| Content Author     | Focusses on content and concepts of the group he/she belongs to.                                  | [Content Author Guide](various-roles/content-authors-guide/introduction.md) |
-| Terminology Author | Focusses on term definitions covering concepts of the group he/she belongs to.                    | [Terminology Author Guide](various-roles/terminology-authors-guide/introduction.md) |
-| Curator            | Checks logical consistency & meaning of term definition in a certain context.                      | [Curator Guide](various-roles/curators-guide/introduction.md) |
-| Reader             | Reads concepts in text and terminology in glossaries.                                             | [Reader Guide](various-roles/readers-guide/introduction.md)            |
-| Admin              | Installs, updates and maintains Spec-Up-T.                                                        | [Admin Guide](various-roles/admins-guide.md)                           |
-| Developer          | Adds new functionality to Spec-Up-T.                                                              | [Developer Guide](various-roles/developers-guide.md)                   |
-

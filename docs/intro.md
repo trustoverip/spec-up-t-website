@@ -10,14 +10,14 @@ sidebar_position: 1
 
 **This `index.html` file is the actual specification file that is the goal of it all.**
 
-This `index.html` file is stand-alone and can be hosted on any webserver. Or double click it and it will open.
+This `index.html` file is stand-alone and can be hosted on any web server. Or double-click it, and it will open.
 The code is available [on Github](https://github.com/blockchainbird/spec-up-t).
 
-**Spec-Up-T** is based on **Spec-Up** and some of the content on this website is taken from the [Spec-Up website](https://identity.foundation/spec-up/).
+**Spec-Up-T** is based on **Spec-Up**, and some of the content on this website is taken from the [Spec-Up website](https://identity.foundation/spec-up/).
 
 :::tip
 
-In order to start using Spec-Up-T you will have to install it. Go straight to the [admin section](various-roles/admins-guide.md) for instructions.
+You will have to install Spec-Up-T to start using it. Go straight to the [admin section](various-roles/admins-guide.md) for instructions.
 
 :::
 
@@ -31,7 +31,7 @@ Spec-Up is a tool provided by [DIF](https://github.com/decentralized-identity) (
 ![Logo ToIP and DIF combined](/img/logo.svg)
 </div>
 
-From the Spec-Up documentation: “*Spec-Up* is a technical specification development tool that enables you to create rich specification documents for standards bodies and engineering projects by writing in an extended version of markdown that features all the bells and whistles - for example: advanced syntax highlighting, notice blocks, complex tables, charts, UML diagrams, and more.”
+From the Spec-Up documentation: “*Spec-Up* is a technical specification development tool that enables you to create rich specification documents for standards bodies and engineering projects by writing in an extended version of markdown that features all the bells and whistles - for example, advanced syntax highlighting, notice blocks, complex tables, charts, UML diagrams, and more.”
 | Spec-Up | Spec-Up-T |
 |----------------|----------------|
 | <div class='image-small'>![DIF Logo](/img/logo-dif.svg)</div>Decentralized Identity Foundation | <div class='image-small'>![ToIP Logo](/img/logo-toip.svg)</div>Trust over IP |
@@ -43,12 +43,12 @@ From the Spec-Up documentation: “*Spec-Up* is a technical specification develo
 
 ## Spec-Up-T
 
-Spec-Up-T stays in sync with Spec-Up, and currently adds the following extra functionality:
+Spec-Up-T stays in sync with Spec-Up and currently adds the following extra functionality:
 
 1. Search & Find (not the same as the browser search)
-2. Splitter for Terms and Definition section following the [Termininology Governance Guide](https://trustoverip.github.io/ctwg-terminology-governance-guide/) and various meeting report since [CTWG April 2024](https://wiki.trustoverip.org/display/HOME/2024-04-22+CTWG+Meeting+Notes)
+2. Splitter for Terms and Definition section following the [Termininology Governance Guide](https://trustoverip.github.io/ctwg-terminology-governance-guide/) and various meeting reports since [CTWG April 2024](https://wiki.trustoverip.org/display/HOME/2024-04-22+CTWG+Meeting+Notes)
 3. External Reference (xref) functionality (To Do: add link)
-4. Small User Interface enhancements (back to top button, automatic copying of urls when clicking on anchors (“$”), menu-item highlighting)
+4. Small User Interface enhancements (back-to-top button, automatic copying of urls when clicking on anchors (“$”), menu-item highlighting)
 
 *Spec-Up* and *Spec-Up-T* work on *Github*. The specification is stored in a Github repo. Editing can be done locally in a suitable editor (Visual Studio Code is widely used), or can be done web-based via the editor provided by Github if you are logged in.
 

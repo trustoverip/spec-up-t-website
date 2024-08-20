@@ -111,7 +111,6 @@ Mind you, the `Spec` directory regularly holds the authors' markdown, but it's c
 - Orange: may touch, but in consultation via PRs with DIF / Daniel Buchner
 - Green: These are the files that can freely be altered under Spec-Up-T. 
 
-
 In the orange sections, we could make amendments to ToIP concepts and terminology. By doing so, we can move forward without having to wait for DIF to accept or reject these changes.
 
 Other Spec-Up-based repos could come over to Spec-Up-T and pull the amendments that we've made to their repo. We'll branch off per feature. Because we stay in sync with the latest Spec-Up, a clean merge with little or no merge conflicts should be possible. Of course, for this to happen, the target repo needs to be in sync with the latest Spec-Up, too.

@@ -8,19 +8,6 @@ Spec-Up-T is a specialized tool designed to facilitate the creation, management,
 
 Not everyone needs all the knowledge described here. Different roles are identified.
 
-*To do: assign the different parts in the text below to the available roles. Also rewrite the text below*
-
-| Skill  | Role |
-|----------|-------------|
-| 1. Familiarity with Node.js and npm |   Admin          |
-| 2. Basic Understanding of File System Navigation and Directory Management | Admin |
-| 3. JSON Configuration Files | Content Author, Terminology Author, Curator, Glossary Maintainer |
-| 4. Markdown Language Proficiency | Content Author, Terminology Author, Curator, Glossary Maintainer |
-| 5. Basic Web Development Concepts | – |
-| 6. Version Control and Automation | Developer |
-| 7. Debugging and Development Tools | Admin |
-
-
 ## 1
 
 ### Familiarity with Node.js and npm

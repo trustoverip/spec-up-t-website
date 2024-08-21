@@ -37,7 +37,7 @@ Now you have a basic Spec-Up-T specification file (`index.html`) with the follow
 
 #### View your specification
 
-So the `index.html` is the endresult. You should view it in a browser. Er zijn twee manieren om dit te doen:
+So the `index.html` is the endresult. You should view it in a browser. There are two ways to do this:
 
 - via `http://`
 - via `file:///`

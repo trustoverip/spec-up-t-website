@@ -12,11 +12,11 @@ Not everyone needs all the knowledge described here. Different roles are identif
 
 ### Familiarity with Node.js and npm
 
-At the core of Spec-Up-T's installation and operation lies the Node.js environment, coupled with npm (Node Package Manager). Node.js is a popular JavaScript runtime that allows developers to execute JavaScript code outside of a web browser, making it a critical tool for server-side and command-line interface (CLI) applications. npm, on the other hand, is a package manager for Node.js that facilitates the installation and management of software packages.
+At the core of Spec-Up-T's installation and operation lies the [Node.js](https://nodejs.org/en) environment, coupled with [npm (Node Package Manager)](https://www.npmjs.com/).
 
 **Required Knowledge:**
 
-- **Installation and Setup:** Users must know how to download and install Node.js, ensuring all relevant dependencies are correctly set up. This includes understanding the importance of checking the necessary checkboxes during installation to ensure a smooth setup process.
+- **Installation and Setup:** Users must know how to download and install Node.js, ensuring all relevant dependencies are correctly set up.
 - **Command-Line Interface (CLI) Proficiency:** Users should be comfortable using a CLI, as many operations, including installing Spec-Up-T, running npm commands, and managing directories, are executed via terminal commands.
 - **Understanding npm Scripts:** Familiarity with npm scripts, such as `npm run install`, `npm run render`, and `npm run dev`, is crucial. These scripts automate various tasks in Spec-Up-T, from installing dependencies to rendering the final HTML output.
 
@@ -28,8 +28,7 @@ Spec-Up-T users need to navigate through the file system, create and manage dire
 
 **Required Knowledge:**
 
-- **Directory Navigation:** Users should know how to move between directories using the command line (`cd` command) and understand the importance of directory structures in project management.
-- **File Management:** The creation of new directories, such as the site directory (`my-spec-up-t-website`), and the management of project files like `specs.json`, `spec.md`, and the `docs` directory, are routine tasks that require basic file system knowledge.
+- Users should know how to move between directories using the command line (`cd` command).
 
 ## 3
 
@@ -53,7 +52,6 @@ Read more about [Markdown](https://www.markdownguide.org/getting-started/)
 **Required Knowledge:**
 
 - **Markdown Syntax:** Users should be comfortable with Markdown syntax, including headers, lists, links, and code blocks. This proficiency allows them to structure the content of their specifications clearly and concisely.
-- **Multi-File Markdown Management:** Spec-Up-T allows users to specify multiple Markdown files to be combined into a single output document. Users need to know how to reference these files in the `specs.json` file using the `markdown_paths` array.
 
 ## 5
 
@@ -63,8 +61,6 @@ Since Spec-Up-T ultimately renders HTML files that are intended for web viewing,
 
 **Required Knowledge:**
 
-- **HTML Basics:** Users should know how HTML works, particularly the role of the `index.html` file as the main entry point for the rendered specifications.
-- **HTTP vs. File Protocol:** Understanding the difference between accessing files via the `file:///` protocol (locally) and `http://` protocol (over a web server) is important for viewing and sharing the generated specifications.
 - **Browser Usage:** Users should be familiar with opening files in a web browser, either by double-clicking the `index.html` file in a file manager or by navigating to the file via the browser’s menu.
 
 ## 6

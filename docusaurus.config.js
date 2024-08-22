@@ -107,6 +107,15 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        // options here
+        hashed: true,
+      },
+    ],
+  ],
 };
 
 export default config;

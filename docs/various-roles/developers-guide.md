@@ -83,7 +83,7 @@ Generally, if you now run `npm run render,` it will call the scripts from the Sp
 
 In the `scripts` section of the `package.json` file for your Spec-Up-T installation, you will find commands like this:
 
-"`json
+```json
 "scripts": {
   "render": "node -e \"require('spec-up-t')({ nowatch: true })\"",
   "xrefs": "node -e \"require('spec-up-t/src/get-xrefs-data.js').getXrefsData()\""
@@ -100,13 +100,13 @@ Type this into your terminal:
 It is only tested on macOS.
 :::
 
-"`bash
+```bash
 node -e "require('/Users/***/path/to/your/spec-up-t/index.js')({ nowatch: true })"
 ```
 
 or
 
-"`bash
+```bash
 node -e "require('/Users/***/path/to/your/spec-up-t/spec-up-t/src/get-xrefs-data.js').getXrefsData()"
 ```
 

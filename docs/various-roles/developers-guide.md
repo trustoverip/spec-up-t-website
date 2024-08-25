@@ -31,8 +31,11 @@ Note: The The Spec-Up-T installer repo has two `package.json`s. One in the root,
 
 The new package will usually be available as soon as it is uploaded.
 
+## Adding functionality
 
-## Adding client-side functionality
+The `Spec-Up-T` tool is written in `JavaScript,` client-side, and server-side (Node.js).
+
+### Adding client-side functionality
 
 Client-side JavaScript and CSS can be found in these directories: `/assets/js` and `/assets/css`. 
 
@@ -54,7 +57,7 @@ $ npm run render
 ```
 Now your `index.html` file should be created or updated.
 
-## Gulp
+### Gulp
 
 Of course, you can only use Gulp if you have it [installed](https://gulpjs.com/docs/en/getting-started/quick-start).
 
@@ -62,7 +65,46 @@ Of course, you can only use Gulp if you have it [installed](https://gulpjs.com/d
 If Gulp suddenly stops working even though it worked before, it could be because you are using NVM and have a different Node.js version active.
 :::
 
-## Adding server-side functionality
+### Adding server-side functionality
 
-To be written.
+The Node.js scripts that run server-side are found in the root of the `Spec-Up-T` repo and in the `/src/ directory.
+
+How can you run and test Node.js code locally without publishing it on npm first?
+
+- Clone the Spec-Up-T repo
+- Install a Spec-Up-T via the installer
+- Run `npm install` in the Spec-Up-T website that you installed via the installer
+  
+Generally, if you now run `npm run render,` it will call the scripts from the Spec-Up-T inside `node_modules.` 
+
+In the `scripts` section of the `package.json` file for your Spec-Up-T installation, you will find commands like this:
+
+```json
+"scripts": {
+  "render": "node -e \"require('spec-up-t')({ nowatch: true })\"",
+  "xrefs": "node -e \"require('spec-up-t/src/get-xrefs-data.js').getXrefsData()\""
+}
+```
+
+These are calls to the `Spec-Up-T` library in `node_modules`.
+
+However, we want to test locally. To do this, we will call the scripts from your local Spec-Up-T clone, where you are developing.
+
+Type this into your terminal (tested on MacOs):
+
+:::warning
+Only tested on MacOs.
+:::
+
+```bash
+node -e "require('/Users/***/path/to/your/spec-up-t/index.js')({ nowatch: true })"
+```
+
+or
+
+```bash
+node -e "require('/Users/***/path/to/your/spec-up-t/spec-up-t/src/get-xrefs-data.js').getXrefsData()"
+```
+
+Adjust this based on what you need.
 

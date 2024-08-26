@@ -6,11 +6,23 @@ sidebar_position: 3
 
 These are general instructions for every role involved.
 
+#### Test `spec.json`
+
+Once you have edited the `spec.json,` you can test here to see if it is OK; that is, it checks whether each key is present. It does not check whether the value of the key meets specific rules:
+
+```bash
+npm run validatespec
+```
+
+If a key is missing you will get a notification about it.
+
+
+
 #### Look up xrefs
 
 Xrefs are [To Do: write explanation]
 
-```
+```bash
 npm run xrefs
 ```
 
@@ -20,7 +32,7 @@ Now, the references to external specs are generated, if any.
 
 The final result will be just one file: `index.html`. This file is rendered or re-rendered with the following command:
 
-```
+```bash
 npm run render
 ```
 

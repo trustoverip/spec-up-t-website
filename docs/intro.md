@@ -13,7 +13,7 @@ sidebar_position: 1
 This `index.html` file is stand-alone and can be hosted on any web server. Or double-click it, and it will open.
 The code is available [on Github](https://github.com/blockchainbird/spec-up-t).
 
-**Spec-Up-T** is based on **Spec-Up**, and some of the content on this website is taken from the [Spec-Up website](https://identity.foundation/spec-up/).
+**Spec-Up-T** is based on **Spec-Up**, and some of the content on this website is taken from the [Spec-Up website](https://identity.foundation/spec-up/) and [repo](https://github.com/decentralized-identity/spec-up).
 
 :::tip
 

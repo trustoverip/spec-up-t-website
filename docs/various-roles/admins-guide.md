@@ -6,7 +6,7 @@ sidebar_position: 2
 
 This is the admin guide for the Spec-Up-T system.
 
-The repo can be found [here](https://github.com/blockchainbird/spec-up-t)
+The repo can be found [here](https://github.com/blockchainbird/spec-up-t).
 
 ## Installation
 

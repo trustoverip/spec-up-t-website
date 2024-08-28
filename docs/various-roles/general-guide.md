@@ -10,8 +10,6 @@ This is a temporary page; parts will be moved to other pages.
 
 These are general instructions for every role involved.
 
-The following instructions should be entered into a terminal (command line):
-
 ## Test `spec.json`
 
 Once you have edited the `spec.json,` you can test here to see if it is OK; that is, it checks whether each key is present. It does not check whether the value of the key meets specific rules:

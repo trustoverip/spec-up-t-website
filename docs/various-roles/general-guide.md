@@ -8,7 +8,7 @@ These are general instructions for every role involved.
 
 The following instructions should be entered into a terminal (command line):
 
-#### Test `spec.json`
+## Test `spec.json`
 
 Once you have edited the `spec.json,` you can test here to see if it is OK; that is, it checks whether each key is present. It does not check whether the value of the key meets specific rules:
 
@@ -20,7 +20,7 @@ If a key is missing you will get a notification about it.
 
 
 
-#### Look up xrefs
+## Look up xrefs
 
 Xrefs are [To Do: write explanation]
 
@@ -30,7 +30,7 @@ npm run xrefs
 
 Now, the references to external specs are generated, if any.
 
-#### Create index.html
+## Create index.html
 
 The final result will be just one file: `index.html`. This file is rendered or re-rendered with the following command:
 
@@ -40,7 +40,7 @@ npm run render
 
 Now, an index.html file is created in the `docs` directory. This is the default directory specified in the `specs.json` file.
 
-#### You are ready
+## You are ready
 
 Now you have a basic Spec-Up-T specification file (`index.html`) with the following content:
 
@@ -49,7 +49,7 @@ Now you have a basic Spec-Up-T specification file (`index.html`) with the follow
 - a `docs` directory with a sample index.html file
 - a `node_modules` directory, a `package.json` file, and a `package-lock.json` file (these three elements belong to the `npm` system)
 
-#### View your specification
+## View your specification
 
 So the `index.html` is the endresult. You should view it in a browser. There are two ways to do this:
 
@@ -70,7 +70,7 @@ This way, you can share it with the world by sharing the URL.
 HTTP stands for HyperText Transfer Protocol. It is the foundation of any data exchange on the Web and a protocol for transmitting hypertext requests and information online. The World Wide Web uses HTTP and defines how messages are formatted and transmitted and how web servers and browsers should respond to various commands.
 :::
 
-#### Three different modes
+## Three different modes
 
 `npm run render` is not the only way to go. There are three different modes for rendering the specification:
 
@@ -80,6 +80,6 @@ HTTP stands for HyperText Transfer Protocol. It is the foundation of any data ex
 |`npm run render`| This renders the site once and does not keep a gulpy watch on the underlying files.|
 |`npm run dev`|this enables debugging features.|
 
-#### Automation
+## Automation
 
 The above scripts can easily be triggered by [github actions](../glossary#github-actions).  See [this repo's example](https://github.com/decentralized-identity/spec-up/blob/master/.github/workflows/render-specs.yml)

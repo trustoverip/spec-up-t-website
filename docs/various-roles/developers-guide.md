@@ -12,6 +12,10 @@ The repo can be found [here](https://github.com/blockchainbird/spec-up-t).
 
 If you want to add new functionality to Spec-Up-T, you will find below how to proceed.
 
+:::danger
+Be aware that your specification is just one file, an `index.html` file. Keeping this file as small as possible should be a priority when adding functionality. There is no lazy loading or optimization. It is basic HTML plus embedded CSS and JS.
+:::
+
 Two repos come into play:
 
 - [The Spec-Up-T repo](https://github.com/blockchainbird/spec-up-t), with [associated NPM package](https://www.npmjs.com/package/spec-up-t)

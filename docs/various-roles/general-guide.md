@@ -5,10 +5,8 @@ sidebar_position: 3
 # General Guide
 
 :::warning
-This is a temporary page; parts will be moved to other pages.
+These are general instructions. This is a temporary page; parts will be moved to other pages.
 :::
-
-These are general instructions for every role involved.
 
 ## Create  `spec.json`
 

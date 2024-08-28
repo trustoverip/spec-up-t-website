@@ -4,6 +4,10 @@ sidebar_position: 3
 
 # General Guide
 
+:::warning
+This is a temporary page; parts will be moved to other pages.
+:::
+
 These are general instructions for every role involved.
 
 The following instructions should be entered into a terminal (command line):

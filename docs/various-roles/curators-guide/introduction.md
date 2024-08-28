@@ -1,9 +1,13 @@
-
 ---
 sidebar_position: 1
 ---
 
 # Curators Guide
+
+:::warning
+Under construction
+:::
+
 
 Uses an IDE and git and browser extensions to check the overall content of a specification and logical consistency & meaning of term definition in a particular context.
 

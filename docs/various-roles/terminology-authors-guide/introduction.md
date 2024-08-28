@@ -4,6 +4,11 @@ sidebar_position: 1
 
 # Terminology Authors Guide
 
+:::warning
+Under construction
+:::
+
+
 Focusses on term definitions covering concepts of the group he/she belongs to.
 
 Uses: an IDE, git and a browser extension, to edit Spec-Up markdown files for his/her specific context (mental model) in a version managed environment, authenticated, to write the concept and specification and offer this as a PR.

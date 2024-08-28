@@ -24,15 +24,30 @@ If a key is missing you will get a notification about it.
 
 
 
-## Look up xrefs
+## Look up `xrefs`
 
-Xrefs are [To Do: write explanation]
+`xrefs` are references to external glossaries (specifications).
 
 ```bash
 npm run xrefs
 ```
 
-Now, the references to external specs are generated, if any.
+Now, the `xref` is generated, if any.
+
+Every `xref` is checked against a local data collection to see if there is already a reference. If so, it is left untouched. This way, every xref will point to the definition as it was created. If the external term changes in the meantime, the reference is still to the original version.
+
+## Remove `xref`
+
+Removing an `xref` from the text is something you'll do via the text editor. If you want to update the xref and make it point to the current version of the external reference, remove the current reference that might point to an older version:
+
+```bash
+npm run removexref -- "termValue" "externalSpecValue"
+```
+
+After that, you can run `npm run xrefs` again to get the latest reference (that might be identical if the external reference did not change).
+
+
+
 
 ## Create index.html
 

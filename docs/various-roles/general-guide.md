@@ -38,7 +38,7 @@ Every `xref` is checked against a local data collection to see if there is alrea
 
 ## Remove `xref`
 
-Removing an `xref` from the text is something you'll do via the text editor. If you want to update the xref and make it point to the current version of the external reference, remove the current reference that might point to an older version:
+Removing an `xref` from the text is something you'll do via the text editor. However, if you want to update the xref and make it point to the current version of the external reference, remove the current reference that might point to an older version:
 
 ```bash
 npm run removexref -- "termValue" "externalSpecValue"

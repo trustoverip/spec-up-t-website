@@ -94,3 +94,37 @@ What you don't have yet is the following:
 - a `docs` directory with a sample `index.html` file (which is the actual specification file that is the goal of it all).
 
 How to do this, go to the [General Instructions](./general-guide.md).
+
+#### Add repo to Github
+
+You should push your new specification (i.e. the sample content) to a GitHub repo.
+
+These are the steps to take:
+
+##### Edit `specs.json`
+
+Change this entry in `specs.json`:
+
+```json
+"source": {
+                "host": "github",
+                "account": "blockchainbird",
+                "repo": "spec-up-t-starter-pack"
+            }
+```
+
+to the correct information:
+
+```json
+"source": {
+                "host": "github",
+                "account": "your-account",
+                "repo": "your-repo"
+            }
+```
+
+These are the host (GitHub), your GitHub account name, and the repo name of the repo you are about to push.
+
+##### Push repo to GitHub
+
+Now, push the repo to GitHub. Use the command line or your preferred way to do this.

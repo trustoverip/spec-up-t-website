@@ -9,6 +9,14 @@ This cheat sheet still needs to be completed. Information on how to write conten
 :::
 
 
+## Get help
+
+```bash
+npx run help
+```
+
+This command will show a URL to the documentation website (the website you are reading right now).
+
 
 ## Install a new Spec-Up-T site
 

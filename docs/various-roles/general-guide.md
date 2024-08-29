@@ -8,7 +8,7 @@ sidebar_position: 3
 These are general instructions. This is a temporary page; parts will be moved to other pages and assigned to the various roles.
 :::
 
-## Create  `spec.json`
+## Create (or edit the sample) `spec.json`
 
 The`specs.json` file **in the root folder of your repository** specifies configuration values used in the generation of your spec documents. The values in your `specs.json` file include things like where your spec's markdown files are located, where to output the generated spec document, and various metadata values used in rendering, such as the title, logo, and repo links for each of your specs. The following are the required/optional fields supported in the `specs.json` config file:
 

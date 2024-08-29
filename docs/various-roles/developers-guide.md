@@ -190,3 +190,42 @@ The solution is to include the data as an embedded JavaScript variable. In the d
 ]
 
 ```
+
+## Publishing to GitHub and NPM
+
+The suggested way to publish to GitHub and NPM is as follows:
+
+- Make your changes and commit them:
+
+```bash
+git add .
+git commit -m "Add new feature"
+```
+
+:::info
+Merging branches is not described here. It's generally best to run npm version after merging your feature branch into the main (or master) branch. This ensures that the version bump and tag are applied to the final state of the code that will be released.
+:::
+
+- Update the version in package.json, commit the change, and create a Git tag:
+
+```bash
+npm version <newversion> -m "Bump version to %s"
+```
+
+:::info
+The %s in the npm version command is a placeholder that gets replaced with the new version number. When you run the command, npm automatically substitutes %s with the version number you specified.
+:::
+
+Replace `<newversion>` with the new version number (e.g., 0.11.32).
+
+- Push the changes and the tag to the remote repository:
+
+```bash
+git push origin main --tags
+```
+
+- Publish the new version to npm:
+
+```bash
+npm publish
+```

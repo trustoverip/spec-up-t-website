@@ -6,8 +6,6 @@ sidebar_position: 15
 
 This page is the developer's guide for the Spec-Up-T system.
 
-The repo can be found [here](https://github.com/blockchainbird/spec-up-t).
-
 ## How do you get a new version of Spec-Up-T live?
 
 If you want to add new functionality to Spec-Up-T, you will find below how to proceed.

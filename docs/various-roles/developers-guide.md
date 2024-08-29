@@ -12,6 +12,8 @@ If you want to add new functionality to Spec-Up-T, you will find below how to pr
 
 :::danger
 Be aware that your specification is just one file, an `index.html` file. Keeping this file as small as possible should be a priority when adding functionality. There is no lazy loading or optimization. It is basic HTML plus embedded CSS and JS.
+
+Also, realize that the GitHub API reaches its limit fairly quickly, especially if there is no authentication. So, in everything, keep in mind that the number of requests should remain minimal.
 :::
 
 Two repos come into play:

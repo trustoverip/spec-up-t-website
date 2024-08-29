@@ -46,9 +46,9 @@ From the Spec-Up documentation: “*Spec-Up* is a technical specification develo
 
 Spec-Up-T stays in sync with Spec-Up and currently adds the following extra functionality:
 
-1. Search & Find (not the same as the browser search)
+1. Search & Find (only searches the main content, unlike the browser search);
 2. Splitter for Terms and Definition section following the [Termininology Governance Guide](https://trustoverip.github.io/ctwg-terminology-governance-guide/) and various meeting reports since [CTWG April 2024](https://wiki.trustoverip.org/display/HOME/2024-04-22+CTWG+Meeting+Notes)
-3. External Reference (xref) functionality (To Do: add link)
+3. External Reference (xref) functionality
 4. Small User Interface enhancements (back-to-top button, automatic copying of urls when clicking on anchors (“$”), menu-item highlighting)
 
 *Spec-Up* and *Spec-Up-T* work on *Github*. The specification is stored in a Github repo. Editing can be done locally in a suitable editor (Visual Studio Code is widely used), or can be done web-based via the editor provided by Github if you are logged in.

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Admins Guide
@@ -93,7 +93,7 @@ What you don't have yet is the following:
 
 - a `docs` directory with a sample `index.html` file (which is the actual specification file that is the goal of it all).
 
-How to do this, go to the [General Instructions](./general-guide.md).
+How to do this, go to the [General Instructions](../general-guide.md).
 
 #### Add repo to Github
 

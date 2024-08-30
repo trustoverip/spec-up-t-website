@@ -162,12 +162,6 @@ node -e "require('/Users/***/path/to/your/spec-up-t/src/create-pdf.js')"
 
 Adjust this based on what you need.
 
-## Handling data
-
-Since everything is contained in one HTML file, the question arises as to how we store and call data. After all, we can't load external JSON because we want to keep everything within this one HTML file.
-
-The solution is to include the data as an embedded JavaScript variable. In the development environment (the installation on your file system from where you invoke commands on the command line), you can choose to store the data as JSON as well. However, in order to get it working in the HTML file, you will also have to include a JS variable. You will have to arrange this through Gulp.
-
 ## Directory structure
 
 | File/Directory                | Description / remarks |
@@ -187,6 +181,11 @@ The solution is to include the data as an embedded JavaScript variable. In the d
 
 Some of the files and dirs are for testing purposes only.
 
+## Handling data
+
+Since everything is contained in one HTML file, the question arises as to how we store and call data. After all, we can't load external JSON because we want to keep everything within this one HTML file.
+
+The solution is to include the data as an embedded JavaScript variable. In the development environment (the installation on your file system from where you invoke commands on the command line), you can choose to store the data as JSON as well. However, in order to get it working in the HTML file, you will also have to include a JS variable. You will have to arrange this through Gulp.
 
 ## Github API
 

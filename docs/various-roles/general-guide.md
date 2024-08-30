@@ -76,9 +76,6 @@ npm run removexref -- "termValue" "externalSpecValue"
 
 After that, you can run `npm run xrefs` again to get the latest reference (that might be identical if the external reference did not change).
 
-
-
-
 ## Create index.html
 
 The final result will be just one file: `index.html`. This file is rendered or re-rendered with the following command:
@@ -88,6 +85,21 @@ npm run render
 ```
 
 Now, an index.html file is created in the `docs` directory. This is the default directory specified in the `specs.json` file.
+
+## Create PDF
+
+If you want to create a PDF from the `index.html`, run the following command:
+
+:::info
+“topdf” stands for “To PDF”
+:::
+
+```bash
+npm run topdf
+```
+A PDF will be created in the same directory as the `index.html` file is.
+
+
 
 ## You are ready
 

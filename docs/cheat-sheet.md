@@ -87,6 +87,12 @@ npm run removexref -- "termValue" "externalSpecValue"
 npm run render
 ```
 
+## Create PDF
+
+```bash
+npm run topdf
+```
+
 ## View your specification
 
 So the `index.html` is the endresult. You should view it in a browser. There are two ways to do this:

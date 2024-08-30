@@ -41,7 +41,7 @@ The `Spec-Up-T` tool is written in `JavaScript,` client-side, and server-side (N
 
 ### Adding client-side functionality
 
-Client-side JavaScript and CSS can be found in these directories: `/assets/js` and `/assets/css`. 
+Client-side JavaScript and CSS can be found in these directories: `/assets/js` and `/assets/css`.
 
 This code must first be "compiled" before it enters `index.html`. Compiling, in this case, means that it will end up in the directory `/assets/compiled`. If it is there, it will end up in a newly generated `index.html` via the `render` step. For rendering, see the admin section.
 
@@ -53,16 +53,16 @@ gulp compile`
 
 So, if you have written client-side JavaScript or custom CSS, you need to take the following steps to get this code working (the "$" at the beginning is the command prompt, and you should not type it):
 
-
-```
-$ gulp compile
+```bash
+gulp compile
 ```
 
 Wait for the code to finish. Then:
 
+```bash
+npm run render
 ```
-$ npm run render
-```
+
 Now, your `index.html` file should be created or updated.
 
 ### Gulp
@@ -83,7 +83,7 @@ How can you run and test Node.js code locally without publishing it on npm first
 - Install a Spec-Up-T via the installer
 - Run `npm install` in the Spec-Up-T website that you installed via the installer
   
-Generally, if you now run `npm run render,` it will call the scripts from the Spec-Up-T inside `node_modules.` 
+Generally, if you now run `npm run render,` it will call the scripts from the Spec-Up-T inside `node_modules` .
 
 In the `scripts` section of the `package.json` file for your Spec-Up-T installation, you will find commands like this:
 
@@ -116,8 +116,6 @@ node -e "require('/Users/***/path/to/your/spec-up-t/spec-up-t/src/get-xrefs-data
 
 Adjust this based on what you need.
 
-
-
 ## Handling data
 
 Since everything is contained in one HTML file, the question arises as to how we store and call data. After all, we can't load external JSON because we want to keep everything within this one HTML file.
@@ -126,7 +124,7 @@ The solution is to include the data as an embedded JavaScript variable. In the d
 
 ## Github API
 
-### Example of API response:
+### Example of API response
 
 ```json
 [

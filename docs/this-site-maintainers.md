@@ -6,10 +6,14 @@ sidebar_position: 19
 
 Here you will find information about things specific to this site.
 
+## Info about Docusaurus
+
+This site is built in [Docusaurus](https://docusaurus.io/).
+
 ## Updating the Demo Site
 
-The [demo page](spec-up-t-demo-site.mdx) contains an example of a Spec-Up-T installation in an iFrame. This `index.html` file is in `/static/spec-up-t-demo/docs/`.
+The [demo page](spec-up-t-demo-site.mdx) contains an example of a Spec-Up-T installation in an iFrame. This `index.html` file is in `/static/spec-up-t-demo/docs/` of this website (See [repo of this website](https://github.com/blockchainbird/spec-up-t-website)).
 
-This `index.html` file is a standard Spec-Up-T installation, as described in the [admin section](various-roles/admins-guide/admins-guide.md#installation).
+This `index.html` file was generated from [the Spec-Up-T demonstration installation found on GitHub](https://github.com/blockchainbird/spec-up-t-demo-on-documentation-website).
 
-This `index.html` file is located in the GitHub repository of this site (the site you are now reading). The Spec-Up-T installation that generated the index file is not stored in any repository since it is a standard installation. You can install and generate it anywhere on your computer, then copy the index file to `/static/spec-up-t-demo/docs/`.
+To update the demo, generate the `index.html` and copy it to `/static/spec-up-t-demo/docs/` (see [repo of this website](https://github.com/blockchainbird/spec-up-t-website)).

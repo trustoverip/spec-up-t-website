@@ -48,7 +48,7 @@ This code must first be "compiled" before it enters `index.html`. Compiling, in 
 This is the command to compile:
 
 ```bash
-gulp compile`
+gulp compile
 ```
 
 So, if you have written client-side JavaScript or custom CSS, you need to take the following steps to get this code working (the "$" at the beginning is the command prompt, and you should not type it):

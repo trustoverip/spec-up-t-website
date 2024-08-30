@@ -22,9 +22,10 @@ Note the `npx`, not `npm`.
 
 #### Get help
 
-```
+```bash
 npx spec-up-splitter -help
 ```
+
 This will output a URL that points to this website.
 
 #### Usage
@@ -60,5 +61,5 @@ Currently this tool works only on the first spec definition in specs.json (on th
 
 ### Repo and Package
 
-- Github repo: https://github.com/blockchainbird/spec-up-splitter
-- NPM package: https://www.npmjs.com/package/spec-up-splitter
+- [Github repo](https://github.com/blockchainbird/spec-up-splitter)
+- [NPM package](https://www.npmjs.com/package/spec-up-splitter)

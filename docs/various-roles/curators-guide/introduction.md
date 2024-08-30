@@ -8,7 +8,6 @@ sidebar_position: 1
 Under construction
 :::
 
-
 Uses an IDE and git and browser extensions to check the overall content of a specification and logical consistency & meaning of term definition in a particular context.
 
 The curator uses browser extensions to harvest a personal collection of term definitions based on those recommended by the specification authors.

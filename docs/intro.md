@@ -18,7 +18,7 @@ Spec-Up-T is based on **Spec-Up**, and some of the content on this website is ta
 
 :::tip
 
-You will have to install Spec-Up-T to start using it. Go straight to the [admin section](various-roles/admins-guide.md) for instructions.
+You will have to install Spec-Up-T to start using it. Go straight to the [admin section](various-roles/admins-guide/admins-guide.md) for instructions.
 
 :::
 

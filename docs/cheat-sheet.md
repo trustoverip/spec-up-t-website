@@ -8,7 +8,6 @@ sidebar_position: 0
 This cheat sheet still needs to be completed. Information on how to write content, create references, and more will be added in the future.
 :::
 
-
 ## Get help
 
 ```bash
@@ -31,7 +30,7 @@ cd my-spec-up-t-website
 
 ### Install all dependencies
 
-```
+```bash
 npm run install
 ```
 
@@ -65,10 +64,9 @@ to the correct information:
 npm run validatespec
 ```
 
-##### Commit and Push repo to GitHub
+### Commit and Push repo to GitHub
 
 Now, commit your changes and push the repo to GitHub. Use the command line or your preferred way to do this.
-
 
 ## Look up `xrefs`
 

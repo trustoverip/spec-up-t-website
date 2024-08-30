@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Terminology Authors Guide
+# Intro
 
 :::warning
 Under construction

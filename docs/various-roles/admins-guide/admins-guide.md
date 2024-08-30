@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Admins Guide
+# Intro
 
 This is the admin guide for the Spec-Up-T system.
 

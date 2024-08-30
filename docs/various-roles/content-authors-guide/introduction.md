@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Content Authors Guide
+# Intro
 
 :::warning
 Under construction

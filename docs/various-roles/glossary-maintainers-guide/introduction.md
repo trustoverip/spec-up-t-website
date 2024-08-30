@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Glossary Maintainers Guide
+# Intro
 
 :::warning
 Under construction

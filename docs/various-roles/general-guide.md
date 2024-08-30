@@ -16,7 +16,6 @@ npm run help
 
 This command will show a URL to the documentation website (the website you are reading right now).
 
-
 ## Create (or edit the sample) `spec.json`
 
 The`specs.json` file **in the root folder of your repository** specifies configuration values used in the generation of your spec documents. The values in your `specs.json` file include things like where your spec's markdown files are located, where to output the generated spec document, and various metadata values used in rendering, such as the title, logo, and repo links for each of your specs. The following are the required/optional fields supported in the `specs.json` config file:
@@ -51,8 +50,6 @@ npm run validatespec
 ```
 
 If a key is missing you will get a notification about it.
-
-
 
 ## Look up `xrefs`
 
@@ -97,9 +94,8 @@ If you want to create a PDF from the `index.html`, run the following command:
 ```bash
 npm run topdf
 ```
+
 A PDF will be created in the same directory as the `index.html` file is.
-
-
 
 ## You are ready
 
@@ -143,4 +139,4 @@ HTTP stands for HyperText Transfer Protocol. It is the foundation of any data ex
 
 ## Automation
 
-The above scripts can easily be triggered by [github actions](../glossary#github-actions).  See [this repo's example](https://github.com/decentralized-identity/spec-up/blob/master/.github/workflows/render-specs.yml)
+The above scripts can easily be triggered by [github actions](../glossary#github-actions).  See [this repo's example](https://github.com/decentralized-identity/spec-up/blob/master/.github/workflows/render-specs.yml).

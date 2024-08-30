@@ -77,7 +77,7 @@ You are now in this directory.
 
 - Install all dependencies:
 
-```
+```bash
 npm run install
 ```
 

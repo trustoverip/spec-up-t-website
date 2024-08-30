@@ -185,7 +185,7 @@ Adjust this based on what you need.
 | `/single-file-test`              | –            |
 | `/spec`                          | markdown files (for testing) |
 | `/specs.json`                    | config file (for testing)|
-| `/src`                           | JS files (Node.js, for server side stuff)  |
+| `/src`                           | JS files (Node.js, for server side stuff) + `asset-map.json`  |
 
 Some of the files and dirs are for testing purposes only.
 

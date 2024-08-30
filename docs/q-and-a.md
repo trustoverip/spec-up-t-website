@@ -54,8 +54,8 @@ ToIP added functionality as well: diff tooling, search bar, and navigation aids.
 
 On the other hand, Spec-Up-T is installable via just a single command:
 
-```
-$ npx create-spec-up-t my-spec-up-t-website
+```bash
+npx create-spec-up-t my-spec-up-t-website
 ```
 
 ## For who is Spec-Up-T?

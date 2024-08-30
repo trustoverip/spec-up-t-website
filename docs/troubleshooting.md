@@ -19,7 +19,7 @@ Install NVM if you haven't already. (Instructions not given here).
 
 Then run Node.js version 14:
 
-```
+```bash
 nvm install 14
 nvm use 14
 npm i npm@6.14.16 -g

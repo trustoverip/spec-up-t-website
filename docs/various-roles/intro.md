@@ -14,5 +14,3 @@ Spec-Up-T implementations can distinguish the following roles:
 | Reader             | Reads concepts in text and terminology in glossaries.                         | [Reader Guide](readers-guide/introduction.md)            | [Understand the web](technical-skills-needed#5) |
 | Admin              | Installs, updates, and maintains Spec-Up-T.                                    | [Admin Guide](admins-guide/admins-guide.md)                           | [Understand Node and NPM](technical-skills-needed#1), [Understand file system](technical-skills-needed#2), [Understand debugging](technical-skills-needed#7) |
 | Developer          | Adds new functionality to Spec-Up-T.                                          | [Developer Guide](developers-guide.md)                   | [Understand Git and Github](technical-skills-needed#6) |
-
-

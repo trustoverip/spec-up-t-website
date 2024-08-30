@@ -125,6 +125,6 @@ to the correct information:
 
 These are the host (GitHub), your GitHub account name, and the repo name of the repo you are about to push.
 
-##### Push repo to GitHub
+##### Commit and Push repo to GitHub
 
-Now, push the repo to GitHub. Use the command line or your preferred way to do this.
+Now, commit your changes and push the repo to GitHub. Use the command line or your preferred way to do this.

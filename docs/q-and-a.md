@@ -66,11 +66,11 @@ The **resulting github.io site is intended for any user** interested in the cont
 
 ## Do you have a how-to video to get started with Spec-Up-T?
 
-Yes. Find it here: [Instruction starter package](various-roles/admins-guide/admins-guide.md#short-video)
+Yes. Find it here: [Short video](intro#intro)
 
 ## Where can I find the motivation of this move to create the Spec-Up bolt on "Spec-Up-T"?
 
-Our enhancement proposal and git governance strategy is here: [https://hackmd.io/s1TEBBluQBSL10ZT5yRVPw](https://hackmd.io/s1TEBBluQBSL10ZT5yRVPw)
+Our enhancement proposal and git governance strategy is [here](how-it-came-to-be).
 
 ## Why doesn't the Spec-Up-T repo generate a github.io-served specification itself?
 

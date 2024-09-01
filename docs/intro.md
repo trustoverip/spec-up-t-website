@@ -6,6 +6,16 @@ sidebar_position: 1
 
 ## Intro
 
+A quick demo of how the installation and main menu works.
+
+<video controls autoplay muted poster={require('@site/static/video/spec-up-t-menu.jpg').default}>
+    <source src={require('@site/static/video/spec-up-t-menu.mp4').default} type="video/mp4" />
+ Your browser does not support video tags.
+</video>
+
+[Link to the video](/video/spec-up-t-menu.mp4)
+
+
 **Spec-Up-T** is a tool that helps you write specifications. It is a tool for writing in Markdown and creates *one* `index.html` file.
 
 **This `index.html` file is the actual specification file that is the goal of it all.**
@@ -21,17 +31,6 @@ Spec-Up-T is based on **Spec-Up**, and some of the content on this website is ta
 You will have to install Spec-Up-T to start using it. Go straight to the [admin section](various-roles/admins-guide/admins-guide.md) for instructions.
 
 :::
-
-## Short video
-
-A quick demo of how the installation and main menu works.
-
-<video controls autoplay muted poster={require('@site/static/video/spec-up-t-menu.jpg').default}>
-    <source src={require('@site/static/video/spec-up-t-menu.mp4').default} type="video/mp4" />
- Your browser does not support video tags.
-</video>
-
-[Link to the video](/video/spec-up-t-menu.mp4)
 
 ## History
 

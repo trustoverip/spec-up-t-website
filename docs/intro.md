@@ -22,6 +22,18 @@ You will have to install Spec-Up-T to start using it. Go straight to the [admin 
 
 :::
 
+## Short video
+
+A quick demo of how the installation and main menu works.
+
+
+
+
+<video controls autoplay muted poster={require('@site/static/video/spec-up-t-menu.jpg').default}>
+    <source src={require('@site/static/video/spec-up-t-menu.mp4').default} type="video/mp4" />
+ Your browser does not support video tags.
+</video>
+
 ## History
 
 Spec-Up-T is based on Spec-Up ([Spec-Up on Github](https://github.com/decentralized-identity/spec-up)).

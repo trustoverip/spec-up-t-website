@@ -17,6 +17,15 @@ function HomepageHeader() {
         </Heading>
         <img src="img/logo.svg" alt="Logo" className={styles.logo} />
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div class="sellingpoints">
+          <ul>
+            <li>Basic hosting requirements</li>
+            <li>Create external references</li>
+            <li>Hosted on Github</li>
+            <li>Export to PDF</li>
+          </ul>
+        </div>
+
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"

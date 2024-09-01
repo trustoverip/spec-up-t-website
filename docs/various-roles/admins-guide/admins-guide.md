@@ -10,20 +10,7 @@ The repo can be found [here](https://github.com/blockchainbird/spec-up-t).
 
 ## Installation
 
-### Short video
-
-Let's install **Spec-Up-T**. This short video shows the process.
-
-<video controls>
-  <source src={require('@site/static/video/installer-spec-up-t.mp4').default} type="video/mp4" />
- Your browser does not support video tags.
-</video>
-
-[Link to the video](/video/installer-spec-up-t.mp4)
-
-### Getting Started
-
-Now, let's do it ourselves. Get started by **creating a new site**.
+Get started by **creating a new site**.
 
 ### What you'll need
 

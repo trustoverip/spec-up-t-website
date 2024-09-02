@@ -22,12 +22,13 @@ You will now see this menu:
 ```bash
 Please choose one of the following options:
 
-- [1] Render specification
-- [2] Export to PDF
-- [3] Look up xrefs
-- [4] Validate config file
-- [5] Open documentation website
-- [Q] Quit
+ [1] Render specification
+ [2] Export to PDF
+ [3] Look up xrefs
+ [4] Validate config file
+ [5] Add new terms
+ [6] Open documentation website
+ [Q] Quit
 ```
 
 These are “shortcuts” to the commands covered later below (such as `npm run render`, etc.). You can choose which you prefer: the menu or the direct commands.

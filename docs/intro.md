@@ -13,7 +13,7 @@ A quick demo of how the installation and main menu works.
  Your browser does not support video tags
 </video>
 
-[Link to the video](/video/spec-up-t-menu.mp4)
+[Link to the video]([/video/spec-up-t-menu.mp4](https://dwarshuis.com/various/spec-up-t/documentation-website/video/spec-up-t-menu.mp4))
 
 
 **Spec-Up-T** is a tool that helps you write specifications. It is a tool for writing in Markdown and creates *one* `index.html` file.

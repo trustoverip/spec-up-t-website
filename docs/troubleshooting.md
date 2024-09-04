@@ -10,17 +10,10 @@ Some tips in case of problems:
 
 WSL2 users are recommended to use the `bash` option rather than `PowerShell` in the terminal of Visual Studio Code.
 
-## Node.js versions 15+
+## Use Node.js versions 18+
 
-Some users have reported problems using spec-up with node versions 15+.
-To pin to an older version, use NVM (Node Version Manager):
+Spec-Up-T uses `fetch`, which is added in version 18.
 
 Install NVM if you haven't already. (Instructions not given here).
 
-Then run Node.js version 14:
-
-```bash
-nvm install 14
-nvm use 14
-npm i npm@6.14.16 -g
-```
+Then run Node.js version 18.

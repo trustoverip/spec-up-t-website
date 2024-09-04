@@ -18,6 +18,8 @@ Get started by **creating a new site**.
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 - A [webbrowser](https://en.wikipedia.org/wiki/Web_browser). You are probably reading this in a browser, so you already have one.
 
+Use Node.js version 18 or higher.
+
 ### Install a new site
 
 #### General info

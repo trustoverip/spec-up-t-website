@@ -109,7 +109,7 @@ const config = {
     }),
   plugins: [
     [
-      require.resolve('@easyops-cn/docusaurus-search-local'),// https://easyops-cn.github.io/docusaurus-search-local/
+      require.resolve('@easyops-cn/docusaurus-search-local'),// https://github.com/easyops-cn/docusaurus-search-local
       {
         // options here
         hashed: true,

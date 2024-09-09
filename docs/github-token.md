@@ -43,6 +43,6 @@ To obtain a Personal Access Token (PAT) for the GitHub API, follow these steps:
 - Copy the Token:
   - Copy the generated token and store it securely. You won't be able to see it again once you leave the page.
 - Apply the token:
-  - Paste the token in the `.env` file of your Spec-Up-T installation.
+  - Paste the token in the `.env` file of your Spec-Up-T installation or click on the button with the key symbol (top right) of your specification website.
 
 The token will now be used when making requests to the GitHub API.

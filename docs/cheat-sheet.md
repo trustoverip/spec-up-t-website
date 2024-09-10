@@ -4,10 +4,6 @@ sidebar_position: 0
 
 # Cheat sheet
 
-:::info
-This cheat sheet still needs to be completed. Information on how to write content, create references, and more will be added in the future.
-:::
-
 ## Start command line menu
 
 ```bash

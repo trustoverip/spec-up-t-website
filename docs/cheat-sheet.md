@@ -81,30 +81,6 @@ npm run validatespec
 
 Now, commit your changes and push the repo to GitHub. Use the command line or your preferred way to do this.
 
-## Look up `xrefs`
-
-```bash
-npm run xrefs
-```
-
-## Remove `xref`
-
-```bash
-npm run removexref -- "termValue" "externalSpecValue"
-```
-
-## Create index.html
-
-```bash
-npm run render
-```
-
-## Create PDF
-
-```bash
-npm run topdf
-```
-
 ## View your specification
 
 So the `index.html` is the endresult. You should view it in a browser. There are two ways to do this:

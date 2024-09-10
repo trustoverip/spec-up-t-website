@@ -33,7 +33,7 @@ Please choose one of the following options:
 
 These menu options act as shortcuts to the below commands, such as `npm run render` and others. You can choose between using the menu or entering the direct commands yourself.
 
-### Option [1] Render specification
+### `[1] Render specification`
 
 Direct command:
 
@@ -60,7 +60,7 @@ By the way, there are **three** modes for rendering the specification:
 | **`npm run dev`** | Enables debugging features. |
 
 
-### Option [2] Export to PDF
+### `[2] Export to PDF`
 
 Direct command:
 
@@ -70,7 +70,7 @@ npm run topdf
 
 Creates a PDF. The PDF will be created in the same directory as the `index.html` file.
 
-### Option [3] Look up xrefs
+### `[3] Look up xrefs`
 
 Direct command:
 
@@ -81,7 +81,7 @@ npm run xrefs
 `xrefs` are references to external glossaries (specifications). Each `xref` is checked against a local data collection to see if a reference exists, maintaining an external term's original version.
 
 
-### Option [4] Remove xref
+### `[4] Remove xref`
 
 Direct command:
 
@@ -93,7 +93,7 @@ If you need to remove an `xref` to update it to the current version of an extern
 
 After removing the old reference, you can run `npm run xrefs` again to get the latest reference.
 
-### Option [5] Validate config file
+### `[5] Validate config file`
 
 Direct command:
 
@@ -103,7 +103,7 @@ npm run validatespec
 
 Once you've edited the `spec.json`, you can test it to check for missing keys. If a key is missing, you'll receive a notification.
 
-### Option [6] Add new terms
+### `[6] Add new terms`
 
 Direct command:
 
@@ -114,19 +114,19 @@ npm run addterms
 If you create a new Markdown file with a term and definition in it, it is not automatically included in the final product. It can be included in the index only if you want it to be. With this command, you add it to the index.
 
 
-### Option [7] Open documentation website
+### `[7] Open documentation website`
 
 No Direct command.
 
 This command will redirect to the documentation website (the site you are reading right now).
 
-### Option [Q] Quit
+### `[Q] Quit`
 
 This command will take you out of the menu.
 
 **This is the end of the menu explanation.**
 
-- - - 
+- - -
 
 ## Create (or edit the sample) `spec.json`
 

@@ -32,21 +32,61 @@ To obtain a Personal Access Token (PAT) for the GitHub API, follow these steps:
   - Click on your profile picture in the upper-right corner.
   - Select "Settings" from the dropdown menu.
 
+
+<!-- <img class="image-xlarge" src={require('/static/img/create-token-instructions/create-token-instructions-1.jpg').default} alt="instructions how to create a token" /> -->
+
+<div class='image-large'>
 ![Alt text](/img/create-token-instructions/create-token-instructions-1.jpg)
+</div>
+
+<div class='image-large'>
 ![Alt text](/img/create-token-instructions/create-token-instructions-2.jpg)
+</div>
+
 
 - Access Developer Settings:
   - In the left sidebar, scroll down and click on "Developer settings".
   
-![Alt text](/img/create-token-instructions/create-token-instructions-3.jpg)  
+<div class='image-large'>
+![Alt text](/img/create-token-instructions/create-token-instructions-3.jpg)
+</div>
+
 
 - Generate a New Token:
   - Click on "Personal access tokens".
+
+<div class='image-large'>
+![Alt text](/img/create-token-instructions/create-token-instructions-4.jpg)
+</div>
+
+<div class='image-large'>
+![Alt text](/img/create-token-instructions/create-token-instructions-5.jpg)
+</div>
+
+<div class='image-large'>
+![Alt text](/img/create-token-instructions/create-token-instructions-6.jpg)
+</div>
+
   - Click on "Generate new token".
+
+
+
+<div class='image-large'>
+![Alt text](/img/create-token-instructions/create-token-instructions-7.jpg)
+</div>
+
+
+
+
 - Configure the Token:
   - Give your token a descriptive name.
   - Select the “repo” scope.
   - Click "Generate token" at the bottom of the page.
+
+<div class='image-large'>
+![Alt text](/img/create-token-instructions/create-token-instructions-8.jpg)
+</div>
+
 - Copy the Token:
   - Copy the generated token and store it securely. You won't be able to see it again once you leave the page.
 - Apply the token:

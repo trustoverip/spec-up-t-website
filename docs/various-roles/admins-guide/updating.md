@@ -97,6 +97,6 @@ Run `npm update`.
 npm update
 ```
 
-### Klaar
+### Done
 
-Nu heb je een bijgewerkte Spec-Up-T installatie.
+Now you have an updated Spec-Up-T installation.

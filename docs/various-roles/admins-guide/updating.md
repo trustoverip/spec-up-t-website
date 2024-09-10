@@ -37,15 +37,15 @@ Copy the following information from the `package.json` file in the aforementione
 
 ```json
 "dependencies": {
- "dotenv ":" ^16.4.5"
- “spec-up-t": ”^1.0.8”
-}
+    "dotenv": "^16.4.5",
+    "spec-up-t": "^1.0.8"
+  }
 ```
 
 - Change version:
 
 ```json  
-"version":" 1.0.49"
+  "version": "1.0.49"
 ```  
 
 ### Copy the following files to the root of your installation:

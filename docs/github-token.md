@@ -31,8 +31,15 @@ To obtain a Personal Access Token (PAT) for the GitHub API, follow these steps:
 - Navigate to Settings:
   - Click on your profile picture in the upper-right corner.
   - Select "Settings" from the dropdown menu.
+
+![Alt text](/img/create-token-instructions/create-token-instructions-1.jpg)
+![Alt text](/img/create-token-instructions/create-token-instructions-2.jpg)
+
 - Access Developer Settings:
   - In the left sidebar, scroll down and click on "Developer settings".
+  
+![Alt text](/img/create-token-instructions/create-token-instructions-3.jpg)  
+
 - Generate a New Token:
   - Click on "Personal access tokens".
   - Click on "Generate new token".

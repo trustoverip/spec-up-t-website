@@ -5,9 +5,8 @@ sidebar_position: 1
 # General Guide
 
 :::info
-This is a temporary page; parts will be moved to other pages and assigned to the various roles.
+This page is temporary; parts will be moved to other pages and assigned to the various roles.
 :::
-
 
 ## Start command line menu
 
@@ -32,7 +31,7 @@ Please choose one of the following options:
     [Q] Quit
 ```
 
-These menu options act as shortcuts to the commands covered below, such as `npm run render` and others. You can choose between using the menu or entering the direct commands yourself.
+These menu options act as shortcuts to the below commands, such as `npm run render` and others. You can choose between using the menu or entering the direct commands yourself.
 
 ### Option [1] Render specification
 
@@ -42,7 +41,7 @@ Direct command:
 npm run render
 ```
 
-Creates the specification which is an index.html, in the `docs` directory, as specified in the `specs.json` file.
+Creates the specification, an index.html, in the `docs` directory, as specified in the `specs.json` file.
 
 To view the `index.html` file, you can:
 
@@ -79,7 +78,7 @@ Direct command:
 npm run xrefs
 ```
 
-`xrefs` are references to external glossaries (specifications). Each `xref` is checked against a local data collection to see if a reference already exists, maintaining the original version of an external term.
+`xrefs` are references to external glossaries (specifications). Each `xref` is checked against a local data collection to see if a reference exists, maintaining an external term's original version.
 
 
 ### Option [4] Remove xref
@@ -112,7 +111,7 @@ Direct command:
 npm run addterms
 ```
 
-If you create a new markdown file with a term and definition in it, it is not automatically included in the final product. Only if you want it can it be included in the index. With this command you add it to the index.
+If you create a new Markdown file with a term and definition in it, it is not automatically included in the final product. It can be included in the index only if you want it to be. With this command, you add it to the index.
 
 
 ### Option [7] Open documentation website
@@ -125,7 +124,7 @@ This command will redirect to the documentation website (the site you are readin
 
 This command will take you out of the menu.
 
-**This is the end of the explanation of the menu.**
+**This is the end of the menu explanation.**
 
 - - - 
 

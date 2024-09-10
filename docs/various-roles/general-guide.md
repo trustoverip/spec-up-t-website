@@ -4,8 +4,8 @@ sidebar_position: 1
 
 # General Guide
 
-:::warning
-These are general instructions. This is a temporary page; parts will be moved to other pages and assigned to the various roles.
+:::info
+This is a temporary page; parts will be moved to other pages and assigned to the various roles.
 :::
 
 
@@ -22,148 +22,141 @@ You will now see this menu:
 ```bash
 Please choose one of the following options:
 
-    [1] Render specification"
-    [2] Export to PDF"
-    [3] Look up xrefs"
-    [4] Remove xref"
-    [5] Validate config file"
-    [6] Add new terms"
-    [7] Open documentation website"
-    [Q] Quit"
+    [1] Render specification
+    [2] Export to PDF
+    [3] Look up xrefs
+    [4] Remove xref
+    [5] Validate config file
+    [6] Add new terms
+    [7] Open documentation website
+    [Q] Quit
 ```
 
-These are “shortcuts” to the commands covered later below (such as `npm run render`, etc.). You can choose which you prefer: the menu or the direct commands.
+These menu options act as shortcuts to the commands covered below, such as `npm run render` and others. You can choose between using the menu or entering the direct commands yourself.
 
+### Option [1] Render specification
 
-## Get help
-
-```bash
-npm run help
-```
-
-This command will show a URL to the documentation website (the website you are reading right now).
-
-## Create (or edit the sample) `spec.json`
-
-The`specs.json` file **in the root folder of your repository** specifies configuration values used in the generation of your spec documents. The values in your `specs.json` file include things like where your spec's markdown files are located, where to output the generated spec document, and various metadata values used in rendering, such as the title, logo, and repo links for each of your specs. The following are the required/optional fields supported in the `specs.json` config file:
-
-- **`public_root`** _(PATH STRING, optional)_ - For some platforms and services where you may want to output your rendered spec, the pathing may differ from the directory structure of your local project. To account for this, you can use the `public_root` property to specify the insertion of a path segment to account for the difference in pathing between your local renders and wherever you publish your spec.
-- **`specs`** _(ARRAY, required)_ - the `specs` array contains descriptor objects for each of the specs you are generating in your project and are composed of the following required and optional properties:
-- **`spec_directory`** _(STRING, required)_ - You must specify the **repo-root-relative** location of your spec's markdown file directory. You ****MUST**** name your spec's markdown file `spec.md` and locate it in your `spec_directory` so the tool can automatically find and use it for rendering. If you want to use a different name for the markdown file, or you have multiple markdown files you would like the tool to assemble into one document, you must specify them using the optional`markdown_paths` field described below. See the "multi-file" example in the spec-up repo.
-- **`title`** _(STRING, required)_ - You must add a title for your spec, which will be rendered in the generated document's H1 text and page title.
-- **`logo`** _(PATH/URI STRING, optional)_ - You may add a reference to a logo asset, either via a path to the asset or a URI
-- **`logo_link`** _(URI STRING, optional)_ - The URI you want your logo to point to on the rendered page.
-- **`markdown_paths`** _(ARRAY, optional)_ - If you want to name your spec's markdown file something other than `spec.md`, or you have multiple files you would like assembled into a single output document, you must specify their paths as array entries in the order you would like them assembled. The paths in this array are assumed to be based on the `spec_directory` you specified, so _DO NOT_ repeat the full root relative path.
-- **`katex`** _(BOOLEAN, optional)_ - To enable TeX support via KaTeX, set this property to `true`. After rendering, be sure to copy the `fonts/` subdirectory containing the necessary web fonts.
-- **`output_path`** _(STRING, optional)_ - If you want the generated spec document to be output to a different location than the `spec_directory` you specified (e.g. the project root for GitHub Pages publishing), you can specify another root relative path (use `./` for root), and the tool will write the document file there instead.
-- **`source`** _(OBJECT, optional)_ - this object allows you to configure where repo-specific data is pulled from to power some of the more advanced repo-related features. To do this, specify the code hosting service by adding a service ID string to `host` (currently Spec-Up only supports `"github"`, but this is extensible), add the account/org the repo is located within via the `account` property, and add the repo name under the `repo` property. Here is an example configuration:
-
- ```json
- {
- "host": "github",
- "account": "decentralized-identity",
- "repo": "sidetree"
- }
- ```
-
-You're ready to start rendering specs as HTML sites locally and/or pushing them to github pages however you see fit to automate.
-
-## Test `spec.json`
-
-Once you have edited the `spec.json,` you can test here to see if it is OK; that is, it checks whether each key is present. It does not check whether the value of the key meets specific rules:
-
-```bash
-npm run validatespec
-```
-
-If a key is missing you will get a notification about it.
-
-## Look up `xrefs`
-
-`xrefs` are references to external glossaries (specifications).
-
-```bash
-npm run xrefs
-```
-
-Now, the `xref` is generated, if any.
-
-Every `xref` is checked against a local data collection to see if there is already a reference. If so, it is left untouched. This way, every xref will point to the definition as it was created. If the external term changes in the meantime, the reference is still to the original version.
-
-## Remove `xref`
-
-Removing an `xref` from the text is something you'll do via the text editor. However, if you want to update the xref and make it point to the current version of the external reference, remove the current reference that might point to an older version:
-
-```bash
-npm run removexref -- "termValue" "externalSpecValue"
-```
-
-After that, you can run `npm run xrefs` again to get the latest reference (that might be identical if the external reference did not change).
-
-## Create index.html
-
-The final result will be just one file: `index.html`. This file is rendered or re-rendered with the following command:
+Direct command:
 
 ```bash
 npm run render
 ```
 
-Now, an index.html file is created in the `docs` directory. This is the default directory specified in the `specs.json` file.
+Creates the specification which is an index.html, in the `docs` directory, as specified in the `specs.json` file.
 
-## Create PDF
+To view the `index.html` file, you can:
 
-If you want to create a PDF from the `index.html`, run the following command:
+- Open it via `file:///` in your file manager or
+- Access it via HTTP by placing it on a web server.
 
-:::info
-“topdf” stands for “To PDF”
-:::
+The easiest way is to double-click the file in your file manager, which should open it in your browser.
+
+
+By the way, there are **three** modes for rendering the specification:
+
+| Command | Behavior |
+|---|---|
+| **`npm run edit`** | Renders the site and watches for changes, re-rendering automatically when you save a file. |
+| **`npm run render`** | Renders the site once without watching for changes. |
+| **`npm run dev`** | Enables debugging features. |
+
+
+### Option [2] Export to PDF
+
+Direct command:
 
 ```bash
 npm run topdf
 ```
 
-A PDF will be created in the same directory as the `index.html` file is.
+Creates a PDF. The PDF will be created in the same directory as the `index.html` file.
 
-## You are ready
+### Option [3] Look up xrefs
 
-Now you have a basic Spec-Up-T specification file (`index.html`) with the following content:
+Direct command:
+
+```bash
+npm run xrefs
+```
+
+`xrefs` are references to external glossaries (specifications). Each `xref` is checked against a local data collection to see if a reference already exists, maintaining the original version of an external term.
+
+
+### Option [4] Remove xref
+
+Direct command:
+
+```bash
+npm run removexref -- "termValue" "externalSpecValue"
+```
+
+If you need to remove an `xref` to update it to the current version of an external reference, use:
+
+After removing the old reference, you can run `npm run xrefs` again to get the latest reference.
+
+### Option [5] Validate config file
+
+Direct command:
+
+```bash
+npm run validatespec
+```
+
+Once you've edited the `spec.json`, you can test it to check for missing keys. If a key is missing, you'll receive a notification.
+
+### Option [6] Add new terms
+
+Direct command:
+
+```bash
+npm run addterms
+```
+
+If you create a new markdown file with a term and definition in it, it is not automatically included in the final product. Only if you want it can it be included in the index. With this command you add it to the index.
+
+
+### Option [7] Open documentation website
+
+No Direct command.
+
+This command will redirect to the documentation website (the site you are reading right now).
+
+### Option [Q] Quit
+
+This command will take you out of the menu.
+
+**This is the end of the explanation of the menu.**
+
+- - - 
+
+## Create (or edit the sample) `spec.json`
+
+The `specs.json` file, located in the root folder of your repository, specifies the configuration values used in generating your specification documents. These values include the locations of your markdown files, the output path for the generated spec, and metadata like the title, logo, and repository links for each of your specs. Below are the required and optional fields supported in the `specs.json` config file:
+
+- **`public_root`** _(PATH STRING, optional)_: Used to specify a path segment for platforms where the directory structure may differ between local and published environments.
+- **`specs`** _(ARRAY, required)_: Contains descriptor objects for each spec in your project, including properties like:
+  - **`spec_directory`** _(STRING, required)_: The repo-root-relative location of your markdown file directory. The tool automatically searches for `spec.md` here unless otherwise specified in the optional `markdown_paths`.
+  - **`title`** _(STRING, required)_: The title for your spec, rendered in the document's H1 text and page title.
+  - **`logo`** _(PATH/URI STRING, optional)_: A reference to a logo asset via a path or URI.
+  - **`logo_link`** _(URI STRING, optional)_: The URI your logo points to on the rendered page.
+  - **`markdown_paths`** _(ARRAY, optional)_: Specifies alternative names for your markdown files or includes multiple files for assembly into a single document.
+  - **`katex`** _(BOOLEAN, optional)_: Enables TeX support via KaTeX when set to `true`.
+  - **`output_path`** _(STRING, optional)_: Specifies an alternative output location for the generated spec document.
+  - **`source`** _(OBJECT, optional)_: Configures the source of repo-specific data, such as the hosting service (`host`), account/org (`account`), and repository name (`repo`).
+
+You're now ready to start rendering specs as HTML sites locally and/or pushing them to GitHub Pages.
+
+## A complete installation
+
+This is what a complete installation looks:
 
 - a `specs.json` file
 - a `spec/` directory with sample markdown files
 - a `docs` directory with a sample index.html file
 - a `node_modules` directory, a `package.json` file, and a `package-lock.json` file (these three elements belong to the `npm` system)
 
-## View your specification
-
-So the `index.html` is the endresult. You should view it in a browser. There are two ways to do this:
-
-- via `http://`
-- via `file:///`
-
-The simplest way to do so is via `file:///`: go to the `index.html` file with your Explorer, Finder, or other file manager, and double-click on it. Usually, it now opens in your browser.
-
-If not, go to the browser and try to open the file from the browser menu.
-
-This way, you open the `index.html` file via the `file protocol` (“`file:///`”).
-
-You can also access it via HTTP. You then need to place the `index.html` file on a web server and access it through a browser using the URL under which the file is accessible.
-
-This way, you can share it with the world by sharing the URL.
-
-:::info
-HTTP stands for HyperText Transfer Protocol. It is the foundation of any data exchange on the Web and a protocol for transmitting hypertext requests and information online. The World Wide Web uses HTTP and defines how messages are formatted and transmitted and how web servers and browsers should respond to various commands.
-:::
-
-## Three different modes
-
-`npm run render` is not the only way to go. There are three different modes for rendering the specification:
-
-|command|behavior|
-|---|---|
-|`npm run edit`| After rendering, this will stay running, and the `gulp` library will watch the source files in your spec directory/ies for changes and re-render any time you save a file. Opening these rendered files in a browser and refreshing them will keep you up to date.|
-|`npm run render`| This renders the site once and does not keep a gulpy watch on the underlying files.|
-|`npm run dev`|this enables debugging features.|
+See [directory `spec-up-t-starterpack` of the installer](https://github.com/blockchainbird/spec-up-t-starter-pack/tree/main/spec-up-t-starterpack)
 
 ## Automation
 
-The above scripts can easily be triggered by [github actions](../glossary#github-actions).  See [this repo's example](https://github.com/decentralized-identity/spec-up/blob/master/.github/workflows/render-specs.yml).
+The above scripts can easily be triggered by [GitHub Actions](../glossary#github-actions). See [this repo's example](https://github.com/decentralized-identity/spec-up/blob/master/.github/workflows/render-specs.yml).

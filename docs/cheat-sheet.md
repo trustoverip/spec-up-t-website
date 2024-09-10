@@ -31,12 +31,6 @@ Please choose one of the following options:
 
 These are “shortcuts” to the commands covered later below (such as `npm run render`, etc.). You can choose which you prefer: the menu or the direct commands.
 
-## Get help
-
-```bash
-npm run help
-```
-
 ## Install a new Spec-Up-T site
 
 ### Run install script

@@ -32,17 +32,17 @@
 video {
   width: 100%;
   border: 5px dashed #1D6DAE;
-    /* Pink dashed border */
-    border-radius: 15px;
-    /* Rounded corners */
-    padding: 10px;
-    /* Space between the border and the video */
-    box-shadow: 0 0 10px rgba(29, 109, 174, 0.287);
-    /* Shadow for a playful effect */
-    background-color: #1d6dae56;
-    /* Light pink background */
-    display: inline-block;
-    /* Fit the border to the video size */
+  /* Pink dashed border */
+  border-radius: 15px;
+  /* Rounded corners */
+  padding: 10px;
+  /* Space between the border and the video */
+  box-shadow: 0 0 10px rgba(29, 109, 174, 0.287);
+  /* Shadow for a playful effect */
+  background-color: #1d6dae56;
+  /* Light pink background */
+  display: inline-block;
+  /* Fit the border to the video size */
 }
 
 .image-small img {
@@ -117,4 +117,36 @@ img {
   color: white;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+/* For the section that explains the buttons in the spec-up-t index.html, this reproduces this style */
+
+.button-style-imitation {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  /* user-select: none; */
+  border: 1px solid #1D6DAE;
+  /* Ensure border is applied */
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  color: #111;
+  background-color: transparent;
+  /* Ensure background color consistency */
+  text-decoration: none;
+  background-color: transparent;
+  line-height: 1.5;
+  font-size: 0.7rem;
+  font-variant: small-caps;
+  text-transform: uppercase;
+}
+
+.button-style-imitation img {
+  width: 1em;
+  vertical-align: middle;
+  box-shadow: none;
+  border: none;
+  margin: 0;
+  padding: 0;
 }

@@ -117,7 +117,7 @@ This way, you can share it with the world by sharing the URL.
 |----------------------------------------------------------------------------------|-------------------|
 | <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) edit</span> | Link to the term file in the Github repo in a new tab |
 | <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) history</span> | Link to a GitHub page that shows a history of the edits in a new tab |
-| <span className='button-style-imitation'>xref < > now</span>  |                   |
-| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) xref < > now</span> |                   |
-| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) xref</span>         |                   |
-| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) now</span>          |                   |
+| <span className='button-style-imitation'>xref < > ![GitHub Mark](/img/github-mark.svg) now</span>  | Show diff between the latest version and the referenced version |
+| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) xref < > ![GitHub Mark](/img/github-mark.svg) now</span> | A Diff between the current commit hash of the definition and the commit hash referenced when the link was created. |
+| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) xref</span>         | Go to the repo page of the definition‘s version referenced when the link was created. |
+| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) now</span>          | Go to the repo page of the definition‘s current version. |

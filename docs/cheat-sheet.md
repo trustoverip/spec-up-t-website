@@ -110,3 +110,14 @@ This way, you open the `index.html` file via the `file protocol` (â€œ`file:///`â
 You can also access it via HTTP. You then need to place the `index.html` file on a web server and access it through a browser using the URL under which the file is accessible.
 
 This way, you can share it with the world by sharing the URL.
+
+## Explanation buttons
+
+| Button                                                                 | Explanation |
+|----------------------------------------------------------------------------------|-------------------|
+| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) edit</span> | Link to the term file in the Github repo in a new tab |
+| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) history</span> | Link to a GitHub page that shows a history of the edits in a new tab |
+| <span className='button-style-imitation'>xref < > now</span>  |                   |
+| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) xref < > now</span> |                   |
+| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) xref</span>         |                   |
+| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) now</span>          |                   |

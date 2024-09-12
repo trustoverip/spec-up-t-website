@@ -28,6 +28,7 @@ Please choose one of the following options:
     [5] Validate config file
     [6] Add new terms
     [7] Open documentation website
+    [8] Freeze specification
     [Q] Quit
 ```
 
@@ -119,6 +120,17 @@ If you create a new Markdown file with a term and definition in it, it is not au
 No Direct command.
 
 This command will redirect to the documentation website (the site you are reading right now).
+
+### `[8] Freeze specification`
+
+Direct command:
+
+```bash
+npm run freeze
+```
+
+This command makes a copy of the `index.html` file and adds a version number to the file name (`index-v1.html`, `index-v2.html` etc). These files are placed in the same folder as the `index.html` but in a subfolder called `versions`.
+
 
 ### `[Q] Quit`
 

@@ -37,14 +37,14 @@ Spec-Up-T is based on Spec-Up ([Spec-Up on Github](https://github.com/decentrali
 
 Spec-Up is a tool provided by [DIF](https://github.com/decentralized-identity) (Decentralized Identity Foundation) and created by [Daniel Buchner](https://github.com/csuwildcat).
 
-<div class='image-medium center'>
+<div className='image-medium center'>
 ![Logo ToIP and DIF combined](/img/logo.svg)
 </div>
 
 From the Spec-Up documentation: “*Spec-Up* is a technical specification development tool that enables you to create rich specification documents for standards bodies and engineering projects by writing in an extended version of markdown that features all the bells and whistles - for example, advanced syntax highlighting, notice blocks, complex tables, charts, UML diagrams, and more.”
 | Spec-Up | Spec-Up-T |
 |----------------|----------------|
-| <div class='image-small'>![DIF Logo](/img/logo-dif.svg)</div>Decentralized Identity Foundation | <div class='image-small'>![ToIP Logo](/img/logo-toip.svg)</div>Trust over IP |
+| <div className='image-small'>![DIF Logo](/img/logo-dif.svg)</div>Decentralized Identity Foundation | <div className='image-small'>![ToIP Logo](/img/logo-toip.svg)</div>Trust over IP |
 | “Together we're building a new identity ecosystem” | “Developing a complete architecture for Internet Digital Trust. And a better Internet for everyone.” |
 | [Spec-Up on Github](https://github.com/decentralized-identity/spec-up) | [Spec-Up-T on Github](https://github.com/blockchainbird/spec-up-t) |
 | [DIF website](https://identity.foundation/)  | [ToIP website](https://trustoverip.org/)  |

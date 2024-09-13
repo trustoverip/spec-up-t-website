@@ -20,7 +20,12 @@ Use Node.js version 18 or higher.
 
 ### General info
 
-Installing Spec-Up-T works similarly to installing any other npm package. You install it locally (not globally), and then you run it.
+Installing Spec-Up-T is as follows:
+
+- Install the tool via `npx`
+- Install the spec-up-t package via `npm`
+
+It is explained in more detail below:
 
 ### Let's create
 

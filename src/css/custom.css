@@ -61,6 +61,20 @@ video {
   width: 20em;
 }
 
+.image-center {
+  width: 100%;
+  /* border: 3px solid #1D6DAE; */
+}
+.image-center img {
+  margin: auto;
+  display: block;
+}
+
+.center-table {
+  display: flex;
+  justify-content: center;
+}
+
 /* subtle border plus shadow on images */
 img {
   border: 1px solid #ddd;

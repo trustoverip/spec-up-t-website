@@ -36,13 +36,9 @@ These menu options act as shortcuts to the below commands, such as `npm run rend
 
 ### `[1] Render specification`
 
-Direct command:
+#### Info
 
-```bash
-npm run render
-```
-
-Creates the specification, an index.html, in the `docs` directory, as specified in the `specs.json` file.
+**Creates the specification, an index.html, in the `docs` directory, as specified in the `specs.json` file.**
 
 To view the `index.html` file, you can:
 
@@ -60,78 +56,127 @@ By the way, there are **three** modes for rendering the specification:
 | **`npm run render`** | Renders the site once without watching for changes. |
 | **`npm run dev`** | Enables debugging features. |
 
+#### Direct command
+
+```bash
+npm run render
+```
+
+- - -
+
 
 ### `[2] Export to PDF`
 
-Direct command:
+#### Info
+
+**Creates a PDF. The PDF will be created in the same directory as the `index.html` file.**
+
+#### Direct command
 
 ```bash
 npm run topdf
 ```
 
-Creates a PDF. The PDF will be created in the same directory as the `index.html` file.
+- - -
+
 
 ### `[3] Look up xrefs`
 
-Direct command:
+#### Info
+
+**Creates an “xref” (external reference).**
+
+`xrefs` are references to external glossaries (specifications). Each `xref` is checked against a local data collection to see if a reference exists, maintaining an external term's original version.
+
+#### Direct command
 
 ```bash
 npm run xrefs
 ```
 
-`xrefs` are references to external glossaries (specifications). Each `xref` is checked against a local data collection to see if a reference exists, maintaining an external term's original version.
-
+- - -
 
 ### `[4] Remove xref`
 
-Direct command:
+#### Info
+
+**Removes an “xref” (external reference).**
+
+After removing the old reference, you can run `npm run xrefs` again to get the latest reference.
+
+#### Direct command
 
 ```bash
 npm run removexref -- "termValue" "externalSpecValue"
 ```
 
-If you need to remove an `xref` to update it to the current version of an external reference, use:
-
-After removing the old reference, you can run `npm run xrefs` again to get the latest reference.
+- - -
 
 ### `[5] Validate config file`
 
-Direct command:
+#### Info
+
+**Tests the `spec.json` for missing keys.**
+
+Once you've edited the `spec.json`, you can test it to check for missing keys. If a key is missing, you'll receive a notification.
+
+#### Direct command
 
 ```bash
 npm run validatespec
 ```
-
-Once you've edited the `spec.json`, you can test it to check for missing keys. If a key is missing, you'll receive a notification.
+- - -
 
 ### `[6] Add new terms`
 
-Direct command:
+#### Info
+
+Adds a new file (with a term) to the specification.
+
+If you create a new Markdown file with a term and definition in it, it is not automatically included in the final product. It can be included in the index only if you want it to be. With this command, you add it to the index.
+
+#### Direct command
 
 ```bash
 npm run addterms
 ```
 
-If you create a new Markdown file with a term and definition in it, it is not automatically included in the final product. It can be included in the index only if you want it to be. With this command, you add it to the index.
-
+- - -
 
 ### `[7] Open documentation website`
 
-No Direct command.
+#### Info
 
 This command will redirect to the documentation website (the site you are reading right now).
 
+#### Direct command
+
+No Direct command.
+
+- - -
+
 ### `[8] Freeze specification`
 
-Direct command:
+**Makes a copy of the `index.html` file and adds a version number to the file name.**
+
+Example: `index-v1.html`, `index-v2.html` etc. These files are placed in the same folder as the `index.html` but in a subfolder called `versions`.
+
+#### Direct command
 
 ```bash
 npm run freeze
 ```
 
-This command makes a copy of the `index.html` file and adds a version number to the file name (`index-v1.html`, `index-v2.html` etc). These files are placed in the same folder as the `index.html` but in a subfolder called `versions`.
-
+- - -
 
 ### `[Q] Quit`
 
+#### Info
+
 This command will take you out of the menu.
+
+#### Direct command
+
+No Direct command.
+
+- - -

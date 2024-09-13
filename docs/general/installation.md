@@ -2,31 +2,27 @@
 sidebar_position: 1
 ---
 
-# Intro
+# Installation
 
-This is the admin guide for the Spec-Up-T system.
+Get started by **creating a new Spec-Up-T installation**.
 
-The repo can be found [here](https://github.com/blockchainbird/spec-up-t).
+## What you'll need
 
-## Installation
-
-Get started by **creating a new site**.
-
-### What you'll need
-
+- A terminal / Command Line
+- An editor, also called IDE (Integrated Development Environment). We recommend Visual Studio Code
 - [Node.js](https://nodejs.org/en/download/):
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-- A [webbrowser](https://en.wikipedia.org/wiki/Web_browser). You are probably reading this in a browser, so you already have one.
+  - When installing Node.js, you are recommended to check all checkboxes related to dependencies
+- A [webbrowser](https://en.wikipedia.org/wiki/Web_browser). You are probably reading this in a browser, so you already have one
 
 Use Node.js version 18 or higher.
 
-### Install a new site
+## Create a new Spec-Up-T installation
 
-#### General info
+### General info
 
 Installing Spec-Up-T works similarly to installing any other npm package. You install it locally (not globally), and then you run it.
 
-#### Install a new Spec-Up-T site
+### Let's create
 
 ```bash
 npx create-spec-up-t my-spec-up-t-website
@@ -52,7 +48,7 @@ You can type this command into Command Prompt, Powershell, Terminal, or any othe
 
 You should now have a directory called `my-spec-up-t-website` (or `spec-up-t-starterpack` if you did not specify a name).
 
-#### Go into the directory
+### Go into the directory
 
 - Go into this directory (folder) that was just created:
 
@@ -62,7 +58,7 @@ cd my-spec-up-t-website
 
 You are now in this directory.
 
-#### Install all dependencies
+### Install all dependencies
 
 - Install all dependencies:
 
@@ -82,15 +78,15 @@ What you don't have yet is the following:
 
 - a `docs` directory with a sample `index.html` file (which is the actual specification file that is the goal of it all).
 
-How to do this, go to the [General Instructions](../general-guide.md).
+How to do this, go to the [General Instructions](./command-line-menu.md).
 
-#### Add repo to Github
+### Add repo to Github
 
 You should push your new specification (i.e. the sample content) to a GitHub repo.
 
 These are the steps to take:
 
-##### Edit `specs.json`
+#### Edit `specs.json`
 
 Change this entry in `specs.json`:
 
@@ -114,6 +110,6 @@ to the correct information:
 
 These are the host (GitHub), your GitHub account name, and the repo name of the repo you are about to push.
 
-##### Commit and Push repo to GitHub
+#### Commit and Push repo to GitHub
 
 Now, commit your changes and push the repo to GitHub. Use the command line or your preferred way to do this.

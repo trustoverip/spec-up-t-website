@@ -6,6 +6,13 @@ sidebar_position: 21
 
 Some tips in case of problems:
 
+## GitHub and API and limits
+
+Problem: I want to look up an external reference (*xref*) but I get an error about GitHub and API and limits.
+
+Solution: [get a GitHub Token](./github-token.md).
+
+
 ## WSL2 users
 
 WSL2 users are recommended to use the `bash` option rather than `PowerShell` in the terminal of Visual Studio Code.

@@ -30,7 +30,7 @@ Unlike the DIF Spec-Up repository, the Spec-Up-T repository **does not generate 
 
 This functionality has been moved to the Spec-Up-T *installer*.
 
-For more details, refer to [the installation section in the admin guide](various-roles/admins-guide/admins-guide.md#installation).
+For more details, refer to [the installation section](./general/installation.md).
 
 :::
 

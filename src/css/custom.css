@@ -164,3 +164,25 @@ img {
   margin: 0;
   padding: 0;
 }
+
+/* === Rotate === */
+.rotate {
+  display: inline-block;
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  transform-origin: 50% 50%;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ******************************************** */

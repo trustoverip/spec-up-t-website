@@ -33,13 +33,13 @@ To obtain a Personal Access Token (PAT) for the GitHub API, follow these steps:
   - Select "Settings" from the dropdown menu.
 
 
-<!-- <img class="image-xlarge" src={require('/static/img/create-token-instructions/create-token-instructions-1.jpg').default} alt="instructions how to create a token" /> -->
+<!-- <img className="image-xlarge" src={require('/static/img/create-token-instructions/create-token-instructions-1.jpg').default} alt="instructions how to create a token" /> -->
 
-<div class='image-large'>
+<div className='image-large'>
 ![Alt text](/img/create-token-instructions/create-token-instructions-1.jpg)
 </div>
 
-<div class='image-large'>
+<div className='image-large'>
 ![Alt text](/img/create-token-instructions/create-token-instructions-2.jpg)
 </div>
 
@@ -47,7 +47,7 @@ To obtain a Personal Access Token (PAT) for the GitHub API, follow these steps:
 - Access Developer Settings:
   - In the left sidebar, scroll down and click on "Developer settings".
   
-<div class='image-large'>
+<div className='image-large'>
 ![Alt text](/img/create-token-instructions/create-token-instructions-3.jpg)
 </div>
 
@@ -55,15 +55,15 @@ To obtain a Personal Access Token (PAT) for the GitHub API, follow these steps:
 - Generate a New Token:
   - Click on "Personal access tokens".
 
-<div class='image-large'>
+<div className='image-large'>
 ![Alt text](/img/create-token-instructions/create-token-instructions-4.jpg)
 </div>
 
-<div class='image-large'>
+<div className='image-large'>
 ![Alt text](/img/create-token-instructions/create-token-instructions-5.jpg)
 </div>
 
-<div class='image-large'>
+<div className='image-large'>
 ![Alt text](/img/create-token-instructions/create-token-instructions-6.jpg)
 </div>
 
@@ -71,7 +71,7 @@ To obtain a Personal Access Token (PAT) for the GitHub API, follow these steps:
 
 
 
-<div class='image-large'>
+<div className='image-large'>
 ![Alt text](/img/create-token-instructions/create-token-instructions-7.jpg)
 </div>
 
@@ -83,7 +83,7 @@ To obtain a Personal Access Token (PAT) for the GitHub API, follow these steps:
   - Select the “repo” scope.
   - Click "Generate token" at the bottom of the page.
 
-<div class='image-large'>
+<div className='image-large'>
 ![Alt text](/img/create-token-instructions/create-token-instructions-8.jpg)
 </div>
 
@@ -92,11 +92,11 @@ To obtain a Personal Access Token (PAT) for the GitHub API, follow these steps:
 - Apply the token:
   - Paste the token in the `.env` file of your Spec-Up-T installation or click on the button with the key symbol (top right) of your specification website.
 
-<div class='image-large'>
+<div className='image-large'>
 ![Alt text](/img/create-token-instructions/create-token-instructions-9.jpg)
 </div>
 
-<div class='image-large'>
+<div className='image-large'>
 ![Alt text](/img/create-token-instructions/create-token-instructions-10.jpg)
 </div>
 

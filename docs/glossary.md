@@ -8,6 +8,9 @@ This is a glossary with some terms that you need to know in order to understand 
 
 This glossary was not created in Spec-Up-T, it could have been, but to avoid confusion we did not.
 
+## xref
+
+Stands for *external reference*. An essential feature for creating connections between glossaries.
 
 ## Git and Github
 

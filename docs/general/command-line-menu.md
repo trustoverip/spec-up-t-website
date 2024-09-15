@@ -14,7 +14,9 @@ Still, it can be confusing. And if you're used to a regular application you cont
 Currently, the menu is only tested on MacOs and has not been tested on Windows OS.
 :::
 
-Assuming you already [installed](./installation.md) Spec-Up-T, here you find further instructions:
+Assuming you already [installed](./installation.md) Spec-Up-T, here you find further instructions.
+
+To start, run this command in the terminal:
 
 ```bash
 npm run menu
@@ -25,7 +27,7 @@ You will now see this menu:
 ```bash
 Please choose one of the following options:
 
-    [0] Publish (= [6]+[2]+[3]+[1]
+    [0] Publish ¹
 
     [1] Render specification
     [2] Export to PDF
@@ -37,11 +39,21 @@ Please choose one of the following options:
     [8] Freeze specification
     [Q] Quit
 
+    ¹ Publish = [6]+[2]+[3]+[1]
+
 
     Enter your choice (0/1/2/3/4/5/6/7/8/Q)?
 ```
 
 These menu options act as shortcuts to the below commands, such as `npm run render` and others. You can choose between using the menu or entering the direct commands yourself.
+
+### `[0] Publish`
+
+#### Info
+
+**Runs the below options in given order: [6]+[2]+[3]+[1].**
+
+Use this if you use a GitHub token and, therefore, don't have to worry about the limited number of GitHub API calls you can make per hour.
 
 ### `[1] Render specification`
 
@@ -96,6 +108,8 @@ npm run topdf
 **Creates an “xref” (external reference).**
 
 `xrefs` are references to external glossaries (specifications). Each `xref` is checked against a local data collection to see if a reference exists, maintaining an external term's original version.
+
+This separate command is not just used when generating a specification (option [1]) because, without a GitHub token, you are only allowed a limited number of calls to the GitHub API. So, you may choose not to create the xrefs until the end of your work session.
 
 #### Direct command
 

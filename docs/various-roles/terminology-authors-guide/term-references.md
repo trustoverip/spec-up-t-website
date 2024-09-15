@@ -4,6 +4,15 @@ sidebar_position: 2
 
 # Term References
 
+See the [demo site](https://blockchainbird.github.io/spec-up-t-demo-on-documentation-website/#term:term-1).
+
+
+:::info
+
+If you've been working with Spec-Up, it's good to know that adding a term file doesn't require adding it to the configuration file anymore; it's automatic now.
+
+:::
+
 ## Definition Lists
 
 Many specs may want to include a section for terminology references, and Definition Lists are a great way to do that. Here's how to leverage Spec-Up's automatic term reference features via Definition List markup:
@@ -12,23 +21,17 @@ Many specs may want to include a section for terminology references, and Definit
 [[def: Term 1, Term One]]:
 ~ This is the first term we will define.
 
-[[def: Term 2, Term Two]]:
-~ This is the second term, but not the last.
+~ Second paragraph
 
-[[def: Term 3, Term Three]]:
-~ This is the last term, because you know what they say: third term's the charm!
 ```
 
-[[def: Term 1, Term One]]:
-~ This is the first term we will define.
-
-[[def: Term 2, Term Two]]:
-~ This is the second term, but not the last.
-
-[[def: Term 3, Term Three]]:
-~ This is the last term, because you know what they say: third term's the charm!
-
 Now let's refer to some of the terms defined above to show how the auto-linking of terms works. Additionally, as long as you define your terms using Definition Lists (as seen in the markdown above), you will be able to hover any reference to a term to see a tooltip with its definition. See the [demo site](https://blockchainbird.github.io/spec-up-t-demo-on-documentation-website/#term:term-1).
+
+## What are the “~” ?
+
+That is how Markdown indicates that it is a &lt;dd&gt;&lt;/dd&gt;, the definition part of a “definition list.” Just use it for each sentence. In the future, we want to catch this automated so that if you accidentally forget it, you still get it right.
+
+What goes wrong if you don't? You see, some things don't fold in and out properly, for example, because the structure of the HTML is no longer correct.
 
 ## Table-defined Terms
 

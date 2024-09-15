@@ -10,6 +10,10 @@ Still, it can be confusing. And if you're used to a regular application you cont
 
 ## Start command line menu
 
+:::info
+Currently, the menu is only tested on MacOs and has not been tested on Windows OS.
+:::
+
 Assuming you already [installed](./installation.md) Spec-Up-T, here you find further instructions:
 
 ```bash

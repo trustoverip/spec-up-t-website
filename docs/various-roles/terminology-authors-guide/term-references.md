@@ -8,7 +8,7 @@ sidebar_position: 2
 
 Many specs may want to include a section for terminology references, and Definition Lists are a great way to do that. Here's how to leverage Spec-Up's automatic term reference features via Definition List markup:
 
-<pre>
+```markdown
 [[def: Term 1, Term One]]:
 ~ This is the first term we will define.
 
@@ -17,7 +17,7 @@ Many specs may want to include a section for terminology references, and Definit
 
 [[def: Term 3, Term Three]]:
 ~ This is the last term, because you know what they say: third term's the charm!
-</pre>
+```
 
 [[def: Term 1, Term One]]:
 ~ This is the first term we will define.
@@ -28,17 +28,17 @@ Many specs may want to include a section for terminology references, and Definit
 [[def: Term 3, Term Three]]:
 ~ This is the last term, because you know what they say: third term's the charm!
 
-Now let's refer to some of the terms defined above to show how the auto-linking of terms works: [[ref: Term 1]], [[ref: Term Two]], [[ref: Term 3]]. Additionally, as long as you define your terms using Definition Lists (as seen in the markdown above), you will be able to hover any reference to a term to see a tooltip with its definition.
+Now let's refer to some of the terms defined above to show how the auto-linking of terms works. Additionally, as long as you define your terms using Definition Lists (as seen in the markdown above), you will be able to hover any reference to a term to see a tooltip with its definition. See the [demo site](https://blockchainbird.github.io/spec-up-t-demo-on-documentation-website/#term:term-1).
 
 ## Table-defined Terms
 
 You can also reference table-oriented terms and definitions which are decomposed into heading-titled attributes in distinct cells:
 
-<pre>
-Variable           | Default Value | Max Value
-------------------- | -------------- | ---------
-[[def: Variable 1]] | 123          | 9999
-</pre>
+```markdown
+Variable            | Default Value  | Max Value
+------------------- | -------------  | ---------
+[[def: Variable 1]] | 123            | 9999
+```
 
 Variable            | Default Value | Max Value
 ------------------- | ------------- | ---------

@@ -25,6 +25,8 @@ You will now see this menu:
 ```bash
 Please choose one of the following options:
 
+    [0] Publish (= [6]+[2]+[3]+[1]
+
     [1] Render specification
     [2] Export to PDF
     [3] Look up xrefs
@@ -34,6 +36,9 @@ Please choose one of the following options:
     [7] Open documentation website
     [8] Freeze specification
     [Q] Quit
+
+
+    Enter your choice (0/1/2/3/4/5/6/7/8/Q)?
 ```
 
 These menu options act as shortcuts to the below commands, such as `npm run render` and others. You can choose between using the menu or entering the direct commands yourself.

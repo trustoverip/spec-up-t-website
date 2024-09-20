@@ -33,8 +33,8 @@ This way, you can share it with the world by sharing the URL.
 
 | Button | Explanation |
 |-|-|
-| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) edit</span> | Link to the term file in the Github repo in a new tab |
-| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) history</span> | Link to a GitHub page that shows a history of the edits in a new tab |
+| <span className='button-style-imitation'>🖊️</span> | Link to the term file in the Github repo in a new tab |
+| <span className='button-style-imitation'>📅</span> | Link to a GitHub page that shows a history of the edits in a new tab |
 
 ### External references
 

@@ -42,6 +42,6 @@ This way, you can share it with the world by sharing the URL.
 |-|-|
 | <span className='button-style-imitation'>xref</span>         | Show the local snapshot of the referenced term, created at the moment the xref was made. |
 | <span className='button-style-imitation'>xref < > ![GitHub Mark](/img/github-mark.svg) now</span>  | Show diff between the local snapshot of the latest version and the referenced version |
-| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) xref < > ![GitHub Mark](/img/github-mark.svg) now</span> | A Diff between the current commit hash of the definition and the commit hash referenced when the link was created. |
+| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) xref < > ![GitHub Mark](/img/github-mark.svg) now</span> | A Diff between the latest commit hash of the definition and the commit hash referenced when the link was created. |
 | <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) xref</span>         | Go to the repo page of the definition‘s version referenced when the link was created. |
-| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) now</span>          | Go to the repo page of the definition‘s current version. |
+| <span className='button-style-imitation'>![GitHub Mark](/img/github-mark.svg) now</span>          | Go to the repo page of the definition‘s latest version. |

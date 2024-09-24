@@ -14,7 +14,7 @@ Get started by **creating a new Spec-Up-T installation**.
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies
   - Use Node.js version 18 or higher
 - A [webbrowser](https://en.wikipedia.org/wiki/Web_browser). You are probably reading this in a browser, so you already have one
-- [Git](https://git-scm.com/). To host your specification on Github, you must also have Git installed on your local system. By the way, you can also create a specification (index.html) without hosting it on GitHub
+- [Git](https://git-scm.com/). To host your specification on Github, you must also have Git installed on your local system. By the way, you can also create a specification (index.html) without hosting it on GitHub. But if you do so, the whole idea of a version-managed glossary using Git goes through the window.
 
 
 :::info

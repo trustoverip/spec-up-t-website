@@ -6,7 +6,38 @@ sidebar_position: 1
 
 ## Intro
 
-**Spec-Up-T** is a tool that helps you write specifications. It is a tool for writing in Markdown and creates *one* `index.html` file.
+**Spec-Up-T** is a tool that helps you write specifications. Specifications in Spec-Up-T have two main parts:
+* content 
+* term definitions
+
+Content is stored in markdown files under the `spec` directory, Terms definition optionally in various languages and optionally in various user levels are stored in the `terms-definitions` folder also in the spec directory.
+
+The two parts content and term definitions also illustrate the two main use cases of Spec-Up-T both resulting in single-file html servable from any webserver:
+- a glossary (fat terms section, slim content section)
+- a standardization specification (slim terms section, fat content section)
+
+> An example **glossary** is the [Main TrustoverIP glossary](https://github.com/trustoverip/ctwg-main-glossary)
+> An example **standard specification** is the [DID:Webs specification](https://github.com/trustoverip/tswg-did-method-webs-specification)
+
+## # Use cases and roles in Spec-Up-T
+
+Spec-Up-T is a technical specification and standardization tool, which a special focus on termninology: definiton and (externally) referencing terms and the version management of this complex.
+
+We have distinguished the following **roles**:
+- [terminology-authors](./various-roles/terminology-authors-guide/introduction.md)
+- [content-authors](./various-roles/content-authors-guide/introduction.md)
+- [curators](./various-roles/curators-guide/introducion.md)
+- [readers](./various-roles/readers-guide/introduction.md)
+
+Supporting roles are:
+- [admins](./various-roles/admins-guide/introduction.md)
+- [developers](./various-roles/developers-guide.md)
+
+All the **use cases** are specified under the roles above. Click the links to get there.
+
+## Technical presence
+
+It is a tool for writing in Markdown and creates *one* `index.html` file.
 
 - You write your texts in [Markdown](https://www.markdownguide.org/getting-started/)
 - You use an editor (IDE) or you use GitHub's web editor

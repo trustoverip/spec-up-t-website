@@ -67,7 +67,7 @@ classDef purpleFill fill:#60c,stroke:#f66,stroke-width:2px,color:#fff,stroke-das
 classDef blueFill fill:#336,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 
 
-click CA href "./various-roles/content-authors-guide/introduction.md" "Open documentation in a new tab" _blank
+click CA href "https://trustoverip.github.io/spec-up-t-website/docs/various-roles/content-authors-guide/introduction.md" "Open documentation in a new tab" _blank
 click CU href "https://trustoverip.github.io/spec-up-t-website/docs/various-roles/curators-guide/introduction.md" "Open documentation in a new tab" _blank
 click R href "https://trustoverip.github.io/spec-up-t-website/docs/various-roles/readers-guide/introduction.mdd" "Open documentation in a new tab" _blank
 click TA href "https://trustoverip.github.io/spec-up-t-website/docs/various-roles/terminology-authors-guide/introduction.md" "Open documentation in a new tab" _blank

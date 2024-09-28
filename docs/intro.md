@@ -33,7 +33,7 @@ Supporting roles are:
 - [admins](./various-roles/admins-guide/introduction.md)
 - [developers](./various-roles/developers-guide.md)
 
-``` mermaid
+```mermaid
 flowchart
 %% Henk van Cann, Sept 27th 2024
  CA[Content author]:::blueFill;XG(definitions):::lightYellowFill;R[Reader];  TA[Terminology author]:::purpleFill; D(definitions):::lightYellowFill; CU[Curator]:::medBeigeFill; SC(content):::medGreenFill

@@ -16,6 +16,8 @@ An Admin role is a supporting role in Spec-Up-T.
 
 4. _Not yet operational!_ The Admin adds a new language subdirectory to terms-definition directory and specifies the right API calls to chatGPT for a language and/or user-level translation from the source terms definition.
 
+5. The Admin migrates a legacy Spec-Up (DIF) to the latest Spec-Up-T. He/she removes the obsolete files that Spec-Up has by hand.
+
 ## Solutions
 
 ### Add 1. Convenience tool splitting a file into atomic single definition files
@@ -38,6 +40,16 @@ _Not yet operational!_
    _languagecode-LVL1_, _languagecode-LVL2_, ..., _languagecode-LVLn_
 
    Since the reference source-files are LVLn, where n is the most comprehensive description.
+
+### Add 5. Migration
+Follow use case 2. and 3. Use case 2, [update Spec-Up-T](./updating.md#updating-the-npm-package-called-spec-up-t), has to be followed by Use cases 3: [Update own installation](./updating.md#updating-your-installation)
+
+And then remove obsolete files and directories ([this is the list]()) by hand.
+
+| @Kor : could you provide a list of legacy Spec-Up files and directories that we nominate to remove? |
+
+Beware during a migration that extra content may have been added by users. Always back-up before migration.
+Better safe than sorry.
 
 
 #### Functionality

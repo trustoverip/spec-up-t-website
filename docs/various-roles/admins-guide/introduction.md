@@ -69,26 +69,7 @@ cd my-legacy-spec-up-repo
 git fetch upstream
 ```
 
-Now we can distinguish two approaches:
-
-A. Start a clean Spec-Up-T install and copy content files over from the legacy Spec-Up install
-
-B. Run Spec-Up-T updates over the legacy Spec-Up repo and clean obsolete files by hand
-
-#### A. Fresh install
-
-BEWARE: THIS RESULTS IN UNRELATED GIT HISTORIES!
-
-Perform a local spec-up-t install via `npx create-spec-up-t new-dir`
-
-Remove the instructive and placeholder .md files from the `spec` directory:
- - example-markup-in-markdown.md
- - intro.md
- - outro.md
- - terms-and-definitions-intro.md
-
-Empty the `terms-definitions` folder
-- remove term-1.md, term-2.md, term-3.md, term-4.md 
+#### Merge specs.json
 
 In `new-dir` copy `specs.json` to `specs.json-default`. 
 Copy the legacy  `specs.json` into `new-dir` under a new name: `specs.json-legacy`
@@ -126,7 +107,30 @@ Example
                 "repo": "tswg-keri-specification"
 ```
 
-Copy the content of the legacy Spec-Up install in the spec folder, leave the `terms-definitions` folder empty, then run the [split tool](here).
+Now we can distinguish two approaches:
+
+A. Start a clean Spec-Up-T install and copy content files over from the legacy Spec-Up install
+
+B. Run Spec-Up-T updates over the legacy Spec-Up repo and clean obsolete files by hand
+
+#### A. Fresh install
+
+BEWARE: THIS RESULTS IN UNRELATED GIT HISTORIES!
+
+Perform a local spec-up-t install via `npx create-spec-up-t new-dir`
+
+Remove the instructive and placeholder .md files from the `spec` directory:
+ - example-markup-in-markdown.md
+ - intro.md
+ - outro.md
+ - terms-and-definitions-intro.md
+
+Empty the `terms-definitions` folder
+- remove term-1.md, term-2.md, term-3.md, term-4.md 
+
+
+
+Copy the content of the legacy Spec-Up install in the spec folder, leave the `terms-definitions` folder empty, then run the [split tool](https://trustoverip.github.io/spec-up-t-website/docs/various-roles/admins-guide/tools#splitter-tool).
 
 Now you should be up & running to test this repo, back-up the legacy Spec-Up repo to a new name and rename the Spec-Up-T `new-dir` to the name of formerly legacy Spec-Up folder.
 

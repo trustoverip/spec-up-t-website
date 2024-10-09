@@ -41,6 +41,21 @@ _Not yet operational!_
 
    Since the reference source-files are LVLn, where n is the most comprehensive description.
 
+#### Functionality
+_Not yet operational!_ 
+ - AI will convert the reference source data and export the resulting files into directories named in this convention:
+
+  _languagecode-LVLx_
+
+For example:
+EN is the reference language and we have one other language (Dutch) and two user levels in total.
+
+`terms-definition` folder contains:
+
+- files that have the characteristics: English, user level 2.
+- subdirectories EN-LVL1, NL-LVL1, NL-LVL2
+
+An essential feature of this AI conversion is the linking back to the original source in the generated content. So a Reader always has a reference back to the curated source in the original language. Just imagine how important this is in legally enforced specifications: you don't want to be liable for over-simplified or incorrectly translated rules and regulations.
 ### Add 5. Migration
 
 Preparation:
@@ -75,7 +90,41 @@ Remove the instructive and placeholder .md files from the `spec` directory:
 Empty the `terms-definitions` folder
 - remove term-1.md, term-2.md, term-3.md, term-4.md 
 
-Rename `specs.json` to `specs.json-default` and copy the `specs.json` over from the legacy install into `new-dir`.
+In `new-dir` copy `specs.json` to `specs.json-default`. 
+Copy the legacy  `specs.json` into `new-dir` under a new name: `specs.json-legacy`
+Open both the legacy `specs.json-legacy` and `specs.json` Copy these attributes over from the legacy file into `specs.json` **where the values are different**:
+
+```          "title": 
+            "spec_directory":
+            "output_path": 
+            "markdown_paths": [
+                   | all the files listed here |
+            ],
+            "logo": 
+            "logo_link": 
+            "katex": 
+            "source": {
+                "host": 
+                "account": 
+                "repo": 
+```
+
+Example
+```
+            "title": "Key Event Receipt Infrastructure",
+            "spec_directory": "./spec",
+            "output_path": "./docs",
+            "markdown_paths": [
+                   spec.md
+            ],
+            "logo": "https://raw.githubusercontent.com/trustoverip/logo-assets/master/logos/ToIP-Logo-Color-SolidDimensional-Horizontal-LightOnDark.svg",
+            "logo_link": "https://github.com/trustoverip/tswg-keri-specification",
+            "katex": true,
+            "source": {
+                "host": "github",
+                "account": "trustoverip",
+                "repo": "tswg-keri-specification"
+```
 
 Copy the content of the legacy Spec-Up install in the spec folder, leave the `terms-definitions` folder empty, then run the [split tool](here).
 
@@ -98,18 +147,3 @@ And then remove obsolete files and directories ([this is the list](here)) by han
 
 So again., be aware during a migration that extra content may have been added by users. Always back-up before migration. Better safe than sorry.
 
-#### Functionality
-_Not yet operational!_ 
- - AI will convert the reference source data and export the resulting files into directories named in this convention:
-
-  _languagecode-LVLx_
-
-For example:
-EN is the reference language and we have one other language (Dutch) and two user levels in total.
-
-`terms-definition` folder contains:
-
-- files that have the characteristics: English, user level 2.
-- subdirectories EN-LVL1, NL-LVL1, NL-LVL2
-
-An essential feature of this AI conversion is the linking back to the original source in the generated content. So a Reader always has a reference back to the curated source in the original language. Just imagine how important this is in legally enforced specifications: you don't want to be liable for over-simplified or incorrectly translated rules and regulations.

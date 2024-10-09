@@ -42,15 +42,61 @@ _Not yet operational!_
    Since the reference source-files are LVLn, where n is the most comprehensive description.
 
 ### Add 5. Migration
+
+Preparation:
+
+Go to the repo to be migrated on your local machine and Fetch the legacy Spec-Up install from github production server.
+
+For example:
+
+```
+cd my-legacy-spec-up-repo
+git fetch upstream
+```
+
+Now we can distinguish two approaches:
+
+A. Start a clean Spec-Up-T install and copy content files over from the legacy Spec-Up install
+
+B. Run Spec-Up-T updates over the legacy Spec-Up repo and clean obsolete files by hand
+
+#### A. Fresh install
+
+BEWARE: THIS RESULTS IN UNRELATED GIT HISTORIES!
+
+Perform a local spec-up-t install via `npx create-spec-up-t new-dir`
+
+Remove the instructive and placeholder .md files from the `spec` directory:
+ - example-markup-in-markdown.md
+ - intro.md
+ - outro.md
+ - terms-and-definitions-intro.md
+
+Empty the `terms-definitions` folder
+- remove term-1.md, term-2.md, term-3.md, term-4.md 
+
+Rename `specs.json` to `specs.json-default` and copy the `specs.json` over from the legacy install into `new-dir`.
+
+Copy the content of the legacy Spec-Up install in the spec folder, leave the `terms-definitions` folder empty, then run the [split tool]().
+
+Now you should be up & running to test this repo, back-up the legacy Spec-Up repo to a new name and rename the Spec-Up-T `new-dir` to the name of formerly legacy Spec-Up folder.
+
+You should be able to commit the changes and figure out how to deal with the *unrelated* histories on the github remote repository.
+
+> Interesting use case: when legacy install uses local images -> beware!
+> Suspect that the src of those images will be a full url to the repo.
+
+#### B. Overwrite and clean up
+
+Via this approach we keep the git history of the legacy Spec-Up install available after the Spec-Up-T migration.
+
 Follow use case 2. and 3. Use case 2, [update Spec-Up-T](./updating.md#updating-the-npm-package-called-spec-up-t), has to be followed by Use cases 3: [Update own installation](./updating.md#updating-your-installation)
 
-And then remove obsolete files and directories ([this is the list]()) by hand.
+And then remove obsolete files and directories ([this is the list]()) by hand. This is difficult because you don't know by definition what dirs and files have been put in.
 
 | @Kor : could you provide a list of legacy Spec-Up files and directories that we nominate to remove? |
 
-Beware during a migration that extra content may have been added by users. Always back-up before migration.
-Better safe than sorry.
-
+So again., be aware during a migration that extra content may have been added by users. Always back-up before migration. Better safe than sorry.
 
 #### Functionality
 _Not yet operational!_ 

@@ -77,7 +77,7 @@ Empty the `terms-definitions` folder
 
 Rename `specs.json` to `specs.json-default` and copy the `specs.json` over from the legacy install into `new-dir`.
 
-Copy the content of the legacy Spec-Up install in the spec folder, leave the `terms-definitions` folder empty, then run the [split tool]().
+Copy the content of the legacy Spec-Up install in the spec folder, leave the `terms-definitions` folder empty, then run the [split tool](here).
 
 Now you should be up & running to test this repo, back-up the legacy Spec-Up repo to a new name and rename the Spec-Up-T `new-dir` to the name of formerly legacy Spec-Up folder.
 
@@ -92,7 +92,7 @@ Via this approach we keep the git history of the legacy Spec-Up install availabl
 
 Follow use case 2. and 3. Use case 2, [update Spec-Up-T](./updating.md#updating-the-npm-package-called-spec-up-t), has to be followed by Use cases 3: [Update own installation](./updating.md#updating-your-installation)
 
-And then remove obsolete files and directories ([this is the list]()) by hand. This is difficult because you don't know by definition what dirs and files have been put in.
+And then remove obsolete files and directories ([this is the list](here)) by hand. This is difficult because you don't know by definition what dirs and files have been put in.
 
 | @Kor : could you provide a list of legacy Spec-Up files and directories that we nominate to remove? |
 

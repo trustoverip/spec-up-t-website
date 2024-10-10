@@ -50,7 +50,9 @@ Copy the following information from the `package.json` file in the aforementione
 
 The “-”'s are placeholders, use the version number as listed in [this file](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-starterpack/package.json#L3)
 
-### Copy the following files to the root of your installation:
+### Copy files to the root of your installation
+
+Copy the following files to the root of your installation:
 
 - `main.sh`
 - `remove-xref.js`

@@ -99,5 +99,3 @@ Spec-Up-<span className="rotate">T</span> is based on **Spec-Up**, and some of t
 You will have to install Spec-Up-T to start using it. Go straight to the [installation section](general/installation.md) for instructions.
 
 :::
-
-

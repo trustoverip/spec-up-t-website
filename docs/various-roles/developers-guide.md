@@ -279,6 +279,8 @@ npm version <newversion> -m "Bump version to %s"
 
 :::info
 The %s in the npm version command is a placeholder that gets replaced with the new version number. When you run the command, npm automatically substitutes %s with the version number you specified.
+
+npm automatically creates a new Git tag that matches the new version number you specified.
 :::
 
 Replace `<newversion>` with the new version number (e.g., 0.11.32).

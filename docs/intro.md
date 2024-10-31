@@ -31,7 +31,7 @@ We have distinguished the following **roles**:
 
 Supporting roles are:
 - [admins](./various-roles/admins-guide/introduction.md)
-- [developers](./various-roles/developers-guide.md)
+- [developers](./various-roles/developers-guide/intro.md)
 
 ```mermaid
 flowchart

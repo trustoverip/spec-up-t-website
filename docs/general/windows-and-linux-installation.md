@@ -1,4 +1,4 @@
-# Difference between MacOS installation instructions and Windows/Linux
+# Difference between MacOS installation instructions and Windows or Linux instructions
 
 ## Windows
 
@@ -47,12 +47,9 @@ Here are the differences between the original **macOS instructions** and the mod
    - **macOS**: Terminal and general `bash` or zsh commands are assumed.
    - **Windows**: Adds instructions to verify installation with PowerShell using `node -v`, `npm -v`, and `git --version` commands in PowerShell.
 
-
 ## Linux
 
 Here are the differences between the original **macOS instructions** and the modified **Linux-specific instructions**:
-
----
 
 1. **Terminal Type and Command Differences**:
    - **macOS**: Uses `Terminal` with general `bash` commands.
@@ -102,4 +99,3 @@ Here are the differences between the original **macOS instructions** and the mod
      cd my-spec-up-t-website
      npm run install
      ```
-

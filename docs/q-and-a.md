@@ -66,7 +66,7 @@ The **resulting github.io site is intended for any user** interested in the cont
 
 ## Do you have a how-to video to get started with Spec-Up-T?
 
-Yes. Find it here: [Short video](intro#intro)
+Yes. Find it here: [Short video](general/video/)
 
 ## Where can I find the motivation of this move to create the Spec-Up bolt on "Spec-Up-T"?
 

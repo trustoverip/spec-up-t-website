@@ -28,7 +28,7 @@ Spec-Up-T is a github.com repo under Blockchainbird user: [https://github.com/bl
 
 Unlike the DIF Spec-Up repository, the Spec-Up-T repository **does not generate an example specification on github.io**.
 
-This functionality has been moved to the Spec-Up-T *installer*.
+This functionality has been moved to the Spec-Up-T *installer*. Spec-Up-T is now an NPM package that should be installed via `package.json`.
 
 For more details, refer to [the installation section](./general/installation.md).
 

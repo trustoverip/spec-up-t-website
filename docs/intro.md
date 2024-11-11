@@ -38,6 +38,7 @@ Supporting roles are:
 We have KERI specifications that consist of content and terminology. Let's take the KERI spec as an example. A `reader` could be anyone interested in the spec:
 - studying KERI
 - contributing to KERI in team
+
 Contributing to any Spec-Up-T-based specification can be of type:
 - `curator`
 - `content author` or editor
@@ -52,7 +53,7 @@ However, through all the chapters, including the Terms and Definitions chapter i
 
 > *Phil Pfeairheller* is a typical user of term defnitions. Generally he is a `content author` of specifications in the KERI team, whenever he sees a term that is not yet defined, he might create a definition on-the-fly if needed.
 
-Note that any specification could use only **definitions** of other glossaries. And xref to those glossaries. This is rather uncommon because if your specifying, you most probably construct new concepts whithin a new mental model.
+Note that any specification could use only **definitions** of other glossaries. And `xref` to those glossaries. This is rather uncommon because if your specifying, you most probably construct new concepts whithin a new mental model.
 
 *Drummond Reed* is `terminology author` of the ToIP main glossary. The main glosary has *hardly any content section*. All other terminology authors and content authors can use the Main ToIP glossary by `xref`-ing to it, as a plain Spec-Up-T link "[[xref: glossary, term ]]" even in their own `def`s to explain the difference between the mental model of the term in the smaller context vs. the broader ToIP context.
 

@@ -109,20 +109,20 @@ Change this entry in `specs.json`:
 
 ```json
 "source": {
-                "host": "github",
-                "account": "blockchainbird",
-                "repo": "spec-up-t-starter-pack"
-            }
+  "host": "github",
+  "account": "blockchainbird",
+  "repo": "spec-up-t-starter-pack"
+}
 ```
 
 to the correct information:
 
 ```json
 "source": {
-                "host": "github",
-                "account": "your-account",
-                "repo": "your-repo"
-            }
+  "host": "github",
+  "account": "your-account",
+  "repo": "your-repo"
+}
 ```
 
 These are the host (GitHub), your GitHub account name, and the repo name of the repo you are about to push.

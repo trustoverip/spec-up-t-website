@@ -46,7 +46,16 @@ It's about file management. It's in line with how static website generator gener
 - create the `terms-index.json` in the root of the repo
 - generate the glossary in `index.html`
 - creates `specs-generated.json` in the output directory, DON'T TOUCH
-- creates `terms-and-definitions-intro.md` in the `/spec` directory DON'T TOUCH
+
+By hand you have to:
+
+```
+cd /spec
+pwd
+touch terms-and-definitions-intro.md
+```
+
+This creates `terms-and-definitions-intro.md` in the `/spec` directory DON'T TOUCH this file further
 
 ### Feel free to reorganize the order of term in the glossary
 Open the `terms-index.json` with a text editor in the root of the repo and change the order of terms. You can even throw terms out.
@@ -64,7 +73,7 @@ This method is adopted from Docusaurus.
 
 #### We copy the new specs.json structure for Spec-Up-T
 
-```json
+```
 {
     "specs": [
         {
@@ -110,7 +119,7 @@ This method is adopted from Docusaurus.
 }
 ```
 
-Be sure to get the latest specs.json [here](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-starterpack/specs.json)
+**Be sure to get the latest specs.json [here](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-starterpack/specs.json)**
 
 Copy your old order of files from `specs-backup.json` and add `terms-and-definitions-intro.md` somewhere in the list (you choose the order!)
 

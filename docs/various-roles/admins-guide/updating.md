@@ -33,14 +33,7 @@ The information (files, code) to be copied to your existing Spec-Up-T installati
 Copy the following information from the `package.json` file in the aforementioned installer files into the `package.json` of your Spec-Up-T installation:
 
 - Overwrite the entire `scripts` section
-- Update the `dependencies` as follows:
-
-```json
-"dependencies": {
-    "dotenv": "^16.4.5",
-    "spec-up-t": "^1.0.8"
-  }
-```
+- Update the `dependencies`
 
 - Change version:
 

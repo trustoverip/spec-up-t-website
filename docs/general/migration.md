@@ -50,7 +50,7 @@ It's about file management. It's in line with how static website generator gener
 By hand you have to:
 
 ```
-cd /spec
+cd ./spec
 pwd
 touch terms-and-definitions-intro.md
 ```

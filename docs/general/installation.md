@@ -61,6 +61,8 @@ npx create-spec-up-t@latest my-spec-up-t-website
 
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor. It should work on any operating system (not tested yet).
 
+### Result
+
 You should now have a directory called `my-spec-up-t-website` (or `spec-up-t-starterpack` if you did not specify a name) with the following files and directories:
 
 <GitHubDirectoryList githubUrl="https://github.com/trustoverip/spec-up-t-starter-pack/tree/main/spec-up-t-starterpack" />

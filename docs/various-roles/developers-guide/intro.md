@@ -91,7 +91,6 @@ If you have a Spec-Up-T installation (via `npx create-spec-up-t`), how can you r
 
 - Clone the Spec-Up-T repo
 - Install a Spec-Up-T via the installer
-- Run `npm install` in the Spec-Up-T website that you installed via the installer
   
 Generally, if you now run `npm run render,` it will call the scripts from the Spec-Up-T inside `node_modules` .
 

@@ -58,17 +58,17 @@ const GitHubFileViewer = ({ githubFileUrl }) => {
 
     return (
         <div>
+            {/* File content display */}
+            <pre>
+                <code>{content}</code>
+            </pre>
+
             {/* Link to source */}
             <p>
                 <a href={githubFileUrl} target="_blank" rel="noopener noreferrer">
                     link to source
                 </a>
             </p>
-
-            {/* File content display */}
-            <pre>
-                <code>{content}</code>
-            </pre>
         </div>
     );
 };

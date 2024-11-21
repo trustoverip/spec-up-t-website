@@ -3,9 +3,11 @@
 import React from 'react';
 import DefaultMDXComponents from '@theme-original/MDXComponents';
 import GitHubDirectoryList from '@site/src/components/GitHubDirectoryList';
+import GitHubFileViewer from '../components/GitHubFileViewer';
 
 // Extend the default MDX components
 export default {
     ...DefaultMDXComponents, // Include all default components
-    GitHubDirectoryList,     // Add your custom component
+    GitHubDirectoryList,
+    GitHubFileViewer
 };

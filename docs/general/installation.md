@@ -16,17 +16,15 @@ Get started by **creating a new Spec-Up-T installation**.
 - A [webbrowser](https://en.wikipedia.org/wiki/Web_browser). You are probably reading this in a browser, so you already have one
 - [Git](https://git-scm.com/). To host your specification on Github, you must also have Git installed on your local system. By the way, you can also create a specification (index.html) without hosting it on GitHub. But if you do so, the whole idea of a version-managed glossary using Git goes through the window.
 
-
 :::info
 Non-technical explanation:
+
 - Command Line: A text interface to type commands for your computer.
 - IDE: A software where you can easily write, test, and debug code.
 - Node.js: This makes Spec-Up-T run
 - Git: A system to track and manage changes in your code.
+
 :::
-
-
-
 
 ## Create a new Spec-Up-T installation
 

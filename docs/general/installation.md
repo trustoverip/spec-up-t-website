@@ -61,33 +61,9 @@ npx create-spec-up-t@latest my-spec-up-t-website
 
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor. It should work on any operating system (not tested yet).
 
-You should now have a directory called `my-spec-up-t-website` (or `spec-up-t-starterpack` if you did not specify a name).
+You should now have a directory called `my-spec-up-t-website` (or `spec-up-t-starterpack` if you did not specify a name) with the following files and directories:
 
-### Go into the directory
-
-- Go into this directory (folder) that was just created:
-
-```bash
-cd my-spec-up-t-website
-```
-
-You are now in this directory.
-
-### Install all dependencies
-
-- Install all dependencies:
-
-```bash
-npm run install
-```
-
-It can take some time, and you should see multiple lines of output during installation.
-
-When the prompt is visible again, you should now have a basic Spec-Up-T install:
-
-- a `specs.json` file
-- a `spec/` directory with sample markdown files
-- a `node_modules` directory, a `package.json` file, and a `package-lock.json` file (these three elements belong to the `npm` system)
+<GitHubDirectoryList githubUrl="https://github.com/trustoverip/spec-up-t-starter-pack/tree/main/spec-up-t-starterpack" />
 
 What you don't have yet is the following:
 

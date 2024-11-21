@@ -99,8 +99,7 @@ In the `scripts` section of the `package.json` file for your Spec-Up-T installat
 
 ```json
 "scripts": {
-  "render": "node -e \"require('spec-up-t')({ nowatch: true })\"",
-  "xrefs": "node -e \"require('spec-up-t/src/get-xrefs-data.js').getXrefsData()\""
+  "render": "node -e \"require('spec-up-t')({ nowatch: true })\""
 }
 ```
 

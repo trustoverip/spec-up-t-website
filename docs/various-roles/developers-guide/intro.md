@@ -95,13 +95,9 @@ If you have a Spec-Up-T installation (via `npx create-spec-up-t`), how can you r
   
 Generally, if you now run `npm run render,` it will call the scripts from the Spec-Up-T inside `node_modules` .
 
-In the `scripts` section of the `package.json` file for your Spec-Up-T installation, you will find commands like this:
+In the `scripts` section of the `package.json` file for your Spec-Up-T installation, you will find commands like `render` in the `scripts` section:
 
-```json
-"scripts": {
-  "render": "node -e \"require('spec-up-t')({ nowatch: true })\""
-}
-```
+<GitHubFileViewer githubFileUrl="https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-starterpack/package.json" />
 
 These are calls to the `Spec-Up-T` library in `node_modules`.
 

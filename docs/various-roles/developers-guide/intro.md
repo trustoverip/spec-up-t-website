@@ -124,9 +124,6 @@ Adjust the other entries if you want to run them.
 
 <GitHubDirectoryList githubUrl="https://github.com/trustoverip/spec-up-t/tree/master" />
 
-
-
-
 | File/Directory                | Description / remarks |
 |-------------------------------|-------------|
 | `/assets`                        | client-side: JS and CSS files |

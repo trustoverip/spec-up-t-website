@@ -14,7 +14,7 @@ It is possible to include references to terms from external spec-up generated sp
     {
       ...
       "external_specs": [
-        {"test-1": "https://kordwarshuis.github.io/spec-up-xref-test-1/"}
+        {"test-1": "https://blockchainbird.github.io/spec-up-xref-test-1/"}
       ]
     }
   ]

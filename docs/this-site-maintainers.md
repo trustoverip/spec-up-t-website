@@ -18,6 +18,19 @@ Show the content of a GitHub repo directory:
 <GitHubDirectoryList githubUrl="https://github.com/trustoverip/spec-up-t-starter-pack/tree/main/spec-up-t-starterpack" />
 ```
 
+:::warning
+
+You should always specify a tree and a repo,
+
+so this doesn't work: `https://github.com/trustoverip/spec-up-t/`,
+
+and this does work: `https://github.com/trustoverip/spec-up-t/tree/master` although the former refers to the latter.
+
+If `/tree/master` (in this case) is not already at the end of the URL, add it manually.
+
+:::
+
+
 Show the content of a GitHub repo file:
 
 ``` markdown

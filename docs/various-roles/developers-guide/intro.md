@@ -122,7 +122,7 @@ Adjust the other entries if you want to run them.
 
 ## Directory structure
 
-<GitHubDirectoryList githubUrl="https://github.com/trustoverip/spec-up-t/tree/master" />
+ToDo: Add file list
 
 | File/Directory                | Description / remarks |
 |-------------------------------|-------------|

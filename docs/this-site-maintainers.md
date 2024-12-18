@@ -14,9 +14,7 @@ This site is built in [Docusaurus](https://docusaurus.io/).
 
 Show the content of a GitHub repo directory:
 
-``` markdown
-<GitHubDirectoryList githubUrl="https://github.com/trustoverip/spec-up-t-starter-pack/tree/main/spec-up-t-starterpack" />
-```
+ToDo: Add file list
 
 :::warning
 

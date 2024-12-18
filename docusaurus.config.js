@@ -82,7 +82,7 @@ const config = {
           { to: '/docs/general/how-to', label: 'How To‘s', position: 'left' },
           { to: '/docs/spec-up-t-demo-site', label: 'Demo', position: 'left' },
           { to: '/docs/general/video', label: 'Video', position: 'left' },
-          { to: '/docs/github-token', label: 'GitHub token', position: 'left' },
+          { to: '/docs/general/github-token', label: 'GitHub token', position: 'left' },
           // { to: '/docs/admins-guide', label: 'Admin section', position: 'left' },
           {
             href: 'https://github.com/blockchainbird/spec-up-t-website',
@@ -97,10 +97,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/blockchainbird/spec-up-t-website',

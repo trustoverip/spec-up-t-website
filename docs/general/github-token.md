@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Intro
 
-Because GitHub.com is where all specifications live, it is essential to have good access to it. This goes under the hood through the GitHub API (Application Programming Interface). You have access to this, but soon you run into a limit. To make more requests, you need a token. Here's how to get such a token and how to apply it.
+Because GitHub.com is where all specifications live, having good access to it is essential. This goes under the hood through the GitHub API (Application Programming Interface). You have access to this, but soon you run into a limit. To make more requests, you need a token. Here's how to get such a token and how to apply it.
 
 Steps to take:
 

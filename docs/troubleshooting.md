@@ -10,8 +10,7 @@ Some tips in case of problems:
 
 Problem: I want to look up an external reference (*xref*) but I get an error about GitHub and API and limits.
 
-Solution: [get a GitHub Token](./github-token.md).
-
+Solution: [get a GitHub Token](./general/github-token.md).
 
 ## WSL2 users
 
@@ -19,7 +18,7 @@ WSL2 users are recommended to use the `bash` option rather than `PowerShell` in 
 
 ## Use Node.js versions 18+
 
-Spec-Up-T uses `fetch`, which is [added in version 18](https://nodejs.org/dist/latest-v18.x/docs/api/globals.html#fetch).
+Spec-Up-T uses `fetch`, which was [added in version 18](https://nodejs.org/dist/latest-v18.x/docs/api/globals.html#fetch).
 
 Install NVM if you haven't already. (Instructions not given here).
 

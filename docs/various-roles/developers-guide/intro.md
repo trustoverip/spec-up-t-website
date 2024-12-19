@@ -98,7 +98,7 @@ Generally, if you now run `npm run render,` it will call the scripts from the Sp
 
 In the `scripts` section of the `package.json` file for your Spec-Up-T installation, you will find commands like `render` in the `scripts` section:
 
-<GitHubFileViewer githubFileUrl="https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-starterpack/package.json" />
+ToDo: add file list
 
 These are calls to the `Spec-Up-T` library in `node_modules`.
 

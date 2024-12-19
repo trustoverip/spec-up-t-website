@@ -145,7 +145,7 @@ Via this approach we keep the git history of the legacy Spec-Up install availabl
 
 Follow use case 2. and 3. Use case 2, [update Spec-Up-T](./updating.md#updating-the-npm-package-called-spec-up-t), has to be followed by Use cases 3: [Update own installation](./updating.md#updating-your-installation)
 
-And then remove obsolete files and directories ([this is the list](here)) by hand. This is difficult because you don't know by definition what dirs and files have been put in.
+And then remove obsolete files and directories (ToDo: add link to list) by hand. This is difficult because you don't know by definition what dirs and files have been put in.
 
 | @Kor : could you provide a list of legacy Spec-Up files and directories that we nominate to remove? |
 

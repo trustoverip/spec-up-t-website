@@ -8,21 +8,61 @@ This page is the developer's guide for the Spec-Up-T system.
 
 ## Description of repositories related to Spec-Up-T
 
-The following repositories together constitute a working Spec-Up-T installation:
+### Intro
 
-- [The Spec-Up-T repo](https://github.com/blockchainbird/spec-up-t), with [associated NPM package](https://www.npmjs.com/package/spec-up-t)
-- [The Spec-Up-T installer repo](https://github.com/blockchainbird/spec-up-t-starter-pack), with [associated NPM package](https://www.npmjs.com/package/create-spec-up-t)
+There are **three** components distinguishable in **two** repositories.
+
+1. The **Spec-Up-T installation** containing the markdown files containing the texts such as specifications and terms plus definitions
+2. **Installer files** that copy this Spec-Up-T installation to the desired location
+3. A **Spec-Up-T npm package** (created from the Spec-Up-T repository) that is installed after the Spec-Up-T installation is copied to the desired location
+
+### The repositories
+
+- [The Spec-Up-T installer repository](https://github.com/blockchainbird/spec-up-t-starter-pack), with [associated NPM package](https://www.npmjs.com/package/create-spec-up-t) (1. and 2.)
+- [The Spec-Up-T repository](https://github.com/blockchainbird/spec-up-t), with [associated NPM package](https://www.npmjs.com/package/spec-up-t) (3.)
 
 We will now explain how these relate to each other.
 
-The Spec-Up-T Installer repo installs a set of files somewhere on a file system.
+### The Spec-Up-T installer repository
 
-- That can be on your local file system, which you later create a GitHub repo from so that others can use your repo as an external source for their glossary. However, you don't have to make a repo of it; without it, you will also get a working glossary.
-- You can also start from GitHub and create a repo through this web interface with the files included in the Starterpack (this option is in development).
+The Spec-Up-T Installer repository installs a set of files somewhere on a file system.
 
-The Spec-Up-T Installer repo (called `spec-up-t-starter-pack`) has a subdirectory with the same name. This subdirectory is a working Spec-Up-T install. The scripts in the root copy this subdirectory to your chosen location on your file system via an NPX command (or you do this via GitHub's web interface, but this is under development, as mentioned above).
+- That can be on your local file system, which you later create a GitHub repository from so that others can use your repository as an external source for their glossary. However, you don't have to make a repository of it; without it, you will also get a working glossary.
+- You can also start from GitHub and create a repository through this web interface with the files included in the Starterpack (this option is in development).
 
-When you run this NPX command, this subdirectory is copied to your local file system, and then, when that is done, `npm install` is called. This installs the packages as defined in the co-copied `package.json`, which is also in the mentioned subdirectory. The `package.json` in the root of the repo serves to copy the subdirectory to your local file system.
+The Spec-Up-T Installer repository has a subdirectory named `spec-up-t-starter-pack`. This subdirectory is a working Spec-Up-T install. The scripts in the root copy this subdirectory to your chosen location on your file system via an NPX command (or you do this via GitHub's web interface, but this is under development, as mentioned above).
+
+Note: You can also copy `spec-up-t-starterpack/` manually and then call `npm install`. That has the same result.
+
+When you run this NPX command, this subdirectory is copied to your local file system, and then, when that is done, `npm install` is called. This installs the packages as defined in the co-copied `package.json`, which is also in the mentioned subdirectory. The `package.json` in the root of the repository serves to copy the subdirectory to your local file system, via `create-spec-up-t-starterpack.js`.
+
+:::info
+The relevant files + a directory in the Spec-Up-T installer repository:
+
+```
+spec-up-t-starterpack/
+create-spec-up-t-starterpack.js
+messages.js
+package.json
+```
+
+This directory contains a working Spec-Up-T:
+```
+spec-up-t-starterpack/
+```
+
+These files …
+
+```
+create-spec-up-t-starterpack.js
+messages.js
+package.json
+```
+
+… copy the `spec-up-t-starterpack/` directory to your desired location via NPX.
+:::
+
+### The Spec-Up-T repository
 
 One of the packages listed in the `package.json` copied to the local file system is `spec-up-t`. This package does all the work from the `node_modules` directory created when you run `npm install`. The copied files in the subdirectory have a helper function.
 
@@ -38,10 +78,10 @@ Be aware that your specification is just one file, an `index.html` file. Keeping
 Also, realize that the GitHub API reaches its limit fairly quickly, especially if there is no authentication. So, in everything, keep in mind that the number of requests should remain minimal.
 :::
 
-Two repos come into play:
+Two repositories come into play:
 
-- [The Spec-Up-T repo](https://github.com/blockchainbird/spec-up-t), with [associated NPM package](https://www.npmjs.com/package/spec-up-t)
-- [The Spec-Up-T installer repo](https://github.com/blockchainbird/spec-up-t-starter-pack), with [associated NPM package](https://www.npmjs.com/package/create-spec-up-t)
+- [The Spec-Up-T repository](https://github.com/blockchainbird/spec-up-t), with [associated NPM package](https://www.npmjs.com/package/spec-up-t)
+- [The Spec-Up-T installer repository](https://github.com/blockchainbird/spec-up-t-starter-pack), with [associated NPM package](https://www.npmjs.com/package/create-spec-up-t)
 
 The Spec-Up-T installer uses Spec-Up-T as a package in node_modules, which is installed via `npm install` after you install the Spec-Up-T installer itself (see [Admins Guide](../admins-guide/introduction.md) for this).
 
@@ -53,7 +93,7 @@ How to publish an updated package version to NPM:
   `"version": "0.11.29"` to `"version": "0.11.30"`
 - Run `npm publish`
 
-Note: The Spec-Up-T installer repo has two package.json files. One is in the root and belongs to the repo itself. The other is inside the directory that contains a full Spec-Up-T installation. This is the package.json that will be used later. The first one is only used for the installation itself. For simplicity, keep both version numbers the same.
+Note: The Spec-Up-T installer repository has two package.json files. One is in the root and belongs to the repository itself. The other is inside the directory that contains a full Spec-Up-T installation. This is the package.json that will be used later. The first one is only used for the installation itself. For simplicity, keep both version numbers the same.
 
 The new package will be available as soon as it is uploaded.
 

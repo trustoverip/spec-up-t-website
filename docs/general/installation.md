@@ -28,16 +28,9 @@ Non-technical explanation:
 
 ## Create a new Spec-Up-T installation
 
-### General info
-
-Installing Spec-Up-T is as follows:
-
-- Install the tool via `npx`
-- Install the spec-up-t package via `npm`
-
-It is explained in more detail below:
-
 ### Let's create
+
+Make sure you are in the directory where you want to install Spec-Up-T. A new subdirectory will be created with your chosen name, and the Spec-Up-T files will be placed in this subdirectory.
 
 ```bash
 npx create-spec-up-t my-spec-up-t-website

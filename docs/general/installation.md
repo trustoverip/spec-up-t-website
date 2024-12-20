@@ -30,13 +30,13 @@ Non-technical explanation:
 
 ### Let's create
 
-Make sure you are in the directory where you want to install Spec-Up-T. A new subdirectory will be created with your chosen name, and the Spec-Up-T files will be placed in this subdirectory.
+Make sure you are in the directory where you want to install Spec-Up-T. A new subdirectory will be created with **your chosen name**, and the Spec-Up-T files will be placed in this subdirectory.
 
 ```bash
 npx create-spec-up-t my-spec-up-t-website
 ```
 
-*my-spec-up-t-website* can be anything you want it to be (however, it is recommended to not use spaces or special characters in directory names).
+*my-spec-up-t-website* can be anything you want it to be, that will **your chosen name** (however, it is recommended to not use spaces or special characters in directory names).
 
 You can also omit the last part:
 
@@ -56,9 +56,7 @@ You can type this command into Command Prompt, Powershell, Terminal, or any othe
 
 ### Result
 
-You should now have a directory called `my-spec-up-t-website` (or `spec-up-t-starterpack` if you did not specify a name) with the following files and directories:
-
-ToDo: add file list
+You should now have a directory called `my-spec-up-t-website` (or `spec-up-t-starterpack` if you did not specify a name) with a subdirectory called `spec/`. You will find markdown files and another subdirectory, `terms-definitions` containing markdown files containing some sample content.
 
 What you don't have yet is the following:
 

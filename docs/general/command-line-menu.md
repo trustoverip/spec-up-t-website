@@ -27,37 +27,29 @@ You will now see this menu:
 ```bash
 Please choose one of the following options:
 
-    [0] Publish ¹
+   [0] Add content
+   [1] Render specification
+   [2] Export to PDF
+   [3] Update new xrefs
+   [4] Update all xrefs
+   [5] Add, remove or view xref source
+   [6] Configure
+   [7] Open documentation website
+   [8] Freeze specification
+   [Q] Quit
 
-    [1] Render specification
-    [2] Export to PDF
-    [3] Look up xrefs
-    [4] Remove xref
-    [5] Validate config file
-    [6] Add new terms
-    [7] Open documentation website
-    [8] Freeze specification
-    [Q] Quit
+   An xref is a reference to another repository.
 
-    ¹ Publish = [6]+[2]+[3]+[1]
-
-
-    Enter your choice (0/1/2/3/4/5/6/7/8/Q)?
+   Enter your choice:
 ```
 
 These menu options act as shortcuts to the below commands, such as `npm run render` and others. You can choose between using the menu or entering the direct commands yourself.
 
-### `[0] Publish`
+### `[0] Add content`
 
-#### Info
-
-**Runs the below options in given order: [6]+[2]+[3]+[1].**
-
-Use this if you use a GitHub token and, therefore, don't have to worry about the limited number of GitHub API calls you can make per hour.
+Gives info on how to add content.
 
 ### `[1] Render specification`
-
-#### Info
 
 **Creates the specification, an index.html, in the `docs` directory, as specified in the `specs.json` file.**
 
@@ -68,7 +60,6 @@ To view the `index.html` file, you can:
 
 The easiest way is to double-click the file in your file manager, which should open it in your browser.
 
-
 By the way, there are **three** modes for rendering the specification:
 
 | Command | Behavior |
@@ -77,106 +68,37 @@ By the way, there are **three** modes for rendering the specification:
 | **`npm run render`** | Renders the site once without watching for changes. |
 | **`npm run dev`** | Enables debugging features. |
 
-#### Direct command
-
-```bash
-npm run render
-```
-
-- - -
-
-
 ### `[2] Export to PDF`
-
-#### Info
 
 **Creates a PDF. The PDF will be created in the same directory as the `index.html` file.**
 
-#### Direct command
+### `[3] Update new xrefs`
 
-```bash
-npm run topdf
-```
+**Creates all newly added “xref”'s (external references).**
 
-- - -
-
-
-### `[3] Look up xrefs`
-
-#### Info
-
-**Creates an “xref” (external reference).**
+Also runs [1].
 
 `xrefs` are references to external glossaries (specifications). Each `xref` is checked against a local data collection to see if a reference exists, maintaining an external term's original version.
 
-This separate command is not just used when generating a specification (option [1]) because, without a GitHub token, you are only allowed a limited number of calls to the GitHub API. So, you may choose not to create the xrefs until the end of your work session.
+The xrefs are not always automatically looked up when you choose option [1] because every lookup invokes the GitHub API, and you are faced with a limit at some point. You then have to wait for the limitation to be lifted again. Without a unique token, you run into the limit pretty quickly. Hence this option to take it slow. By the way, you can create a token for free at GitHub.
 
-#### Direct command
+### `[4] Update all xrefs`
 
-```bash
-npm run xrefs
-```
+**(re)creates all “xref” (external references).**
 
-- - -
+If you delete an xref, it is also deleted from the system's bookkeeping.
 
-### `[4] Remove xref`
+### `[5] Add, remove or view xref source`
 
-#### Info
+**See an overview of all external references, or add or delete**
 
-**Removes an “xref” (external reference).**
+### `[6] Configure`
 
-After removing the old reference, you can run `npm run xrefs` again to get the latest reference.
-
-#### Direct command
-
-```bash
-npm run removexref -- "termValue" "externalSpecValue"
-```
-
-- - -
-
-### `[5] Validate config file`
-
-#### Info
-
-**Tests the `spec.json` for missing keys.**
-
-Once you've edited the `spec.json`, you can test it to check for missing keys. If a key is missing, you'll receive a notification.
-
-#### Direct command
-
-```bash
-npm run validatespec
-```
-- - -
-
-### `[6] Add new terms`
-
-#### Info
-
-Adds a new file (with a term) to the specification.
-
-If you create a new Markdown file with a term and definition in it, it is not automatically included in the final product. It can be included in the index only if you want it to be. With this command, you add it to the index.
-
-#### Direct command
-
-```bash
-npm run addterms
-```
-
-- - -
+Configure a new installation.
 
 ### `[7] Open documentation website`
 
-#### Info
-
 This command will redirect to the documentation website (the site you are reading right now).
-
-#### Direct command
-
-No Direct command.
-
-- - -
 
 ### `[8] Freeze specification`
 
@@ -184,22 +106,6 @@ No Direct command.
 
 Example: `index-v1.html`, `index-v2.html` etc. These files are placed in the same folder as the `index.html` but in a subfolder called `versions`.
 
-#### Direct command
-
-```bash
-npm run freeze
-```
-
-- - -
-
 ### `[Q] Quit`
 
-#### Info
-
 This command will take you out of the menu.
-
-#### Direct command
-
-No Direct command.
-
-- - -

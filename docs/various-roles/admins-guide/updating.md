@@ -6,9 +6,6 @@ sidebar_position: 2
 
 ## intro
 
-Een Spec-Up-T installatie is, zoals te verwachten, een setje bestanden, waarvan er een aantal in de root staan en de rest in subdirectories.****
-
-
 Updating Spec-Up-T means two things:
 
 - Updating the **npm package called Spec-Up-T**

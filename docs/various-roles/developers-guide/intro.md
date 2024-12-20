@@ -6,6 +6,28 @@ sidebar_position: 15
 
 This page is the developer's guide for the Spec-Up-T system.
 
+## Description of repositories related to Spec-Up-T
+
+The following repositories together constitute a working Spec-Up-T installation:
+
+- [The Spec-Up-T repo](https://github.com/blockchainbird/spec-up-t), with [associated NPM package](https://www.npmjs.com/package/spec-up-t)
+- [The Spec-Up-T installer repo](https://github.com/blockchainbird/spec-up-t-starter-pack), with [associated NPM package](https://www.npmjs.com/package/create-spec-up-t)
+
+We will now explain how these relate to each other.
+
+The Spec-Up-T Installer repo installs a set of files somewhere on a file system.
+
+- That can be on your local file system, which you later create a GitHub repo from so that others can use your repo as an external source for their glossary. However, you don't have to make a repo of it; without it, you will also get a working glossary.
+- You can also start from GitHub and create a repo through this web interface with the files included in the Starterpack (this option is in development).
+
+The Spec-Up-T Installer repo (called `spec-up-t-starter-pack`) has a subdirectory with the same name. This subdirectory is a working Spec-Up-T install. The scripts in the root copy this subdirectory to your chosen location on your file system via an NPX command (or you do this via GitHub's web interface, but this is under development, as mentioned above).
+
+When you run this NPX command, this subdirectory is copied to your local file system, and then, when that is done, `npm install` is called. This installs the packages as defined in the co-copied `package.json`, which is also in the mentioned subdirectory. The `package.json` in the root of the repo serves to copy the subdirectory to your local file system.
+
+One of the packages listed in the `package.json` copied to the local file system is `spec-up-t`. This package does all the work from the `node_modules` directory created when you run `npm install`. The copied files in the subdirectory have a helper function.
+
+In the `package.json` you will find a `scripts` section. These reference the `spec-up-t` package, which can be called via npm commands, such as `npm run render`. Some calls go through a file in the `/src/server/` directory. This workaround is necessary so that you can include a  GitHub token. This token is needed to raise the GitHub API limit.
+
 ## How do you get a new version of Spec-Up-T live?
 
 If you want to add new functionality to Spec-Up-T, you will find below how to proceed.

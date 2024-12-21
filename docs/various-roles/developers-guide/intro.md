@@ -68,36 +68,14 @@ One of the packages listed in the `package.json` copied to the local file system
 
 In the `package.json` you will find a `scripts` section. These reference the `spec-up-t` package, which can be called via npm commands, such as `npm run render`. Some calls go through a file in the `/src/server/` directory. This workaround is necessary so that you can include a  GitHub token. This token is needed to raise the GitHub API limit.
 
-## How do you get a new version of Spec-Up-T live?
+## Adding functionality
 
-If you want to add new functionality to Spec-Up-T, you will find below how to proceed.
-
-:::danger
+:::info
 Be aware that your specification is just one file, an `index.html` file. Keeping this file as small as possible should be a priority when adding functionality. There is no lazy loading or optimization. It is basic HTML plus embedded CSS and JS. (This applies only to client-side functionality and not to server-side things you do from the command line during the “build” phase. That's code that doesn't end up in the `index.html`  after all.)
 
 Also, realize that the GitHub API reaches its limit fairly quickly, especially if there is no authentication. So, in everything, keep in mind that the number of requests should remain minimal.
 :::
 
-Two repositories come into play:
-
-- [The Spec-Up-T repository](https://github.com/blockchainbird/spec-up-t), with [associated NPM package](https://www.npmjs.com/package/spec-up-t)
-- [The Spec-Up-T installer repository](https://github.com/blockchainbird/spec-up-t-starter-pack), with [associated NPM package](https://www.npmjs.com/package/create-spec-up-t)
-
-The Spec-Up-T installer uses Spec-Up-T as a package in node_modules, which is installed via `npm install` after you install the Spec-Up-T installer itself (see [Admins Guide](../admins-guide/introduction.md) for this).
-
-The topic of updating Git repositories goes too far here; you can find a lot of information about that online.
-
-How to publish an updated package version to NPM:
-
-- Update the "version" in `package.json` to a higher number (use [SemVer](https://semver.org/)); for example, go from
-  `"version": "0.11.29"` to `"version": "0.11.30"`
-- Run `npm publish`
-
-Note: The Spec-Up-T installer repository has two package.json files. One is in the root and belongs to the repository itself. The other is inside the directory that contains a full Spec-Up-T installation. This is the package.json that will be used later. The first one is only used for the installation itself. For simplicity, keep both version numbers the same.
-
-The new package will be available as soon as it is uploaded.
-
-## Adding functionality
 
 The `Spec-Up-T` tool is written in `JavaScript,` client-side, and server-side (Node.js).
 
@@ -265,9 +243,11 @@ ToDo: Add file list
 
 ## Publishing to GitHub and NPM
 
-The suggested way to publish to GitHub and NPM is as follows:
+The suggested way to publish to GitHub and NPM will be described here.
 
-- Make your changes and commit them:
+### Add changes to Git
+
+Make your changes and commit them:
 
 ```bash
 git add .
@@ -278,28 +258,53 @@ git commit -m "Add new feature"
 Merging branches is not described here. It's generally best to run npm version after merging your feature branch into the main (or master) branch. This ensures that the version bump and tag are applied to the final state of the code that will be released.
 :::
 
-- Update the version in package.json, commit the change, and create a Git tag:
+### Publish to NPM
+
+#### Update version numbers
+
+Update the version number in four `package.json`'s. The idea is to keep the version numbers of all repos the same. If you publish an update to NPM you have to raise the version number in four places:
+
+1. https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-starterpack/package.json#L3
+2. https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-starterpack/package.json#L8
+3. https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/package.json#L3
+4. https://github.com/trustoverip/spec-up-t/blob/master/package.json#L3
+
+add 1: do this manually, if the current version is 1.0.87, make it 1.0.88
+
+add 2: do this manually, if the current version is 1.0.87, make it 1.0.88
+
+Now commit this file with message: “Bump version to 1.0.88”
+
+add 3 & 4: Use this command:
 
 ```bash
 npm version <newversion> -m "Bump version to %s"
 ```
 
-:::info
+In this case that would be:
+
+```bash
+npm version 1.0.88 -m "Bump version to %s"
+```
+
 The %s in the npm version command is a placeholder that gets replaced with the new version number. When you run the command, npm automatically substitutes %s with the version number you specified.
 
 npm automatically creates a new Git tag that matches the new version number you specified.
-:::
 
-Replace `<newversion>` with the new version number (e.g., 0.11.32).
+#### Push changes
 
-- Push the changes and the tag to the remote repository:
+Push the changes and the tag to the remote repository:
 
 ```bash
 git push origin main --tags
 ```
 
-- Publish the new version to npm:
+#### Publish to NPM
+
+Publish the new version to npm:
 
 ```bash
 npm publish
 ```
+
+The new package will be available as soon as it is uploaded.

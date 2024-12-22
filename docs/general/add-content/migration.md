@@ -2,7 +2,7 @@
 sidebar_position: 100
 ---
 
-# Migration
+# Migrate content
 
 **Pre condition: You have a Spec-Up installation up and running**
 

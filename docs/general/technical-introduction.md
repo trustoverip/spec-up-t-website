@@ -1,3 +1,7 @@
+---
+sidebar_position: 10
+---
+
 # Technical introduction
 
 In short, it comes down to this: as a user, you only need to consider the following directories: `spec/` and `docs/`.

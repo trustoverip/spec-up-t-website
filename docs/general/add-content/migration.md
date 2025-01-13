@@ -31,8 +31,8 @@ Back-up Specs.json to specs-backup.json
 Back-up package.json to package-backup.json
 
 ```
-mv specs.json specs-backup.json
-mv package.json package-backup.json
+cp specs.json specs-backup.json
+cp package.json package-backup.json
 ```
 
 Be sure to get the latest specs.json [here](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-starterpack/specs.json) from the starter pack and save into the root of the repo.

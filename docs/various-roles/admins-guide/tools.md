@@ -31,13 +31,13 @@ This will output a URL that points to this website.
 #### Usage
 
 ```bash
-npx spec-up-split [pathToTermsFile] [pathToTermsDir]
+npx spec-up-splitter [pathToTermsFile] [pathToTermsDir]
 ```
 
 #### Example
 
 ```bash
-npx spec-up-split custom_terms.md custom-terms-output
+npx spec-up-splitter custom_terms.md custom-terms-output
 ```
 
 :::warning

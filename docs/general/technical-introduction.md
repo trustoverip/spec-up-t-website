@@ -13,3 +13,18 @@ You will place the source files you create yourself in this directory. The forma
 ## `docs/`
 
 This is the directory where the final `index.html` is created. This file is what you end up consuming as a reader. You will also find a version history here.
+
+## Images
+
+Serve your assets like images, sound files, and videos from an external domain. We consider this common practice.
+
+Do this:
+```markdown
+![your image alt text](full-url)
+```
+
+Please refrain from:
+
+```markdown
+![local image alt text](local-url-or-path)
+```

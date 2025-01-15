@@ -6,13 +6,70 @@ sidebar_position: 3
 
 ## Splitter Tool
 
+### Introduction
+
+[The splitter tool](https://github.com/blockchainbird/spec-up-splitter) is a tool that can be used in conjunction with Spec-Up or Spec-Up-T. You feed it a markdown file (the source file) and it creates several new markdown files based on this source file.
+
+This tool is for Spec-Up and Spec-Up-T users. Use this tool if you want to make managing your Spec-Up or Spec-Up-T easier.
+
+### An example of what the tool does
+
+This tool splits a `Spec-Up` Markdown file with many terms and definitions into separate files, each containing only one term and definition.
+
+#### Input: source file
+
+An example of a source file is shown below:
+
+`terms-definitions.md` :
+
+
+```bash
+[[def: term 1, term one, Term One]]
+
+~ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus volutpat justo, sed ornare velit.
+
+[[def: term 2, term two, Term Two]]
+
+~ Nam euismod augue sed tempus imperdiet. Pellentesque ac porta ipsum, sed sodales leo. Suspendisse molestie est sit amet est porta, sit amet molestie dolor pharetra. Duis porta mollis sem vel aliquam. Maecenas laoreet turpis nunc, vitae mattis urna auctor ac. Donec mattis quis urna nec porta. Sed sit amet viverra ligula. Vivamus vitae sem sodales, malesuada dui sit amet, viverra lectus. Integer ullamcorper molestie ante, in blandit nunc tempus auctor.
+
+[[def: term 3, term three, Term Three]]
+
+~ Sed lorem nunc, ultricies nec nibh eu, bibendum sollicitudin arcu. Nullam porttitor condimentum elit ac commodo. Aenean ac augue quis arcu congue aliquam vitae in massa. Aliquam erat volutpat. Curabitur lobortis, sapien vitae mattis dignissim, risus augue iaculis risus, sed tempus sapien ex nec massa. Integer quis maximus nunc. Nunc ultrices sapien erat, at congue augue mattis sit amet. Aliquam condimentum luctus nunc, ut euismod augue commodo in.
+```
+
+#### Output: new files
+
+An example of the new files is shown below. The splitter tool has cut up the original file into three new files where the names of the files are based on the definition in the first line:
+
+`term1.md` :
+
+```bash
+[[def: term 1, term one, Term One]]
+
+~ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus volutpat justo, sed ornare velit.
+```
+
+
+`term2.md` :
+
+```bash
+[[def: term 2, term two, Term Two]]
+
+~ Nam euismod augue sed tempus imperdiet. Pellentesque ac porta ipsum, sed sodales leo. Suspendisse molestie est sit amet est porta, sit amet molestie dolor pharetra. Duis porta mollis sem vel aliquam. Maecenas laoreet turpis nunc, vitae mattis urna auctor ac. Donec mattis quis urna nec porta. Sed sit amet viverra ligula. Vivamus vitae sem sodales, malesuada dui sit amet, viverra lectus. Integer ullamcorper molestie ante, in blandit nunc tempus auctor.
+```
+
+
+`term3.md` :
+
+```bash
+[[def: term 3, term three, Term Three]]
+
+~ Sed lorem nunc, ultricies nec nibh eu, bibendum sollicitudin arcu. Nullam porttitor condimentum elit ac commodo. Aenean ac augue quis arcu congue aliquam vitae in massa. Aliquam erat volutpat. Curabitur lobortis, sapien vitae mattis dignissim, risus augue iaculis risus, sed tempus sapien ex nec massa. Integer quis maximus nunc. Nunc ultrices sapien erat, at congue augue mattis sit amet. Aliquam condimentum luctus nunc, ut euismod augue commodo in.
+```
+
 ### Why
 
 Each term in a specification will be kept in its own file to keep management doable. Sometimes you have the situation that files have already been created with many `Spec-Up` terms and definitions. Splitting many terms in one file is laborious, so this tool was built.
-
-### What does it do?
-
-This tool splits a `Spec-Up` Markdown file with many terms and definitions into separate files, each containing only one term and definition.
 
 ### How to use it
 
@@ -28,7 +85,7 @@ npx spec-up-splitter -help
 
 This will output a URL that points to this website.
 
-#### Usage
+#### Use the tool
 
 ```bash
 npx spec-up-splitter [pathToTermsFile] [pathToTermsDir]

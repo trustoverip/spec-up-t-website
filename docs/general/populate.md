@@ -88,7 +88,10 @@ Two approaches:
 2. use the splitter tool
 
 #### 1. By hand splitting of term-defnitions file
-Example: `terms-and-definitions.md` contains 5 defnitions -> 5 files with the name of the term as the file name in a new directory named `terms-definitions` in the `./spec` directory of the Spec-Up-T install:
+Example: `terms-and-definitions.md` contains 5 definitions -> 5 separate files, optionally with the name of the term as the file name, in a new directory named `terms-definitions` in the `./spec` directory of the Spec-Up-T install.
+
+##### Alpha-numerical sorting
+If you choose to have leading numbers in the filename (e.g., `13verifier.md`, `1200ssi.md`), the files will be used in this order. Any file without a number will be appended in the output alphabetically, AFTER the numbered files.
 
 ::: warning 
 The name of the directory is declared in `specs.json` under "spec_terms_directory" entry. 

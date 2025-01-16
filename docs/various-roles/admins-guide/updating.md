@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Updating
 
+## intro
+
 Updating Spec-Up-T means two things:
 
 - Updating the **npm package called Spec-Up-T**

@@ -44,7 +44,7 @@ npx create-spec-up-t ./Main-KERI-glossary
 Go to `Main-KERI-glossary-OLD`
 Open Specs.json and  copy the list of `markdown_paths` and paste the list into the specs.json of `Main-KERI-glossary` under `markdown_paths` and remove the terminology markdown file (e.g., `terms-definitions.md`) from the list. 
 
-::: warning 
+:::warning 
 Don't delete the terms-definitions.md, we need the content later!
 :::
 
@@ -73,7 +73,7 @@ ls
 rm terms-and-definitions.md 
 ```
 
-::: note
+:::note
 with the above command, we suggest the old and new repos are both in the same parent directory.
 
 We do not need the copy of terms-and-definitions.md 

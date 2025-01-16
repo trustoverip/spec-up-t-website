@@ -72,7 +72,7 @@ This creates `terms-and-definitions-intro.md` in the `/spec` directory DON'T TOU
 ### Feel free to reorganize the order of term in the glossary
 Open the `terms-index.json` with a text editor in the root of the repo and change the order of terms. You can even throw terms out.
 
-::: note Plan to change
+:::note Plan to change
 `terms-index.json` will be a file that can't be editted by the user. We'll create the following process:
 - a user bypasses a term file (that is in draft) using an `_` (underscore) as the first character of the file name
 - a user create a custom order (default: alphabetically) by putting an order number as the first 3 characters of a filename. Example: `10_validator.md`, `15_autonomous-identifier.md`, etc.
@@ -154,6 +154,20 @@ Install Spec-Up-T and install all dependencies:
 ```
 npm install
 ```
+:::note Ignore warnings
+During the process, you can ignore the NPM warnings. 
+
+Keeping up-to-date with warnings would demand a daily effort from programmers and maintainers. Things change so quickly but are hardly ever a breaking change.
+:::
+
+<<<<<<< HEAD
+:::tip Optional extra check
+=======
+:::todo Optional extra check
+>>>>>>> upstream/main
+Do the extra check with the "NPM list" command to see whether your install or update command has worked as expected. Check the packages and their latest version numbers. 
+:::
+
 Go into the menu
 
 ```
@@ -187,4 +201,3 @@ Follow the steps to take here if you want to use a different account or repo: [A
 
 ## Organize your Terminology data
 - Split your Terms and Definition into separate files under a directory in `/spec` directory
-

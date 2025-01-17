@@ -160,11 +160,7 @@ During the process, you can ignore the NPM warnings.
 Keeping up-to-date with warnings would demand a daily effort from programmers and maintainers. Things change so quickly but are hardly ever a breaking change.
 :::
 
-<<<<<<< HEAD
-:::tip Optional extra check
-=======
 :::todo Optional extra check
->>>>>>> upstream/main
 Do the extra check with the "NPM list" command to see whether your install or update command has worked as expected. Check the packages and their latest version numbers. 
 :::
 

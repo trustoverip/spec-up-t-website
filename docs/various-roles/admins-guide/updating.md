@@ -21,7 +21,7 @@ npm update
 
 ## Updating your installation
 
-Updating your installation requires manually copying and updating files (an automated update script may be made in the future).
+Updating your installation requires manually copying and updating files.
 
 Here is a step-by-step description:
 

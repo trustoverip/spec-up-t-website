@@ -112,12 +112,12 @@ If there are entries in `gitignore` (no dot at the beginning) from the `spec-up-
 
 Copy the following files to the root of your installation, overwrite if they exist:
 
-- .env.example
-- gitignore
-- help.txt
-- main.sh
-- postinstall-message.js
-- README.md
+- `.env.example`
+- `gitignore`
+- `help.txt`
+- `main.sh`
+- `postinstall-message.js`
+- `README.md`
 
 (Maybe there are old unused files, we leave them for now, they will do no harm).
 

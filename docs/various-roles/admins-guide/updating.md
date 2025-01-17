@@ -30,7 +30,7 @@ There are several ways to get the needed files to your computer: clone the repos
 
 The file- and directory names in the source are leading. If for some reason the naming in your current installation differs from the source, then you should change it to the situation in the source.
 
-### `package.json`
+### File: `package.json`
 
 #### Summary
 
@@ -106,20 +106,27 @@ Replace it with:
 The “-”'s are placeholders, use the version number as listed in [this file](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/package.json#L3)
 
 
-### `.gitignore`
+### File: `.gitignore`
 
 If there are entries in `gitignore` (no dot at the beginning) from the `spec-up-t-boilerplate` link above that are not in your `.gitignore` (dot at the beginning), then copy these entries to your `.gitignore`.
 
+### File: GitHub token
 
+If you have a GitHub Token, rename `.env.example` to `.env`, then put it in `.env`.
 
+### File: `specs.json`
 
+Your current `specs.json` should be carefully inspected and compared with the [specs.json](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/specs.json) in the boilerplate.
+
+Make sure that the entries match.
+
+TODO: explain how to do this.
 
 ### Copy files to the root of your installation
 
 Copy the following files to the root of your installation, overwrite if they exist:
 
 - `.env.example`
-- `gitignore`
 - `help.txt`
 - `main.sh`
 - `postinstall-message.js`
@@ -128,9 +135,6 @@ Copy the following files to the root of your installation, overwrite if they exi
 (Maybe there are old unused files, we leave them for now, they will do no harm).
 
   
-### GitHub token
-
-If you have a GitHub Token, rename `.env.example` to `.env`, then put it in `.env`.
 
 ### Terms
 

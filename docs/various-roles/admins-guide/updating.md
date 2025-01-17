@@ -22,6 +22,12 @@ Here is a step-by-step description:
 
 The information (files, code) to be copied to your existing Spec-Up-T installation can be found in the [directory `spec-up-t-boilerplate` of the installer](https://github.com/blockchainbird/spec-up-t-starter-pack/tree/main/spec-up-t-boilerplate).
 
+:::info
+
+There are several ways to get the needed files to your computer: clone the repository, download a ZIP of the repo or copy the content of each file by hand and create the files locally.
+
+:::
+
 The file- and directory names in the source are leading. If for some reason the naming in your current installation differs from the source, then you should change it to the situation in the source.
 
 ### `package.json`

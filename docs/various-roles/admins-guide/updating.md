@@ -29,19 +29,80 @@ Here is a step-by-step description:
 
 The information (files, code) to be copied to your existing Spec-Up-T installation can be found in the [directory `spec-up-t-boilerplate` of the installer](https://github.com/blockchainbird/spec-up-t-starter-pack/tree/main/spec-up-t-boilerplate).
 
+The file- and directory names in the source are leading. If for some reason the naming in your current installation differs from the source, then you should change it to the situation in the source.
 
 ### `package.json`
 
-Copy the following information from the `package.json` file in the aforementioned installer files into the `package.json` of your Spec-Up-T installation:
+#### Summary
 
-- Overwrite the entire `scripts` section
-- Update the `dependencies`
+The following entries of `package.json` should be updated:
 
-- Change version:
+- `scripts`
+- `dependencies`
+- `version`
+
+The update info should be copied from the `spec-up-t-boilerplate` link above.
+
+#### `scripts`
+
+Remove your current `scripts` section, meaning:
+
+```json
+
+"scripts": {
+// everything here
+}
+
+```
+Replace it with:
+
+```json
+"scripts": {
+// everything here
+}
+```
+
+from the `spec-up-t-boilerplate` link above.
+
+
+#### `dependencies`
+
+Remove your current `dependencies` section, meaning:
+
+```json
+
+"dependencies": {
+// everything here
+}
+
+```
+Replace it with:
+
+```json
+"dependencies": {
+// everything here
+}
+```
+
+from the `spec-up-t-boilerplate` link above.
+
+
+#### `version`
+
+Remove your current `version` section, meaning:
 
 ```json  
   "version": "-.-.-"
 ```  
+
+The “-”'s are placeholders for what is currently listed in your `package.json`.
+
+```
+Replace it with:
+
+```json
+"version": "-.-.-"
+```
 
 The “-”'s are placeholders, use the version number as listed in [this file](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/package.json#L3)
 

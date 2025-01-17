@@ -47,7 +47,7 @@ cp specs.json specs-backup.json
 cp package.json package-backup.json
 ```
 
-Be sure to get the latest specs.json [here](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-starterpack/specs.json) from the starter pack and save into the root of the repo.
+Be sure to get the latest specs.json [here](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/specs.json) from the starter pack and save into the root of the repo.
 
 ## Modify your Spec-Up installation with Spec-Up-T install
 
@@ -97,7 +97,7 @@ This method is adopted from Docusaurus.
                 "intro.md",
             **| copy your .md files here, listed in specs.json-backup, excluding the terminology md files |**
             ],
-            "logo": "https://raw.githubusercontent.com/blockchainbird/spec-up-t-starter-pack/main/spec-up-t-starterpack/logo.svg",
+            "logo": "https://raw.githubusercontent.com/blockchainbird/spec-up-t-starter-pack/main/spec-up-t-boilerplate/logo.svg",
             "logo_link": "https://github.com/blockchainbird/spec-up-t",
             "source": {
                 "host": "github",
@@ -131,7 +131,7 @@ This method is adopted from Docusaurus.
 }
 ```
 
-**Be sure to get the latest specs.json [here](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-starterpack/specs.json)**
+**Be sure to get the latest specs.json [here](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/specs.json)**
 
 Copy your old order of files from `specs-backup.json` and add `terms-and-definitions-intro.md` somewhere in the list (you choose the order!)
 

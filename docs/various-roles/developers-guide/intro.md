@@ -32,7 +32,7 @@ The Spec-Up-T Installer repository installs a set of files somewhere on a file s
 
 The Spec-Up-T Installer repository has a subdirectory named `spec-up-t-starter-pack`. This subdirectory is a working Spec-Up-T install. The scripts in the root copy this subdirectory to your chosen location on your file system via an NPX command (or you do this via GitHub's web interface, but this is under development, as mentioned above).
 
-Note: You can also copy `spec-up-t-starterpack/` manually and then call `npm install`. That has the same result.
+Note: You can also copy `spec-up-t-boilerplate/` manually and then call `npm install`. That has the same result.
 
 When you run this NPX command, this subdirectory is copied to your local file system, and then, when that is done, `npm install` is called. This installs the packages as defined in the co-copied `package.json`, which is also in the mentioned subdirectory. The `package.json` in the root of the repository serves to copy the subdirectory to your local file system, via `create-spec-up-t-starterpack.js`.
 
@@ -40,7 +40,7 @@ When you run this NPX command, this subdirectory is copied to your local file sy
 The relevant files + a directory in the Spec-Up-T installer repository:
 
 ```
-spec-up-t-starterpack/
+spec-up-t-boilerplate/
 create-spec-up-t-starterpack.js
 messages.js
 package.json
@@ -48,7 +48,7 @@ package.json
 
 This directory contains a working Spec-Up-T:
 ```
-spec-up-t-starterpack/
+spec-up-t-boilerplate/
 ```
 
 These files …
@@ -59,7 +59,7 @@ messages.js
 package.json
 ```
 
-… copy the `spec-up-t-starterpack/` directory to your desired location via NPX.
+… copy the `spec-up-t-boilerplate/` directory to your desired location via NPX.
 :::
 
 ### The Spec-Up-T repository
@@ -270,8 +270,8 @@ It's easy to forget to update the version nummer in different locations. Please 
 
 Update the version number in four `package.json`'s. The idea is to keep the version numbers of all repos the same. If you publish an update to NPM you have to raise the version number in four places:
 
-1. https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-starterpack/package.json#L3
-2. https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-starterpack/package.json#L8
+1. https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/package.json#L3
+2. https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/package.json#L8
 3. https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/package.json#L3
 4. https://github.com/trustoverip/spec-up-t/blob/master/package.json#L3
 

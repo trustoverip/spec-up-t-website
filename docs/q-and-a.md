@@ -80,7 +80,7 @@ Our enhancement proposal and git governance strategy is [here](how-it-came-to-be
 
 ## Why doesn't the Spec-Up-T repo generate a github.io-served specification itself?
 
-The repo Spec-Up-T doesn't generate an example specification on github.io. because it's not the purpose of this repo. Your example site will pop up when “spec-up-t” is installed in node_modules of spec-up-t-starterpack when you run npm install.
+The repo Spec-Up-T doesn't generate an example specification on github.io. because it's not the purpose of this repo. Your example site will pop up when “spec-up-t” is installed in node_modules of spec-up-t-boilerplate when you run npm install.
 
 ## How to integrate Spec-Up-T in other systems
 

@@ -44,7 +44,7 @@ You can also omit the last part:
 npx create-spec-up-t
 ```
 
-If you omit `my-spec-up-t-website`, a default directory name, namely `spec-up-t-starterpack,` is used.
+If you omit `my-spec-up-t-website`, a default directory name, namely `spec-up-t-boilerplate,` is used.
 
 Sometimes, you want to force the latest version to be installed. Then you can do the following:
 
@@ -56,7 +56,7 @@ You can type this command into Command Prompt, Powershell, Terminal, or any othe
 
 ### Result
 
-You should now have a directory called `my-spec-up-t-website` (or `spec-up-t-starterpack` if you did not specify a name) with a subdirectory called `spec/`. You will find markdown files and another subdirectory, `terms-definitions` containing markdown files containing some sample content.
+You should now have a directory called `my-spec-up-t-website` (or `spec-up-t-boilerplate` if you did not specify a name) with a subdirectory called `spec/`. You will find markdown files and another subdirectory, `terms-definitions` containing markdown files containing some sample content.
 
 What you don't have yet is the following:
 

@@ -24,9 +24,9 @@ The `specs.json` file, located in the root folder of your repository, specifies 
                 "example-markup-in-markdown.md",
                 "spec-body.md"
             ],
-            "logo": "https://raw.githubusercontent.com/trustoverip/spec-up-t-starter-pack/main/spec-up-t-starterpack/static/logo.svg",
+            "logo": "https://raw.githubusercontent.com/trustoverip/spec-up-t-starter-pack/main/spec-up-t-boilerplate/static/logo.svg",
             "logo_link": "https://github.com/trustoverip/spec-up-t",
-            "favicon": "https://raw.githubusercontent.com/trustoverip/spec-up-t-starter-pack/main/spec-up-t-starterpack/static/favicon.ico",
+            "favicon": "https://raw.githubusercontent.com/trustoverip/spec-up-t-starter-pack/main/spec-up-t-boilerplate/static/favicon.ico",
             "source": {
                 "host": "github",
                 "account": "trustoverip",

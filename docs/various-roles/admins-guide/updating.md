@@ -27,7 +27,7 @@ Here is a step-by-step description:
 
 ### Source files in the Installer
 
-The information (files, code) to be copied to your existing Spec-Up-T installation can be found in the [directory `spec-up-t-starterpack` of the installer](https://github.com/blockchainbird/spec-up-t-starter-pack/tree/main/spec-up-t-starterpack).
+The information (files, code) to be copied to your existing Spec-Up-T installation can be found in the [directory `spec-up-t-boilerplate` of the installer](https://github.com/blockchainbird/spec-up-t-starter-pack/tree/main/spec-up-t-boilerplate).
 
 
 ### `package.json`
@@ -43,7 +43,7 @@ Copy the following information from the `package.json` file in the aforementione
   "version": "-.-.-"
 ```  
 
-The “-”'s are placeholders, use the version number as listed in [this file](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-starterpack/package.json#L3)
+The “-”'s are placeholders, use the version number as listed in [this file](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/package.json#L3)
 
 ### Copy files to the root of your installation
 

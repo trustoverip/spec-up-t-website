@@ -8,20 +8,13 @@ sidebar_position: 2
 
 Updating Spec-Up-T means two things:
 
-- Updating the **npm package called Spec-Up-T**
 - Updating **your own installation**, which you did via the installer, uses the Spec-Up-T npm package.
+- Updating the **npm package called Spec-Up-T**
 
-## Updating the npm package called Spec-Up-T
 
-If you installed Spec-Up-T, you probably did so via the installer. This installer uses the Spec-Up-T npm package via the `node_modules` directory in which Spec-Up-T is installed. To update the package, you can use the standard procedure at the command line:
+## Updating your own installation
 
-```bash
-npm update
-```
-
-## Updating your installation
-
-Updating your installation requires manually copying and updating files.
+Updating your own installation requires manually copying and updating files.
 
 Here is a step-by-step description:
 
@@ -106,16 +99,28 @@ Replace it with:
 
 The “-”'s are placeholders, use the version number as listed in [this file](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/package.json#L3)
 
+
+### `.gitignore`
+
+If there are entries in `gitignore` (no dot at the beginning) from the `spec-up-t-boilerplate` link above that are not in your `.gitignore` (dot at the beginning), then copy these entries to your `.gitignore`.
+
+
+
+
+
 ### Copy files to the root of your installation
 
-Copy the following files to the root of your installation:
+Copy the following files to the root of your installation, overwrite if they exist:
 
-- `main.sh`
-- `remove-xref.js`
-- `postinstall-message.js`
-- `help.txt`
-- `logo.svg`
-- `.env.example`
+- .env.example
+- gitignore
+- help.txt
+- main.sh
+- postinstall-message.js
+- README.md
+
+(Maybe there are old unused files, we leave them for now, they will do no harm).
+
   
 ### GitHub token
 

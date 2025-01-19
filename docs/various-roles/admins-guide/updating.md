@@ -106,6 +106,12 @@ Copy the following files from the boilerplate to the root of your installation. 
 
 Old, unused files can remain for now; they will not interfere with the system.
 
+Copy the following directory (including sub-directories) from the boilerplate to the root of your installation. Overwrite existing directory:
+
+- `/src`
+
+
+
 ### 7. Set Up Terms
 
 #### `terms-and-definitions-intro.md`

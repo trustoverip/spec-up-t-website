@@ -2,129 +2,101 @@
 sidebar_position: 2
 ---
 
-# Updating
 
-## intro
+# Updating Spec-Up-T
 
-Updating Spec-Up-T means two things:
+## Introduction
 
-- Updating **your own installation**, which you did via the installer, uses the Spec-Up-T npm package.
-- Updating the **npm package called Spec-Up-T**
+Updating Spec-Up-T involves two key processes:
 
+1. Updating **your own installation**, which you initially set up using the Spec-Up-T installer.
+2. Updating the **Spec-Up-T npm package** to ensure you have the latest features and fixes.
 
-## Updating your own installation
+This guide provides step-by-step instructions to update your installation.
 
-Updating your own installation requires manually copying and updating files.
+## Prerequisites
 
-Here is a step-by-step description:
+Before proceeding, ensure you have the following tools and knowledge:
 
-### Source files in the Installer
+- Basic familiarity with Git and npm.
+- A text editor (e.g., VS Code or Notepad++).
+- Installed Node.js and npm.
+- Access to the Spec-Up-T GitHub repository.
 
-The information (files, code) to be copied to your existing Spec-Up-T installation can be found in the [directory `spec-up-t-boilerplate` of the installer](https://github.com/blockchainbird/spec-up-t-starter-pack/tree/main/spec-up-t-boilerplate).
+## Updating Your Own Installation
 
-:::info
+Updating your installation requires manually copying and updating files from the boilerplate provided in the Spec-Up-T repository. Follow these steps:
 
-There are several ways to get the needed files to your computer: clone the repository, download a ZIP of the repo or copy the content of each file by hand and create the files locally.
+### 1. Retrieve Source Files from the Installer
 
-:::
+The necessary files can be found in the [`spec-up-t-boilerplate`](https://github.com/blockchainbird/spec-up-t-starter-pack/tree/main/spec-up-t-boilerplate)[ directory](https://github.com/blockchainbird/spec-up-t-starter-pack/tree/main/spec-up-t-boilerplate).
 
-The file- and directory names in the source are leading. If for some reason the naming in your current installation differs from the source, then you should change it to the situation in the source.
+#### Methods to Download Files
 
-### File: `package.json`
+- Clone the repository using Git:
+  ```bash
+  git clone https://github.com/blockchainbird/spec-up-t-starter-pack.git
+  ```
+- Download a ZIP of the repository and extract it locally.
+- Manually copy the content of individual files into your local setup.
 
-#### Summary
+Ensure the file and directory names in your local installation match those in the source repository. If they differ, rename your local files to align with the repository structure.
 
-The following entries of `package.json` should be updated:
+### 2. Update `package.json`
 
-- `scripts`
-- `dependencies`
-- `version`
-
-The update info should be copied from the `spec-up-t-boilerplate` link above.
+The following sections in your `package.json` file need updating:
 
 #### `scripts`
 
-Remove your current `scripts` section, meaning:
-
-```json
-
-"scripts": {
-// everything here
-}
-
-```
-Replace it with:
+Replace your current `scripts` section with the one from the boilerplate:
 
 ```json
 "scripts": {
-// everything here
+  // contents from the boilerplate
 }
 ```
-
-from the `spec-up-t-boilerplate` link above.
-
 
 #### `dependencies`
 
-Remove your current `dependencies` section, meaning:
-
-```json
-
-"dependencies": {
-// everything here
-}
-
-```
-Replace it with:
+Replace your current `dependencies` section:
 
 ```json
 "dependencies": {
-// everything here
+  // contents from the boilerplate
 }
 ```
-
-from the `spec-up-t-boilerplate` link above.
-
 
 #### `version`
 
-Remove your current `version` section, meaning:
-
-```json  
-  "version": "-.-.-"
-```  
-
-The “-”'s are placeholders for what is currently listed in your `package.json`.
-
-```
-Replace it with:
+Update the `version` field to match the boilerplate version:
 
 ```json
-"version": "-.-.-"
+"version": "<latest-version>"
 ```
 
-The “-”'s are placeholders, use the version number as listed in [this file](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/package.json#L3)
+You can find the latest version number [here](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/package.json#L3).
 
+### 3. Update `.gitignore`
 
-### File: `.gitignore`
+Compare your `.gitignore` file with the boilerplate version. Copy any entries missing in your file from the boilerplate.
 
-If there are entries in `gitignore` (no dot at the beginning) from the `spec-up-t-boilerplate` link above that are not in your `.gitignore` (dot at the beginning), then copy these entries to your `.gitignore`.
+### 4. Configure GitHub Token
 
-### File: GitHub token
+If you are using a GitHub token for authentication:
 
-If you have a GitHub Token, rename `.env.example` to `.env`, then put it in `.env`.
+- Rename `.env.example` to `.env`.
+- Add your token in the `.env` file as follows:
+  ```env
+  GITHUB_TOKEN=<your-token>
+  ```
 
-### File: `specs.json`
+### 5. Update `specs.json`
 
-Your current `specs.json` should be carefully inspected and compared with the [specs.json](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/specs.json) in the boilerplate.
+Compare your `specs.json` with the boilerplate version. Use a file comparison tool like `diff` or `Meld` to identify differences. Ensure all entries align with the boilerplate.
 
-Make sure that the entries match.
+### 6. Copy Boilerplate Files
 
-TODO: explain how to do this.
-
-### Copy files to the root of your installation
-
-Copy the following files to the root of your installation, overwrite if they exist:
+Copy the following files from the boilerplate to the root of your installation. Overwrite existing files:
 
 - `.env.example`
 - `help.txt`
@@ -132,46 +104,39 @@ Copy the following files to the root of your installation, overwrite if they exi
 - `postinstall-message.js`
 - `README.md`
 
-(Maybe there are old unused files, we leave them for now, they will do no harm).
+Old, unused files can remain for now; they will not interfere with the system.
 
-  
+### 7. Set Up Terms
 
-### Terms
+#### `term-index.json`
 
-You should place the terms in their own directory. This directory is defined in `specs.json` as "spec_terms_directory".
+- Create a `term-index.json` file in the root directory.
+- Populate it with references to term definition files as shown below:
+  ```json
+  [
+    "terms-definitions/aal.md",
+    "terms-definitions/abac.md",
+    "terms-definitions/acceptance.md",
+    ...
+  ]
+  ```
 
-A JSON file containing the references to these files should also exist. This file should be called `term-index.json`.
+#### `terms-and-definitions-intro.md`
 
-- Create `term-index.json` in the root
-- Move everything with "term-definitions" over to `term-index.json`
+- Create a file named `terms-and-definitions-intro.md` in the `/specs` directory.
+- Add an intro text or leave it empty. Ensure this file is referenced in `specs.json`.
 
-Example:
+### 8. Run `npm update`
 
-```json
-[
-  "terms-definitions/aal.md",
-  "terms-definitions/abac.md",
-  "terms-definitions/acceptance.md",
-  "terms-definitions/acceptance-network.md",
-  "terms-definitions/access-control.md",
-  ... etc.
-]
-```
-
-### "terms-and-definitions-intro.md”
-
-The "terms-and-definitions-intro.md" file is needed as a pointer for Spec-Up-T where to place the term files in the generated specification file.
-
-Make sure there is an entry "terms-and-definitions-intro.md" in specs.json and create it as a file in the directory called `/specs`. It's okay if it is empty, but it can also contain an intro text. 
-
-### `npm update`
-
-Run `npm update`.
+Update your npm dependencies by running:
 
 ```bash
 npm update
 ```
 
-### Done
+## Completion
 
-Now you have an updated Spec-Up-T installation.
+Your Spec-Up-T installation is now up to date. If you encounter any issues, refer to the troubleshooting guide or open an issue in the [Spec-Up-T GitHub repository](https://github.com/blockchainbird/spec-up-t-starter-pack/issues).
+
+
+

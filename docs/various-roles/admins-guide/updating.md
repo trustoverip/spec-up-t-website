@@ -40,7 +40,7 @@ The necessary files can be found in the [`spec-up-t-boilerplate`](https://github
 - Download a ZIP of the repository and extract it locally.
 - Manually copy the content of individual files into your local setup.
 
-Ensure the file and directory names in your local installation match those in the source repository. If they differ, rename your local files to align with the repository structure.
+Ensure the file and directory names in your local installation match those in the GitHub source repository. If they differ, rename your local files to align with the repository structure.
 
 ### 2. Update `package.json`
 

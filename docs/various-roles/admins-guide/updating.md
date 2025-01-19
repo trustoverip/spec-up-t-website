@@ -108,19 +108,6 @@ Old, unused files can remain for now; they will not interfere with the system.
 
 ### 7. Set Up Terms
 
-#### `term-index.json`
-
-- Create a `term-index.json` file in the root directory.
-- Populate it with references to term definition files as shown below:
-  ```json
-  [
-    "terms-definitions/aal.md",
-    "terms-definitions/abac.md",
-    "terms-definitions/acceptance.md",
-    ...
-  ]
-  ```
-
 #### `terms-and-definitions-intro.md`
 
 - Create a file named `terms-and-definitions-intro.md` in the `/specs` directory.

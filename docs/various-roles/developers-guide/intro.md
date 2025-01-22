@@ -2,7 +2,7 @@
 sidebar_position: 15
 ---
 
-# Developers Guide
+# Intro
 
 This page is the developer's guide for the Spec-Up-T system.
 

@@ -44,7 +44,7 @@ What you don't have yet is the following:
 
 - a `docs` directory with a sample `index.html` file (which is the actual specification file that is the goal of it all).
 
-How to do this, go to the [Command Line Menu](../general/command-line-menu.md).
+How to do this, go to the [Command Line Menu](../user-interface-overview/command-line-menu.md).
 
 ### Add repo to Github
 

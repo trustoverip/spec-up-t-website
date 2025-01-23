@@ -28,7 +28,7 @@ git init
 cd ..
 ```
 
-Now that you're outside the repo directory (!): Go over [Installation](../../getting-started/installation) and create a new repo with the established name. In the example `Main-KERI-glossary`, you start with: 
+Now that you're outside the repo directory (!): Go over [Installation](../getting-started/installation) and create a new repo with the established name. In the example `Main-KERI-glossary`, you start with: 
 
 ```
 npx create-spec-up-t < established dirname >
@@ -107,7 +107,7 @@ spec/terms-definitions/normative.md
 ```
 #### 2. Splitter-tool
 
-See [splitter tool documentation](../../various-roles/admins-guide/tools#splitter-tool)
+See [splitter tool documentation](../various-roles/admins-guide/tools#splitter-tool)
 
 It's about file management. It's in line with how static website generator generally work. So, be aware that you only organize your files in the migration process, you then configure your configuration files and you're good to go. 
 
@@ -120,7 +120,7 @@ Spec-Up-T will:
 
 
 ### Feel free to reorganize the order of term in the glossary
-See [Migration reorganize glossary](./migration#feel-free-to-reorganize-the-order-of-term-in-the-glossary)
+See [Migration reorganize glossary](../advanced-features/migration#feel-free-to-reorganize-the-order-of-term-in-the-glossary)
   
 
 #### Npm run

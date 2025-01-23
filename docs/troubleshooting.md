@@ -1,5 +1,5 @@
 ---
-sidebar_position: 21
+sidebar_position: 6
 ---
 
 # Troubleshooting
@@ -10,7 +10,7 @@ Some tips in case of problems:
 
 Problem: I want to look up an external reference (*xref*) but I get an error about GitHub and API and limits.
 
-Solution: [get a GitHub Token](./general/github-token.md).
+Solution: [get a GitHub Token](./core-features/github-token.md).
 
 ## WSL2 users
 

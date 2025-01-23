@@ -26,7 +26,7 @@ The input of a [Splitter tool](./tools.md#splitter-tool) is a markdown file with
 You can do the splitting operation by hand, the splitter tool is just a convenience tool for large glossaries.
 
 ### Add 2 and 3. Updates
-Use case 2, [update Spec-Up-T](./updating.md#updating-the-npm-package-called-spec-up-t), has to be followed by Use cases 3: [Update own installation](./updating.md#updating-your-installation)
+Use case 2, [update Spec-Up-T](../../administrative-and-maintenance-tasks/updating.md#updating-the-npm-package-called-spec-up-t), has to be followed by Use cases 3: [Update own installation](../../administrative-and-maintenance-tasks/updating.md#updating-your-installation)
 
 ### Add 4. Languages
 _Not yet operational!_ However, The design is:
@@ -143,7 +143,7 @@ You should be able to commit the changes and figure out how to deal with the *un
 
 Via this approach we keep the git history of the legacy Spec-Up install available after the Spec-Up-T migration.
 
-Follow use case 2. and 3. Use case 2, [update Spec-Up-T](./updating.md#updating-the-npm-package-called-spec-up-t), has to be followed by Use cases 3: [Update own installation](./updating.md#updating-your-installation)
+Follow use case 2. and 3. Use case 2, [update Spec-Up-T](../../administrative-and-maintenance-tasks/updating.md#updating-the-npm-package-called-spec-up-t), has to be followed by Use cases 3: [Update own installation](../../administrative-and-maintenance-tasks/updating.md#updating-your-installation)
 
 And then remove obsolete files and directories (ToDo: add link to list) by hand. This is difficult because you don't know by definition what dirs and files have been put in.
 

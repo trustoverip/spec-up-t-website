@@ -4,13 +4,12 @@ sidebar_position: 0
 
 # Intro
 
-## Installation/Setup Instructions
+Let's start with a quick visual demo of how the installation and main menu works.
 
+<video controls poster={require('@site/static/video/spec-up-t-menu.jpg').default}>
+    <source src="https://dwarshuis.com/various/spec-up-t/documentation-website/video/spec-up-t-menu.mp4" type="video/mp4" />
+ Your browser does not support video tags
+</video>
 
-## System Requirements
+[Link to the video](https://dwarshuis.com/various/spec-up-t/documentation-website/video/spec-up-t-menu.mp4)
 
-
-## Initial Configuration
-
-
-## Quick Start Guide

@@ -50,9 +50,9 @@ const config = {
           editUrl:
             'https://github.com/blockchainbird/spec-up-t-website/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-        },
+        // blog: {
+        //   showReadingTime: true,
+        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -80,7 +80,6 @@ const config = {
           // },
           { to: '/docs/intro', label: 'Enter Documentation', position: 'left' },
           { to: '/docs/spec-up-t-demo-site', label: 'Demo', position: 'left' },
-          { to: '/docs/general/video', label: 'Video', position: 'left' },
           { to: '/docs/general/github-token', label: 'GitHub token', position: 'left' },
           // { to: '/docs/admins-guide', label: 'Admin section', position: 'left' },
           {

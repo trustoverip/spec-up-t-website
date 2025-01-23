@@ -2,9 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction
-
-## Intro
+# Intro
 
 **Spec-Up-<span className="rotate">T</span>** is a technical specification and standardization tool, which a special focus on terminology. It helps you write content in the form of specifications and glossaries.
 

@@ -76,7 +76,7 @@ Yes. Find it here: [Short video](getting-started/intro)
 
 ## Where can I find the motivation of this move to create the Spec-Up bolt on "Spec-Up-T"?
 
-Our enhancement proposal and git governance strategy is [here](how-it-came-to-be).
+Our enhancement proposal and git governance strategy is [here](introduction/how-it-came-to-be).
 
 ## Why doesn't the Spec-Up-T repo generate a github.io-served specification itself?
 

@@ -14,7 +14,7 @@ We have distinguished the following **roles**:
 Supporting roles are:
 
 - [admins](../various-roles/admins-guide/introduction.md)
-- [developers](../various-roles/developers-guide/intro.md)
+- [developers](../developer-documentation/intro.md)
 
 ## Spec-Up and Spec-Up-<span className="rotate">T</span>
 

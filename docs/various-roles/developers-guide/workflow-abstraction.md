@@ -40,18 +40,22 @@ The end result is an **`index.html`** file that is “self containing”, in thi
 
 ## Menu option `[0] Add content`
 
+Shows simple instructions on how to add content.
+
+## Menu option `[1] Add content`
+
 Steps:
 
 | Summary                                                                  | Description                                                                                                                                   | where                       |
 | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
-| 1: Initialize                                                            | Not yet active                                                                                                                                | in init.js                  |
-| 2: Create **term index** based on the files containing terms             | Make an ordered list (JSON) of all terms markdown files                                                                     | in create-term-index.js     |
+| 1: Initialize                                                            | Not yet active                                                                                                                                | init.js                  |
+| 2: Create **term index** based on the files containing terms             | Make an ordered list (JSON) of all terms markdown files                                                                                       | create-term-index.js     |
 | 3: Insert **term index** into the *system config file*                   | based on user config file and *term index*                                                                                                    | insert-term-index.js        |
-| 4: Create a version index.                                               | This page lists all available snapshots of this Spec-Up-T specification                                                                       | in create-versions-index.js |
-| 5: Prepare the markdown files that contain '*[[tref]]*'s as a definition | A '*[[tref]]*' is a term defined in another (“remote”) specification. The definition (already locally stored in JSON) is inserted in the file | in prepare-tref.js          |
-| 6: Fix the markdown in the term files                                    | One blank line between paragraphs, prepend `~` to lines, etc                                                                                  | in fix-markdown-files.js    |
-| 7: Create a &lt;script&gt; object that contains external data            | A local copy of external data are inserted in the `index.html`                                                                                | in index.js                 |
-| Work in progress                                                                         |                                                                                                                                               |
+| 4: Create a version index.                                               | This page lists all available snapshots of this Spec-Up-T specification                                                                       | create-versions-index.js |
+| 5: Prepare the markdown files that contain '*[[tref]]*'s as a definition | A '*[[tref]]*' is a term defined in another (“remote”) specification. The definition (already locally stored in JSON) is inserted in the file | prepare-tref.js          |
+| 6: Fix the markdown in the term files                                    | One blank line between paragraphs, prepend `~` to lines, etc                                                                                  | fix-markdown-files.js    |
+| 7: Create a &lt;script&gt; object that contains external data            | A local copy of external data are inserted in the `index.html`                                                                                | index.js                 |
+| Work in progress                                                         |                                                                                                                                               |
 
 
 

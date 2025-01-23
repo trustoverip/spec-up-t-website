@@ -80,7 +80,7 @@ const config = {
           // },
           { to: '/docs/introduction/overview/', label: 'Enter Documentation', position: 'left' },
           { to: '/docs/spec-up-t-demo-site', label: 'Demo', position: 'left' },
-          { to: '/docs/general/github-token', label: 'GitHub token', position: 'left' },
+          { to: '/docs/getting-started/github-token', label: 'GitHub token', position: 'left' },
           // { to: '/docs/admins-guide', label: 'Admin section', position: 'left' },
           {
             href: 'https://github.com/blockchainbird/spec-up-t-website',

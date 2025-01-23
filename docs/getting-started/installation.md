@@ -6,25 +6,7 @@ sidebar_position: 1
 
 Get started by **creating a new Spec-Up-T installation**.
 
-## What you'll need
 
-- A terminal / Command Line
-- An editor, also called IDE (Integrated Development Environment). We recommend Visual Studio Code, but an editor in which you can quickly write Markdown is also good
-- [Node.js](https://nodejs.org/en/download/):
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies
-  - Use Node.js version 18 or higher
-- A [webbrowser](https://en.wikipedia.org/wiki/Web_browser). You are probably reading this in a browser, so you already have one
-- [Git](https://git-scm.com/). To host your specification on Github, you must also have Git installed on your local system. By the way, you can also create a specification (index.html) without hosting it on GitHub. But if you do so, the whole idea of a version-managed glossary using Git goes through the window.
-
-:::info
-Non-technical explanation:
-
-- Command Line: A text interface to type commands for your computer.
-- IDE: A software where you can easily write, test, and debug code.
-- Node.js: This makes Spec-Up-T run
-- Git: A system to track and manage changes in your code.
-
-:::
 
 ## Create a new Spec-Up-T installation
 

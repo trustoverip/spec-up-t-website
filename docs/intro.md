@@ -6,14 +6,14 @@ sidebar_position: 1
 
 ## Intro
 
-**Spec-Up-T** is a technical specification and standardization tool, which a special focus on terminology. It helps you write content in the form of specifications and glossaries.
+**Spec-Up-<span className="rotate">T</span>** is a technical specification and standardization tool, which a special focus on terminology. It helps you write content in the form of specifications and glossaries.
 
 The two parts content and term definitions also illustrate the two main use cases of Spec-Up-T:
 
 - a glossary (fat terms section, slim content section)
 - a standardization specification (slim terms section, fat content section)
 
-**Spec-Up-T** is a tool for writing in Markdown files and creates *one* `index.html` file from all these Markdown files.
+**Spec-Up-<span className="rotate">T</span>** is a tool for writing in Markdown files and creates *one* `index.html` file from all these Markdown files.
 
 - You write your texts in [Markdown](https://www.markdownguide.org/getting-started/), “the simple and easy-to-use markup language”
 - You use an editor (IDE) or you use GitHub's web editor

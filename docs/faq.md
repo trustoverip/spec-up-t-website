@@ -2,7 +2,7 @@
 sidebar_position: 18
 ---
 
-# Q & A
+# F.A.Q.
 
 Questions and answers about Spec-Up-T.
 
@@ -72,7 +72,7 @@ The **resulting github.io site is intended for any user** interested in the cont
 
 ## Do you have a how-to video to get started with Spec-Up-T?
 
-Yes. Find it here: [Short video](general/video/)
+Yes. Find it here: [Short video](general/video)
 
 ## Where can I find the motivation of this move to create the Spec-Up bolt on "Spec-Up-T"?
 

@@ -1,3 +1,12 @@
+Terms definition optionally in various languages and optionally in various user levels are stored in the `terms-definitions` folder also in the spec directory.
+
+Content is stored in markdown files under the `spec` directory.
+
+both resulting in single-file html servable from any webserver:
+
+
+- - - 
+
 ---
 sidebar_position: 10
 ---

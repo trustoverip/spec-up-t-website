@@ -14,7 +14,7 @@ Still, it can be confusing. And if you're used to a regular application you cont
 Currently, the menu is only tested on MacOs and has not been tested on Windows OS.
 :::
 
-Assuming you already [installed](./installation.md) Spec-Up-T, here you find further instructions.
+Assuming you already [installed](../getting-started/installation.md) Spec-Up-T, here you find further instructions.
 
 To start, run this command in the terminal:
 

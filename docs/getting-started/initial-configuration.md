@@ -1,8 +1,8 @@
 ---
-sidebar_position: 25
+sidebar_position: 3
 ---
 
-# Configuration
+# Initial Configuration
 
 The `specs.json` file, located in the root folder of your repository, specifies the configuration values used in generating your specification documents. Using the command line menu, you can configure the most important elements. The rest you can do manually.
 

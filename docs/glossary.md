@@ -8,6 +8,10 @@ This is a glossary with some terms that you need to know in order to understand 
 
 This glossary was not created in Spec-Up-T, it could have been, but to avoid confusion we did not.
 
+## The Specification
+
+When we talk about The Specification here, we mean the result of our efforts, located in an `index.html` file. We call this The Specification.
+
 ## xref
 
 Stands for *external reference*. An essential feature for creating connections between glossaries.

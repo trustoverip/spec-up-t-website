@@ -10,7 +10,7 @@ This glossary was not created in Spec-Up-T, it could have been, but to avoid con
 
 ## The Specification
 
-When we talk about The Specification here, we mean the result of our efforts, located in an `index.html` file. We call this The Specification.
+When we talk about **The Specification** here, we mean the result of our efforts, located in an `index.html` file. We call this The Specification.
 
 ## xref
 

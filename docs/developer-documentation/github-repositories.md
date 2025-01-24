@@ -6,8 +6,8 @@ sidebar_position: 1
 
 There are currently **two** repositories that contain **three** components.
 
-1. [**The Spec-Up-T Starterpack**](https://github.com/blockchainbird/spec-up-t-starter-pack), with [associated NPM package](https://www.npmjs.com/package/create-spec-up-t)
-2. [**The Spec-Up-T repository**](https://github.com/blockchainbird/spec-up-t), with [associated NPM package](https://www.npmjs.com/package/spec-up-t)
+1. [**Spec-Up-T Starterpack**](https://github.com/blockchainbird/spec-up-t-starter-pack) ([NPM package](https://www.npmjs.com/package/create-spec-up-t))
+2. [**Spec-Up-T**](https://github.com/blockchainbird/spec-up-t) ([NPM package](https://www.npmjs.com/package/spec-up-t))
 
 Ad 1: **The Spec-Up-T Starterpack**
 

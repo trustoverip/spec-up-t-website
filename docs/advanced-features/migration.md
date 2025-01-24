@@ -2,7 +2,7 @@
 sidebar_position: 100
 ---
 
-# Migrate spec-up to spec-up-t
+# Migrate from Spec-Up
 
 **Pre condition: You have a Spec-Up installation up and running**
 

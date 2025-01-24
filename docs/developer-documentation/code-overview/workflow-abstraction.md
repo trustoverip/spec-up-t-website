@@ -42,7 +42,7 @@ The end result is an **`index.html`** file that is “self containing”, in thi
 
 Shows simple instructions on how to add content.
 
-## Menu option `[1] Add content`
+## Menu option `[1] Render specification`
 
 Steps:
 

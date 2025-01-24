@@ -2,7 +2,7 @@
 sidebar_position: 60
 ---
 
-# Add Content
+# Add Content NEW
 
 :::warning
 

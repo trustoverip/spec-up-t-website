@@ -2,9 +2,8 @@
 sidebar_position: 3
 ---
 
-# Extra Tools
+# Splitter Tool OLD
 
-## Splitter Tool
 
 ### Introduction
 

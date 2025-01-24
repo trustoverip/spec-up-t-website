@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Term References
 
-See the [demo site](https://blockchainbird.github.io/spec-up-t-demo-on-documentation-website/#term:term-1).
+See the [demo site](https://trustoverip.github.io/spec-up-t-demo-on-documentation-website/#term:aaa-example-1).
 
 
 :::info

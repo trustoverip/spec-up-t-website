@@ -1,27 +1,19 @@
 ---
-sidebar_position: 15
+sidebar_position: 0
 ---
 
 # Intro
 
 This page is the developer's guide for the Spec-Up-T system.
 
+The `Spec-Up-T` tool is written in `JavaScript,` client-side, and `Node.js` (server-side).
+
+When we say “server-side,” in this context, we mean that it takes place in the Command Line of a user's computer, where the `index.html` is generated through Node.js scripts.
+
+After that, the `index.html` can be placed anywhere on a Web server, but GitHub Pages are preferable because they allow you to take advantage of GitHub's power. The fact that it is an html file means that there are minimal hosting requirements.
+
 ## Description of repositories related to Spec-Up-T
 
-### Intro
-
-There are **three** components distinguishable in **two** repositories.
-
-1. The **Spec-Up-T installation** containing the markdown files containing the texts such as specifications and terms plus definitions
-2. **Installer files** that copy this Spec-Up-T installation to the desired location
-3. A **Spec-Up-T npm package** (created from the Spec-Up-T repository) that is installed after the Spec-Up-T installation is copied to the desired location
-
-### The repositories
-
-- [The Spec-Up-T installer repository](https://github.com/blockchainbird/spec-up-t-starter-pack), with [associated NPM package](https://www.npmjs.com/package/create-spec-up-t) (1. and 2.)
-- [The Spec-Up-T repository](https://github.com/blockchainbird/spec-up-t), with [associated NPM package](https://www.npmjs.com/package/spec-up-t) (3.)
-
-We will now explain how these relate to each other.
 
 ### The Spec-Up-T installer repository
 
@@ -67,61 +59,6 @@ package.json
 One of the packages listed in the `package.json` copied to the local file system is `spec-up-t`. This package does all the work from the `node_modules` directory created when you run `npm install`. The copied files in the subdirectory have a helper function.
 
 In the `package.json` you will find a `scripts` section. These reference the `spec-up-t` package, which can be called via npm commands, such as `npm run render`. Some calls go through a file in the `/src/server/` directory. This workaround is necessary so that you can include a  GitHub token. This token is needed to raise the GitHub API limit.
-
-## Adding functionality
-
-:::info
-Be aware that your specification is just one file, an `index.html` file. Keeping this file as small as possible should be a priority when adding functionality. There is no lazy loading or optimization. It is basic HTML plus embedded CSS and JS. (This applies only to client-side functionality and not to server-side things you do from the command line during the “build” phase. That's code that doesn't end up in the `index.html`  after all.)
-
-Also, realize that the GitHub API reaches its limit fairly quickly, especially if there is no authentication. So, in everything, keep in mind that the number of requests should remain minimal.
-:::
-
-
-The `Spec-Up-T` tool is written in `JavaScript,` client-side, and server-side (Node.js).
-
-### Adding client-side functionality
-
-Client-side JavaScript and CSS can be found in these directories: `/assets/js` and `/assets/css`.
-
-This code must first be "compiled" before it enters `index.html`. Compiling, in this case, means that it will end up in the directory `/assets/compiled`. If it is there, it will end up in a newly generated `index.html` via the `render` step. For rendering, see the admin section.
-
-If you introduce a new CSS or JS file, it should be declared here: `/src/asset-map.json`.
-
-This is the command to compile:
-
-```bash
-gulp compile
-```
-
-### Testing
-
-So, if you have written client-side JavaScript or custom CSS, you need to take the following steps to get this code running:
-
-```bash
-gulp compile
-```
-
-Wait for the code to finish. Then:
-
-```bash
-npm run render
-```
-
-Now, your `index.html` file should be created or updated.
-
-### Handling data
-
-Since everything is contained in one HTML file, the question arises as to how we store and call data. After all, we can't load external JSON because we want to keep everything within this one HTML file.
-
-The solution is to include the data as an embedded JavaScript variable. In the development environment (the installation on your file system from where you invoke commands on the command line), you can choose to store the data as JSON as well. However, in order to get it working in the HTML file, you will also have to include a JS variable. You will have to arrange this through Gulp.
-
-### Gulp
-
-Of course, you can only use Gulp if you have it [installed](https://gulpjs.com/docs/en/getting-started/quick-start).
-
-:::warning
-If Gulp suddenly stops working even though it worked before, it could be because you are using NVM and have a different Node.js version active.
-:::
 
 ### Adding server-side functionality
 
@@ -173,73 +110,6 @@ ToDo: Add file list
 | `src/`                           | JS files (Node.js, for server side stuff) + `asset-map.json`  |
 | `static/` | Static files, like logo.svg |
 | `templates/` | Mostly HTML, final step |
-
-## Github API
-
-### Example of API response
-
-```json
-[
-  {
-    sha: '117b86fa676c0bd3030c16e8bbb87ebaa61af576',
-    node_id: 'C_kwDOMi-o_toAKDExN2I4NmZhNjc2YzBiZDMwMzBjMTZlOGJiYjg3ZWJhYTYxYWY1NzY',
-    commit: {
-      author: [Object],
-      committer: [Object],
-      message: 'first commit',
-      tree: [Object],
-      url: 'https://api.github.com/repos/****/****/git/commits/117b86fa676c0bd3030c16e8bbb87ebaa61af576',
-      comment_count: 0,
-      verification: [Object]
-    },
-    url: 'https://api.github.com/repos/****/****/commits/117b86fa676c0bd3030c16e8bbb87ebaa61af576',
-    html_url: 'https://github.com/****/****/commit/117b86fa676c0bd3030c16e8bbb87ebaa61af576',
-    comments_url: 'https://api.github.com/repos/****/****/commits/117b86fa676c0bd3030c16e8bbb87ebaa61af576/comments',
-    author: {
-      login: '****',
-      id: 0,
-      node_id: '****',
-      avatar_url: 'https://avatars.githubusercontent.com/u/****?v=4',
-      gravatar_id: '',
-      url: 'https://api.github.com/users/****',
-      html_url: 'https://github.com/****',
-      followers_url: 'https://api.github.com/users/****/followers',
-      following_url: 'https://api.github.com/users/****/following{/other_user}',
-      gists_url: 'https://api.github.com/users/****/gists{/gist_id}',
-      starred_url: 'https://api.github.com/users/****/starred{/owner}{/repo}',
-      subscriptions_url: 'https://api.github.com/users/****/subscriptions',
-      organizations_url: 'https://api.github.com/users/****/orgs',
-      repos_url: 'https://api.github.com/users/****/repos',
-      events_url: 'https://api.github.com/users/****/events{/privacy}',
-      received_events_url: 'https://api.github.com/users/****/received_events',
-      type: 'User',
-      site_admin: false
-    },
-    committer: {
-      login: '****',
-      id: 0,
-      node_id: '****',
-      avatar_url: 'https://avatars.githubusercontent.com/u/****?v=4',
-      gravatar_id: '',
-      url: 'https://api.github.com/users/****',
-      html_url: 'https://github.com/****',
-      followers_url: 'https://api.github.com/users/****/followers',
-      following_url: 'https://api.github.com/users/****/following{/other_user}',
-      gists_url: 'https://api.github.com/users/****/gists{/gist_id}',
-      starred_url: 'https://api.github.com/users/****/starred{/owner}{/repo}',
-      subscriptions_url: 'https://api.github.com/users/****/subscriptions',
-      organizations_url: 'https://api.github.com/users/****/orgs',
-      repos_url: 'https://api.github.com/users/****/repos',
-      events_url: 'https://api.github.com/users/****/events{/privacy}',
-      received_events_url: 'https://api.github.com/users/****/received_events',
-      type: 'User',
-      site_admin: false
-    },
-    parents: []
-  }
-]
-
-```
 
 ## Publishing to GitHub and NPM
 

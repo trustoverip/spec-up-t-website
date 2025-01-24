@@ -21,7 +21,7 @@ An Admin role is a supporting role in Spec-Up-T.
 ## Solutions
 
 ### Add 1. Convenience tool splitting a file into atomic single definition files
-The input of a [Splitter tool](../../advanced-features/tools.md#splitter-tool) is a markdown file with multiple spec-up definition, references, and external references. 
+The input of a [Splitter tool](../../advanced-features/splitter.md#splitter-tool) is a markdown file with multiple spec-up definition, references, and external references. 
 
 You can do the splitting operation by hand, the splitter tool is just a convenience tool for large glossaries.
 

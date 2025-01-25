@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Command Line Menu
 
-You don't have to be a command-line wizard to use Spec-Up-T. There's even a menu, so all you have to do is type in a number, which makes a difference, right?
+You don't have to be a command-line wizard to use Spec-Up-T. There's a menu, so all you have to do is type in a number.
 
 Still, it can be confusing. And if you're used to a regular application you control with your mouse, it takes some getting used to.
 

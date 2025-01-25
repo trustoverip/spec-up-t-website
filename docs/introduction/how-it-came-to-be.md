@@ -6,7 +6,7 @@ sidebar_position: 4
 
 :::warning
 
-Legacy considerations 2024 Fist intent to synchronize DIF's Spec-Up and ToIP's Spec-Up-T.
+Legacy considerations 2024 First intent to synchronize DIF's Spec-Up and ToIP's Spec-Up-T.
 
 :::
 

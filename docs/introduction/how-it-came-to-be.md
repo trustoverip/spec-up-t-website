@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # How it came to be
 
-:::Warning
+:::warning
 
 Legacy considerations 2024 Fist intent to synchronize DIF's Spec-Up and ToIP's Spec-Up-T.
 

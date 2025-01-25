@@ -23,13 +23,13 @@ Merging branches is not described here.It's generally best to run npm version af
 
 ### Update version numbers
 
-::: warning
+:::warning
 
 It's easy to forget to update the version nummer in different locations. Please read carefully what is written below.
 
 :::
 
-Update the version number in four`package.json`'s. The idea is to keep the version numbers of all repos the same. If you publish an update to NPM you have to raise the version number in four places:
+Update the version number in four locations in three`package.json`'s. The idea is to keep the version numbers of all repos the same. If you publish an update to NPM you have to raise the version number in four places:
 
 1. https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/package.json#L3
 2. https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/package.json#L8

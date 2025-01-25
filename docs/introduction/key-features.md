@@ -6,8 +6,8 @@ sidebar_position: 2
 
 The key features of Spec-Up-T are:
 
-- Basic hosting requirements
-- Create external references
-- Hosted on Github
-- Version management (snapshots)
-- Export to PDF
+- Enhanced Markdown Support: Create rich specification documents using an extended version of Markdown, including advanced syntax highlighting, notice blocks, complex tables, charts, UML diagrams, and more.
+- Interrelated Specifications: Reference or embed terms from external specifications, creating a connected web of interrelated documents.
+- Version Management: Track changes and manage snapshots for streamlined version control.
+- GitHub Integration: Hosted on GitHub for seamless collaboration and accessibility.
+- Basic Hosting Requirements: Designed to operate efficiently with minimal hosting setup.

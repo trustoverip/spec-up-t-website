@@ -4,6 +4,12 @@ sidebar_position: 4
 
 # How it came to be
 
+:::Warning
+
+Legacy considerations 2024 Fist intent to synchronize DIF's Spec-Up and ToIP's Spec-Up-T.
+
+:::
+
 ## History
 
 Spec-Up-T is based on Spec-Up ([Spec-Up on Github](https://github.com/decentralized-identity/spec-up)).

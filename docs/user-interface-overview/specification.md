@@ -28,6 +28,16 @@ You can also access it via HTTP. You then need to place the `index.html` file on
 
 This way, you can share it with the world by sharing the URL.
 
+If you follow the most likely scenario, namely, you host your specification on GitHub Pages, then you look at it "via HTTP.”
+
+:::info
+
+“Via `http://`” is a complicated way of saying that you are just looking at your specifications via the Internet, just like you are looking at a Wikipedia page, etc.
+
+However, here it is briefly necessary to mention this because you can also double-click on the file and look “via `file:///`”.
+
+:::
+
 ## Explanation buttons
 
 ### Terms

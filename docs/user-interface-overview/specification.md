@@ -38,7 +38,7 @@ However, here it is briefly necessary to mention this because you can also doubl
 
 :::
 
-## Explanation buttons
+## Explanation of the buttons in the specification
 
 ### Terms
 

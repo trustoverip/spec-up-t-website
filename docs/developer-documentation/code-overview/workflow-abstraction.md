@@ -1,3 +1,9 @@
+import CommandLineMenu from '../../shared-content/command-line-menu.md';
+
+
+<CommandLineMenu />
+
+
 # Workflow abstraction
 
 ## Starting point

@@ -8,6 +8,8 @@ The `specs.json` file, located in the root folder of your repository, specifies 
 
 ## Create (or edit the sample) `spec.json`
 
+If you have external glossaries in mind, then this is time to connect them to your specification and/or glossary, under "external_specs". 
+
 ```json
 {
     "specs": [

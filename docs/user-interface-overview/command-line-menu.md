@@ -65,7 +65,7 @@ Also runs [1].
 
 `xrefs` are references to external glossaries (specifications). Each `xref` is checked against a local data collection to see if a reference exists, maintaining an external term's original version.
 
-The xrefs are not always automatically looked up when you choose option [1] because every lookup invokes the GitHub API, and you are faced with a limit at some point. You then have to wait for the limitation to be lifted again. Without a unique token, you run into the limit pretty quickly. Hence this option to take it slow. By the way, you can create a token for free at GitHub.
+You'll soon need a [GitHub Token](../getting-started/github-token.md) when looking up `xref`'s.
 
 ### `[4] Update all xrefs`
 

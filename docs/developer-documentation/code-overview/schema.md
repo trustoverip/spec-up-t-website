@@ -7,6 +7,7 @@ sidebar_position: 15
 
 The Spec-Up-T Boilerplate is the starting point of the Spec-Up-T system. This is the go to directory.
 
+<div class="filesystemlayout">
 ```sh
 boilerplate/
   │
@@ -22,15 +23,17 @@ boilerplate/
   │
   ├── output/ -- - - - - - - - - - - - - - Generated output
   │
-  └── main.sh  - - - - - - - - - - - - - - Command Line Menu
+  ├── main.sh  - - - - - - - - - - - - - - Command Line Menu
   │
   └── specs.json - - - - - - - - - - - - - Configuration file
 ```
+</div>
 
 ## Spec-Up-T package
 
 These are the main files and directories of the spec-up-t package, necessary for understanding how it works.
 
+<div class="filesystemlayout">
 ```sh
 boilerplate/node_modules/spec-up-t/
   │
@@ -46,30 +49,47 @@ boilerplate/node_modules/spec-up-t/
   │
   └── gulpfile.js ----- Compiles front-end JavaScript
 ```
+</div>
 
 ## Spec-Up-T `src/`
+
+<div class="filesystemlayout">
 
 ```sh
 boilerplate/node_modules/spec-up-t/src/
   │
-  ├── create-pdf.js -------------- Create PDF's
+  ├── asset-map.json
   │
-  ├── create-term-index.js ------- Create Term Index
+  ├── create-pdf.js
   │
-  ├── create-term-relations.js --- Create Term Relations
+  ├── create-term-index.js
   │
-  ├── create-versions-index.js --- Create Version Index
+  ├── create-term-relations.js
   │
-  ├── fix-markdown-files.js ------ Fix Markdown files
+  ├── create-versions-index.js
   │
-  ├── freeze.js ------------------ Freeze
+  ├── fix-markdown-files.js
   │
-  ├── get-xtrefs-data.js --------- Get xrefs data
+  ├── freeze.js
   │
-  └── init.js -------------------- Initialises
-
+  ├── get-xtrefs-data.js
+  │
+  ├── insert-term-index.js
+  │
+  ├── json-key-validator.js
+  │
+  ├── markdown-it-extensions.js
+  │
+  ├── prepare-tref.js
+  │
+  └── references.js
 
 ```
+
+</div>
+
+
+
 
 
 

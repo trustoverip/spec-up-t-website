@@ -14,15 +14,6 @@ Steps to take:
 - Use the token server-side
 - Use the token client-side
 
-## Use the token server-side
-
-Make a copy of the file `.env.example` and name it `.env`. Enter the token in it.
-
-## Use the token client-side
-
-At the top right of the screen, you will see a button with a key. Click it, and an input field will appear. Enter the token here and confirm.
-
-
 ## Get the token
 
 To obtain a Personal Access Token (PAT) for the GitHub API, follow these steps:
@@ -100,5 +91,13 @@ To obtain a Personal Access Token (PAT) for the GitHub API, follow these steps:
 ![Alt text](/img/create-token-instructions/create-token-instructions-10.jpg)
 </div>
 
-
 The token will now be used when making requests to the GitHub API.
+
+
+## Use the token server-side
+
+Make a copy of the file `.env.example` and name it `.env`. Enter the token in it.
+
+## Use the token client-side
+
+At the top right of the screen, you will see a button with a key. Click it, and an input field will appear. Enter the token here and confirm.

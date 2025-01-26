@@ -26,7 +26,7 @@ The input of a [Splitter tool](../../advanced-features/splitter.md) is a markdow
 You can do the splitting operation by hand, the splitter tool is just a convenience tool for large glossaries.
 
 ### Add 2 and 3. Updates
-Use case 2, [update Spec-Up-T](../../administrative-and-maintenance-tasks/updating.md#updating-the-npm-package-called-spec-up-t), has to be followed by Use cases 3: [Update own installation](../../administrative-and-maintenance-tasks/updating.md#updating-your-installation)
+Use case 2, [update Spec-Up-T](../../administrative-and-maintenance-tasks/updating.md), has to be followed by Use cases 3: [Update own installation](../../administrative-and-maintenance-tasks/updating.md) (ToDo: add anchor links)
 
 ### Add 4. Languages
 _Not yet operational!_ However, The design is:

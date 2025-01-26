@@ -6,7 +6,18 @@ sidebar_position: 90
 
 ## Spec-Up-T and PAT
 
-When you look up external references (`xref`'s) in Spec-Up-T, you are using the GitHub API (Application Programming Interface), and you quickly run into a limit set by GitHub. With a **Personal Access Token (PAT)**, you suddenly get a much larger budget. Therefore, it is highly recommended to create such a token; it just takes some time.
+When you look up external references (`xref`'s) in Spec-Up-T, you are using the GitHub API (Application Programming Interface), and you quickly run into a limit set by GitHub. With a **Personal Access Token (PAT)**, you suddenly get a much larger budget. Therefore, it is highly recommended to create such a token; it just takes some time to create it.
+
+1. Without a Token (Unauthenticated):
+
+    - You can make up to **60 requests per hour**.
+    - This limit applies per IP address.
+
+2. With a Personal Access Token (Authenticated):
+
+    - You can make up to **5,000 requests per hour**.
+    - This limit applies per user/token.
+    - Using a token significantly increases the number of allowed requests, making it essential for high-volume API interactions or automation.
 
 ## What is a PAT?
 

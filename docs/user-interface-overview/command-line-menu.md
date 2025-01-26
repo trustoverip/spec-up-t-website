@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import CommandLineMenu from '../shared-content/command-line-menu.md';
+
 # Command Line Menu
 
 You don't have to be a command-line wizard to use Spec-Up-T. There's a menu, so all you have to do is type in a number.
@@ -24,24 +26,7 @@ npm run menu
 
 You will now see this menu:
 
-```bash
-Please choose one of the following options:
-
-   [0] Add content
-   [1] Render specification
-   [2] Export to PDF
-   [3] Update new xrefs
-   [4] Update all xrefs
-   [5] Add, remove or view xref source
-   [6] Configure
-   [7] Open documentation website
-   [8] Freeze specification
-   [Q] Quit
-
-   An xref is a reference to another repository.
-
-   Enter your choice:
-```
+<CommandLineMenu />
 
 These menu options act as shortcuts to the below commands, such as `npm run render` and others. You can choose between using the menu or entering the direct commands yourself.
 

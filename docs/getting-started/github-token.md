@@ -2,13 +2,35 @@
 sidebar_position: 90
 ---
 
-# GitHub Token
+# GitHub Personal Access Token (PAT)
 
-## Intro
+## Spec-Up-T and PAT
 
-Because GitHub.com is where all specifications live, having good access to it is essential. This goes under the hood through the GitHub API (Application Programming Interface). You have access to this, but soon you run into a limit. To make more requests, you need a token. Here's how to get such a token and how to apply it.
+When you look up external references (`xref`'s) in Spec-Up-T, you are using the GitHub API (Application Programming Interface), and you quickly run into a limit set by GitHub. With a **Personal Access Token (PAT)**, you suddenly get a much larger budget. Therefore, it is highly recommended to create such a token; it just takes some time.
 
-Steps to take:
+## What is a PAT?
+
+A **Personal Access Token (PAT)** is a secure key used to authenticate with GitHub via the API, Git, or third-party tools. It replaces passwords for programmatic access.
+
+## Why Use a PAT?
+
+- **Secure Access:** Avoids using passwords in scripts and tools.
+- **Granular Permissions:** Control what the token can access, like repositories or workflows.
+- **Automation:** Enables integration and automation workflows.
+
+## Who Needs a PAT?
+
+- **Developers:** For scripts or Git operations.
+- **DevOps Engineers:** To automate CI/CD pipelines.
+- **Admins:** Managing GitHub resources.
+
+## When Do You Need It?
+
+- Using Git over HTTPS.
+- Automating tasks via the GitHub API.
+- Configuring workflows or accessing private repositories.
+
+## Steps to take:
 
 - Get the token
 - Use the token server-side
@@ -96,7 +118,21 @@ The token will now be used when making requests to the GitHub API.
 
 ## Use the token server-side
 
-Make a copy of the file `.env.example` and name it `.env`. Enter the token in it.
+- Make a copy of the file `.env.example` and name it `.env`.
+
+- Enter the token in it:
+
+```sh
+# Optional GitHub API token for increased rate limits
+GITHUB_API_TOKEN=YOUR_GITHUB_API_TOKEN
+```
+
+Replace `YOUR_GITHUB_API_TOKEN` with the token you created:
+
+```sh
+# Optional GitHub API token for increased rate limits
+GITHUB_API_TOKEN=ghp_example1234567890abcdefEXAMPLETOKEN123456
+```
 
 ## Use the token client-side
 

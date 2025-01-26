@@ -45,17 +45,53 @@ Shows simple instructions on how to add content.
 ## Menu option `[1] Render specification`
 
 Steps:
+  |
 
-| Summary                                                                  | Description                                                                                                                                   | where                       |
-| ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
-| 1: Initialize                                                            | Not yet active                                                                                                                                | init.js                  |
-| 2: Create **term index** based on the files containing terms             | Make an ordered list (JSON) of all terms markdown files                                                                                       | create-term-index.js     |
-| 3: Insert **term index** into the **system config file**                   | **system config file** created from **user config file** and **term index**                                                                                                    | insert-term-index.js        |
-| 4: Create a version index.                                               | This page lists all available snapshots of this Spec-Up-T specification                                                                       | create-versions-index.js |
-| 5: Prepare the markdown files that contain '**[[tref]]**'s as a definition | A '**[[tref]]**' is a term defined in another (“remote”) specification. The definition (already locally stored in JSON) is inserted in the file | prepare-tref.js          |
-| 6: Fix the markdown in the term files                                    | One blank line between paragraphs, prepend `~` to lines, etc                                                                                  | fix-markdown-files.js    |
-| 7: Create a &lt;script&gt; object that contains external data            | A local copy of external data are inserted in the `index.html`                                                                                | index.js                 |
-| Work in progress                                                         |                                                                                                                                               |
+- - -
+
+<div class="size-big-centered">– 1 –</div>
+
+### `create-term-index.js`
+
+Read all the user-created **term files** (markdown).
+
+Make an ordered list (JSON) of all the names of the terms files (“**term index**”).
 
 
+<div class="size-big-centered">↓</div>
+<div class="size-big-centered">– 2 –</div>
 
+
+### `insert-term-index.js`
+
+- Use content of `specs.json` (the **user config file** )
+- Insert **term index** in this content
+- Create a `specs-generated.json` (**system config file**) from this content.
+
+<div class="size-big-centered">↓</div>
+<div class="size-big-centered">– 3 –</div>
+
+### `create-versions-index.js`
+
+Create a version index. This page lists all available snapshots of this Spec-Up-T specification
+
+<div class="size-big-centered">↓</div>
+<div class="size-big-centered">– 4 –</div>
+
+### `prepare-tref.js`
+
+Prepare the markdown files that contain '**[[tref]]**'s as a definition. A '**[[tref]]**' is a term defined in another (“remote”) specification. The definition (already locally stored in JSON) is inserted in the file
+
+<div class="size-big-centered">↓</div>
+<div class="size-big-centered">– 5 –</div>
+
+### `fix-markdown-files.js`
+
+Fix the markdown in the term files. One blank line between paragraphs, prepend `~` to lines, etc
+
+<div class="size-big-centered">↓</div>
+<div class="size-big-centered">– 6 –</div>
+
+### `index.js`
+
+Create a &lt;script&gt; object that contains external data. A local copy of external data are inserted in the `index.html`

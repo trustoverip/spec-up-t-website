@@ -186,3 +186,28 @@ img {
 }
 
 /* ******************************************** */
+
+
+
+/*
+  To make file system layouts nicer. Example:
+
+  <div class="filesystemlayout">
+
+  ```sh
+  boilerplate/node_modules/spec-up-t/src/
+    │
+    ├── init.js
+  ```
+
+  </div>
+*/
+.filesystemlayout * { 
+  line-height: 1.2 !important; 
+}
+
+.size-big-centered {
+  font-size: 4em;
+  color: #1D6DAE;
+  text-align: center;
+}

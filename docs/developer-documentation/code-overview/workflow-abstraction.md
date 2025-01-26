@@ -63,14 +63,18 @@ This page lists all available snapshots of this Spec-Up-T specification
 
 ### `prepare-tref.js`
 
-Prepare the markdown files that contain '**[[tref]]**'s as a definition. A '**[[tref]]**' is a term defined in another (“remote”) specification. The definition (already locally stored in JSON) is inserted in the file
+Prepare the markdown files that contain '**[[tref]]**'s as a definition. A '**[[tref]]**' is a term defined in another (“remote” or “external”) specification. The definition (already locally stored in local JSON) is inserted in the file.
+
+The definition is prepended by an html comment stating that everything below is inserted and can safely be removed.
 
 <div className="size-big-centered">↓</div>
 <div className="size-big-centered">– 5 –</div>
 
 ### `fix-markdown-files.js`
 
-Fix the markdown in the term files. One blank line between paragraphs, prepend `~` to lines, etc
+Fix the markdown in the term files.
+
+One blank line between paragraphs, prepend `~` to lines, etc
 
 <div className="size-big-centered">↓</div>
 <div className="size-big-centered">– 6 –</div>
@@ -85,7 +89,7 @@ Create a &lt;script&gt; object that contains external data. A local copy of exte
 
 ## Menu option `[8] Freeze specification`
 
-Creates a snapshot of the current `index.html` and place it in the version index.
+Creates a snapshot of the current `index.html` and places it in the version index.
 
 #version #snapshot
 

@@ -53,6 +53,8 @@ boilerplate/node_modules/spec-up-t/
 
 ## Spec-Up-T `src/`
 
+### Listing of all files
+
 <div class="filesystemlayout">
 
 ```sh
@@ -88,45 +90,52 @@ boilerplate/node_modules/spec-up-t/src/
 
 </div>
 
+### Description of all files
 
+#### `create-pdf.js`
 
+Creates pdf's with one click.
 
+#### `create-term-index.js`
 
+[Read more](./workflow-abstraction#create-term-indexjs)
 
+#### `create-term-relations.js`
 
+Not in use at the moment.
 
-## Files description
-
-### create-pdf.js
-
-Creates pdf's.
-
-### create-term-index.js
-
-Creates term index.
-
-### create-term-relations.js
-
-Creates term relations.
-
-### create-versions-index.js
+#### `create-versions-index.js`
 
 Creates version index
 
-### fix-markdown-files.js
+#### `fix-markdown-files.js`
 
 Fixes markdown files
 
-### freeze.js
+#### `freeze.js`
 
 Fixes markdown files
 
-### get-xtrefs-data.js
+#### `get-xtrefs-data.js`
 
 Get xtref data
 
-### init.js
+#### `insert-term-index.js`
 
-Initialise.
+[Read more](./workflow-abstraction#insert-term-indexjs)
 
+#### `json-key-validator.js`
 
+To Be Written
+
+#### `markdown-it-extensions.js`
+
+To Be Written
+
+#### `prepare-tref.js`
+
+To Be Written
+
+#### `references.js`
+
+To Be Written

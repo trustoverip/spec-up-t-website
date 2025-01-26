@@ -106,15 +106,15 @@ Not in use at the moment.
 
 #### `create-versions-index.js`
 
-Creates version index
+[Read more](./workflow-abstraction#create-versions-indexjs)
 
 #### `fix-markdown-files.js`
 
-Fixes markdown files
+[Read more](./workflow-abstraction#fix-markdown-filesjs)
 
 #### `freeze.js`
 
-Fixes markdown files
+[Read more](./workflow-abstraction#menu-option-8-freeze-specification)
 
 #### `get-xtrefs-data.js`
 

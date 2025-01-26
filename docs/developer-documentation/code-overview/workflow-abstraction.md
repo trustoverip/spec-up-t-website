@@ -1,9 +1,6 @@
 import CommandLineMenu from '../../shared-content/command-line-menu.md';
 
 
-<CommandLineMenu />
-
-
 # Workflow abstraction
 
 ## Starting point
@@ -12,33 +9,7 @@ We start with a collection of markdown files containing terms and definitions. W
 
 User Entry **Point** is a Command Line Menu:
 
-
-```sh
-  ,---.                  .   .        --.--
-  `---.,---.,---.,---.   |   |,---.     |
-      ||   ||---'|    ---|   ||   |---  |
-  `---'|---'`---'`---'   `---'|---'     `
-       |                      |
-
-
-  Please choose one of the following options:
-
-   [0] Add content
-   [1] Render specification
-   [2] Export to PDF
-   [3] Update new xrefs
-   [4] Update all xrefs
-   [5] Add, remove or view xref source
-   [6] Configure
-   [7] Open documentation website
-   [8] Freeze specification
-   [Q] Quit
-
-   An xref is a reference to another repository.
-
-   Enter your choice:
-
-```
+<CommandLineMenu />
 
 ## End result
 
@@ -117,11 +88,4 @@ Create a &lt;script&gt; object that contains external data. A local copy of exte
 Creates a snapshot of the current `index.html` and place it in the version index.
 
 #version #snapshot
-
-Dit is een test
-
-<!-- docs/page-with-inclusion.md -->
-:::include{file='docs/shared-content/menu.md'}
-:::
-
 

@@ -4,41 +4,11 @@ sidebar_position: 2
 
 # 2: From local to remote (GitHub)
 
-You now have a Spec-Up-T installation on your local system. To make use of all the Spec-Up-T features you should publish your installation on GitHub.
-
-These are the steps to take:
-
-## Edit `specs.json`
-
-First, make some edits to `specs.json`, which you will find in the root of your project directory.
-
-Change the following entries in `specs.json`:
-
-```json
-"source": {
-  "host": "github",
-  "account": "blockchainbird",
-  "repo": "spec-up-t-starter-pack"
-}
-```
-
-to the correct information:
-
-```json
-"source": {
-  "host": "github",
-  "account": "your-account",
-  "repo": "your-repo"
-}
-```
-
-These are the host (GitHub), your GitHub account name, and the repo name of the repo you are about to push.
-
-Now, let's continue.
+You now have a Spec-Up-T installation on your local system. To make use of all the Spec-Up-T features you should publish your installation on GitHub. 
 
 ## Publishing a Local Project to GitHub
 
-This guide explains how to publish a local Git project to a GitHub repository. The project is assumed to have already been initialized with Git (i.e., it contains a `.git` directory).
+This guide explains how to publish a local Git project to a GitHub repository. During the local installation, the installer script initialized your project with Git (i.e., it contains a `.git` directory). This is the starting point for the instructions below.
 
 ### Prerequisites
 

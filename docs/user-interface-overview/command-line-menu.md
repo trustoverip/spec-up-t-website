@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-import CommandLineMenu from '../shared-content/command-line-menu.md';
+import CommandLineMenu from '../_shared-content/command-line-menu.md';
 
 # Command Line Menu
 

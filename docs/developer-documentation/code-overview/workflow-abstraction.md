@@ -1,4 +1,4 @@
-import CommandLineMenu from '../../shared-content/command-line-menu.md';
+import CommandLineMenu from '../../_shared-content/command-line-menu.md';
 
 
 # Workflow abstraction

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Local Installation
+# 1: Local Installation
 
 Get started by **creating a new Spec-Up-T installation**.
 

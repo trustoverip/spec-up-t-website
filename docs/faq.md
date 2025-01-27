@@ -36,7 +36,7 @@ Unlike the DIF Spec-Up repository, the Spec-Up-T repository **does not generate 
 
 This functionality has been moved to the Spec-Up-T *installer*. Spec-Up-T is now an NPM package that should be installed via `package.json`.
 
-For more details, refer to [the installation section](./getting-started/installation.md).
+For more details, refer to [the installation section](./getting-started/installation/installation.md).
 
 :::
 

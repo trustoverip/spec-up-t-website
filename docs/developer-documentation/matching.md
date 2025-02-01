@@ -12,29 +12,27 @@ This matching occurs in several ways, each with its advantages and disadvantages
 
 ## `ref`
 
-- Where: [`/src/markdown-it-extensions.js`](https://github.com/trustoverip/spec-up-t/blob/master/src/markdown-it-extensions.js)
-- Source: the markdown files containing terms and definitions in the exact specification where the `ref` is located.
-- How: Through a custom-written `markdown-it` extension.
+- **Where**: [`/src/markdown-it-extensions.js`](https://github.com/trustoverip/spec-up-t/blob/master/src/markdown-it-extensions.js).
+- **Source**: the markdown files containing terms and definitions in the exact specification where the `ref` is located.
+- **How**: Through a custom-written `markdown-it` extension.
 
 
 ## `xref`
 
-- Where: [`/src/references.js`](https://github.com/trustoverip/spec-up-t/blob/master/src/references.js)
-- Source: The GitHub page with the external definition.
-- How: Reads HTML via JSDOM and makes a cross-reference call to the GitHub page. 
+- **Where**: [`/src/references.js`](https://github.com/trustoverip/spec-up-t/blob/master/src/references.js).
+- **Source**: The GitHub page with the external definition.
+- **How**: Reads HTML via JSDOM and Cross-Origin Resource Sharing (CORS) of the GitHub page.
+- **Downside**: It will no longer work if GitHub makes the CORS policy stricter. GitHub already has some CORS restrictions in place, so further restrictions could be a natural progression.
+- **Upside**: easy and fast.
 
 :::info
-
 The JSDOM library brings JavaScript DOM selectors to Node.js.
-
 :::
-
-Downside: It will no longer work if GitHub makes the CORS policy stricter. GitHub already has some CORS restrictions in place, so further restrictions could be a natural progression.
 
 ## `tref`
 
-- Where: [`/src/get-xtrefs-data.js`](https://github.com/trustoverip/spec-up-t/blob/master/src/get-xtrefs-data.js) and imported modules
-- Source: The markdown files in the external repository.
-- How: It uses the GitHub API to download the remote repository files to the local computer and then search for a match in the files via JavaScript methods and / or regex.
-
-Disadvantage: The API has a limit. Using a Personal Access Token broadens the limit, but it is still a limit.
+- **Where**: [`/src/get-xtrefs-data.js`](https://github.com/trustoverip/spec-up-t/blob/master/src/get-xtrefs-data.js) and imported modules.
+- **Source**: The markdown files in the external repository.
+- **How**: It uses the GitHub API to download the remote repository files to the local computer and then search for a match in the files via JavaScript methods and / or regex.
+- **Downside**: The API has a limit. Using a Personal Access Token broadens the limit, but it is still a limit.
+- **Upside**: via API, A service created specifically for the purpose for which you use it.

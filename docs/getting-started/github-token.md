@@ -4,6 +4,10 @@ sidebar_position: 4
 
 # GitHub Personal Access Token (PAT)
 
+:::info
+Find more general information on the [GitHub website](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
+:::
+
 ## Spec-Up-T and PAT
 
 When you look up external references (`xref`'s) in Spec-Up-T, you are using the GitHub API (Application Programming Interface), and you quickly run into a limit set by GitHub. With a **Personal Access Token (PAT)**, you suddenly get a much larger budget. Therefore, it is highly recommended to create such a token; it just takes some time to create it.

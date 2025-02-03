@@ -22,7 +22,7 @@ This matching occurs in several ways, each with its advantages and disadvantages
 - **Where**: [`/src/references.js`](https://github.com/trustoverip/spec-up-t/blob/master/src/references.js).
 - **Source**: The GitHub page with the external definition.
 - **How**: Reads HTML via JSDOM and Cross-Origin Resource Sharing (CORS) of the GitHub page.
-- **Downside**: It will no longer work if GitHub makes the CORS policy stricter. GitHub already has some CORS restrictions in place, so further restrictions could be a natural progression.
+- **Downside**: You cannot retrieve meta-info like the commit hash, etc. Also, it will no longer work if GitHub makes the CORS policy stricter. GitHub already has some CORS restrictions in place, so further restrictions could be a natural progression.
 - **Upside**: easy and fast.
 
 :::info

@@ -70,7 +70,7 @@ boilerplate/node_modules/spec-up-t/src/
   │
   ├── freeze.js
   │
-  ├── get-xtrefs-data.js
+  ├── collectExternalReferences.js
   │
   ├── insert-term-index.js
   │
@@ -112,7 +112,7 @@ Not in use at the moment.
 
 [Read more](./workflow-abstraction.md#menu-option-8-freeze-specification)
 
-#### `get-xtrefs-data.js`
+#### `collectExternalReferences.js`
 
 Get xtref data
 

@@ -31,7 +31,7 @@ The JSDOM library brings JavaScript DOM selectors to Node.js.
 
 ## `tref`
 
-- **Where**: [`/src/get-xtrefs-data.js`](https://github.com/trustoverip/spec-up-t/blob/master/src/get-xtrefs-data.js) and imported modules.
+- **Where**: [`/src/collectExternalReferences.js`](https://github.com/trustoverip/spec-up-t/blob/master/src/collectExternalReferences.js) and imported modules.
 - **Source**: The markdown files in the external repository.
 - **How**: It uses the GitHub API / Octokit to search through the remote repository files.
 - **Downside**: The API has a limit. Using a Personal Access Token broadens the limit, but it is still a limit.

@@ -11,10 +11,6 @@ The Spec-Up-T Boilerplate is the starting point of the Spec-Up-T system. This is
 ```sh
 boilerplate/
   │
-  ├── src/
-  │   │
-  │   └── server/  - - - - - - - - - - - - Scripts that ask for user input
-  │
   ├── node_modules/
   │   │
   │   └── spec-up-t/ - - - - - - - - - - - Spec-Up-T package

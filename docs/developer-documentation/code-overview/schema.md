@@ -17,13 +17,20 @@ boilerplate/
   │
   ├── spec/  - - - - - - - - - - - - - - - Markdown files
   │
-  ├── output/ -- - - - - - - - - - - - - - Generated output
+  ├── docs/ -- - - - - - - - - - - - - - Generated output¹
+  │
+  ├── output/ -- - - - - - - - - - - - - - Generated output²
   │
   ├── main.sh  - - - - - - - - - - - - - - Command Line Menu
   │
   └── specs.json - - - - - - - - - - - - - Configuration file
 ```
 </div>
+
+- ¹: Can be deleted, the index.html will be regenerated, but you will lose snapshots directory
+
+- ²: Can safely be deleted
+
 
 ## Spec-Up-T package
 

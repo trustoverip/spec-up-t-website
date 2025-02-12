@@ -28,13 +28,14 @@ git init
 cd ..
 ```
 
-Now that you're outside the repo directory (!): Go over [Installation](../getting-started/installation/installation) and create a new repo with the established name. In the example `Main-KERI-glossary`, you start with: 
+Now that you're outside the repo directory (!): Go over [Installation](../getting-started/installation/installation.md) and create a new repo with the established name. In the example `Main-KERI-glossary`, you start with:
 
 ```
 npx create-spec-up-t < established dirname >
 ```
 
 Example:
+
 ```
 npx create-spec-up-t ./Main-KERI-glossary
 ```

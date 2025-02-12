@@ -7,12 +7,7 @@ sidebar_position: 2
 
 ## Introduction
 
-Updating Spec-Up-T involves two key processes:
-
-1. Updating **your own installation**, which you initially set up using the Spec-Up-T installer.
-2. Updating the **Spec-Up-T npm package** to ensure you have the latest features and fixes.
-
-This guide provides step-by-step instructions to update your installation.
+This guide provides step-by-step instructions to update your **Spec-Up-T** installation.
 
 ## Prerequisites
 
@@ -23,32 +18,13 @@ Before proceeding, ensure you have the following tools and knowledge:
 - Installed Node.js and npm.
 - Access to the Spec-Up-T GitHub repository.
 
-## Updating Your Own Installation
+## Update
 
-Updating your installation requires manually copying and updating files from the boilerplate provided in the Spec-Up-T repository. Follow these steps:
+Updating your **Spec-Up-T** installation requires the following steps:
 
-### 1. Retrieve Source Files from the Installer
+### 1. Configure GitHub Token
 
-The necessary files can be found in the [`spec-up-t-boilerplate`](https://github.com/blockchainbird/spec-up-t-starter-pack/tree/main/spec-up-t-boilerplate)[ directory](https://github.com/blockchainbird/spec-up-t-starter-pack/tree/main/spec-up-t-boilerplate).
-
-#### Methods to Download Files
-
-- Clone the repository using Git:
-  ```bash
-  git clone https://github.com/blockchainbird/spec-up-t-starter-pack.git
-  ```
-- Download a ZIP of the repository and extract it locally.
-- Manually copy the content of individual files into your local setup.
-
-Ensure the file and directory names in your local installation match those in the GitHub source repository. If they differ, rename your local files to align with the repository structure.
-
-### 2. Update `.gitignore`
-
-Compare your `.gitignore` file with the boilerplate version. Copy any entries missing in your file from the boilerplate.
-
-### 3. Configure GitHub Token
-
-If you are using a GitHub token for authentication:
+You need a GitHub Personal Access Token for authentication. [Instructions how to create a GitHub Personal Access Token](../getting-started/github-token.md).
 
 - Rename `.env.example` to `.env`.
 - Add your token in the `.env` file as follows:
@@ -56,26 +32,28 @@ If you are using a GitHub token for authentication:
   GITHUB_TOKEN=<your-token>
   ```
 
-### 4. Update `specs.json`
+### 2. Update `specs.json`
 
-Compare your `specs.json` with the boilerplate version. Use a file comparison tool like `diff` or `Meld` to identify differences. Ensure all entries align with the boilerplate.
+Compare your `specs.json` with [the boilerplate version](https://github.com/trustoverip/spec-up-t/blob/master/src/install-from-boilerplate/boilerplate/specs.json). Use a file comparison tool like `diff` or `Meld` to identify differences. Ensure all entries align with the boilerplate.
 
-### 5. Set Up Terms
+### 3. Set Up Terms
 
 #### `terms-and-definitions-intro.md`
 
 - Create a file named `terms-and-definitions-intro.md` in the `/specs` directory.
 - Add an intro text or leave it empty. Ensure this file is referenced in `specs.json`.
 
-### 6. Update
+### 4. Update
 
-Update your npm dependencies and more by running:
+Run the update function:
 
 ```bash
 npm run custom-update
 ```
 
-This will run `npm update` first and after that a custom script.
+This will run
+1. `npm update` (which will update the `spec-up-t` package, and other packages)
+2. a custom script.
 
 ## Completion
 

@@ -42,45 +42,11 @@ The necessary files can be found in the [`spec-up-t-boilerplate`](https://github
 
 Ensure the file and directory names in your local installation match those in the GitHub source repository. If they differ, rename your local files to align with the repository structure.
 
-### 2. Update `package.json`
-
-The following sections in your `package.json` file need updating:
-
-#### `scripts`
-
-Replace your current `scripts` section with the one from the boilerplate:
-
-```json
-"scripts": {
-  // contents from the boilerplate
-}
-```
-
-#### `dependencies`
-
-Replace your current `dependencies` section:
-
-```json
-"dependencies": {
-  // contents from the boilerplate
-}
-```
-
-#### `version`
-
-Update the `version` field to match the boilerplate version:
-
-```json
-"version": "<latest-version>"
-```
-
-You can find the latest version number [here](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/package.json#L3).
-
-### 3. Update `.gitignore`
+### 2. Update `.gitignore`
 
 Compare your `.gitignore` file with the boilerplate version. Copy any entries missing in your file from the boilerplate.
 
-### 4. Configure GitHub Token
+### 3. Configure GitHub Token
 
 If you are using a GitHub token for authentication:
 
@@ -90,36 +56,26 @@ If you are using a GitHub token for authentication:
   GITHUB_TOKEN=<your-token>
   ```
 
-### 5. Update `specs.json`
+### 4. Update `specs.json`
 
 Compare your `specs.json` with the boilerplate version. Use a file comparison tool like `diff` or `Meld` to identify differences. Ensure all entries align with the boilerplate.
 
-### 6. Copy Boilerplate Files
-
-Copy the following files from the boilerplate to the root of your installation. Overwrite existing files:
-
-- `.env.example`
-- `help.txt`
-- `main.sh`
-- `postinstall-message.js`
-- `README.md`
-
-Old, unused files can remain for now; they will not interfere with the system.
-
-### 7. Set Up Terms
+### 5. Set Up Terms
 
 #### `terms-and-definitions-intro.md`
 
 - Create a file named `terms-and-definitions-intro.md` in the `/specs` directory.
 - Add an intro text or leave it empty. Ensure this file is referenced in `specs.json`.
 
-### 8. Run `npm update`
+### 6. Update
 
-Update your npm dependencies by running:
+Update your npm dependencies and more by running:
 
 ```bash
-npm update
+npm run custom-update
 ```
+
+This will run `npm update` first and after that a custom script.
 
 ## Completion
 

@@ -14,26 +14,20 @@ You can do that as follows. Assuming you have a Spec-Up-T installation running l
 
 <PackageJsonScript />
 
-## 2. Replace it with this:
+## 2. Find & Replace:
 
-```json
-"scripts": {
-    "edit": "node -e \"require('/Your/path/to/local/spec-up-t/repo/spec-up-t/spec-up-t')()\"",
-    "render": "node --no-warnings -e \"require('/Your/path/to/local/spec-up-t/repo/spec-up-t/spec-up-t/index.js')({ nowatch: true })\"",
-    "dev": "node -e \"require('/Your/path/to/local/spec-up-t/repo/spec-up-t/spec-up-t')({ dev: true })\"",
-    "collectExternalReferencesCache": "node --no-warnings -e \"require('/Your/path/to/local/spec-up-t/repo/spec-up-t/spec-up-t/src/collect-external-references.js').collectExternalReferences({cache: true})\"",
-    "collectExternalReferencesNoCache": "node --no-warnings -e \"require('/Your/path/to/local/spec-up-t/repo/spec-up-t/spec-up-t/src/collect-external-references.js').collectExternalReferences({cache: false})\"",
-    "topdf": "node -e \"require('/Your/path/to/local/spec-up-t/repo/spec-up-t/spec-up-t/src/create-pdf.js')\"",
-    "freeze": "node -e \"require('/Your/path/to/local/spec-up-t/repo/spec-up-t/spec-up-t/src/freeze.js')\"",
-    "references": "node -e \"require('/Your/path/to/local/spec-up-t/repo/spec-up-t/spec-up-t/src/references.js')\"",
-    "help": "cat help.txt",
-    "menu": "bash ./main.sh",
-    "addremovexrefsource": "node --no-warnings -e \"require('/Your/path/to/local/spec-up-t/repo/spec-up-t/spec-up-t/src/add-remove-xref-source.js')\"",
-    "configure": "node --no-warnings -e \"require('/Your/path/to/local/spec-up-t/repo/spec-up-t/spec-up-t/src/configure.js')\"",
-    "postinstall": "node postinstall-message.js"
-}
+In the `scripts` section:
+
+Find
+
+```sh
+'spec-up-t/
 ```
 
-## 3. Replace with actual path
+Replace it with:
 
-And replace `/Your/path/to/local/spec-up-t/repo/spec-up-t/spec-up-t` with your actual path.
+```sh
+'/Your/path/to/local/spec-up-t/repo/
+```
+
+where `/Your/path/to/local/spec-up-t/repo/spec-up-t/spec-up-t` should be the actual path on your machine.

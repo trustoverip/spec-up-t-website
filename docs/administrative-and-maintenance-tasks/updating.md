@@ -32,6 +32,10 @@ You need a GitHub Personal Access Token for authentication. [Instructions how to
   GITHUB_TOKEN=<your-token>
   ```
 
+:::info
+If there is a `.env` file already, with a token, you can skip this step.
+:::
+
 ### 2. Update `specs.json`
 
 Compare your `specs.json` with [the boilerplate version](https://github.com/trustoverip/spec-up-t/blob/master/src/install-from-boilerplate/boilerplate/specs.json). Use a file comparison tool like `diff` or `Meld` to identify differences. Ensure all entries align with the boilerplate.
@@ -42,6 +46,10 @@ Compare your `specs.json` with [the boilerplate version](https://github.com/trus
 
 - Create a file named `terms-and-definitions-intro.md` in the `/specs` directory.
 - Add an intro text or leave it empty. Ensure this file is referenced in `specs.json`.
+
+:::info
+If there is a `terms-and-definitions-intro.md` file in the `/specs` directory already you can skip this step.
+:::
 
 ### 4. Update
 
@@ -54,6 +62,20 @@ npm run custom-update
 This will run
 1. `npm update` (which will update the `spec-up-t` package, and other packages)
 2. a custom script.
+
+If this giver errors, then run the following command:
+
+```bash
+node node_modules/spec-up-t/src/install-from-boilerplate/custom-update.js
+```
+
+and then run this again:
+
+```bash
+npm run custom-update
+```
+
+
 
 ## Completion
 

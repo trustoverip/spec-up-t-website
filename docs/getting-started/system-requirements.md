@@ -24,7 +24,7 @@ To successfully run **Spec-Up-T**, ensure your system meets the following requir
 2. **Node.js**: Version 18.x or later.
    - Verify installation: `node -v`
    - When installing Node.js, you are recommended to check all checkboxes related to dependencies
-   - Download from [Node.js official website](https://nodejs.org/).
+   - [Installing instructions](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 3. **NPM**: Version 7.x or later (bundled with Node.js).
    - Verify installation: `npm -v`
 4. **Internet Connection**: Required to fetch dependencies from the NPM registry.

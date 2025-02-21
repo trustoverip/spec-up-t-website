@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Intro
 
-Below is a summary of the files and folders found in the `spec-up-t` npm package.
+Below is a summary of the files and folders found in the `spec-up-t` [GitHub repository](https://github.com/trustoverip/spec-up-t) / [npm package](https://www.npmjs.com/package/spec-up-t).
 
 :::info
 

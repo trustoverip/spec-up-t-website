@@ -10,9 +10,9 @@ Below is a summary of the files and folders found in the `spec-up-t` [GitHub rep
 
 :::info
 
-It is important to understand:
+It is essential to understand:
 
-- that you will find the files and directories below in the `spec-up-t` npm package installed in de `node_modules` directory of a working **Spec-Up-T installation**
+- that the files and directories listed below can be found in the `spec-up-t` npm package installed in the `node_modules` directory of a working **Spec-Up-T installation**
 - that this working **Spec-Up-T installation** was created **from the boilerplate directory** inside this `spec-up-t` npm package via NPX
 
 :::

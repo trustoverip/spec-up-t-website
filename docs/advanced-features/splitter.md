@@ -118,4 +118,4 @@ Currently this tool works only on the first spec definition in specs.json (on th
 ### Repo and Package
 
 - [Github repo](https://github.com/blockchainbird/spec-up-splitter)
-- [NPM package](https://www.npmjs.com/package/spec-up-splitter)
+- [npm package](https://www.npmjs.com/package/spec-up-splitter)

@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# Publishing to GitHub and NPM
+# Publishing to GitHub and npm
 
-The suggested way to publish to GitHub and NPM will be described here.
+The suggested way to publish to GitHub and npm will be described here.
 
 ## Add changes to Git
 
@@ -19,7 +19,7 @@ git commit -m "Add new feature"
 Merging branches is not described here. It's generally best to run npm version after merging your feature branch into the main (or master) branch. This ensures that the version bump and tag are applied to the final state of the code that will be released.
 :::
 
-## Publish to NPM
+## Publish to npm
 
 ### Update version number
 
@@ -60,7 +60,7 @@ where `origin` and/or `upstream` are the remotes that you have configured.
 
 
 
-### Publish to NPM
+### Publish to npm
 
 Publish the new version to npm:
 

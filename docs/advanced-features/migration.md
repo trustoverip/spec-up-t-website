@@ -155,13 +155,13 @@ Install Spec-Up-T and install all dependencies:
 npm install
 ```
 :::note Ignore warnings
-During the process, you can ignore the NPM warnings. 
+During the process, you can ignore the npm warnings. 
 
 Keeping up-to-date with warnings would demand a daily effort from programmers and maintainers. Things change so quickly but are hardly ever a breaking change.
 :::
 
 :::todo Optional extra check
-Do the extra check with the "NPM list" command to see whether your install or update command has worked as expected. Check the packages and their latest version numbers. 
+Do the extra check with the "npm list" command to see whether your install or update command has worked as expected. Check the packages and their latest version numbers. 
 :::
 
 Go into the menu

@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Spec-Up-T (via NPM)
+# Spec-Up-T (via npm)
 
 The Spec-Up-T Boilerplate is the starting point of the Spec-Up-T system. This is the go to directory.
 
@@ -68,7 +68,7 @@ boilerplate/node_modules/spec-up-t/
   │
   ├── assets/   ------- Front-end code: JavaScript
   │
-  ├── node_modules/ --- NPM packages used by Spec-Up-T
+  ├── node_modules/ --- npm packages used by Spec-Up-T
   │
   ├── index.js -------- Entry point
   │

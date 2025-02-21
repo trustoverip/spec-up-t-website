@@ -99,7 +99,7 @@ We propose a "bi-directional sync" or "mutual synchronization" model. In this mo
 
 For clarity, there are three main perspectives on Spec-Up(-T) publicly AND on your local computer: 
 - **Authors** look at the ready-to-use Spec-Up github.com version (after running Starter-pack)
-- **Coders** look at the NPM Spec-Up libraries
+- **Coders** look at the npm Spec-Up libraries
 - **Users** see the generated end-product on github.io (index.html)
 
 ### Perspective: Authors
@@ -141,7 +141,7 @@ Suppose DIF's Spec-Up is stable and not actively enhanced further. Spec-Up can s
 
 ![image](/img/how-it-came-to-be/SyxaaHsEC.png)
 
-The image below shows the github.com repo and its NPM library section in green, red, and orange. We won't touch the red and orange sections in our repo 'Spec-Up-T' without making a separate branch and offering the changes as a PR to DIF.
+The image below shows the github.com repo and its npm library section in green, red, and orange. We won't touch the red and orange sections in our repo 'Spec-Up-T' without making a separate branch and offering the changes as a PR to DIF.
 
 ![image](/img/how-it-came-to-be/Hy_mVl1rR.png)
 

@@ -20,7 +20,7 @@ This script is called via NPX and starts the installation process. What it does:
 
 1. Handle file system operations (create the target directory etc.)
 2. Initialize Git
-3. Initialize NPM
+3. Initialize npm
     1. copy `package.spec-up-t.json` to the target directory
     2. rename to `package.json`
     3. install the `spec-up-t` npm package

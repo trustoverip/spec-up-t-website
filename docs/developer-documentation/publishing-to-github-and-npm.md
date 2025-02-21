@@ -23,8 +23,10 @@ Merging branches is not described here. It's generally best to run npm version a
 
 ### Update version number
 
-https://github.com/trustoverip/spec-up-t/blob/master/package.json#L3
+Increase the number according to what is [appropriate](https://semver.org/).
 
+- In case of Spec-Up-T: https://github.com/trustoverip/spec-up-t/blob/master/package.json#L3
+- In case of the Starterpack: https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/package.json#L3
 
 Use this command:
 

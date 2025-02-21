@@ -149,7 +149,7 @@ Creates pdf's with one click.
 
 #### `create-term-index.js`
 
-[Read more](../workflow-abstraction.md#create-term-indexjs)
+[Read more](../../workflow-abstraction.md#create-term-indexjs)
 
 #### `create-term-relations.js`
 
@@ -157,15 +157,15 @@ Not in use at the moment.
 
 #### `create-versions-index.js`
 
-[Read more](../workflow-abstraction.md#create-versions-indexjs)
+[Read more](../../workflow-abstraction.md#create-versions-indexjs)
 
 #### `fix-markdown-files.js`
 
-[Read more](../workflow-abstraction.md#fix-markdown-filesjs)
+[Read more](../../workflow-abstraction.md#fix-markdown-filesjs)
 
 #### `freeze.js`
 
-[Read more](../workflow-abstraction.md#menu-option-8-freeze-specification)
+[Read more](../../workflow-abstraction.md#menu-option-8-freeze-specification)
 
 #### `collectExternalReferences.js`
 
@@ -173,7 +173,7 @@ Get xtref data
 
 #### `insert-term-index.js`
 
-[Read more](../workflow-abstraction.md#insert-term-indexjs)
+[Read more](../../workflow-abstraction.md#insert-term-indexjs)
 
 #### `json-key-validator.js`
 

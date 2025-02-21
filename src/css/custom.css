@@ -204,7 +204,7 @@ img {
 */
 .filesystemlayout * { 
   line-height: 1.2 !important; 
-  font-size: 1.05em;
+  font-size: 1em;
 }
 
 .size-big-centered {

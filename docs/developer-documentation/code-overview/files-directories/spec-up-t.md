@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Spec-Up-T
+# Spec-Up-T (via NPM)
 
 The Spec-Up-T Boilerplate is the starting point of the Spec-Up-T system. This is the go to directory.
 

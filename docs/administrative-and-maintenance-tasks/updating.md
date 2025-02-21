@@ -45,7 +45,7 @@ Compare your `specs.json` with [the boilerplate version](https://github.com/trus
 #### `terms-and-definitions-intro.md`
 
 - Create a file named `terms-and-definitions-intro.md` in the `/specs` directory.
-- Add an intro text or leave it empty. Ensure this file is referenced in `specs.json`.
+- Add an intro text or leave it empty. Ensure this file is referenced in `specs.json`. See the [boilerplate](https://github.com/trustoverip/spec-up-t/blob/master/src/install-from-boilerplate/boilerplate/specs.json#L12).
 
 :::info
 If there is a `terms-and-definitions-intro.md` file in the `/specs` directory already you can skip this step.

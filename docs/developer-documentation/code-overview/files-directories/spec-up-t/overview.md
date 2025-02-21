@@ -17,8 +17,6 @@ It is important to understand:
 
 :::
 
-
-
 ## Abstracted overview
 
 Abstracted overview of files and directories in the Spec-Up-T GitHub repository (and npm package).

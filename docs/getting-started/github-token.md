@@ -109,7 +109,7 @@ To obtain a Personal Access Token (PAT) for the GitHub API, follow these steps:
 - Configure the Token:
   - Give your token a descriptive name.
   - Select the “repo” scope.
-  - Update (*not visible in the image*): also check “workflow”
+  - Update (*not visible in the image*): also select the “workflow” scope.
   - Click "Generate token" at the bottom of the page.
 
 <div className='image-large'>

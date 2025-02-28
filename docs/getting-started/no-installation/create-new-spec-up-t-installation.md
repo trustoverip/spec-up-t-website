@@ -11,7 +11,7 @@ This guide explains how to use the "Create Spec-Up-T Project via Repo Creation" 
 ### Prerequisites
 
 - A GitHub account.
-- (Optional) A Personal Access Token (PAT) with `repo` and `workflow` scopes if you want the project pushed to your own repository. If you skip this, you’ll get a downloadable artifact instead.
+- (Optional, but strongly recommended) A Personal Access Token (PAT) with `repo` and `workflow` scopes if you want the project pushed to your own repository. If you skip this, you’ll get a downloadable artifact instead. [How to create a Personal Access Token (PAT)](../github-token.md).
 
 ### Steps to Run the Workflow
 
@@ -28,9 +28,9 @@ This guide explains how to use the "Create Spec-Up-T Project via Repo Creation" 
      - This will be the name of the repository created under your GitHub account (if using a PAT) or the artifact folder (if downloading).
      - Example: `my-spec-project`
    - **Your GitHub username (required if PAT is provided)**:
-     - Enter your GitHub username (e.g., `kordwarshuis`).
+     - Enter your GitHub username (e.g., `johndoe`).
      - Required only if you’re providing a PAT (see below); otherwise, leave blank.
-     - Example: `kordwarshuis`
+     - Example: `johndoe`
    - **Your GitHub PAT (optional, to push to your own repo)**:
      - If you want the project pushed to a new repository under your account, enter a Personal Access Token (PAT) here.
      - To create a PAT:
@@ -65,12 +65,12 @@ This guide explains how to use the "Create Spec-Up-T Project via Repo Creation" 
 
 ### Example
 
-To create a repo named `my-spec-project` under `kordwarshuis`:
+To create a repo named `my-spec-project` under `johndoe`:
 
 - Inputs:
   - Name: `my-spec-project`
-  - Username: `kordwarshuis`
+  - Username: `johndoe`
   - PAT: `ghp_xxxxxxxxxxxxxxxxxxxxx`
-- Result: A new repo at `https://github.com/kordwarshuis/my-spec-project`.
+- Result: A new repo at `https://github.com/johndoe/my-spec-project`.
 
 Enjoy your new Spec-Up-T project—happy specifying!

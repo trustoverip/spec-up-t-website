@@ -25,7 +25,7 @@ Many specs may want to include a section for terminology references, and Definit
 
 ```
 
-Now let's refer to some of the terms defined above to show how the auto-linking of terms works. Additionally, as long as you define your terms using Definition Lists (as seen in the markdown above), you will be able to hover any reference to a term to see a tooltip with its definition. See the [demo site](https://blockchainbird.github.io/spec-up-t-demo-on-documentation-website/#term:term-1).
+Now let's refer to some of the terms defined above to show how the auto-linking of terms works. Additionally, as long as you define your terms using Definition Lists (as seen in the markdown above), you will be able to hover any reference to a term to see a tooltip with its definition. See the [demo site](https://trustoverip.github.io/spec-up-t-demo-on-documentation-website/#term:term-1).
 
 ## What are the “~” ?
 

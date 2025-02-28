@@ -23,7 +23,7 @@ The endproduct of your work is **the `index.html` file, the actual specification
 
 This `index.html` file is stand-alone and can be hosted on any web server. Or double-click it, and it will open in a browser. The most common place is a GitHub Page though.
 
-The Spec-Up-T code itself is available [on Github](https://github.com/blockchainbird/spec-up-t).
+The Spec-Up-T code itself is available [on Github](https://github.com/trustoverip/spec-up-t).
 
 
 :::info

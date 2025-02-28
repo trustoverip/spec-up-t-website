@@ -28,7 +28,7 @@ Some improvements have been incorporated into Spec-Up. Spec-Up will remain a sub
 
 ## Where to find Spec-Up-T?
 
-Spec-Up-T is a github.com repo under Blockchainbird user: [https://github.com/blockchainbird/spec-up-t](https://github.com/blockchainbird/spec-up-t). You can find the source code there.
+Spec-Up-T is a github.com repo under trustoverip user: [https://github.com/trustoverip/spec-up-t](https://github.com/trustoverip/spec-up-t). You can find the source code there.
 
 :::warning
 

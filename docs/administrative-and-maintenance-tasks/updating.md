@@ -79,7 +79,7 @@ npm run custom-update
 
 ## Completion
 
-Your Spec-Up-T installation is now up to date. If you encounter any issues, refer to the troubleshooting guide or open an issue in the [Spec-Up-T GitHub repository](https://github.com/blockchainbird/spec-up-t-starter-pack/issues).
+Your Spec-Up-T installation is now up to date. If you encounter any issues, refer to the troubleshooting guide or open an issue in the [Spec-Up-T GitHub repository](https://github.com/trustoverip/spec-up-t-starter-pack/issues).
 
 
 

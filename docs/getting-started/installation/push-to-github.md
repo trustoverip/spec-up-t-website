@@ -33,7 +33,7 @@ You will find `specs.json` in the root of your project directory. Change the fol
 ```json
 "source": {
   "host": "github",
-  "account": "blockchainbird",
+  "account": "trustoverip",
   "repo": "spec-up-t-starter-pack"
 }
 ```

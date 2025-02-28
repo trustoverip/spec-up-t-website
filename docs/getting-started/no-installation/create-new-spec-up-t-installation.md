@@ -16,8 +16,7 @@ This guide explains how to use the "Create Spec-Up-T Project via Repo Creation" 
 ### Steps to Run the Workflow
 
 1. **Navigate to the Workflow**:
-   - Go to the [Actions tab](https://github.com/trustoverip/spec-up-t/actions) in the `trustoverip/spec-up-t` repository.
-   - Scroll through the list of workflows on the left and find **"Create Spec-Up-T Project via Repo Creation"**. Click it to select it.
+   - Go to the [`Create Spec-Up-T project`](https://github.com/trustoverip/spec-up-t/actions/workflows/create-project-via-repo-creation.yml) Action Workflow in the `trustoverip/spec-up-t` repository.
 
 2. **Start the Workflow**:
    - On the right side, you’ll see a "Run workflow" button or dropdown (it might say "Run workflow" directly or be under a small arrow). Click it.

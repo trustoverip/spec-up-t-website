@@ -11,7 +11,13 @@ This guide explains how to use the "Create Spec-Up-T Project via Repo Creation" 
 ### Prerequisites
 
 - A GitHub account.
-- (Optional, but strongly recommended) A Personal Access Token (PAT) with `repo` and `workflow` scopes if you want the project pushed to your own repository. If you skip this, you’ll get a downloadable artifact instead. [How to create a Personal Access Token (PAT)](../github-token.md).
+- (Optional, but strongly recommended) A Personal Access Token (PAT) with `repo` and `workflow` scopes if you want the project pushed to your own repository. If you skip this, you’ll get a downloadable artifact instead.
+
+:::info
+
+[How to create a Personal Access Token (PAT)](../github-token.md)
+
+:::
 
 ### Steps to Run the Workflow
 

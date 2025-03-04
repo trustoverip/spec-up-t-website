@@ -49,6 +49,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/blockchainbird/spec-up-t-website/tree/main/',
+          showLastUpdateTime: true
         },
         // blog: {
         //   showReadingTime: true,
@@ -59,7 +60,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

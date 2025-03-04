@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Using Spec-Up-T Web-Based
+# Intro
 
 With Spec-Up-T, you don’t need to install Node.js, Git, or any tools on your computer — everything can run in your browser using GitHub Actions! Whether you’re creating a new specification project or managing an existing one, our workflows let you do it all online. Here’s how it works:
 

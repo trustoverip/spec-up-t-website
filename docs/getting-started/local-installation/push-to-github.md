@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# 2: From local to remote (GitHub)
+# From local to remote (GitHub)
 
 You now have a Spec-Up-T installation on your local system. To make use of all the Spec-Up-T features you should publish your installation on GitHub. 
 

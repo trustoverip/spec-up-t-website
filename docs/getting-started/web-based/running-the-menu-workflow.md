@@ -25,19 +25,13 @@ This guide shows you how to use the "Menu" workflow in the `trustoverip/spec-up-
 3. **Select a Script**:
    - **Select the script to run**:
      - Use the dropdown to choose one of the following options:
-       - **Edit specification**: Opens the Spec-Up-T editor.
-       - **Render specification**: Renders your specification to static files (deploys to GitHub Pages).
-       - **Develop specification**: Runs the Spec-Up-T development server.
-       - **Collect external references (cached)**: Gathers external references using a cache.
-       - **Collect external references (no cache)**: Gathers external references without caching, using `MY_PAT` for authentication.
-       - **Convert to PDF**: Generates a PDF from your specification.
-       - **Freeze specification**: Freezes the specification state.
-       - **List references**: Lists all references in the specification.
-       - **Show help**: Displays the Spec-Up-T help text.
-       - **Show menu**: Shows the Spec-Up-T menu.
-       - **Add/remove xref source**: Manages external reference sources.
-       - **Configure specification**: Configures Spec-Up-T settings.
-       - **Custom update**: Updates dependencies and copies files from `spec-up-t`, committing changes to your repository.
+       - **Render specification**: Renders your specification to `index.html`
+       - **Collect external references (cached)**: Gathers external references using a cache (will fetch cache the first time you run it)
+       - **Collect external references (no cache)**: Gathers external references without caching, using `MY_PAT` for authentication
+       - **Convert to PDF**: Generates a PDF from your specification
+       - **Freeze specification**: Freezes the specification state
+       - **List references**: Lists all references in the specification
+       - **Custom update**: Updates your installation
      - Default: "Render specification"
    - Click the green "Run workflow" button at the bottom of the form.
 
@@ -73,10 +67,5 @@ To render a specification:
 
 - Select: "Render specification"
 - Result: Files deploy to `gh-pages`, viewable at your Pages URL.
-
-To update your repo:
-
-- Select: "Custom update"
-- Result: New files committed to `main`.
 
 Enjoy exploring Spec-Up-T—happy scripting!

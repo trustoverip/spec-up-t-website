@@ -6,7 +6,7 @@ sidebar_position: 0
 
 There are two ways to get started with Spec-Up-T:
 
-- Web-based: create and use a Spec-Up-T installation via GitHub in your browser
+- Web-based: create and use a Spec-Up-T installation via GitHub in your browser (based on Github Actions)
 - Local installation: create and use a Spec-Up-T installation via your command line
 
 ## Web-based

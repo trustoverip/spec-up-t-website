@@ -12,3 +12,12 @@ With Spec-Up-T, you don’t need to install Node.js, Git, or any tools on your c
 - Use the web-based menu under “Run workflow” to run scripts like rendering your specification, generating a PDF, or updating files—all with a few clicks.
 
 There are no downloads or command lines—just a GitHub account and a browser. Dive in and start specifying the easy way!
+
+If you want a quick visual introduction, watch this video (no sound):
+
+<video controls>
+    <source src="https://dwarshuis.com/various/spec-up-t/documentation-website/video/create-web-based.mp4" type="video/mp4" />
+ Your browser does not support video tags
+</video>
+
+[Link to the video](https://dwarshuis.com/various/spec-up-t/documentation-website/video/create-web-based.mp4)

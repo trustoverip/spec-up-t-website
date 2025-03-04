@@ -16,6 +16,10 @@ Still, it can be confusing. And if you're used to a regular application you cont
 Currently, the menu is only tested on MacOs and has not been tested on Windows OS.
 :::
 
+:::info
+Some of these menu items are available in the GitHub Web-based version (based on Github Actions). But since GitHub Actions cannot be interactive, the “Configure” option for example is not available. That, you will have to do manually.
+:::
+
 Assuming you already [installed](../getting-started/local-installation/installation.md) Spec-Up-T, here you find further instructions.
 
 To start, run this command in the terminal:
@@ -57,21 +61,25 @@ By the way, there are **three** modes for rendering the specification:
 
 **Creates a PDF. The PDF will be created in the same directory as the `index.html` file.**
 
-### `[3] Update new xrefs`
-
-**Creates all newly added “xref”'s (external references).**
+### `[3] Collect external references (cache, faster)`
 
 Also runs [1].
 
-`xrefs` are references to external glossaries (specifications). Each `xref` is checked against a local data collection to see if a reference exists, maintaining an external term's original version.
+:::info
+External references (`xrefs`) are references to external glossaries (specifications).
+:::
 
-You'll soon need a [GitHub Token](../getting-started/github-token.md) when looking up `xref`'s.
+The info will be taken from the local cache. This only works if there is a cache already, so the first time you run this, it will do the same as option [4]
 
-### `[4] Update all xrefs`
+### `[4] Collect external references (no cache, slower)`
 
-**(re)creates all “xref” (external references).**
+Also runs [1].
 
-If you delete an xref, it is also deleted from the system's bookkeeping.
+:::info
+External references (`xrefs`) are references to external glossaries (specifications).
+
+You need a [GitHub Token](../getting-started/github-token.md) when looking up `xref`'s.
+:::
 
 ### `[5] Add, remove or view xref source`
 

@@ -8,7 +8,7 @@ Create a new Spec-Up-T installation directly from your browser—no local setup 
 
 ## Running the "Create Spec-Up-T Project" Workflow
 
-This guide explains how to use the "Create Spec-Up-T Project via Repo Creation" workflow to generate a new Spec-Up-T project repository. Since this workflow requires write access, you’ll first fork the `trustoverip/spec-up-t` repository and run it from there—all via GitHub Actions in your browser!
+This guide explains how to use the "Create Spec-Up-T Project" workflow to generate a new Spec-Up-T project repository. Since this workflow requires write access, you’ll first fork the `trustoverip/spec-up-t` repository and run it from there—all via GitHub Actions in your browser!
 
 ### Prerequisites
 
@@ -70,6 +70,16 @@ This guide explains how to use the "Create Spec-Up-T Project via Repo Creation" 
      - Click the run, scroll to the bottom, and find the "Artifacts" section.
      - Download the ZIP file named after your project (e.g., `my-spec-project.zip`).
      - Unzip it locally or upload it to your own repo manually (e.g., drag files into a new GitHub repo).
+
+:::info
+In the context of GitHub Actions, an ephemeral runner refers to a temporary, single-use virtual machine or container that executes a workflow job and is discarded once the job is complete.
+
+When you start a GitHub Actions Workflow, an “ephemeral runner” is started “in the cloud.” Such a runner is the computer on which the Node.js scripts are run. With one click, everything is done; you, as a user, just have to wait. If you click on the workflow in the middle screen, you can see the console output, so to speak, and get an idea of what is happening.
+
+When you manually trigger a workflow in GitHub Actions (e.g., via the "Run workflow" button on the Actions tab), an ephemeral runner is spun up. The runner downloads the necessary tools, dependencies, and your repository code, executes the defined steps, and then terminates. Because it’s ephemeral, each run starts with a clean slate, ensuring no residual state from previous runs affects the outcome. This is particularly useful for debugging or one-off tasks, as it eliminates concerns about cached data or lingering configurations.
+
+:::
+
 
 ### Troubleshooting
 

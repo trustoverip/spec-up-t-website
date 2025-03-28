@@ -63,10 +63,16 @@ This will run
 1. `npm update` (which will update the `spec-up-t` package, and other packages)
 2. a custom script.
 
-If this giver errors, then run the following command:
+If this giver errors, then run the following commands:
+
+First update:
 
 ```bash
 npm update
+```
+Then run this:
+
+```bash
 node node_modules/spec-up-t/src/install-from-boilerplate/custom-update.js
 ```
 

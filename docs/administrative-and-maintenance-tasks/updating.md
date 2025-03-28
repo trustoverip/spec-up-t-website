@@ -66,6 +66,7 @@ This will run
 If this giver errors, then run the following command:
 
 ```bash
+npm update
 node node_modules/spec-up-t/src/install-from-boilerplate/custom-update.js
 ```
 

@@ -38,7 +38,11 @@ If there is a `.env` file already, with a token, you can skip this step.
 
 ### 2. Update `specs.json`
 
-Compare your `specs.json` with [the boilerplate version](https://github.com/trustoverip/spec-up-t/blob/master/src/install-from-boilerplate/boilerplate/specs.json). Use a file comparison tool like `diff` or `Meld` to identify differences. Ensure all entries align with the boilerplate.
+Compare your `specs.json` with [the boilerplate version](https://github.com/trustoverip/spec-up-t/blob/master/src/install-from-boilerplate/boilerplate/specs.json). Use the following tool to identify differences. Ensure all entries align with the boilerplate.
+
+```bash
+npx compare-spec-up-t-specs
+```
 
 ### 3. Set Up Terms
 
@@ -81,6 +85,7 @@ and then run this again:
 ```bash
 npm run custom-update
 ```
+
 
 
 

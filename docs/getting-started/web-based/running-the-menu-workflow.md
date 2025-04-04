@@ -17,7 +17,7 @@ This guide shows you how to use the "Menu" workflow in the `trustoverip/spec-up-
 
 1. **Navigate to the Workflow**:
    - Go to the [Actions tab](https://github.com/kordwarshuis/myproject4/actions) in your project repository (e.g., `your-username/my-spec-project`).
-   - Scroll through the list of workflows on the left and find **"Menu"**. Click it to select it.
+   - Scroll through the list of workflows on the left and find **"Run Menu"**. Click it to select it.
 
 2. **Start the Workflow**:
    - On the right side, click the "Run workflow" button or dropdown (it might be a button or under a small arrow). A form will appear with a dropdown menu.

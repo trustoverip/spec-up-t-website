@@ -53,10 +53,23 @@ Be sure to get the latest specs.json [here](https://github.com/trustoverip/spec-
 
 We consider migration a task for the roles `developer` or `administrator`.
 
+```
+npm install spec-up-t 
+```
+
 It's about file management. It's in line with how static website generator generally work. So, be aware that you only organize your files in the migration process, you then configure your configuration files and you're good to go. Spec-Up-T will:
 
-- create the `terms-index.json` in the root of the repo
-- generate the glossary in `index.html`
+- create the `terms-index.json` in the root of the repo, by the command: `touch terms-index.json`
+- if you haven't done before, run [updates](https://blockchainbird.github.io/spec-up-t-website/docs/administrative-and-maintenance-tasks/updating/#4-update)s firs; in brief:
+        ```bash
+        npm update
+        node node_modules/spec-up-t/src/install-from-boilerplate/custom-update.js
+        npm run custom-update
+        ```
+
+and then:
+
+- `run npm menu` option 1 to generate the glossary in `index.html`
 - creates `specs-generated.json` in the output directory, DON'T TOUCH
 
 By hand you have to:
@@ -136,13 +149,23 @@ This method is adopted from Docusaurus.
 Copy your old order of files from `specs-backup.json` and add `terms-and-definitions-intro.md` somewhere in the list (you choose the order!)
 
 #### Alter package.json
-Follow the instructions here: [Update package.json](https://trustoverip.github.io/spec-up-t-website/docs/various-roles/admins-guide/updating/#packagejson)
 
-#### Copy Spec-Up-T specific files
-Follow the instructions here: [Make Spec-Up-T operational](https://trustoverip.github.io/spec-up-t-website/docs/various-roles/admins-guide/updating/#copy-files-to-the-root-of-your-installation)
+Be inspired by the [starterpack]() package.json file or any closely related spec-up-t based repo that you've already migrated.
+
+> Example : take package.json from the already migrated *KERI specification* when you're in the work of migrating the *ACDC specification*
+
+Follow the instructions here: [Update](https://blockchainbird.github.io/spec-up-t-website/docs/administrative-and-maintenance-tasks/updating)
+
 
 #### Terms in their own directory
-| TBW why are we doing this | 
+
+Why has Spec-Up-T put the term definitions in separate files and in a separate directory. The reasons briefly:
+- a term def is an atomic piece of information we want to keep version controlled with git
+- To be able `tref` and `xref` over glossaries
+- levels and languages, with AI we're going to create a tree full of information based on the atomic files in English
+
+To see more explanation, read the [Terminology Governance Guide](https://trustoverip.github.io/ctwg-terminology-governance-guide/).
+
 You should place the terms in their own directory. This directory is defined in specs.json as `spec_terms_directory`.
 
 Alter the configuration according to your wishes and place all term-files the directory. Also see [Organize your Terminology data](#organize-your-terminology-data)

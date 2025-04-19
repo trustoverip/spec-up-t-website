@@ -150,7 +150,7 @@ Copy your old order of files from `specs-backup.json` and add `terms-and-definit
 
 #### Alter package.json
 
-Be inspired by the [starterpack]() package.json file or any closely related spec-up-t based repo that you've already migrated.
+Be inspired by the [starterpack](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/package.spec-up-t.json) package.json file or any closely related spec-up-t based repo that you've already migrated.
 
 > Example : take package.json from the already migrated *KERI specification* when you're in the work of migrating the *ACDC specification*
 

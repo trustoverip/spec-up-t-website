@@ -2,62 +2,152 @@
 sidebar_position: 101
 ---
 
-# Migrate from Spec-Up NEW
+# Migrate from Spec-Up to Spec-Up-T
 
 :::warning
-Work in progress. This instruction is based on one repo. It is not yet tested on other repos.
+Work in progress.
 :::
 
-## Clean
+## Prerequisites
 
-- empty `/assets`
-- remove `/docs/fonts`
-- remove `/gulpfile.js`
-- remove `/.idea`
-- from `.gitignore` remove:
-  - `package-lock.js`
-  - `*.index.html`
-  - `/.gems/Gemfile.lock`
+- A functioning Spec-Up installation that you want to convert to Spec-Up-T
+- Node.js version 18 or higher
+- Git installed on your local system
+- A terminal/command line interface
+- A text editor or IDE (Visual Studio Code recommended)
+
+## Migration Process in Detail
+
+### 1. Back Up Your Critical Files
+
+First, create backups of your configuration files:
+```bash
+cp specs.json specs-backup.json
+cp package.json package-backup.json
+```
+
+### 2. Clean Up Repository Structure
+
+Remove unnecessary directories and files:
+- Empty the `/assets` directory
+- Delete `/docs/fonts` directory if present
+- Remove `/.idea` directory if present
+- Delete `/gulpfile.js` file
 - Remove all files from `.github/workflows`
+- Clean up your `.gitignore` file:
+  - Remove `package-lock.js` entry
+  - Make sure that the `index.html` file in the `"output_path"` directory (in `specs.json`) is not ignored
 
-## Add
+### 3. Add Required Files and Configuration
 
-- add these files to `/assets`:
+#### Add Test Files
+Add the required test files to the `/assets` directory from the spec-up-t repository.
   - https://github.com/blockchainbird/spec-up-t/blob/master/src/install-from-boilerplate/boilerplate/assets/test.json
   - https://github.com/blockchainbird/spec-up-t/blob/master/src/install-from-boilerplate/boilerplate/assets/test.text
-- remove content of `/package.json` and replace it with `https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/package.json`
-- move `specs.json` to `specs.json.backup` and create new `specs.json` from `https://github.com/blockchainbird/spec-up-t/blob/3dc92062d95c918b3e47e4704634b39fef603aca/src/install-from-boilerplate/boilerplate/specs.json`
-- use the following entries from backup file:
-    - "title": "Authentic Chained Data Containers (ACDC)"
-    - `"source": {  
-        "host": "github",
-        "account": "trustoverip",
-        "repo": "tswg-acdc-specification"
-    }`
-- In `specs.json`, `"markdown_paths"`:  Empty everything between square brackets so it looks like this: 
-`"markdown_paths": [ ]`
-- Make sure `specs.json` is valid JSON
-- add this file to `/spec`
-    `https://github.com/blockchainbird/spec-up-t/blob/master/src/install-from-boilerplate/boilerplate/spec/terms-and-definitions-intro.md`
-- create directory called `terms-definitions`
 
-## Run
+#### Update Package Configuration
+Replace your `/package.json` with the version from the [spec-up-t starter pack](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/package.spec-up-t.json) or from a similar repository you've already migrated.
 
-- run:
-    `npm install`
-- run:
-    `npm install spec-up-t`
-- run
-    `node node_modules/spec-up-t/src/install-from-boilerplate/custom-update.js`
-- run
-    `npx spec-up-splitter`
-    (use `spec/spec.md` as the source file)
-- BUG: Repeat: In `specs.json`, `"markdown_paths"`:  Empty everything between square brackets so this remains: `"markdown_paths": [ ]`
-- In `specs.json`, `"markdown_paths"` add these two files:      `"markdown_paths": [        "glossary-intro-created-by-split-tool.md",        "terms-and-definitions-intro.md"      ]`,
-- Deactivate `/spec/spec.md` by renaming `/spec/spec.md` to `/spec/_spec.md`
-- `npm run menu`, option 1, etc
+#### Create New Specs.json
+1. Download the latest specs.json template from the [starter pack](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/specs.json)
+2. Save it to the root of your repository
+3. Customize it with your specific information:
+   - Title
+   - Source information (host, account, repo)
+   - Markdown paths (copy from your backup, excluding terminology files)
+   - Set up your preferred `spec_terms_directory` (e.g., "terms-definitions")
 
-## Repair before git commit:
-- Do not commit README.md but check if you want to keep the original content
-- Check if there are double entries in .gitignore and deduplicate
+Example structure:
+```json
+{
+    "specs": [
+        {
+            "title": "Your Specification Title",
+            "spec_directory": "./spec",
+            "spec_terms_directory": "terms-definitions",
+            "output_path": "./docs",
+            "markdown_paths": [
+                "intro.md",
+                "your-content-files.md"
+            ],
+            "logo": "path/to/your/logo.svg",
+            "logo_link": "your-logo-link-url",
+            "source": {
+                "host": "github",
+                "account": "your-account",
+                "repo": "your-repo-name"
+            }
+        }
+    ]
+}
+```
+
+#### Set Up Terminology Structure
+1. Create a terminology introduction file:
+   ```bash
+   cd ./spec
+   touch terms-and-definitions-intro.md
+   ```
+2. Create a directory for your terminology files:
+   ```bash
+   mkdir -p ./spec/terms-definitions
+   ```
+
+### 4. Installation and Package Setup
+
+1. Clean up existing installation:
+   ```bash
+   rm -rf node_modules
+   rm package-lock.json
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Install spec-up-t package:
+   ```bash
+   npm install spec-up-t
+   ```
+
+4. Run the update scripts:
+   ```bash
+   npm update
+   node node_modules/spec-up-t/src/install-from-boilerplate/custom-update.js
+   (or npm run custom-update)
+   ```
+
+### 5. Organize Your Terminology
+
+1. Use the splitter tool to separate your terms and definitions into individual files
+2. Place these files in your designated terminology directory (`/spec/terms-definitions`)
+3. You can organize terms by:
+   - Using the `terms-index.json` file to change the order
+   - Using filename prefixes for custom ordering (e.g., `10_validator.md`, `15_autonomous-identifier.md`)
+
+### 6. Generate Your Specification
+
+1. Run the setup menu:
+   ```bash
+   npm run menu
+   ```
+
+2. Select option 1 to generate the specification in `index.html`
+3. If needed, add new terms using option 6
+
+### 7. Final Review Before Commit
+
+1. Review your README.md content to ensure it's up to date
+2. Check your .gitignore file for any duplicate entries and clean them up
+3. Verify that `index.html` has been generated correctly
+4. Check that all terms appear correctly in the generated glossary
+
+## Troubleshooting
+
+- If you encounter npm warnings during installation, you can generally ignore them
+- If generation fails, check your specs.json format and markdown paths
+- For term organization issues, verify the structure of your terminology files
+
+Run the final generation with `npm run menu` and select option 1 to complete the migration.
 

@@ -2,7 +2,7 @@
 sidebar_position: 101
 ---
 
-# Migrate from Spec-Up to Spec-Up-T
+# Migrate from Spec-Up to Spec-Up-T (new, work in progress)
 
 :::warning
 Work in progress.
@@ -31,8 +31,8 @@ cp package.json package-backup.json
 Remove unnecessary directories and files:
 - Empty the `/assets` directory
 - Delete `/docs/fonts` directory if present
-- Remove `/.idea` directory if present
 - Delete `/gulpfile.js` file
+- Delete `/index.js` file
 - Remove all files from `.github/workflows`
 - Clean up your `.gitignore` file:
   - Remove `package-lock.js` entry
@@ -40,16 +40,11 @@ Remove unnecessary directories and files:
 
 ### 3. Add Required Files and Configuration
 
-#### Add Test Files
-Add the required test files to the `/assets` directory from the spec-up-t repository.
-  - https://github.com/blockchainbird/spec-up-t/blob/master/src/install-from-boilerplate/boilerplate/assets/test.json
-  - https://github.com/blockchainbird/spec-up-t/blob/master/src/install-from-boilerplate/boilerplate/assets/test.text
-
 #### Update Package Configuration
 Replace your `/package.json` with the version from the [spec-up-t starter pack](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/package.spec-up-t.json) or from a similar repository you've already migrated.
 
 #### Create New Specs.json
-1. Download the latest specs.json template from the [starter pack](https://github.com/trustoverip/spec-up-t-starter-pack/blob/main/spec-up-t-boilerplate/specs.json)
+1. Download the latest specs.json template from the [starter pack](https://github.com/blockchainbird/spec-up-t/blob/master/src/install-from-boilerplate/boilerplate/specs.json)
 2. Save it to the root of your repository
 3. Customize it with your specific information:
    - Title
@@ -120,7 +115,12 @@ Example structure:
 
 ### 5. Organize Your Terminology
 
-1. Use the splitter tool to separate your terms and definitions into individual files
+1. Use the splitter tool to separate your terms and definitions into individual files:
+       ```bash
+       npx spec-up-splitter
+       ```
+
+       (find the markdown file that holds the terms and definitions and use it as the source file)
 2. Place these files in your designated terminology directory (`/spec/terms-definitions`)
 3. You can organize terms by:
    - Using the `terms-index.json` file to change the order

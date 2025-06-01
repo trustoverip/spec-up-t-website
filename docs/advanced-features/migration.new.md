@@ -10,11 +10,21 @@ Work in progress.
 
 ## Prerequisites
 
-- A functioning Spec-Up installation that you want to convert to Spec-Up-T
+- A functioning **Spec-Up** installation that you want to convert to **Spec-Up-T**
 - Node.js version 18 or higher
 - Git installed on your local system
 - A terminal/command line interface
 - A text editor or IDE (Visual Studio Code recommended)
+
+## Is it **Spec-Up**?
+
+How do we know if your repository is a Spec-Up installation?
+
+- Is there a `specs.json` present in the root directory that looks like [this](https://github.com/decentralized-identity/spec-up/blob/master/specs.json): 
+- Is there a `package.json` present in the root directory that looks like [this](https://github.com/decentralized-identity/spec-up/blob/master/package.json):
+- Is there a `index.js` present in the root directory that looks like [this](https://github.com/decentralized-identity/spec-up/blob/master/index.js): 
+
+If so, then you are likely using Spec-Up.
 
 ## Migration Process in Detail
 
@@ -30,6 +40,7 @@ cp package.json package-backup.json
 
 Remove unnecessary directories and files:
 - Empty the `/assets` directory
+- Delete `/fonts` directory if present
 - Delete `/docs/fonts` directory if present
 - Delete `/gulpfile.js` file
 - Delete `/index.js` file

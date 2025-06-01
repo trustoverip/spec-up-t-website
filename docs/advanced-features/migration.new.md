@@ -5,6 +5,10 @@ sidebar_position: 101
 # Migrate from Spec-Up to Spec-Up-T (new, work in progress)
 
 :::warning
+We are building a [migration tool to automate this process](https://github.com/blockchainbird/spec-up-migrate/blob/main/README.md). 
+:::
+
+:::warning
 Work in progress.
 :::
 

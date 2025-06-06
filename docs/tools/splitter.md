@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Splitter Tool
+# Term File Splitter
 
 
 ### Introduction

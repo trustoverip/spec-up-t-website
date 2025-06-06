@@ -2,7 +2,6 @@
 sidebar_position: 1
 ---
 
-
 # Spec-Up Migrater
 
 The Spec-Up Migrater is a tool that helps you migrate your existing **Spec-Up** specification to **Spec-Up-T**.

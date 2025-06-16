@@ -22,21 +22,7 @@ Before proceeding, ensure you have the following tools and knowledge:
 
 Updating your **Spec-Up-T** installation requires the following steps:
 
-### 1. Configure GitHub Token
-
-You need a GitHub Personal Access Token for authentication. [Instructions how to create a GitHub Personal Access Token](../getting-started/github-token.md).
-
-- Rename `.env.example` to `.env`.
-- Add your token in the `.env` file as follows:
-  ```env
-  GITHUB_TOKEN=<your-token>
-  ```
-
-:::info
-If there is a `.env` file already, with a token, you can skip this step.
-:::
-
-### 2. Update `specs.json`
+### 1. Update `specs.json`
 
 Compare your `specs.json` with [the boilerplate version](https://github.com/trustoverip/spec-up-t/blob/master/src/install-from-boilerplate/boilerplate/specs.json). Use the following tool to identify differences. Ensure all entries align with the boilerplate.
 
@@ -44,7 +30,7 @@ Compare your `specs.json` with [the boilerplate version](https://github.com/trus
 npx compare-spec-up-t-specs
 ```
 
-### 3. Set Up Terms
+### 2. Set Up Terms
 
 #### `terms-and-definitions-intro.md`
 
@@ -55,7 +41,7 @@ npx compare-spec-up-t-specs
 If there is a `terms-and-definitions-intro.md` file in the `/specs` directory already you can skip this step.
 :::
 
-### 4. Update
+### 3. Update
 
 Run the update function:
 

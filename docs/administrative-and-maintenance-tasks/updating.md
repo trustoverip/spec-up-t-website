@@ -59,7 +59,7 @@ Compare your `specs.json` with [the boilerplate version](https://github.com/trus
 npx compare-spec-up-t-specs
 ```
 
-
+See the [tools page](../tools/compare-spec-up-t-specs.md) for more details.
 
 
 

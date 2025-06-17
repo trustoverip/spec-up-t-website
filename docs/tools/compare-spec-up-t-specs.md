@@ -5,3 +5,5 @@ The [compare-spec-up-t-specs tool](https://github.com/kordwarshuis/compare-spec-
 ```bash
 npx compare-spec-up-t-specs
 ```
+
+Also see [Updating Spec-Up-T](../administrative-and-maintenance-tasks/updating.md) for more details on updating your installation.

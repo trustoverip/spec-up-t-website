@@ -2,7 +2,7 @@
 sidebar_position: 100
 ---
 
-# General tools (Node.js, npx)
+# General tools
 
 ## Find local clones of GitHub repositories
 

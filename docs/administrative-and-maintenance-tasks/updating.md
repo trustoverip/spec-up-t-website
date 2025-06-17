@@ -22,7 +22,36 @@ Before proceeding, ensure you have the following tools and knowledge:
 
 Updating your **Spec-Up-T** installation requires the following steps:
 
-### 1. Update `specs.json`
+### 1. Run migration script
+
+Make sure you are in the root directory of your installation, then run the migration script as follows:
+
+```bash
+npx spec-up-migrate complete --skip-detection
+```
+
+:::info
+
+Good to know:
+
+```
+npx spec-up-migrate complete --skip-detection
+│   │               │        │
+│   │               │        └── Option/Flag
+│   │               └─────────── Subcommand/Command
+│   └─────────────────────────── Package/Tool
+└─────────────────────────────── Package runner
+```
+:::
+
+
+
+
+### 2. Manual work: check `specs.json` and terminology files
+
+Depending on the installation being converted, the `specs.json` may need to be updated.
+
+Also, the terminology files may need to be moved. This is manual work.
 
 Compare your `specs.json` with [the boilerplate version](https://github.com/trustoverip/spec-up-t/blob/master/src/install-from-boilerplate/boilerplate/specs.json). Use the following tool to identify differences. Ensure all entries align with the boilerplate.
 
@@ -30,47 +59,6 @@ Compare your `specs.json` with [the boilerplate version](https://github.com/trus
 npx compare-spec-up-t-specs
 ```
 
-### 2. Set Up Terms
-
-#### `terms-and-definitions-intro.md`
-
-- Create a file named `terms-and-definitions-intro.md` in the `/specs` directory.
-- Add an intro text or leave it empty. Ensure this file is referenced in `specs.json`. See the [boilerplate](https://github.com/trustoverip/spec-up-t/blob/master/src/install-from-boilerplate/boilerplate/specs.json#L12).
-
-:::info
-If there is a `terms-and-definitions-intro.md` file in the `/specs` directory already you can skip this step.
-:::
-
-### 3. Update
-
-Run the update function:
-
-```bash
-npm run custom-update
-```
-
-This will run
-1. `npm update` (which will update the `spec-up-t` package, and other packages)
-2. a custom script.
-
-If this giver errors, then run the following commands:
-
-First update:
-
-```bash
-npm update
-```
-Then run this:
-
-```bash
-node node_modules/spec-up-t/src/install-from-boilerplate/custom-update.js
-```
-
-and then run this again:
-
-```bash
-npm run custom-update
-```
 
 
 

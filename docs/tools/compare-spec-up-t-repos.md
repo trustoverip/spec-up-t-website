@@ -5,5 +5,5 @@ The [compare-spec-up-t-repos tool](https://github.com/kordwarshuis/compare-spec-
 inventory of shared understanding, scope, or mental model.
 
 ```bash
-npx compare-spec-up-t-specs
+npx @korkor/compare-spec-up-t-repos
 ```

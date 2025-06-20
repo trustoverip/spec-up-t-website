@@ -2,7 +2,9 @@
 sidebar_position: 10
 ---
 
-# Adding to specref.org
+# ❶ Adding to specref.org
+
+## How to add a new specification reference to the Specref database
 
 This tutorial explains how to add a new specification reference to the Specref database, which is a community-maintained database of web standards and related references.
 

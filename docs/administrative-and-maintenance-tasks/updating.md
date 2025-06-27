@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 
 
-# Updating Spec-Up-T
+# Updating
 
 ## Introduction
 

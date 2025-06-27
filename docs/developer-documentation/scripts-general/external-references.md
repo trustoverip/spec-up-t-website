@@ -1,4 +1,4 @@
-# External References in Spec-Up-T
+# External References
 
 This document explains how external references work in Spec-Up-T, covering both xref (external reference links) and tref (transcluded references).
 

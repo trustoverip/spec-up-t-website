@@ -1,4 +1,4 @@
-# Moving Spec-Up-T repo to another location
+# Moving repo to another location
 
 Actions to take when migrating repo to another GitHub user.
 

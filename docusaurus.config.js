@@ -49,7 +49,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/blockchainbird/spec-up-t-website/tree/main/',
-          showLastUpdateTime: true
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
         blog: false,
         theme: {

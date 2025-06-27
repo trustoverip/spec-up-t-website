@@ -51,9 +51,7 @@ const config = {
             'https://github.com/blockchainbird/spec-up-t-website/tree/main/',
           showLastUpdateTime: true
         },
-        // blog: {
-        //   showReadingTime: true,
-        // },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },

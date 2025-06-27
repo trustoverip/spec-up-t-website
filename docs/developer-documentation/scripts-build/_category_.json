@@ -1,8 +1,8 @@
 {
-  "label": "Back-end",
+  "label": "Scripts: build",
   "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "Back-end."
+    "description": "Scripts: build."
   }
 }

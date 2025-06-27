@@ -2,7 +2,7 @@
 
 ## How to use it
 
-See [the instructions for writers](../various-roles/writing-tips.md).
+See [the instructions for writers](../../various-roles/writing-tips.md).
 
 ## Implementation Details
 

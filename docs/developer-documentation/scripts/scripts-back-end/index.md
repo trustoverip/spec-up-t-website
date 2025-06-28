@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# Intro
+# Introduction
 
 ## Runtime Architecture Clarification
 

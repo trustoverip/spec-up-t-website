@@ -21,7 +21,7 @@ An Admin role is a supporting role in Spec-Up-T.
 ## Solutions
 
 ### Add 2 and 3. Updates
-Use case 2, [update Spec-Up-T](../../administrative-and-maintenance-tasks/updating.md), has to be followed by Use cases 3: [Update own installation](../../administrative-and-maintenance-tasks/updating.md) (ToDo: add anchor links)
+Use case 2, [update Spec-Up-T](../../maintenance-tasks/updating.md), has to be followed by Use cases 3: [Update own installation](../../maintenance-tasks/updating.md) (ToDo: add anchor links)
 
 ### Add 4. Languages
 _Not yet operational!_ However, The design is:

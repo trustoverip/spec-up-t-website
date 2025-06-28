@@ -44,7 +44,7 @@ For more details, refer to [the installation section](./getting-started/local-in
 
 Brief answer: because Spec-Up-T is based on npm packaging and version control.
 
-To understand why more thoroughly: Spec-Up-T is team-work tooling based on npm, git versioning and (automated) github deployment. Therefore participants incept and maintain local version of specifications on their computer, manage updates to and fro github.com and generate local test and finally production sites (github actions github.io site).
+To understand why more thoroughly: Spec-Up-T is team-work tooling based on npm, git versioning and (automated) GitHub deployment. Therefore participants incept and maintain local version of specifications on their computer, manage updates to and fro github.com and generate local test and finally production sites (GitHub Actions GitHub.io site).
 With this type of creation and collegial management of versions and updates come commands on the command line.
 
 ## What is the command for help?

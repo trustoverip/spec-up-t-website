@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# Intro
+# Introduction
 
 Welcome to the comprehensive developer's guide for the Spec-Up-T system. This documentation will guide you through contributing to Spec-Up-T, whether you're adding features, fixing bugs, or creating custom extensions for your specific needs.
 

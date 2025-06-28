@@ -2,11 +2,13 @@
 sidebar_position: 1
 ---
 
-# Intro
+# Local Installation Overview
 
-You can use Spec-Up-T locally on your computer through the command line.
+Spec-Up-T can be used locally on your computer via the command line, providing greater control and flexibility.
 
-- First, install Spec-Up-T
-- Then you make sure your changes end up on GitHub
+To get started:
 
-After that you can start writing, editing, adding to your Spec-Up-T installation.
+- Install Spec-Up-T on your local machine.
+- Ensure your changes are synchronized with GitHub.
+
+Once set up, you can begin writing, editing, and expanding your Spec-Up-T installation efficiently.

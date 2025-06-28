@@ -1,8 +1,8 @@
 ---
-sidebar_position: 8
+sidebar_position: 10
 ---
 
-# Troubleshooting
+# 🚑 Troubleshooting
 
 Some tips in case of problems:
 

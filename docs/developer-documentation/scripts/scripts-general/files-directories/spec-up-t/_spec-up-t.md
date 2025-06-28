@@ -62,7 +62,7 @@ These are the main files and directories of the spec-up-t package, necessary for
 ```sh
 boilerplate/node_modules/spec-up-t/
   │
-  ├── src/ ------------ Node.js scripts
+  ├── src/ ------------ Node.js build scripts
   │
   ├── template/ ------- HTML template
   │

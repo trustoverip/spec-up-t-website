@@ -41,4 +41,4 @@ For detailed information about the installer files and structure, see:
 
 For installation instructions, see:
 
-- [Getting Started Guide](../../getting-started/intro.md)
+- [Getting Started Guide](../../../getting-started/intro.md)

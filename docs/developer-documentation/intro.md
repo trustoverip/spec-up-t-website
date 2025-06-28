@@ -175,7 +175,7 @@ npx create-spec-up-t my-spec-up-t-website
 
 ## Next Steps
 
-- Explore the [Scripts Documentation](./scripts/) to understand the build process
+- Explore the [Scripts Documentation](../category/scripts/) to understand the build process
 - Learn about [GitHub Repositories](./github-repositories.md) structure
-- Check out [Front-End Development](./scripts/scripts-front-end/) for client-side customization
-- Review [Specification References](./spec-references/) for external integrations
+- Check out [Front-End Development](./scripts/scripts-front-end/intro.md) for client-side customization
+- Review [Specification References](./spec-references/add-to-specref.md) for external integrations

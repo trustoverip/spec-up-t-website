@@ -63,5 +63,5 @@ To understand how the build process works:
 2. Review the specific build script documentation in this section
 3. Examine the configuration options available in `specs.json`
 
-For installation and setup instructions, refer to the [Getting Started](../../getting-started/intro.md) section.
+For installation and setup instructions, refer to the [Getting Started](../../../getting-started/intro.md) section.
 

@@ -21,7 +21,7 @@ Spec-Up-T has more features than Spec-Up.
 
 ## What you'll need
 
-- A terminal / Command Line
+- A terminal / command line
 - An editor, also called IDE (Integrated Development Environment). We recommend Visual Studio Code, but an editor in which you can quickly write Markdown is also good
 - [Node.js](https://nodejs.org/en/download/):
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies

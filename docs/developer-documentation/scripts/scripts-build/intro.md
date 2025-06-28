@@ -2,88 +2,66 @@
 sidebar_position: 0
 ---
 
-# Intro
+# Introduction
 
-## Description of repositories related to Spec-Up-T
+## Build Scripts Overview
 
-### The Spec-Up-T installer repository
+This section covers the build-time scripts and processes used in Spec-Up-T to generate specification documents from markdown source files.
 
-The Spec-Up-T Installer repository installs a set of files somewhere on a file system.
+## Core Components
 
-- That can be on your local file system, which you later create a GitHub repository from so that others can use your repository as an external source for their glossary. However, you don't have to make a repository of it; without it, you will also get a working glossary.
-- You can also start from GitHub and create a repository through this web interface with the files included in the Starterpack (this option is in development).
+### The Spec-Up-T Package
 
-The Spec-Up-T Installer repository has a subdirectory named `spec-up-t-boilerplate`. This subdirectory is a working Spec-Up-T install. The scripts in the root copy this subdirectory to your chosen location on your file system via an NPX command (or you do this via GitHub's web interface, but this is under development, as mentioned above).
+The main `spec-up-t` npm package contains all the build-time functionality. When you install Spec-Up-T (either via the installer or manually), this package is added to your `node_modules` directory and provides all the tools needed to transform your markdown files into rendered specifications.
 
-Note: You can also copy `spec-up-t-boilerplate/` manually and then call `npm install`. That has the same result.
+### Scripts Section in package.json
 
-When you run this NPX command, this subdirectory is copied to your local file system, and then, when that is done, `npm install` is called. This installs the packages as defined in the co-copied `package.json`, which is also in the mentioned subdirectory. The `package.json` in the root of the repository serves to copy the subdirectory to your local file system, via `create-spec-up-t-starterpack.js`.
+In the `scripts` section of the `package.json` file for your Spec-Up-T installation, you will find commands that trigger the build process:
 
-:::info
-The relevant files + a directory in the Spec-Up-T installer repository:
-
-```
-spec-up-t-boilerplate/
-create-spec-up-t-starterpack.js
-messages.js
-package.json
-```
-
-This directory contains a working Spec-Up-T:
-```
-spec-up-t-boilerplate/
+```json
+{
+  "scripts": {
+    "render": "spec-up-t render",
+    "dev": "spec-up-t dev",
+    "build": "spec-up-t build"
+  }
+}
 ```
 
-These files …
+These are calls to the `spec-up-t` library in `node_modules` that handle different aspects of the build process.
 
-```
-create-spec-up-t-starterpack.js
-messages.js
-package.json
-```
+### Build Process Architecture
 
-… copy the `spec-up-t-boilerplate/` directory to your desired location via NPX.
-:::
+The Node.js scripts that run during the build process are located in:
 
-### The Spec-Up-T repository
+- The root of the Spec-Up-T repository
+- The `/src/` directory within the Spec-Up-T package
 
-One of the packages listed in the `package.json` copied to the local file system is `spec-up-t`. This package does all the work from the `node_modules` directory created when you run `npm install`. The copied files in the subdirectory have a helper function.
+When you run `npm run render`, it calls the build scripts from the Spec-Up-T package inside `node_modules`, which then:
 
-In the `package.json` you will find a `scripts` section. These reference the `spec-up-t` package, which can be called via npm commands, such as `npm run render`.
+1. **Parse Configuration**: Read the `specs.json` configuration file
+2. **Process Markdown**: Transform markdown files according to Spec-Up-T syntax
+3. **Handle Terms**: Process terminology definitions and cross-references
+4. **Generate Output**: Create the final HTML specification document
+5. **Apply Styling**: Add CSS and JavaScript for interactive features
 
-### Adding server-side functionality
+### Build-Time Features
 
-The Node.js scripts that run server-side are in the root of the Spec-Up-T repo and the `/src/` directory.
+The build scripts handle several key features:
 
-If you have a Spec-Up-T installation (via `npx create-spec-up-t`), how can you run and test server-side Node.js code locally without publishing it on npm first?
+- **Terminology Processing**: Converting term definitions and creating cross-references
+- **External References**: Fetching and linking to terms from external specifications
+- **Markdown Extensions**: Processing Spec-Up-T specific markdown syntax
+- **Template Rendering**: Applying HTML templates and styling
+- **Asset Management**: Handling images, CSS, and JavaScript files
 
-- Clone the Spec-Up-T repo
-- Install a Spec-Up-T via the installer
-  
-Generally, if you now run `npm run render,` it will call the scripts from the Spec-Up-T inside `node_modules` .
+## Getting Started
 
-### Scripts section
+To understand how the build process works:
 
-In the `scripts` section of the `package.json` file for your Spec-Up-T installation, you will find commands like `render` in the `scripts` section:
+1. Start with [Spec-Up-T Installer](./spec-up-t-installer.md) to understand how the build environment is set up
+2. Review the specific build script documentation in this section
+3. Examine the configuration options available in `specs.json`
 
-ToDo: add file list
+For installation and setup instructions, refer to the [Getting Started](../../getting-started/intro.md) section.
 
-These are calls to the `Spec-Up-T` library in `node_modules`.
-
-However, we want to test locally. To do this, we will call the scripts from your local Spec-Up-T clone, where you are developing.
-
-Type this into your terminal:
-
-:::warning
-It is only tested on macOS.
-:::
-
-To `render` the index.html file, run this in your terminal:
-
-```bash
-node -e "require('/Users/***/path/to/your/spec-up-t/index.js')({ nowatch: true })"
-```
-
-You will notice that this is the same as the value of the `render` key without the escape characters.
-
-Adjust the other entries if you want to run them.

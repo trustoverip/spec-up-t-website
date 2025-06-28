@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Intro
+# Introduction
 
 An Admin role is a supporting role in Spec-Up-T. 
 

@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# Intro
+# Introduction
 
 We distinguish between a front end and a build process:
 

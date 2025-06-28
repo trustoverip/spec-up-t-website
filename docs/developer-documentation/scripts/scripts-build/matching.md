@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Matching terms
 
-## Intro
+## Introduction
 
 One of the strengths of Spec-Up-T is that you specify a term, and the link to the definition is automatically established. Both internally (via `[[ref:term]]`) and to external specifications (via `[[xref:term]]` and `[[tref:term]]`).
 

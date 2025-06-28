@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-## Intro
+## Introduction
 
 Below is a summary of the files and folders found in the `spec-up-t` [GitHub repository](https://github.com/trustoverip/spec-up-t) / [npm package](https://www.npmjs.com/package/spec-up-t).
 

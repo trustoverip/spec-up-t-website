@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Requirements
 
-## Intro
+## Introduction
 
 To successfully run **Spec-Up-T**, ensure your system meets the following requirements:
 

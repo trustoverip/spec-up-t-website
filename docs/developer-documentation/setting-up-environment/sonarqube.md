@@ -92,7 +92,7 @@ Add .scannerwork to your `.gitignore` file to ensure it is not tracked by git:
 ## Troubleshooting
 
 ```bash
-ERROR] ScannerEngine: You are running manual analysis while Automatic Analysis is enabled. Please consider disabling one or the other.
+[ERROR] ScannerEngine: You are running manual analysis while Automatic Analysis is enabled. Please consider disabling one or the other.
 [ERROR] Bootstrapper: An error occurred: Error: Scanner engine failed with code 1
 ```
 

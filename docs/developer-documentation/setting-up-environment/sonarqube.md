@@ -112,4 +112,3 @@ How to fix:
    - Make sure you are in your project root.
    - Run: `npx sonarqube-scanner`
    - The error should be gone.
-   - 

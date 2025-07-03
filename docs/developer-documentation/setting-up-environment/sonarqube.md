@@ -77,9 +77,9 @@ You can find the results of npx sonarqube-scanner in your browser at the dashboa
 
 This dashboard shows the Quality Gate status, code issues, duplications, coverage, and more.
 
-Note:
-
+:::note
 The scanner output in your terminal only shows the upload status, not the full analysis results.
+:::
 
 When you run `npx sonarqube-scanner`, your local analysis results are uploaded to the remote SonarCloud server. The dashboardUrl in `.scannerwork/report-task.txt` points to the web dashboard where you can view the results of your latest analysis for your project.
 

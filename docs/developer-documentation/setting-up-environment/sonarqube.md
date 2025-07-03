@@ -81,7 +81,7 @@ Note:
 
 The scanner output in your terminal only shows the upload status, not the full analysis results.
 
-When you run `npx sonarqube-scanner`, your local analysis results are uploaded to the remote SonarCloud server. The dashboardUrl in report-task.txt points to the web dashboard where you can view the results of your latest analysis for your project.
+When you run `npx sonarqube-scanner`, your local analysis results are uploaded to the remote SonarCloud server. The dashboardUrl in `.scannerwork/report-task.txt` points to the web dashboard where you can view the results of your latest analysis for your project.
 
 Add .scannerwork to your `.gitignore` file to ensure it is not tracked by git:
 

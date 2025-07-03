@@ -88,3 +88,28 @@ Add .scannerwork to your `.gitignore` file to ensure it is not tracked by git:
 ```
 .scannerwork/
 ```
+
+## Troubleshooting
+
+```bash
+ERROR] ScannerEngine: You are running manual analysis while Automatic Analysis is enabled. Please consider disabling one or the other.
+[ERROR] Bootstrapper: An error occurred: Error: Scanner engine failed with code 1
+```
+
+You are seeing this error because SonarCloud Automatic Analysis is enabled for your project, but you are also trying to run a manual analysis with the scanner. SonarCloud does not allow both at the same time.
+
+How to fix:
+
+1. Disable Automatic Analysis on SonarCloud:
+
+   - Go to your project on SonarCloud.
+   - Navigate to Project Settings > Analysis Method.
+   - Switch from Automatic Analysis to CI-based analysis (manual).
+   - Save your changes.
+
+2. Now you can run the scanner manually:
+
+   - Make sure you are in your project root.
+   - Run: `npx sonarqube-scanner`
+   - The error should be gone.
+   - 

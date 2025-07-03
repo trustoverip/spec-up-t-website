@@ -32,12 +32,12 @@ Add a `sonar-project.properties` file to your project with the following configu
 sonar.projectKey=<your-project-key>
 sonar.organization=<your-organization>
 sonar.host.url=https://sonarcloud.io
-sonar.token=${SONAR_TOKEN}
+sonar.token=SONAR_TOKEN
 sonar.exclusions=<comma-separated-list-of-paths-to-exclude>
 ```
 
 - Replace the placeholders with your actual values.
-- Use the environment variable `${SONAR_TOKEN}` for security.
+- Use the environment variable `SONAR_TOKEN` for security.
 
 ### 3. Set Up Environment Variable
 

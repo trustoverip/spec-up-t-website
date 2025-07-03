@@ -39,6 +39,18 @@ sonar.exclusions=<comma-separated-list-of-paths-to-exclude>
 - Replace the placeholders with your actual values.
 - Use the environment variable `SONAR_TOKEN` for security.
 
+Your `sonar-project.properties` file should be committed to git.
+
+Why?
+
+- It contains project-specific SonarQube/SonarCloud configuration.
+- It allows all contributors and CI systems to use the same analysis settings.
+- It does not contain sensitive information (as long as you do not put your real token in it).
+
+Important:
+
+- Do not commit your actual SonarCloud token.
+
 ### 3. Set Up Environment Variable
 
 Add your SonarQube token to your shell environment by editing your `~/.zshrc` file:
@@ -59,4 +71,20 @@ To initiate a code quality analysis, run the following command in your project d
 
 ```bash
 npx sonarqube-scanner
+```
+
+You can find the results of npx sonarqube-scanner in your browser at the dashboard URL shown in your report-task.txt file in the `.scannerwork` directory.
+
+This dashboard shows the Quality Gate status, code issues, duplications, coverage, and more.
+
+Note:
+
+The scanner output in your terminal only shows the upload status, not the full analysis results.
+
+When you run `npx sonarqube-scanner`, your local analysis results are uploaded to the remote SonarCloud server. The dashboardUrl in report-task.txt points to the web dashboard where you can view the results of your latest analysis for your project.
+
+Add .scannerwork to your `.gitignore` file to ensure it is not tracked by git:
+
+```
+.scannerwork/
 ```

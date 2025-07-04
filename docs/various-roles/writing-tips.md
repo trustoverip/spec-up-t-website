@@ -6,6 +6,16 @@ sidebar_position: 1
 
 We have one tip for you about how to use the Spec-Up-T specific tags in instructions, so they are not processed.
 
+## Comments in Markdown
+
+As [explained on Stackoverflow](https://stackoverflow.com/a/20885980) this is the best way to write comments in Markdown:
+
+```markdown
+[//]: # (This may be the most platform independent comment)
+```
+
+This is a common convention in Markdown to include comments that are not rendered in the final output. Everything inside `[//]: # ( ... )` is ignored by Markdown processors, so it's useful for adding notes, section markers, or instructions for editors and tools without affecting the visible document.
+
 ## Backslash Escape Mechanism
 
 ### Overview

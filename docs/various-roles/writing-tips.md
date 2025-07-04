@@ -4,8 +4,6 @@ sidebar_position: 1
 
 # Writing tips
 
-We have one tip for you about how to use the Spec-Up-T specific tags in instructions, so they are not processed.
-
 ## Comments in Markdown
 
 As [explained on Stackoverflow](https://stackoverflow.com/a/20885980) this is the best way to write comments in Markdown:

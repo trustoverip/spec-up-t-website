@@ -91,6 +91,8 @@ Add .scannerwork to your `.gitignore` file to ensure it is not tracked by git:
 
 ## Troubleshooting
 
+### 1
+
 ```bash
 [ERROR] ScannerEngine: You are running manual analysis while Automatic Analysis is enabled. Please consider disabling one or the other.
 [ERROR] Bootstrapper: An error occurred: Error: Scanner engine failed with code 1
@@ -112,3 +114,19 @@ How to fix:
    - Make sure you are in your project root.
    - Run: `npx sonarqube-scanner`
    - The error should be gone.
+
+### 2
+
+If you want to disable local analysis, then comment out the lines in `sonar-project.properties`:
+
+```
+# sonar.projectKey=<your-project-key>
+# sonar.organization=<your-organization>
+# sonar.host.url=https://sonarcloud.io
+# sonar.token=SONAR_TOKEN
+# sonar.exclusions=<comma-separated-list-of-paths-to-exclude>
+```
+
+:::warn
+Renaming `sonar-project.properties` to `sonar-project.properties.old` did not work for me.
+:::

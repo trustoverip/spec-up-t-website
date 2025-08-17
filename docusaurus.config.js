@@ -77,7 +77,7 @@ const config = {
           //   position: 'left',
           //   label: 'Admin section',
           // },
-          { to: '/docs/introduction/overview/', label: 'Enter Documentation', position: 'left' },
+          { to: '/docs/introduction/intro/', label: 'Enter Documentation', position: 'left' },
           { to: '/docs/spec-up-t-demo-site', label: 'Demo', position: 'left' },
           { to: '/docs/getting-started/github-token', label: 'GitHub token', position: 'left' },
           // { to: '/docs/admins-guide', label: 'Admin section', position: 'left' },

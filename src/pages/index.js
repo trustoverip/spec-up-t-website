@@ -19,10 +19,10 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div class="sellingpoints">
           <ul>
-            <li>Basic hosting requirements</li>
-            <li>Create external references</li>
+            <li>Write in markdown</li>
+            <li>Re-use existing glossaries</li>
             <li>Hosted on Github</li>
-            <li>Export to PDF</li>
+            <li>Export to standards (ISO, W3C)</li>
           </ul>
         </div>
 

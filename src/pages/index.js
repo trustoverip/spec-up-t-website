@@ -17,7 +17,7 @@ function HomepageHeader() {
         </Heading>
         <img src="img/logo.svg" alt="Logo" className={styles.logo} />
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div class="sellingpoints">
+        <div className="sellingpoints">
           <ul>
             <li>Write in markdown</li>
             <li>Re-use existing glossaries</li>

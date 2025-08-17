@@ -65,6 +65,7 @@ video {
   width: 100%;
   /* border: 3px solid #1D6DAE; */
 }
+
 .image-center img {
   margin: auto;
   display: block;
@@ -82,6 +83,7 @@ img {
   padding: 5px;
   box-shadow: 0 0 10px rgba(29, 109, 174, 0.287);
 }
+
 .navbar__logo img {
   border: none;
   box-shadow: none;
@@ -206,8 +208,8 @@ img {
 
   </div>
 */
-.filesystemlayout * { 
-  line-height: 1.2 !important; 
+.filesystemlayout * {
+  line-height: 1.2 !important;
   font-size: 1em;
 }
 

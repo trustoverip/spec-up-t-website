@@ -1,5 +1,6 @@
 {
-  "label": "🔧 Maintenance Tasks",
+  "label": "Maintenance Tasks",
+  "className": "icon-maintenance",
   "position": 7,
   "link": {
     "type": "generated-index",

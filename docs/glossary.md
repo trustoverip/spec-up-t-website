@@ -2,7 +2,7 @@
 sidebar_position: 11
 ---
 
-# 📖 Glossary
+# Glossary
 
 This is a glossary with some terms that you need to know in order to understand working with Spec-Up-T.
 

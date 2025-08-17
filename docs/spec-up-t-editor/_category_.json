@@ -1,5 +1,6 @@
 {
-  "label": "✎ Spec-Up-T Editor",
+  "label": "Spec-Up-T Editor",
+  "className": "icon-editor",
   "position": 110,
   "link": {
     "type": "generated-index",

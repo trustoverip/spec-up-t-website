@@ -2,7 +2,7 @@
 sidebar_position: 9
 ---
 
-# ❓ FAQ
+# FAQ
 
 Questions and answers about Spec-Up-T.
 

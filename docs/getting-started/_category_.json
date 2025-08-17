@@ -1,5 +1,6 @@
 {
-  "label": "🚀 Getting Started",
+  "label": "Getting Started",
+  "className": "icon-start",
   "position": 2,
   "link": {
     "type": "generated-index",

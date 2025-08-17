@@ -2,7 +2,7 @@
 sidebar_position: 10
 ---
 
-# 🚑 Troubleshooting
+# Troubleshooting
 
 Some tips in case of problems:
 

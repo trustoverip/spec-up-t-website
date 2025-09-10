@@ -89,7 +89,7 @@ Here follows a description of the structure of a term file:
 
 ### `[[def: ...]]`
 
-Local Term Definition
+Local Term Definition example:
 
 ```markdown
 [[def: authentication, auth, authn]]
@@ -101,27 +101,35 @@ Local Term Definition
 
 ### `[[ref: ...]]`
 
-Internal Reference
+Internal Reference example:
 
 ```markdown
-The system requires [[ref: authentication]] before access.
+[[def: access-control]]
+
+~ Access control is a security technique that regulates who or what can view or use resources in a computing environment.
+
+~ The system requires [[ref: authentication]] before access.
 ```
 
 **Usage:** Anywhere in the definition part of the content, to link to locally defined terms
 
 ### `[[xref: ...]]`
 
-External Reference
+External Reference example:
 
 ```markdown
-See the [[xref: external-spec, credential]] specification.
+[[def: verifiable-credential]]
+
+~ A verifiable credential is a tamper-evident credential that has authorship that can be cryptographically verified.
+
+~ See the [[xref: external-spec, credential]] specification for more details.
 ```
 
 **Usage:** Anywhere in the definition part of the content, to link to terms in other Spec-Up-T repositories
 
 ### `[[tref: ...]]`
 
-Transcluded Reference
+Transcluded Reference example:
 
 ```markdown
 [[tref: external-spec, digital-signature, alias]]

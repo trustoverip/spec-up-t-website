@@ -18,6 +18,14 @@
 | **`tref`** | `[[tref:spec,term, alias]]` | 📥 Import external definition | Embeds full content     |
 | **`spec`** | `[[spec:RFC-7519]]`         | 📚 Cite specification         | Links to standard spec  |
 
+:::info
+
+The `,` (comma) is the delimiter. A space after a comma is okay, but not necessary.
+
+:::
+
+
+
 ## Creating Definition Files
 
 ### 1. Create a new term file
@@ -51,7 +59,7 @@ File name should be descriptive but doesn't need to match the term
 
 :::info
 
-`[[def: primary-term,synonym1,synonym2]]` without the spaces is also ok.
+`[[def: primary-term,synonym1,synonym2]]` without the spaces is also okay.
 
 :::
 

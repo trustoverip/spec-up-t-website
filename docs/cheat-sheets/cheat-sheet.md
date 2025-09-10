@@ -165,7 +165,7 @@ Optional: your own text.
 According to [[spec: RFC-7519]], JSON Web Tokens are...
 ```
 
-**Usage:** Reference standard specifications (from specref.org database)
+**Usage:** Reference standard specifications <del>(from specref.org database)</del> currently under development.
 
 ## Rendering & Menu Navigation
 

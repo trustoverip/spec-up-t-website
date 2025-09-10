@@ -57,6 +57,15 @@ File name should be descriptive but doesn't need to match the term
 ~ Each paragraph represents a separate concept or detail.
 ```
 
+Here follows a description of the structure of a term file:
+
+| Markdown snippet       | Explanation       |
+| -------------- | -------------- |
+| `[[def: primary-term, synonym1, synonym2]]` | The definition should be the first line |
+| `~ This is the definition of the term using tilde prefix.` | Each new line should start with a `~` to indicate that it belongs to the definition (it becomes a `<dd>…</dd>` in HTML) |
+| `~ Additional paragraphs also use the tilde prefix.` | " |
+| `~ Each paragraph represents a separate concept or detail.` | " |
+
 :::info
 
 `[[def: primary-term,synonym1,synonym2]]` without the spaces is also okay.

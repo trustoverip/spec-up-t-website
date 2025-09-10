@@ -201,6 +201,7 @@ npm run menu
 - Resolves term references
 - Generates `docs/index.html`
 - Creates complete specification
+- Opening in a browser via local file system (`file:///`) will work for almost everything (simply put: double click on the file in “Finder” or “Explorer”)
 
 ### Option 2: Export to PDF
 

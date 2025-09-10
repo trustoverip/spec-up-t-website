@@ -1,5 +1,11 @@
 # Spec-Up-T Cheatsheet
 
+:::info
+
+Since “***Installation & Setup***” is used less often, this is listed [***below***](#installation--setup).
+
+:::
+
 ## TL;DR
 
 1. `npx create-spec-up-t project-name`

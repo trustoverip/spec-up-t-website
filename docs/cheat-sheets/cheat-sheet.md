@@ -152,14 +152,7 @@ Optional: your own text.
 
 ```
 
-
-
 :::
-
-
-
-
-
 
 ### Specification Reference: `[[spec: ...]]`
 

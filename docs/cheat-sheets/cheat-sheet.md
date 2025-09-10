@@ -179,6 +179,7 @@ npm run menu
 
 - Fetches definitions from external repositories
 - Updates local cache with latest versions
+- Also runs option 1
 
 **When to use:**
 

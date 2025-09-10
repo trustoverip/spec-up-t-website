@@ -3,7 +3,7 @@
 ## TL;DR
 
 1. `npx create-spec-up-t project-name`
-2. Add terms in `spec/terms-definitions/*.md` with `[[def: term]]`
+2. Add terms in `spec/terms-definitions/*.md` with `[[def: term, alias]]` or `[[tref: term, alias]]` (external definition)
 3. Reference with `[[ref: term]]` or `[[xref: spec, term]]`
 4. `npm run menu` → Option 4 (Also runs Option 1)
 5. Open `docs/index.html`

@@ -79,6 +79,7 @@ const config = {
           // },
           { to: '/docs/introduction/intro/', label: 'Enter Documentation', position: 'left' },
           { to: '/docs/spec-up-t-demo-site', label: 'Demo', position: 'left' },
+          { to: '/docs/cheat-sheets/cheat-sheet', label: 'Cheat Sheet', position: 'left' },
           { to: '/docs/getting-started/github-token', label: 'GitHub token', position: 'left' },
           // { to: '/docs/admins-guide', label: 'Admin section', position: 'left' },
           {

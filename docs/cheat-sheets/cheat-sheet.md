@@ -78,7 +78,7 @@ Here follows a description of the structure of a term file:
 
 :::
 
-**💡 Key Points:**
+**Key Points:**
 
 - File name should be descriptive but doesn't need to match the term
 - `[[def:]]` tag **must be the first line**
@@ -87,7 +87,9 @@ Here follows a description of the structure of a term file:
 
 ## Reference Syntax
 
-### Local Term Definition: `[[def: ...]]`
+### `[[def: ...]]`
+
+Local Term Definition
 
 ```markdown
 [[def: authentication, auth, authn]]
@@ -95,31 +97,59 @@ Here follows a description of the structure of a term file:
 ~ The process of verifying the identity of a user or system.
 ```
 
-**📍 Usage:** First line of term definition files only
+**Usage:** First line of term definition files only
 
-### Internal Reference: `[[ref: ...]]`
+### `[[ref: ...]]`
+
+Internal Reference
 
 ```markdown
 The system requires [[ref: authentication]] before access.
 ```
 
-**📍 Usage:** Anywhere in the definition part of the content, to link to locally defined terms
+**Usage:** Anywhere in the definition part of the content, to link to locally defined terms
 
-### External Reference: `[[xref: ...]]`
+### `[[xref: ...]]`
+
+External Reference
 
 ```markdown
 See the [[xref: external-spec, credential]] specification.
 ```
 
-**📍 Usage:** Anywhere in the definition part of the content, to link to terms in other Spec-Up-T repositories
+**Usage:** Anywhere in the definition part of the content, to link to terms in other Spec-Up-T repositories
 
-### Transcluded Reference: `[[tref: ...]]`
+### `[[tref: ...]]`
+
+Transcluded Reference
 
 ```markdown
 [[tref: external-spec, digital-signature, alias]]
 ```
 
-**📍 Usage:** Embeds complete external definition (file can contain only this tag, but optionally you can add text in your local file, that will be added below the external, embedded definition)
+**Usage:** Embeds complete external definition (file can contain only this tag, but optionally you can add text in your local file, that will be added below the external, embedded definition)
+
+:::info
+
+Final result:
+
+```markdown
+[[tref: …]]
+
+External definition text.
+
+Optional: your own text.
+
+```
+
+
+
+:::
+
+
+
+
+
 
 ### Specification Reference: `[[spec: ...]]`
 
@@ -127,7 +157,7 @@ See the [[xref: external-spec, credential]] specification.
 According to [[spec: RFC-7519]], JSON Web Tokens are...
 ```
 
-**📍 Usage:** Reference standard specifications (from specref.org database)
+**Usage:** Reference standard specifications (from specref.org database)
 
 ## Rendering & Menu Navigation
 

@@ -1,3 +1,5 @@
+import CommandLineMenu from '../_shared-content/command-line-menu.md';
+
 # Spec-Up-T Cheatsheet
 
 :::info
@@ -177,30 +179,16 @@ npm run menu
 
 **Menu Options:**
 
-```text
-  ┌─────────────────────────────────────┐
-  │  [0] Add content                    │
-  │  [1] Render specification           │
-  │  [2] Export to PDF                  │
-  │  [3] Export to DOCX                 │
-  │  [4] Collect external references    │ (will also run [1])
-  │  [5] Add/remove xref source         │
-  │  [6] Configure                      │
-  │  [7] Run health check               │
-  │  [8] Open documentation website     │
-  │  [9] Freeze specification           │
-  │  [Q] Quit                           │
-  └─────────────────────────────────────┘
-```
+<CommandLineMenu />
 
-### [0]: Add content
+### `[0]`: Add content
 
 **What it does:**
 
 - Shows a short instruction on how to add content
 - Shows a link to the this website (the website you are currently reading)
 
-### [1]: Render Specification
+### `[1]`: Render Specification
 
 **What it does:**
 
@@ -210,22 +198,21 @@ npm run menu
 - Creates complete specification
 - Opening in a browser via local file system (`file:///`) will work for almost everything (simply put: double click on the file in “Finder” or “Explorer”)
 
-### [2]: Export to PDF
+### `[2]`: Export to PDF
 
 **What it does:**
 
 - Exports the specification to PDF format
 - Creates a `.pdf` file
 
-
-### [3]: Export to DOCX
+### `[3]`: Export to DOCX
 
 **What it does:**
 
 - Exports the specification to Microsoft Word format
 - Creates a `.docx` file
 
-### [4]: Collect External References
+### `[4]`: Collect External References
 
 **What it does:**
 
@@ -237,21 +224,43 @@ npm run menu
 
 - After adding new external specifications
 
-### [7]: Run Health Check
+### `[5]`: Add/remove xref source
+
+**What it does:**
+
+- Allows you to add or remove external specification sources
+- Manages the list of repositories that can be referenced with `[[xref: ...]]` and `[[tref: ...]]`
+
+### `[6]`: Configure
+
+**What it does:**
+
+- Opens configuration options for the Spec-Up-T project
+- Allows you to modify settings in `specs.json`
+
+### `[7]`: Run Health Check
 
 **What it does:**
 
 - Provides diagnostic information
 
-### [8]: Open Documentation Website
+### `[8]`: Open Documentation Website
 
 **Alternative:** Opens `https://blockchainbird.github.io/spec-up-t-website/`
 
-### [9]: Freeze Specification
+### `[9]`: Freeze Specification
 
 **What it does:**
 
 - Creates a snapshot of your current specification
+
+### `[Q]`: Quit
+
+**What it does:**
+
+- Quits the menu
+
+
 
 ## Installation & Setup
 

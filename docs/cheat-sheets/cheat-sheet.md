@@ -193,7 +193,15 @@ npm run menu
   └─────────────────────────────────────┘
 ```
 
-### Option 1: Render Specification
+
+### [0]: Add content
+
+**What it does:**
+
+- Shows a short instruction on how to add content
+- Shows a link to the this website (the website you are currently reading)
+
+### [1]: Render Specification
 
 **What it does:**
 
@@ -203,7 +211,7 @@ npm run menu
 - Creates complete specification
 - Opening in a browser via local file system (`file:///`) will work for almost everything (simply put: double click on the file in “Finder” or “Explorer”)
 
-### Option 2: Export to PDF
+### [2]: Export to PDF
 
 **What it does:**
 
@@ -211,14 +219,14 @@ npm run menu
 - Creates a `.pdf` file
 
 
-### Option 3: Export to DOCX
+### [3]: Export to DOCX
 
 **What it does:**
 
 - Exports the specification to Microsoft Word format
 - Creates a `.docx` file
 
-### Option 4: Collect External References
+### [4]: Collect External References
 
 **What it does:**
 
@@ -230,17 +238,17 @@ npm run menu
 
 - After adding new external specifications
 
-### Option 7: Run Health Check
+### [7]: Run Health Check
 
 **What it does:**
 
 - Provides diagnostic information
 
-### Option 8: Open Documentation Website
+### [8]: Open Documentation Website
 
 **Alternative:** Opens `https://blockchainbird.github.io/spec-up-t-website/`
 
-### Option 9: Freeze Specification
+### [9]: Freeze Specification
 
 **What it does:**
 

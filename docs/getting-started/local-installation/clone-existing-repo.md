@@ -78,7 +78,35 @@ Most Spec-Up-T repositories require Node.js dependencies. Install them using:
 npm install
 ```
 
-### 6. Verify the Installation
+### 6. Check Out the Correct Branch (if needed)
+
+By default, Git clones the default branch (usually `main` or `master`). If you need to work on a different branch:
+
+First, see what branches are available:
+
+```bash
+git branch -a
+```
+
+Then check out the branch you need:
+
+```bash
+git checkout branch-name
+```
+
+For example, to switch to a development branch:
+
+```bash
+git checkout develop
+```
+
+If you need to create a new branch for your work:
+
+```bash
+git checkout -b my-new-feature
+```
+
+### 7. Verify the Installation
 
 Check if everything is working by running the Spec-Up-T menu:
 

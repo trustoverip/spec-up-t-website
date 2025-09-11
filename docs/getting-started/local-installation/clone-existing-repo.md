@@ -16,7 +16,6 @@ If you want to work with an existing Spec-Up-T repository (either your own or so
 Before cloning a repository, ensure you have:
 
 - [Git installed](system-requirements.md) on your system
-- A [GitHub token](../github-token.md) configured (if the repository is private)
 - Basic familiarity with the command line
 
 ## Steps to Clone a Repository
@@ -84,7 +83,7 @@ npm install
 Check if everything is working by running the Spec-Up-T menu:
 
 ```bash
-npm run edit
+npm run menu
 ```
 
 This should open the interactive menu where you can start working with the specification.

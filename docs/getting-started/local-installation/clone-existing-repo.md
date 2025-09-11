@@ -2,6 +2,8 @@
 sidebar_position: 6
 ---
 
+import CommandLineMenu from '../../_shared-content/command-line-menu.md';
+
 # Clone an Existing Spec-Up-T Repository
 
 If you want to work with an existing Spec-Up-T repository (either your own or someone else's), you'll need to clone it to your local machine. This is useful when:
@@ -123,7 +125,9 @@ Check if everything is working by running the Spec-Up-T menu:
 npm run menu
 ```
 
-This should open the interactive menu where you can start working with the specification.
+This should open the interactive menu where you can start working with the specification. It looks like this (see below):
+
+<CommandLineMenu />
 
 ## Working with the Cloned Repository
 
@@ -133,6 +137,50 @@ Once you've successfully cloned the repository:
 2. **Generate output**: Use the Spec-Up-T menu to generate HTML files
 3. **Commit your changes**: Use Git to track your modifications
 4. **Push updates**: Share your changes back to the repository (if you have permissions)
+
+## 1. Make changes locally
+
+Edit the markdown files in the `spec/` directory using your preferred text editor. You can modify terms, definitions, and specification content as needed. After making changes, save the files and proceed to generate the updated output.
+
+## 2. Generate output
+
+What you currently have is the following:
+
+- A `docs` directory with a pulled-in version of `index.html` file (which is the resulting specification file).
+
+What you don't have yet is a newly generated `index.html` locally:
+
+- An `index.html` file in the `docs` directory with a timestamp of just seconds ago
+
+To generate the local `index.html`, run:
+
+```bash
+npm run menu
+```
+
+Then select option `1` to generate the specification.
+
+## 3. Commit your changes
+
+After generating the updated output, commit your changes to Git:
+
+```bash
+git add .
+git commit -m "Your commit message describing the changes"
+```
+
+This saves your changes locally in the Git repository.
+
+## 4. Push updates
+
+Push your committed changes to the remote repository (if you have write permissions):
+
+```bash
+git push origin branch-name
+```
+
+Replace `branch-name` with the name of the branch you're working on (e.g., `main` or `develop`). This makes your changes available to others.
+
 
 ## Common Issues and Solutions
 

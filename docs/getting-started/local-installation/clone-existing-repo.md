@@ -53,7 +53,8 @@ git clone https://github.com/username/repository-name.git
 Replace the URL with the actual repository URL. For example:
 
 ```bash
-git clone https://github.com/blockchainbird/spec-up-t-starter.git
+git clone https://github.com/trustoverip/tswg-acdc-specification.git
+
 ```
 
 ### 4. Navigate to the Cloned Directory
@@ -67,18 +68,10 @@ cd repository-name
 For example:
 
 ```bash
-cd spec-up-t-starter
+cd tswg-acdc-specification
 ```
 
-### 5. Install Dependencies
-
-Most Spec-Up-T repositories require Node.js dependencies. Install them using:
-
-```bash
-npm install
-```
-
-### 6. Check Out the Correct Branch (if needed)
+### 5. Check Out the Correct Branch (if needed)
 
 By default, Git clones the default branch (usually `main` or `master`). If you need to work on a different branch:
 
@@ -105,6 +98,22 @@ If you need to create a new branch for your work:
 ```bash
 git checkout -b my-new-feature
 ```
+
+### 6. Install Dependencies
+
+Spec-Up-T repositories require Node.js dependencies. Install them using:
+
+```bash
+npm install
+```
+
+:::warning
+
+Do the `npm install` after checking out the correct branch since different branches can have different `package.json`.
+
+`package.json` contains the instructions for `npm install`.
+
+:::
 
 ### 7. Verify the Installation
 

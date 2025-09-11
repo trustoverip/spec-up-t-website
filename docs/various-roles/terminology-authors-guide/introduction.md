@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Intro
+# Introduction
 
 A terminology author focusses on term definitions covering concepts of the group he/she belongs to. By far the most terminology author will use links to other glossaries, that may or may not be based on Spec-Up-T. They simply copy links and make references in their own text. Which is perfectly fine.
 

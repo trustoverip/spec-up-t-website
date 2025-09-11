@@ -48,7 +48,7 @@ A **Personal Access Token (PAT)** is a secure key used to authenticate with GitH
 ## Steps to take:
 
 - Get the token
-- Use the token server-side
+- Use the token during build-time
 - Use the token client-side
 
 ## Get the token

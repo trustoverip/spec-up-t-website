@@ -15,21 +15,21 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <img src="img/logo.svg" alt="Logo" className={styles.logo} />
+  <img src="img/logo.svg" alt="Logo" className={styles['homepage-logo']} />
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div class="sellingpoints">
+        <div className="sellingpoints">
           <ul>
-            <li>Basic hosting requirements</li>
-            <li>Create external references</li>
+            <li>Write in markdown</li>
+            <li>Re-use existing glossaries</li>
             <li>Hosted on Github</li>
-            <li>Export to PDF</li>
+            <li>Export to standards (ISO, W3C)</li>
           </ul>
         </div>
 
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/introduction/overview">
+            to="/docs/introduction/intro">
             Let's start
           </Link>
         </div>

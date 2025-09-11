@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# Intro
+# Introduction
 
 Spec-Up-T implementations can distinguish the following roles:
 

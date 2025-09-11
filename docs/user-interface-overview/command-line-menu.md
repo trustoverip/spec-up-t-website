@@ -36,7 +36,9 @@ These menu options act as shortcuts to the below commands, such as `npm run rend
 
 ### `[0] Add content`
 
-Gives info on how to add content.
+- Shows a short instruction on how to add content
+- Shows a link to the this website (the website you are currently reading)
+
 
 ### `[1] Render specification`
 
@@ -59,9 +61,13 @@ By the way, there are **three** modes for rendering the specification:
 
 ### `[2] Export to PDF`
 
-**Creates a PDF. The PDF will be created in the same directory as the `index.html` file.**
+Creates a PDF. The PDF will be created in the same directory as the `index.html` file.
 
-### `[3] Collect external references (cache, faster)`
+### `[3] Export to DOCX`
+
+Creates a Microsoft Word document. The DOCX file will be created in the same directory as the `index.html` file.
+
+### `[4] Collect external references`
 
 Also runs [1].
 
@@ -69,33 +75,27 @@ Also runs [1].
 External references (`xrefs`) are references to external glossaries (specifications).
 :::
 
-The info will be taken from the local cache. This only works if there is a cache already, so the first time you run this, it will do the same as option [4]
-
-### `[4] Collect external references (no cache, slower)`
-
-Also runs [1].
-
-:::info
-External references (`xrefs`) are references to external glossaries (specifications).
-
-You need a [GitHub Token](../getting-started/github-token.md) when looking up `xref`'s.
-:::
+Fetches definitions from external repositories and updates local cache with latest versions.
 
 ### `[5] Add, remove or view xref source`
 
-**See an overview of all external references, or add or delete**
+See an overview of all external references, or add or delete them.
 
 ### `[6] Configure`
 
 Configure a new installation.
 
-### `[7] Open documentation website`
+### `[7] Run health check`
+
+Provides diagnostic information about your Spec-Up-T installation and configuration.
+
+### `[8] Open documentation website`
 
 This command will redirect to the documentation website (the site you are reading right now).
 
-### `[8] Freeze specification`
+### `[9] Freeze specification`
 
-**Makes a copy of the `index.html` file and adds a version number to the file name.**
+Makes a copy of the `index.html` file and adds a version number to the file name.
 
 Example: `index-v1.html`, `index-v2.html` etc. These files are placed in the same folder as the `index.html` but in a subfolder called `versions`.
 

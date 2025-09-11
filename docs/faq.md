@@ -2,7 +2,7 @@
 sidebar_position: 9
 ---
 
-# F.A.Q.
+# FAQ
 
 Questions and answers about Spec-Up-T.
 
@@ -44,7 +44,7 @@ For more details, refer to [the installation section](./getting-started/local-in
 
 Brief answer: because Spec-Up-T is based on npm packaging and version control.
 
-To understand why more thoroughly: Spec-Up-T is team-work tooling based on npm, git versioning and (automated) github deployment. Therefore participants incept and maintain local version of specifications on their computer, manage updates to and fro github.com and generate local test and finally production sites (github actions github.io site).
+To understand why more thoroughly: Spec-Up-T is team-work tooling based on npm, git versioning and (automated) GitHub deployment. Therefore participants incept and maintain local version of specifications on their computer, manage updates to and fro github.com and generate local test and finally production sites (GitHub Actions GitHub.io site).
 With this type of creation and collegial management of versions and updates come commands on the command line.
 
 ## What is the command for help?
@@ -80,7 +80,7 @@ Our enhancement proposal and git governance strategy is [here](introduction/how-
 
 ## Why doesn't the Spec-Up-T repo generate a github.io-served specification itself?
 
-The repo Spec-Up-T doesn't generate an example specification on github.io. because it's not the purpose of this repo. Your example site will pop up when “spec-up-t” is installed in node_modules of spec-up-t-boilerplate when you run npm install.
+If you use Spec-Up, you clone the repository directly. In contrast, Spec-Up-T is distributed as an npm package, which you install using the [starter pack instructions](./getting-started/local-installation/installation.md).
 
 ## How to integrate Spec-Up-T in other systems
 

@@ -2,21 +2,21 @@
 sidebar_position: 0
 ---
 
-# Intro
+# Introduction
 
-There are two ways to get started with Spec-Up-T:
+Spec-Up-T offers two primary methods for getting started:
 
-- Web-based: create and use a Spec-Up-T installation via GitHub in your browser (based on Github Actions)
-- Local installation: create and use a Spec-Up-T installation via your command line
+- **Web-based:** Set up and use Spec-Up-T directly in your browser via GitHub (leveraging GitHub Actions).
+- **Local installation:** Install and operate Spec-Up-T on your local machine using the command line.
 
 ## Web-based
 
-The advantage is that it's more straightforward, but it's all slower. For example, retrieving the external credentials is quite simple. However, it does start what is called a “Runner”: a new installation is created on GitHub's servers, and that takes several minutes. After that, the code that retrieves the external credentials is executed. This whole process will take minutes.
+The web-based approach is straightforward and user-friendly, making it ideal for those seeking a quick setup. For example, retrieving external credentials is a simple process. However, this method initiates a “Runner” on GitHub’s servers, which can take several minutes to provision and execute the necessary code. As a result, the overall process may be slower compared to local installation.
 
-On the other hand, modifying a definition is fast: you can use the GitHub web editor.
+On the positive side, editing definitions is efficient and can be accomplished directly through the GitHub web editor.
 
-## Local installation
+## Local Installation
 
-You can use Spec-Up-T locally, that is, on your computer. It requires basic knowledge of the command line.
+Running Spec-Up-T locally provides greater control and faster execution, but requires basic familiarity with the command line. To get started, either clone a Spec-Up-T installation from GitHub, or install Spec-Up-T using `npx`. 
 
-First, you install Spec-Up-T via `npx`. After that, you start up a menu via a typed command, and from there, you can enter options.
+Once cloned or installed, you can launch the interactive menu by entering a command, allowing you to navigate and select various options as needed.

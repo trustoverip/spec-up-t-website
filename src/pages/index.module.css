@@ -21,3 +21,13 @@
   align-items: center;
   justify-content: center;
 }
+
+/* Logo used on the homepage header */
+.homepage-logo {
+  display: block;
+  margin: 1rem auto;
+  max-width: 240px;
+  width: 50%;
+  height: auto;
+  border: none;
+}

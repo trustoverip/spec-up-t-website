@@ -1,0 +1,9 @@
+{
+  "label": "Maintenance Tasks",
+  "className": "icon-maintenance",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Administrative and Maintenance Tasks."
+  }
+}

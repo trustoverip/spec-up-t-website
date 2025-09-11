@@ -2,13 +2,13 @@
 sidebar_position: 3
 ---
 
-# Initial Configuration
+# Initial configuration
 
 The `specs.json` file, located in the root folder of your repository, specifies the configuration values used in generating your specification documents. Using the command line menu, you can configure the most important elements. The rest you can do manually.
 
 ## Create (or edit the sample) `spec.json`
 
-If you have external glossaries in mind, then this is time to connect them to your specification and/or glossary, under "external_specs". 
+If you have external glossaries in mind, then this is time to connect them to your specification and/or glossary, under "external_specs".
 
 ```json
 {

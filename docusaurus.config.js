@@ -9,7 +9,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Spec-Up-T',
-  tagline: 'A tool for writing specifications',
+  tagline: 'Start building consensus today',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -49,11 +49,10 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/blockchainbird/spec-up-t-website/tree/main/',
-          showLastUpdateTime: true
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
-        // blog: {
-        //   showReadingTime: true,
-        // },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -78,8 +77,9 @@ const config = {
           //   position: 'left',
           //   label: 'Admin section',
           // },
-          { to: '/docs/introduction/overview/', label: 'Enter Documentation', position: 'left' },
+          { to: '/docs/introduction/intro/', label: 'Enter Documentation', position: 'left' },
           { to: '/docs/spec-up-t-demo-site', label: 'Demo', position: 'left' },
+          { to: '/docs/cheat-sheets/cheat-sheet', label: 'Cheat Sheet', position: 'left' },
           { to: '/docs/getting-started/github-token', label: 'GitHub token', position: 'left' },
           // { to: '/docs/admins-guide', label: 'Admin section', position: 'left' },
           {

@@ -66,7 +66,7 @@ Last but not least, we need to combine current and future efforts.
  
 At ToIP, we do more with concepts and terminology than Spec-Up has foreseen. An example of this work is versioning individual terms and versioning who references them and when have been proven critical to building consensus within ToIP.
 
-To offer ToIP-specific Spec-Up functionality, we need to extend the code. Happily, we are able to extend Spec-Up with specific front-end and back-end functionality. As we did before, we could offer those extensions as a PR to DIF's Spec-Up. In practice, this means asking Daniel Buchner to have a look at it and asking him to consider merging the new code into the main code repository of Spec-Up.
+To offer ToIP-specific Spec-Up functionality, we need to extend the code. Happily, we are able to extend Spec-Up with specific front-end and build-time functionality. As we did before, we could offer those extensions as a PR to DIF's Spec-Up. In practice, this means asking Daniel Buchner to have a look at it and asking him to consider merging the new code into the main code repository of Spec-Up.
 
 ### A rock and a hard place
 
@@ -160,7 +160,7 @@ Other Spec-Up-based repos could come over to Spec-Up-T and pull the amendments t
 
 To have a clean start, we suggest offering a PR to Daniel Buchner. This PR doesn't change any feature or outcome at the front-end side of a Spec-Up-generated site but only alters the code organization. These are the points of interest:
 
-1. Maintain a Clean Division: Currently, our Node.js scripts are placed in the root directory, while client-side JavaScript and CSS have their own directory under /assets. We should aim for a similar clean separation of all Node.js (and server-side code in general) for all new developments. By organizing new features and code into separate files within a dedicated directory, we can ensure that code and content are even more manageable and even better organized.
+1. Maintain a Clean Division: Currently, our Node.js scripts are placed in the root directory, while client-side JavaScript and CSS have their own directory under /assets. We should aim for a similar clean separation of all Node.js (and build-time code in general) for all new developments. By organizing new features and code into separate files within a dedicated directory, we can ensure that code and content are even more manageable and even better organized.
 
 2. Minimize Changes to Existing Code: This is done to facilitate smoother updates and reduce the burden of acceptance checks; it's crucial to keep modifications to existing code to a minimum. By placing new code in distinct files and directories, we allow ongoing work without significant disruption. This approach respects the existing codebase while permitting necessary extensions and bug fixes.
 

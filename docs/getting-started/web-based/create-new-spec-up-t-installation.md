@@ -30,7 +30,8 @@ This guide explains how to use the "Create Spec-Up-T Project" workflow to genera
 
 2. **Navigate to the Workflow**:
    - In *your forked repository* (e.g., `https://github.com/your-username/spec-up-t`), go to the Actions tab.
-   - Find and select the **"Create Spec-Up-T Project via Repo Creation"** workflow in the list on the left.
+   - Click on the button that says that you understand workflows
+   - Find and select the **"Create Spec-Up-T Project"** workflow in the list on the left.
 
 3. **Start the Workflow**:
    - On the right side, you’ll see a "Run workflow" button or dropdown (it might say "Run workflow" directly or be under a small arrow). Click it.
@@ -57,7 +58,7 @@ This guide explains how to use the "Create Spec-Up-T Project" workflow to genera
 
 5. **Run the Workflow**:
    - Click the green "Run workflow" button at the bottom of the form.
-   - You’ll be taken back to the Actions page in your fork, where a new run will appear under "Create Spec-Up-T Project via Repo Creation" with a yellow circle (running) or green check (completed).
+   - You’ll be taken back to the Actions page in your fork, where a new run will appear under "Create Spec-Up-T Project via Repo Creation" with a yellow circle (running) or green check (completed). **It can take a while (let's say 15 seconds) before the workflow starts, so be patient.**
 
 6. **Check the Results**:
    - **With a PAT**:

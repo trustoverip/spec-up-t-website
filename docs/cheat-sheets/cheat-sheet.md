@@ -268,6 +268,41 @@ cd my-spec-project
 npm run menu
 ```
 
+## Clone Existing Repository
+
+```bash
+# Clone existing Spec-Up-T repository
+git clone https://github.com/username/repository-name.git
+cd repository-name
+
+# Check out correct branch (if needed)
+git checkout branch-name
+
+# Install dependencies
+npm install
+
+# Launch interactive menu
+npm run menu
+```
+
+**Key Steps:**
+
+1. **Get repository URL** from GitHub (green "Code" button)
+2. **Clone** with `git clone <url>`
+3. **Navigate** into cloned directory
+4. **Install dependencies** with `npm install`
+5. **Run menu** to start working
+
+**Remote Setup (Recommended):**
+
+```bash
+# Add upstream remote for original repo
+git remote add upstream https://github.com/original/repo.git
+
+# Set origin to your fork
+git remote set-url origin https://github.com/yourusername/repo.git
+```
+
 ## Project Structure
 
 `docs/`: output files

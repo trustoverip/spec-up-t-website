@@ -17,4 +17,6 @@ On the positive side, editing definitions is efficient and can be accomplished d
 
 ## Local Installation
 
-Running Spec-Up-T locally provides greater control and faster execution, but requires basic familiarity with the command line. To get started, install Spec-Up-T using `npx`. Once installed, you can launch the interactive menu by entering a command, allowing you to navigate and select various options as needed.
+Running Spec-Up-T locally provides greater control and faster execution, but requires basic familiarity with the command line. To get started, either clone a Spec-Up-T installation from GitHub, or install Spec-Up-T using `npx`. 
+
+Once cloned or installed, you can launch the interactive menu by entering a command, allowing you to navigate and select various options as needed.

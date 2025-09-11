@@ -101,7 +101,56 @@ If you need to create a new branch for your work:
 git checkout -b my-new-feature
 ```
 
-### 6. Install Dependencies
+### 6. Set Up Git Remotes (Recommended)
+
+When working with collaborative repositories, it's recommended to set up your Git remotes properly:
+
+- **origin**: Points to your personal fork of the repository
+- **upstream**: Points to the original production repository
+
+By default, after cloning, you'll have (example):
+
+```bash
+origin	https://github.com/trustoverip/tswg-acdc-specification.git (fetch)
+origin	https://github.com/trustoverip/tswg-acdc-specification.git (push)
+```
+
+To set up the recommended remote configuration:
+
+1. Add the original repository as upstream:
+
+```bash
+git remote add upstream https://github.com/trustoverip/tswg-acdc-specification.git
+```
+
+2. Change origin to point to your personal fork:
+
+```bash
+git remote set-url origin https://github.com/{USERNAME}/tswg-acdc-specification.git
+```
+
+Replace `{USERNAME}` with your actual GitHub username.
+
+#### Verify Remote Settings
+
+Check your remote configuration with:
+
+```bash
+git remote -v
+```
+
+You should see output like this:
+
+```bash
+origin	https://github.com/henkvancann/tswg-acdc-specification.git (fetch)
+origin	https://github.com/henkvancann/tswg-acdc-specification.git (push)
+upstream	https://github.com/trustoverip/tswg-acdc-specification.git (fetch)
+upstream	https://github.com/trustoverip/tswg-acdc-specification.git (push)
+```
+
+This setup allows you to push changes to your fork (origin) and pull updates from the production repository (upstream).
+
+### 7. Install Dependencies
 
 Spec-Up-T repositories require Node.js dependencies. Install them using:
 
@@ -117,7 +166,7 @@ Do the `npm install` after checking out the correct branch since different branc
 
 :::
 
-### 7. Verify the Installation
+### 8. Verify the Installation
 
 Check if everything is working by running the Spec-Up-T menu:
 
@@ -138,11 +187,11 @@ Once you've successfully cloned the repository:
 3. **Commit your changes**: Use Git to track your modifications
 4. **Push updates**: Share your changes back to the repository (if you have permissions)
 
-## 1. Make changes locally
+### Add. 1: Make changes locally
 
 Edit the markdown files in the `spec/` directory using your preferred text editor. You can modify terms, definitions, and specification content as needed. After making changes, save the files and proceed to generate the updated output.
 
-## 2. Generate output
+### Add. 2: Generate output
 
 What you currently have is the following:
 
@@ -160,7 +209,7 @@ npm run menu
 
 Then select option `1` to generate the specification.
 
-## 3. Commit your changes
+### Add. 3: Commit your changes
 
 After generating the updated output, commit your changes to Git:
 
@@ -171,7 +220,7 @@ git commit -m "Your commit message describing the changes"
 
 This saves your changes locally in the Git repository.
 
-## 4. Push updates
+### Add. 4: Push updates
 
 Push your committed changes to the remote repository (if you have write permissions):
 

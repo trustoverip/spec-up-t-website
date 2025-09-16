@@ -36,3 +36,19 @@ Spec-Up-T uses `fetch`, which was [added in version 18](https://nodejs.org/dist/
 Install NVM if you haven't already. (Instructions not given here).
 
 Then run Node.js version 18.
+
+## Cache Issues
+
+Problem: Persistent build or rendering issues.
+
+Solution: Remove the `.cache` directory and rerender the site.
+
+- **Windows:** Open File Explorer, navigate to the project root directory, and delete the `.cache` folder
+- **Mac:** Open Finder, navigate to the project root directory, and delete the `.cache` folder
+- **Linux (Ubuntu):** Open the file manager (e.g., Files), navigate to the project root directory, and delete the `.cache` folder
+
+:::warning
+
+If using the terminal command `rm -rf`, be cautious as it is powerful and irreversible. For safer options, use your system's file explorer or manager.
+
+:::

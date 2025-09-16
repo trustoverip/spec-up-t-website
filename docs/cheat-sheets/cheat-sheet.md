@@ -16,6 +16,24 @@ Since “***Installation & Setup***” is used less often, this is listed [***be
 4. `npm run menu` → Option 4 (Also runs Option 1)
 5. Open `docs/index.html`
 
+## Menu Options
+
+Run `npm run menu` to access the interactive menu. You can also run these commands directly using `npm run <command>`.
+
+| Option | Description | NPM Command |
+|--------|-------------|-------------|
+| [0] | Add content | N/A |
+| [1] | Render specification | `npm run render` |
+| [2] | Export to PDF | `npm run topdf` |
+| [3] | Export to DOCX | `npm run todocx` |
+| [4] | Collect external references | `npm run collectExternalReferences` |
+| [5] | Add, remove or view xref source | `npm run addremovexrefsource` |
+| [6] | Configure | `npm run configure` |
+| [7] | Run health check | `npm run healthCheck` |
+| [8] | Open documentation website | N/A |
+| [9] | Freeze specification | `npm run freeze` |
+| [Q] | Quit | N/A |
+
 ## Reference Types
 
 | Type       | Syntax                      | Purpose                      | Output                  |

@@ -22,6 +22,8 @@ To successfully run **Spec-Up-T**, ensure your system meets the following requir
 
 1. **Operating System**: Windows 10/11, macOS Monterey or later, Linux (Ubuntu 20.04+ recommended).
 2. **Node.js**: Version 18.x or later.
+   - Node.js versions: Even-numbered versions (e.g., 18, 20, 22) are LTS (Long-Term Support) versions, which are stable and recommended for production. Odd-numbered versions (e.g., 19, 21, 23) are current releases with the latest features but may include experimental changes.
+   - Current production version (as of September 18, 2025): 22.19.0
    - Verify installation: `node -v`
    - When installing Node.js, you are recommended to check all checkboxes related to dependencies
    - [Installing instructions](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)

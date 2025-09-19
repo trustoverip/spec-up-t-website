@@ -8,6 +8,29 @@ Since “***Installation & Setup***” is used less often, this is listed [***be
 
 :::
 
+## Set up your editing environment
+
+We advice to keep a production version of your latest generated/rendered `index.html` file open, next to your IDE. This way you're able to:
+
+1. Create/check internal cross-references: Find and copy the anchor to the found header in the browser, and paste it in the markdown via IDE.
+2. Check where an existing link goes while hovering over the link.
+
+### Example of copying anchors (1):
+
+- use browser find-function (command-F) to find a block to cross-reference to
+- use the `§` anchor link to copy the anchor URL
+- paste and shorten the full URL to only the anchor.
+
+NB 1. You can bypass this workflow, by predicting the way the markdown header will be transformed into an anchor and do all of this in the IDE. Safer is copy via the browser.
+
+NB 2. If you change the header in markdown the link will be broken
+
+### Example of hovering over links (2):
+
+Go to a Spec-Up-T specification or glossary and hover over any link, the browser will show the URL (including an anchor if applicable). A visual check is now possible and also the link can be copied.
+
+![hover over link](../../static/img/hover.png)
+
 ## TL;DR
 
 1. `npx create-spec-up-t project-name`

@@ -50,8 +50,6 @@ The `,` (comma) is the delimiter. A space after a comma is okay, but not necessa
 
 :::
 
-
-
 ## Creating Definition Files
 
 ### 1. Create a new term file
@@ -69,7 +67,6 @@ touch my-new-term.md
 File name should be descriptive but doesn't need to match the term
 
 :::
-
 
 ### 2. Basic term file structure
 
@@ -108,9 +105,6 @@ Here follows a description of the structure of a term file:
 ## Reference Syntax
 
 ### Normal link to another place in same document
-
-
-
 
 - - -
 
@@ -157,9 +151,6 @@ Internal Reference example:
 - - -
 
 :::
-
-
-
 
 ```markdown
 [[def: access-control]]
@@ -338,8 +329,6 @@ npm run menu
 
 - Quits the menu
 
-
-
 ## Installation & Setup
 
 ```bash
@@ -410,7 +399,6 @@ my-spec-project/
 │   └── spec-body.md
 └── specs.json               # ⚙️  Configuration
 ```
-
 
 ## Configuration Example
 

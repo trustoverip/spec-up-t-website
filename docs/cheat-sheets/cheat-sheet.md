@@ -107,6 +107,11 @@ Here follows a description of the structure of a term file:
 
 ## Reference Syntax
 
+### Normal link to another place in same document
+
+
+
+
 - - -
 
 ### `[[def: ...]]`
@@ -218,7 +223,7 @@ Optional: your own text.
 Optional: your own text.
 ```
 
-**Usage:** Embeds complete external definition (file can contain only this tag, but optionally you can add text in your local file, that will be added below the external, embedded definition)
+**Usage:** First line of term definition files only. Embeds complete external definition (file can contain only this tag, but optionally you can add text in your local file, that will be added below the external, embedded definition)
 
 - - -
 

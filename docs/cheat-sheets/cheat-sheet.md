@@ -107,9 +107,23 @@ Here follows a description of the structure of a term file:
 
 ## Reference Syntax
 
+- - -
+
 ### `[[def: ...]]`
 
 Local Term Definition example:
+
+:::info
+
+- - -
+
+***[[def: authentication, auth, authn]]***
+
+~ The process of verifying the identity of a user or system.
+
+- - -
+
+:::
 
 ```markdown
 [[def: authentication, auth, authn]]
@@ -119,9 +133,28 @@ Local Term Definition example:
 
 **Usage:** First line of term definition files only
 
+- - -
+
 ### `[[ref: ...]]`
 
 Internal Reference example:
+
+:::info
+
+- - -
+
+[[def: access-control]]
+
+~ Access control is a security technique that regulates who or what can view or use resources in a computing environment.
+
+~ The system requires ***[[ref: authentication]]*** before access.
+
+- - -
+
+:::
+
+
+
 
 ```markdown
 [[def: access-control]]
@@ -133,9 +166,25 @@ Internal Reference example:
 
 **Usage:** Anywhere in the definition part of the content, to link to locally defined terms
 
+- - -
+
 ### `[[xref: ...]]`
 
 External Reference example:
+
+:::info
+
+- - -
+
+[[def: verifiable-credential]]
+
+~ A verifiable credential is a tamper-evident credential that has authorship that can be cryptographically verified.
+
+~ See the ***[[xref: external-spec, credential]]*** specification for more details.
+
+- - -
+
+:::
 
 ```markdown
 [[def: verifiable-credential]]
@@ -147,32 +196,45 @@ External Reference example:
 
 **Usage:** Anywhere in the definition part of the content, to link to terms in other Spec-Up-T repositories
 
+- - -
+
 ### `[[tref: ...]]`
 
 Transcluded Reference example:
 
+:::info
+- - -
+***[[tref: external-spec, digital-signature, alias]]***
+
+&lt;external definition that will be included&gt;
+
+Optional: your own text.
+- - -
+:::
+
 ```markdown
 [[tref: external-spec, digital-signature, alias]]
+
+Optional: your own text.
 ```
 
 **Usage:** Embeds complete external definition (file can contain only this tag, but optionally you can add text in your local file, that will be added below the external, embedded definition)
 
+- - -
+
+### `[[spec: ...]]`
+
+Specification Reference example:
+
 :::info
 
-Final result:
+- - -
 
-```markdown
-[[tref: …]]
+According to ***[[spec: RFC-7519]]***, JSON Web Tokens are...
 
-External definition text.
-
-Optional: your own text.
-
-```
+- - -
 
 :::
-
-### Specification Reference: `[[spec: ...]]`
 
 ```markdown
 According to [[spec: RFC-7519]], JSON Web Tokens are...

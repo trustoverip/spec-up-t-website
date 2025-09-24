@@ -104,7 +104,36 @@ Here follows a description of the structure of a term file:
 
 ## Reference Syntax
 
-### Normal link to another place in same document
+- - -
+
+### `anchor`
+
+An `anchor` is a hyperlink that points to a specific location (or "anchor point") within the same webpage, typically identified by an element’s id attribute.
+
+In Spec-Up-T headings and also terms get an id.
+
+Creating a hyperlink within the same document is not a Spec-Up-T-specific action, but standard markdown language:
+
+```md
+[link](#heading-id)
+```
+
+Spec-Up-T will generate **heading** IDs for you, based on the heading text. For example, `### Hello World` will have ID `hello-world`.
+
+So the rules are:
+- spaces are replaced with dashes
+- everything is converted to lowercase
+
+In the case of **terms**, it is slightly more complicated. The best approach is to first generate the page once and then click on the symbol in front of a term to copy the ID to your clipboard.
+
+```md
+[Go to Hello World](#hello-world)
+```
+:::warning
+
+Make sure that you do not create duplicate id's. If you do, the first one will be used by a browser.
+
+:::
 
 - - -
 

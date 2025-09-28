@@ -2,6 +2,8 @@ import CommandLineMenu from '../_shared-content/command-line-menu.md';
 
 # Spec-Up-T Cheatsheet
 
+Updated: 2025-09-28 20:55:20
+
 :::info
 
 Since “***Installation & Setup***” is used less often, this is listed [***below***](#installation--setup).
@@ -20,29 +22,29 @@ Since “***Installation & Setup***” is used less often, this is listed [***be
 
 Run `npm run menu` to access the interactive menu. You can also run these commands directly using `npm run <command>`.
 
-| Option | Description | NPM Command |
-|--------|-------------|-------------|
-| [0] | Add content | N/A |
-| [1] | Render specification | `npm run render` |
-| [2] | Export to PDF | `npm run topdf` |
-| [3] | Export to DOCX | `npm run todocx` |
-| [4] | Collect external references | `npm run collectExternalReferences` |
-| [5] | Add, remove or view xref source | `npm run addremovexrefsource` |
-| [6] | Configure | `npm run configure` |
-| [7] | Run health check | `npm run healthCheck` |
-| [8] | Open documentation website | N/A |
-| [9] | Freeze specification | `npm run freeze` |
-| [Q] | Quit | N/A |
+| Option | Description                     | NPM Command                         |
+| ------ | ------------------------------- | ----------------------------------- |
+| [0]    | Add content                     | N/A                                 |
+| [1]    | Render specification            | `npm run render`                    |
+| [2]    | Export to PDF                   | `npm run topdf`                     |
+| [3]    | Export to DOCX                  | `npm run todocx`                    |
+| [4]    | Collect external references     | `npm run collectExternalReferences` |
+| [5]    | Add, remove or view xref source | `npm run addremovexrefsource`       |
+| [6]    | Configure                       | `npm run configure`                 |
+| [7]    | Run health check                | `npm run healthCheck`               |
+| [8]    | Open documentation website      | N/A                                 |
+| [9]    | Freeze specification            | `npm run freeze`                    |
+| [Q]    | Quit                            | N/A                                 |
 
 ## Reference Types
 
-| Type       | Syntax                      | Purpose                      | Output                  |
-| ---------- | --------------------------- | ---------------------------- | ----------------------- |
-| **`def`**  | `[[def:term,alias]]`        | 🏷️ Define new term            | Creates anchor point    |
-| **`ref`**  | `[[ref:term]]`              | 🔗 Link to local term         | Clickable internal link |
-| **`xref`** | `[[xref:spec,term]]`        | 🌐 Link to external           | Opens external spec     |
-| **`tref`** | `[[tref:spec,term, alias]]` | 📥 Import external definition | Embeds full content     |
-| **`spec`** | `[[spec:RFC-7519]]`         | 📚 Cite specification         | Links to standard spec  |
+| Type       | Syntax                                 | Purpose                      | Output                  |
+| ---------- | -------------------------------------- | ---------------------------- | ----------------------- |
+| **`def`**  | `[[def:term,alias]]`                   | 🏷️ Define new term            | Creates anchor point    |
+| **`ref`**  | `[[ref:term]]`                         | 🔗 Link to local term         | Clickable internal link |
+| **`xref`** | `[[xref:spec,term]]`                   | 🌐 Link to external           | Opens external spec     |
+| **`tref`** | `[[tref:spec,term,alias1,alias2,...]]` | 📥 Import external definition | Embeds full content     |
+| **`spec`** | `[[spec:RFC-7519]]`                    | 📚 Cite specification         | Links to standard spec  |
 
 :::info
 
@@ -82,12 +84,12 @@ File name should be descriptive but doesn't need to match the term
 
 Here follows a description of the structure of a term file:
 
-| Markdown snippet       | Explanation       |
-| -------------- | -------------- |
-| `[[def: primary-term, synonym1, synonym2]]` | The definition should be the first line |
-| `~ This is the definition of the term using tilde prefix.` | Each new line should start with a `~` to indicate that it belongs to the definition (it becomes a `<dd>…</dd>` in HTML) |
-| `~ Additional paragraphs also use the tilde prefix.` | " |
-| `~ Each paragraph represents a separate concept or detail.` | " |
+| Markdown snippet                                            | Explanation                                                                                                             |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `[[def: primary-term, synonym1, synonym2]]`                 | The definition should be the first line                                                                                 |
+| `~ This is the definition of the term using tilde prefix.`  | Each new line should start with a `~` to indicate that it belongs to the definition (it becomes a `<dd>…</dd>` in HTML) |
+| `~ Additional paragraphs also use the tilde prefix.`        | "                                                                                                                       |
+| `~ Each paragraph represents a separate concept or detail.` | "                                                                                                                       |
 
 :::info
 
@@ -238,12 +240,14 @@ Optional: your own text.
 :::
 
 ```markdown
+[[tref: external-spec, digital-signature]]
 [[tref: external-spec, digital-signature, alias]]
+[[tref: external-spec, digital-signature, alias1, alias2]]
 
 Optional: your own text.
 ```
 
-**Usage:** First line of term definition files only. Embeds complete external definition (file can contain only this tag, but optionally you can add text in your local file, that will be added below the external, embedded definition)
+**Usage:** First line of term definition files only. Embeds complete external definition. Supports multiple aliases (comma-separated). File can contain only this tag, but optionally you can add text in your local file, that will be added below the external, embedded definition.
 
 - - -
 

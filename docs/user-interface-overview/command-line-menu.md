@@ -69,8 +69,6 @@ Creates a Microsoft Word document. The DOCX file will be created in the same dir
 
 ### `[4] Collect external references`
 
-Also runs [1].
-
 :::info
 External references (`xrefs`) are references to external glossaries (specifications).
 :::

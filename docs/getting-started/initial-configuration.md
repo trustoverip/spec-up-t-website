@@ -26,29 +26,42 @@ If you have external glossaries in mind, then this is time to connect them to yo
                 "example-markup-in-markdown.md",
                 "spec-body.md"
             ],
-            "logo": "https://raw.githubusercontent.com/trustoverip/spec-up-t-starter-pack/main/spec-up-t-boilerplate/static/logo.svg",
+            "logo": "https://raw.githubusercontent.com/trustoverip/spec-up-t/refs/heads/master/src/install-from-boilerplate/boilerplate/static/logo.svg",
             "logo_link": "https://github.com/trustoverip/spec-up-t",
-            "favicon": "https://raw.githubusercontent.com/trustoverip/spec-up-t-starter-pack/main/spec-up-t-boilerplate/static/favicon.ico",
             "source": {
                 "host": "github",
                 "account": "trustoverip",
-                "repo": "spec-up-t-starter-pack"
+                "repo": "spec-up-t-starter-pack",
+                "branch": "main"
             },
             "external_specs": [
                 {
-                    "external_spec": "test-1",
-                    "gh_page": "https://blockchainbird.github.io/spec-up-xref-test-1/",
-                    "url": "https://github.com/blockchainbird/spec-up-xref-test-1",
-                    "terms_dir": "spec/term-definitions"
+                    "external_spec": "vLEI",
+                    "gh_page": "https://henkvancann.github.io/vlei-glossary/",
+                    "url": "https://github.com/henkvancann/vlei-glossary",
+                    "terms_dir": "spec/terms-definitions"
                 },
                 {
-                    "external_spec": "test-2",
-                    "gh_page": "https://blockchainbird.github.io/spec-up-xref-test-2/",
-                    "url": "https://github.com/blockchainbird/spec-up-xref-test-2",
-                    "terms_dir": "spec/term-definitions"
+                    "external_spec": "KERISuite",
+                    "gh_page": "https://weboftrust.github.io/kerisuite-glossary/",
+                    "url": "https://github.com/weboftrust/kerisuite-glossary",
+                    "terms_dir": "spec/terms-definitions"
+                },
+                {
+                    "external_spec": "ToIP",
+                    "gh_page": "https://glossary.trustoverip.org/",
+                    "url": "https://github.com/trustoverip/ctwg-main-glossary",
+                    "terms_dir": "spec/terms-definitions"
+                },
+                {
+                    "external_spec": "GenIT",
+                    "gh_page": "https://trustoverip.github.io/ctwg-general-glossary/",
+                    "url": "https://github.com/trustoverip/ctwg-general-glossary",
+                    "terms_dir": "spec/terms-definitions"
                 }
             ],
-            "katex": false
+            "katex": false,
+            "anchor_symbol": "§"
         }
     ]
 }

@@ -21,14 +21,25 @@ In the `scripts` section of the `package.json` file for your Spec-Up-T installat
 ```json
 {
   "scripts": {
-    "render": "spec-up-t render",
-    "dev": "spec-up-t dev",
-    "build": "spec-up-t build"
+    "edit": "node -e \"require('spec-up-t')()\"",
+    "render": "node --no-warnings -e \"require('spec-up-t/index.js')({ nowatch: true })\"",
+    "dev": "node -e \"require('spec-up-t')({ dev: true })\"",
+    "collectExternalReferences": "node --no-warnings -e \"require('spec-up-t/src/pipeline/references/collect-external-references.js').collectExternalReferences()\"",
+    "topdf": "node -e \"require('spec-up-t/src/create-pdf.js')\"",
+    "todocx": "node -e \"require('spec-up-t/src/create-docx.js')\"",
+    "freeze": "node -e \"require('spec-up-t/src/freeze-spec-data.js')\"",
+    "references": "node -e \"require('spec-up-t/src/pipeline/references/external-references-service.js')\"",
+    "help": "cat ./node_modules/spec-up-t/src/install-from-boilerplate/help.txt",
+    "menu": "bash ./node_modules/spec-up-t/src/install-from-boilerplate/menu.sh",
+    "addremovexrefsource": "node --no-warnings -e \"require('spec-up-t/src/add-remove-xref-source.js')\"",
+    "configure": "node --no-warnings -e \"require('spec-up-t/src/configure.js')\"",
+    "healthCheck": "node --no-warnings -e \"require('spec-up-t/src/health-check.js')\"",
+    "custom-update": "npm update && node -e \"require('spec-up-t/src/install-from-boilerplate/custom-update.js')\""
   }
 }
 ```
 
-These are calls to the `spec-up-t` library in `node_modules` that handle different aspects of the build process.
+These are Node.js commands that directly require and execute specific modules from the `spec-up-t` package in `node_modules`. Each script serves a different purpose in the build and maintenance process.
 
 ### Build Process Architecture
 

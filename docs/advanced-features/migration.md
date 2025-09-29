@@ -5,7 +5,7 @@ sidebar_position: 100
 # Migrate from Spec-Up
 
 :::info
-Go straigt to the [migration instructions](https://github.com/blockchainbird/spec-up-migrate/blob/main/README.md#-commands).
+Go straight to the [migration instructions](https://github.com/trustoverip/spec-up-migrate/blob/main/README.md#-commands).
 :::
 
 

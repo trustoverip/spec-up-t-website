@@ -49,7 +49,7 @@ With this type of creation and collegial management of versions and updates come
 
 ## What is the command for help?
 
-TODO: npx Spec-Up-T --help gives all commands I can give.
+Use `npm run help` to see basic help information, or `npm run menu` to access the interactive command-line menu with all available options.
 
 ## Why does Spec-Up-T look so complicated?
 

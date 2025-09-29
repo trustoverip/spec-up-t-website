@@ -13,7 +13,7 @@
     [2] Export to PDF             
     [3] Export to DOCX            
     [4] Collect external references
-    [5] Add/remove xref source    
+    [5] Add, remove or view xref source
     [6] Configure                 
     [7] Run health check          
     [8] Open documentation website

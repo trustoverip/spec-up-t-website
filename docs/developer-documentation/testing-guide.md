@@ -167,6 +167,66 @@ Focus your testing efforts on these critical areas:
 - **Health Checks**: System validation and error reporting
 - **GitHub Integration**: Repository access and workflow automation
 
+### Current Test Suite
+
+The Spec-Up-T repository includes a comprehensive test suite with **105 tests** across **6 test files**. Each test file is thoroughly documented with natural language comments explaining what functionality is being tested:
+
+#### 1. **collect-external-references.test.js** (47 tests)
+
+- **Purpose**: Tests external reference parsing and collection from markdown
+- **Key Functions**: `isXTrefInMarkdown`, `addNewXTrefsFromMarkdown`, `processXTrefObject`
+- **Coverage**: External reference detection, processing, alias handling, and cross-file tracking
+- **Example Tests**: "Can the system find external references that match specific specs and terms?"
+
+#### 2. **git-info.test.js** (6 tests)
+
+- **Purpose**: Tests Git branch detection and GitHub repository info formatting
+- **Key Functions**: `getCurrentBranch`, `getGithubRepoInfo`
+- **Coverage**: Git utility functions for repository information extraction
+- **Example Tests**: "Can the system extract the current Git branch name?"
+
+#### 3. **highlight-heading-plus-sibling-nodes.test.js** (11 tests)
+
+- **Purpose**: Tests DOM manipulation for heading section highlighting  
+- **Key Functions**: `getHeadingLevel`, `collectHeadingSiblings`, `wrapNodesWithHighlight`, `removeExistingHighlights`
+- **Coverage**: UI interaction and DOM manipulation for section highlighting
+- **Example Tests**: "Can the system highlight a section when given a valid anchor?"
+
+#### 4. **match-term.test.js** (5 tests)
+
+- **Purpose**: Tests matching terms within definition markup
+- **Key Functions**: `matchTerm`
+- **Coverage**: Term matching functionality in definition processing
+- **Example Tests**: "Can the system find terms that exist in definition markup?"
+
+#### 5. **parser-refactoring.test.js** (12 tests)
+
+- **Purpose**: Tests the refactored functional parser system for backward compatibility
+- **Key Functions**: `parseDef`, `parseRef`, `parseSpecReference`, `renderIndividualSpec`
+- **Coverage**: Functional programming approach, parser integration, and compatibility
+- **Example Tests**: "Does the refactored system maintain compatibility with existing markdown processing?"
+
+#### 6. **regex-patterns.test.js** (24 tests)
+
+- **Purpose**: Tests centralized regex patterns for various parsing operations
+- **Key Patterns**: Template tags, external references, escaping, paths, versions, URLs
+- **Coverage**: Regex pattern validation, performance, and backward compatibility
+- **Example Tests**: "Can the system identify all types of template tag markup?"
+
+#### Running the Test Suite
+
+```bash
+# Run all 105 tests
+npm test
+
+# Run with coverage reporting
+npm run test:coverage
+
+# Tests should complete in under 1 second with all passing
+```
+
+All tests include natural language comments in a "Can the system..." or "Does the system..." format to make the test suite more accessible and self-documenting.
+
 ## Types of Testing
 
 ### 1. Unit Testing

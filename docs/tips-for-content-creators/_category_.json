@@ -1,0 +1,9 @@
+{
+  "label": "Tips for Content Creators",
+  "className": "icon-editor",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Tips and best practices for content creators to enhance their workflow and productivity."
+  }
+}

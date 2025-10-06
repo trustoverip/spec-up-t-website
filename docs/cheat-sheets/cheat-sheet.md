@@ -460,6 +460,38 @@ my-spec-project/
 
 **specs.json:** [Go to `specs.json` (raw file in the Spec-Up-T repo boilerplate code)](https://raw.githubusercontent.com/blockchainbird/spec-up-t/refs/heads/master/src/install-from-boilerplate/boilerplate/specs.json)
 
+## Embedding GitHub-Hosted Images
+
+GitHub URLs to images don't point directly to raw files. Get the raw URL using one of these methods:
+
+### Method 1: Copy Image Address
+
+1. Navigate to image in GitHub → Click **Download**
+2. Right-click image → **Copy Image Address**
+
+Result: `https://raw.githubusercontent.com/org/repo/main/images/file.png`
+
+### Method 2: Copy Download Link
+
+1. Navigate to image in GitHub
+2. Right-click **Download** button → **Copy Link**
+
+Result: `https://github.com/org/repo/raw/main/images/file.png`
+
+### Method 3: Append Raw Parameter
+
+Add `?raw=true` to any GitHub file URL:
+
+```text
+https://github.com/org/repo/blob/main/images/file.png?raw=true
+```
+
+:::tip
+
+Method 3 is fastest when converting existing URLs—just append `?raw=true`
+
+:::
+
 ## Common Patterns & Tips
 
 ### ❌ DON'T
@@ -467,3 +499,4 @@ my-spec-project/
 - … put content before `[[def:]]` or `[[tref:]]` tag in term files
 - … forget the `~` prefix for definition content
 - … skip re-running menu option 4 when using new `xref`/`tref`
+- … use GitHub HTML page URLs for images (must use raw URLs)

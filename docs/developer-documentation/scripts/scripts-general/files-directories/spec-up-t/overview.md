@@ -85,7 +85,6 @@ Abstracted overview of files and directories in the Spec-Up-T GitHub repository 
 │   ├── collectExternalReferences/
 │   │   ├── checkRateLimit.js
 │   │   ├── fetchTermsFromGitHubRepository.js
-│   │   ├── matchTerm.js
 │   │   ├── processXTrefsData.js
 │   │   └── setupFetchHeaders.js
 │   │
@@ -209,7 +208,7 @@ Zoom in and out to get a better picture.
 
 :::tip
 
-- Zoom in: Ctrl / Command + Plus sign (+) 
+- Zoom in: Ctrl / Command + Plus sign (+)
 - Zoom out: Ctrl / Command + Minus sign (-)
 - Reset: Ctrl / Command + 0
 

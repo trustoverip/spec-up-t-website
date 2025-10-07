@@ -192,12 +192,7 @@ The Spec-Up-T repository includes a comprehensive test suite with **105 tests** 
 - **Coverage**: UI interaction and DOM manipulation for section highlighting
 - **Example Tests**: "Can the system highlight a section when given a valid anchor?"
 
-#### 4. **match-term.test.js** (5 tests)
 
-- **Purpose**: Tests matching terms within definition markup
-- **Key Functions**: `matchTerm`
-- **Coverage**: Term matching functionality in definition processing
-- **Example Tests**: "Can the system find terms that exist in definition markup?"
 
 #### 5. **parser-refactoring.test.js** (12 tests)
 

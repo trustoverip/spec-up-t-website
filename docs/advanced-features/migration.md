@@ -2,45 +2,76 @@
 sidebar_position: 100
 ---
 
-# Migrate from Spec-Up
+# Migrate from Spec-Up to Spec-Up-T
 
-:::info
-Go straight to the [migration instructions](https://github.com/blockchainbird/spec-up-migrate/blob/main/README.md).
+:::info Complete Migration Guide
+For comprehensive migration instructions, see the [**spec-up-migrate documentation**](https://github.com/blockchainbird/spec-up-migrate/blob/main/README.md).
 :::
 
+## Quick Start
 
-**Pre condition: You have a Spec-Up installation up and running**
+If you have a **Spec-Up** installation and want to convert it to **Spec-Up-T**, use the migration tool:
 
-## When do you need this?
+```bash
+# Navigate to your Spec-Up project directory
+cd /path/to/your/spec-up-project
 
-You will need the instructions below if you have a **Spec-Up** installation and want to convert it to **Spec-Up-T**.
+# Run complete migration
+npx spec-up-migrate complete
 
-## Why would you want this?
+# Test the migrated project
+npm run menu
+```
 
-Spec-Up-T has more features than Spec-Up.
+## Why Migrate to Spec-Up-T?
 
-## What you'll need
+Spec-Up-T extends the original Spec-Up with powerful new features:
 
-- A terminal / command line
-- An editor, also called IDE (Integrated Development Environment). We recommend Visual Studio Code, but an editor in which you can quickly write Markdown is also good
-- [Node.js](https://nodejs.org/en/download/):
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies
-  - Use Node.js version 18 or higher
-  - If you are running a Spec-Up installation you already have Node.js installed
-- A [webbrowser](https://en.wikipedia.org/wiki/Web_browser). You are probably reading this in a browser, so you already have one
-- [Git](https://git-scm.com/). To host your specification on Github, you must also have Git installed on your local system. By the way, you can also create a specification (index.html) without hosting it on GitHub. But if you do so, the whole idea of a version-managed glossary using Git goes through the window.
+- ✨ **Enhanced Terminology Support**: Individual term files with automatic definition management
+- 🔄 **Modern Definition System**: Use `[[iref:]]` inline references that automatically display current definitions
+- 📖 **Multi-File Definition Extraction**: Extract all `[[def:]]` definitions into organized term files
+- 🎯 **Professional Output**: Generate publication-ready HTML specifications
+- ⚡ **Better Configuration**: Dynamic configuration from the latest Spec-Up-T standards
+- 🚀 **Enhanced Developer Experience**: Improved scripts, validation, and live development mode
 
-:::note Non-technical Info
+## Prerequisites
 
-Non-technical explanation:
+If you're running a Spec-Up installation, you already have most of what you need:
 
-- Command Line: A text interface to type commands for your computer.
-- IDE: A software where you can easily write, test, and debug code.
-- Node.js: This makes Spec-Up and Spec-Up-T run
-- Git: A system to track and manage changes in your code.
+- **Node.js** version 18 or higher (already installed if you have Spec-Up)
+- **Terminal/Command Line** access
+- **Git** (recommended for version control)
+- A **text editor** or IDE (Visual Studio Code recommended)
+- A **web browser** to view your specifications
+
+:::note Non-Technical Info
+
+- **Command Line**: A text interface to type commands for your computer
+- **IDE**: Software where you can easily write, test, and debug code
+- **Node.js**: The runtime that makes Spec-Up and Spec-Up-T work
+- **Git**: A system to track and manage changes in your code
 
 :::
 
-:::info
-Go straigt to the [migration instructions](https://github.com/blockchainbird/spec-up-migrate/blob/main/README.md).
-:::
+## What the Migration Tool Does
+
+The `spec-up-migrate` tool provides enterprise-grade automation:
+
+- � **Smart Detection**: Automatically detect Spec-Up installations with 95%+ confidence
+- 📦 **Safe Backup**: Create comprehensive backups before migration
+- 🧹 **Clean Removal**: Remove obsolete files and legacy dependencies
+- ⚡ **Dynamic Configuration**: Fetch latest Spec-Up-T configuration from official repository
+- 🔄 **Intelligent Conversion**: Convert legacy formats to modern Spec-Up-T structure
+- 🚀 **Complete Setup**: Install Spec-Up-T with proper project structure
+- ✅ **Validation**: Built-in validation to ensure migration success
+
+## Learn More
+
+For detailed instructions, advanced features, troubleshooting, and command reference, see:
+
+📚 **[Complete Migration Guide](https://github.com/blockchainbird/spec-up-migrate/blob/main/README.md)**
+
+Additional resources:
+
+- 🐛 [Report Issues](https://github.com/blockchainbird/spec-up-migrate/issues)
+- 💻 [Source Code](https://github.com/blockchainbird/spec-up-migrate)

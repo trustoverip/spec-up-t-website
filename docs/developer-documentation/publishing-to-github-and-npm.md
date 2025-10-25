@@ -123,6 +123,58 @@ Replace `main` with `master` if your repository uses the older branch naming con
 
 **Result**: The stable version `1.0.0` is installed by default with `npm install <package>`, following npm's expected behavior.
 
+## Installing Versions
+
+### Installing the Latest Stable Version
+
+To install the latest stable version (default behavior):
+
+```bash
+npm install <package>
+```
+
+This installs the version tagged as `latest` on the npm registry.
+
+### Installing a Beta Version
+
+To install the latest beta version:
+
+```bash
+npm install <package>@beta
+```
+
+This installs the latest version tagged as `beta` on the npm registry (e.g., `1.0.0-beta.1`).
+
+### Installing a Specific Version
+
+To install a specific version by exact version number:
+
+```bash
+npm install <package>@1.0.0
+npm install <package>@1.0.0-beta.1
+```
+
+### Checking Available Versions
+
+To list all available versions and their tags:
+
+```bash
+npm view <package> versions
+npm dist-tag ls <package>
+```
+
+The `npm dist-tag ls` command shows which tags (like `latest` and `beta`) point to which versions, helpful for understanding what's available.
+
+### Updating an Installed Package
+
+If you already have the package installed and want to update to a different version:
+
+```bash
+npm update <package>                 # Updates to the latest minor/patch of current major version
+npm install <package>@1.0.0          # Installs a specific version
+npm install <package>@beta           # Updates to the latest beta version
+```
+
 ## Summary
 
 - **Beta Workflow**: Using `npm publish --tag beta` ensures beta versions (e.g., `1.0.0-beta.1`) are available only to users who explicitly request them, protecting users who rely on the `latest` stable version

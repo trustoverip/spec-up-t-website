@@ -22,6 +22,12 @@ Spec-Up-<span className="rotate">T</span> is based on **Spec-Up**, and some of t
 
 :::tip
 
-If you aren't contributing to an existing Spec-Up-T project and want to create one yourself, you will have to install Spec-Up-T to start using it. Go straight to the [installation section](../getting-started/local-installation/installation.md) for instructions. If you are contributing to an existing Spec-Up-T project you can contribute to content directly within GitHub's web editor (for example) by editing and adding the appropriate markdown files.
+If you aren't contributing to an existing Spec-Up-T project and want to create one yourself, you have several options:
+
+- **Local installation**: Go to the [installation section](../getting-started/local-installation/installation.md) for full command-line control
+- **GitHub web-based**: Use GitHub Actions workflows without installing anything locally
+- **Spec-Up-T Editor**: Use the [dedicated web editor](/docs/spec-up-t-editor/spec-up-t-editor-user-guide) for a streamlined editing experience
+
+If you are contributing to an existing project, you can edit files using GitHub's built-in web editor, the Spec-Up-T Editor, or any local text editor.
 
 :::

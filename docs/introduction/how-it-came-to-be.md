@@ -39,7 +39,11 @@ Spec-Up-T stays in sync with Spec-Up and currently adds the following extra func
 3. External Reference (xref) functionality
 4. Small User Interface enhancements (back-to-top button, automatic copying of urls when clicking on anchors (“$”), menu-item highlighting, definitions collapse button for quick terms-only listing)
 
-*Spec-Up* and *Spec-Up-T* work on *Github*. The specification is stored in a Github repo. Editing can be done locally in a suitable editor (Visual Studio Code is widely used), or can be done web-based via the editor provided by Github if you are logged in.
+*Spec-Up* and *Spec-Up-T* work on *Github*. The specification is stored in a Github repo. Editing can be done in three ways:
+
+1. **Command line (local)**: Use a suitable editor locally (Visual Studio Code is widely used) and run Spec-Up-T commands from the command line
+2. **GitHub's web editor**: Edit files directly through GitHub's built-in web editor when logged in
+3. **Spec-Up-T Editor**: Use the dedicated web-based Spec-Up-T Editor application for advanced editing features
 
 *[Github Actions](../glossary#github-actions)* is a convenient way to automate things within Github by creating *workflows*. For example, you can create a workflow that generates an updated version of the specification.
 

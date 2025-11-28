@@ -17,7 +17,7 @@ Currently, the menu is only tested on MacOs and has not been tested on Windows O
 :::
 
 :::info
-Some of these menu items are available when using GitHub Actions workflows (the GitHub web-based method). However, since GitHub Actions cannot be interactive, certain options like "Configure" are not available and must be done manually. For a more user-friendly editing experience, consider using the [Spec-Up-T Editor](/docs/spec-up-t-editor/spec-up-t-editor-user-guide).
+Some of these menu items are available when using GitHub Actions workflows (the GitHub web-based method). However, since GitHub Actions cannot be interactive, certain options like "Configure" are not available and must be done manually. For a more user-friendly editing experience, consider using the [Spec-Up-T Editor](/docs/getting-started/spec-up-t-editor/user-guide).
 :::
 
 Assuming you already [installed](../getting-started/local-installation/installation.md) Spec-Up-T, here you find further instructions.

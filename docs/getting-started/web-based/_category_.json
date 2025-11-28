@@ -1,8 +1,8 @@
 {
-  "label": "Web-based",
+  "label": "GitHub Web-Based",
   "position": 0,
   "link": {
     "type": "generated-index",
-    "description": "Web-based."
+    "description": "Use GitHub Actions and GitHub's web editor without local installation."
   }
 }

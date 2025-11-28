@@ -17,7 +17,7 @@ The two parts content and term definitions also illustrate the two main use case
 - You can edit files using:
   1. **A local editor (IDE)** like Visual Studio Code on your computer
   2. **GitHub's web editor** by clicking the edit button on any file in GitHub
-  3. **The Spec-Up-T Editor** - a dedicated web application with advanced features ([learn more](/docs/spec-up-t-editor/spec-up-t-editor-user-guide))
+  3. **The Spec-Up-T Editor** - a dedicated web application with advanced features ([learn more](/docs/getting-started/spec-up-t-editor/user-guide))
 - Your Markdown files are converted to one `index.html` file
 - The place where your Markdown files and the `index.html` are stored is [GitHub](https://github.com)
 

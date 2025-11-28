@@ -26,7 +26,7 @@ If you aren't contributing to an existing Spec-Up-T project and want to create o
 
 - **Local installation**: Go to the [installation section](../getting-started/local-installation/installation.md) for full command-line control
 - **GitHub web-based**: Use GitHub Actions workflows without installing anything locally
-- **Spec-Up-T Editor**: Use the [dedicated web editor](../getting-started/spec-up-t-editor/user-guide) for a streamlined editing experience
+- **Spec-Up-T Editor**: 🌐 [Launch the web editor](https://blockchainbird.org/spec-up-t-web-editor/) or read the [user guide](../getting-started/spec-up-t-editor/user-guide) for a streamlined editing experience
 
 If you are contributing to an existing project, you can edit files using GitHub's built-in web editor, the Spec-Up-T Editor, or any local text editor.
 

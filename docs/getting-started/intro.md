@@ -71,7 +71,7 @@ Use our dedicated web-based Spec-Up-T Editor application - a specialized tool de
 - Health check diagnostics
 - Terms and definitions management
 
-[Learn more about the Spec-Up-T Editor →](spec-up-t-editor/intro.md)
+🌐 **[Launch the Spec-Up-T Web Editor](https://blockchainbird.org/spec-up-t-web-editor/)** | [Learn more about the Editor →](spec-up-t-editor/intro.md)
 
 ---
 

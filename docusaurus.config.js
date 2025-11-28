@@ -81,6 +81,11 @@ const config = {
           { to: '/docs/spec-up-t-demo-site', label: 'Demo', position: 'left' },
           { to: '/docs/cheat-sheets/cheat-sheet', label: 'Cheat Sheet', position: 'left' },
           { to: '/docs/getting-started/github-token', label: 'GitHub token', position: 'left' },
+          {
+            href: 'https://blockchainbird.org/spec-up-t-web-editor/',
+            label: '🌐 Web Editor',
+            position: 'left',
+          },
           // { to: '/docs/admins-guide', label: 'Admin section', position: 'left' },
           {
             href: 'https://github.com/blockchainbird/spec-up-t-website',

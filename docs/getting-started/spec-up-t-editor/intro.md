@@ -35,4 +35,6 @@ The Spec-Up-T Editor is ideal for:
 
 ## Getting Started
 
-Ready to start using the Spec-Up-T Editor? Head to the [User Guide](user-guide.md) for complete step-by-step instructions on setup, usage, and best practices.
+🌐 **[Launch the Spec-Up-T Web Editor](https://blockchainbird.org/spec-up-t-web-editor/)**
+
+Ready to learn more? Head to the [User Guide](user-guide.md) for complete step-by-step instructions on setup, usage, and best practices.

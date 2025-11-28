@@ -42,7 +42,7 @@ To edit any file in your repository:
 **Don't confuse these two web-based options:**
 
 - **GitHub Web-Based** (this section): Uses GitHub's standard web editor and GitHub Actions
-- **[Spec-Up-T Editor](../spec-up-t-editor/intro.md)**: A separate, specialized web application with advanced features
+- **[Spec-Up-T Editor](../spec-up-t-editor/intro.md)**: A separate, specialized web application with advanced features - 🌐 **[Launch it here](https://blockchainbird.org/spec-up-t-web-editor/)**
 
 Both work in your browser, but the Spec-Up-T Editor offers more sophisticated editing tools.
 :::

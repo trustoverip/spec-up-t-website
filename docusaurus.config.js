@@ -13,14 +13,14 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://blockchainbird.github.io',
+  url: 'https://trustoverip.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/spec-up-t-website',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Blockchainbird', // Usually your GitHub org/user name.
+  organizationName: 'trustoverip', // Usually your GitHub org/user name.
   projectName: 'Spec-Up-T', // Usually your repo name.
 
   onBrokenLinks: 'warn',
@@ -48,7 +48,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/blockchainbird/spec-up-t-website/tree/main/',
+            'https://github.com/trustoverip/spec-up-t-website/tree/main/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
         },
@@ -88,7 +88,7 @@ const config = {
           },
           // { to: '/docs/admins-guide', label: 'Admin section', position: 'left' },
           {
-            href: 'https://github.com/blockchainbird/spec-up-t-website',
+            href: 'https://github.com/trustoverip/spec-up-t-website',
             label: 'GitHub',
             position: 'right',
           },
@@ -102,7 +102,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/blockchainbird/spec-up-t-website',
+                href: 'https://github.com/trustoverip/spec-up-t-website',
               },
             ],
           },

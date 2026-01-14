@@ -172,8 +172,7 @@ The application looks for a `specs.json` file in the repository root with this s
         {
           "external_spec": "unique_identifier",
           "gh_page": "https://example.github.io/spec/",
-          "url": "https://github.com/user/repo",
-          "terms_dir": "spec/terms-definitions"
+          "url": "https://github.com/user/repo"
         }
       ]
     }
@@ -188,7 +187,6 @@ The application looks for a `specs.json` file in the repository root with this s
 - `external_spec`: Unique identifier for the external specification
 - `gh_page`: GitHub Pages URL where the spec is hosted
 - `url`: Source repository URL
-- `terms_dir`: Directory path for terms and definitions
 
 ## User Guide
 

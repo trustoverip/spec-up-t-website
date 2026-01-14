@@ -122,7 +122,6 @@ External specifications must be defined in `specs.json`:
         {
           "external_spec": "test-1",
           "path": "https://github.com/org/repo",
-          "terms_dir": "spec/terms-definitions",
           "gh_page": "https://example.github.io/spec-1/"
         }
       ]
@@ -306,7 +305,6 @@ External specifications must be configured in the `specs.json` file:
         {
           "external_spec": "short-name",
           "path": "https://github.com/organization/spec-name",
-          "terms_dir": "spec/terms-definitions",
           "gh_page": "https://organization.github.io/spec-name/"
         }
       ]
@@ -319,7 +317,6 @@ External specifications must be configured in the `specs.json` file:
 
 - `external_spec`: Short identifier used in templates
 - `path`: GitHub repository URL
-- `terms_dir`: Directory containing term definition files
 - `gh_page`: URL to the published specification
 
 ### Term Definition File Structure
@@ -380,7 +377,6 @@ Term definition files follow a specific structure:
 4. **External Specifications**:
    - Always configure external specs in `specs.json`
    - Use `path` for repository URLs and `gh_page` for published URLs
-   - Ensure `terms_dir` paths are correct
 
 5. **Content Guidelines**:
    - Start definition content with `~` prefix

@@ -116,8 +116,7 @@ Both types require external specifications to be configured:
       {
         "external_spec": "test-1",
         "url": "https://github.com/owner/repo",
-        "gh_page": "https://owner.github.io/repo/",
-        "terms_dir": "spec/terms-definitions"
+        "gh_page": "https://owner.github.io/repo/"
       }
     ]
   }]

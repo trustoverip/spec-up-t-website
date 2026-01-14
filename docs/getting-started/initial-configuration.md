@@ -38,26 +38,22 @@ If you have external glossaries in mind, then this is time to connect them to yo
                 {
                     "external_spec": "vLEI",
                     "gh_page": "https://henkvancann.github.io/vlei-glossary/",
-                    "url": "https://github.com/henkvancann/vlei-glossary",
-                    "terms_dir": "spec/terms-definitions"
+                    "url": "https://github.com/henkvancann/vlei-glossary"
                 },
                 {
                     "external_spec": "KERISuite",
                     "gh_page": "https://weboftrust.github.io/kerisuite-glossary/",
-                    "url": "https://github.com/weboftrust/kerisuite-glossary",
-                    "terms_dir": "spec/terms-definitions"
+                    "url": "https://github.com/weboftrust/kerisuite-glossary"
                 },
                 {
                     "external_spec": "ToIP",
                     "gh_page": "https://glossary.trustoverip.org/",
-                    "url": "https://github.com/trustoverip/ctwg-main-glossary",
-                    "terms_dir": "spec/terms-definitions"
+                    "url": "https://github.com/trustoverip/ctwg-main-glossary"
                 },
                 {
                     "external_spec": "GenIT",
                     "gh_page": "https://trustoverip.github.io/ctwg-general-glossary/",
-                    "url": "https://github.com/trustoverip/ctwg-general-glossary",
-                    "terms_dir": "spec/terms-definitions"
+                    "url": "https://github.com/trustoverip/ctwg-general-glossary"
                 }
             ],
             "katex": false,

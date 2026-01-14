@@ -127,7 +127,6 @@ const allXTrefs = {
       "externalSpec": "toip1",
       "term": "SSI",
       "repoUrl": "https://github.com/example/repo",
-      "terms_dir": "spec/terms-definitions",
       "owner": "example-owner",
       "repo": "example-repo",
       "site": null,
@@ -174,7 +173,6 @@ In `specs.json`:
         {
           "external_spec": "kmg-1",
           "path": "https://github.com/org/repo",
-          "terms_dir": "spec/terms-definitions",
           "gh_page": "https://org.github.io/repo"
         }
       ]

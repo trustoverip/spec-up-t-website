@@ -122,13 +122,6 @@ The starter pack is a **thin wrapper** that delegates most functionality to the 
 
 3. **The tool itself**: The installed project uses spec-up-t as a dependency
 
-### Advantages of This Architecture
-
-- ✅ **Single source of truth**: Boilerplate maintained in one place
-- ✅ **Automatic updates**: New boilerplate features available to new projects
-- ✅ **Lightweight starter**: The starter pack stays small
-- ✅ **Separation of concerns**: Clear responsibility boundaries
-
 ## Version Numbering Strategy
 
 ### Recommended Approach: Synchronized Versions

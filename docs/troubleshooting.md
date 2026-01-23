@@ -6,6 +6,21 @@ sidebar_position: 10
 
 Some tips in case of problems:
 
+## There is no pdf and / or docx button
+
+This is normal behavior. The download buttons only appear when the corresponding PDF and/or DOCX files actually exist in your `docs/` folder.
+
+**Solution:** Export your specification to PDF and/or DOCX format first:
+
+1. Run `npm run menu` in your project
+2. Select option `[2] Export to PDF` (to generate `index.pdf`)
+3. Select option `[3] Export to DOCX` (to generate `index.docx`)
+4. Refresh your specification page in the browser
+
+Once the files exist, the download buttons will automatically appear in the top navigation bar next to the theme toggle button.
+
+**Note:** The buttons are intentionally only shown when files exist to avoid displaying broken download links.
+
 ## GitHub and API and limits
 
 Problem: I want to look up an external reference (*xref*) but I get an error about GitHub and API and limits.

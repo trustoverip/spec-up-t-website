@@ -1,70 +1,105 @@
 # Create a Zenodo DOI
 
-This page documents how to create a Zenodo DOI.
+This page explains how to assign a Zenodo DOI to a Spec-Up-T specification.
 
 ## What is a Zenodo DOI?
 
-A Zenodo DOI (Digital Object Identifier) is a persistent, universally recognized identifier assigned to research outputs and datasets hosted on Zenodo, an open-access repository developed by CERN. A DOI provides a permanent link to your work, ensuring it remains accessible even if the URL changes and allowing for proper attribution and citation across the scientific community. By creating a Zenodo DOI, you make your specification or research artifact citable, discoverable in academic databases, and ensure the long-term preservation of your work.
+A DOI (Digital Object Identifier) is a persistent, universally recognized identifier for digital resources. Zenodo, an open-access repository developed by CERN, assigns DOIs to research outputs, datasets, and other artifacts. A Zenodo DOI provides a permanent, citable link to your work — ensuring accessibility even if the hosting URL changes, and enabling proper attribution in academic and technical references.
 
-## What do we want to achieve
+By minting a Zenodo DOI for your specification, you make it:
 
-We want a link to a “Zenodo DOI” in the Spec-Up-T document. This link points to a page on https://zenodo.org that contains a full copy of the **repository** of the Spec-Up-T document. This full copy is uploaded as a **ZIP file**. This ZIP file is automatically created when a **GitHub Release** is created. A GitHub Release is created from a **Git Tag**.
+- **Citable** — others can reference it in papers and standards work
+- **Discoverable** — it appears in academic databases and search indexes
+- **Preserved** — Zenodo stores a full copy of the repository for long-term archival
 
-## Important to know
+## What we want to achieve
 
-There are two ways of achieving this.
-1. By connecting Zenodo to the GitHub repository
-2. Manually
+The goal is to embed a Zenodo DOI link directly in the Spec-Up-T document. This link points to a Zenodo record that holds a full copy of the specification repository, uploaded as a **ZIP file**.
 
-We will use option 2.
+The ZIP file is generated automatically when a **GitHub Release** is published. A GitHub Release is created from a **Git tag**. The workflow is therefore:
 
-The trick is to first reserve a DOI, add this to your Spec-Up-T document, and then get this document into Zenodo.
+1. Reserve a DOI on Zenodo
+2. Embed the DOI URL in the specification source
+3. Create a GitHub Release (which generates the ZIP)
+4. Upload that ZIP to Zenodo and publish the record
 
-Example of a DOI: `10.5281/zenodo.18797357`
+## Two approaches
 
-Example of a markdown link to this DOI: `[https://doi.org/10.5281/zenodo.18797357](https://doi.org/10.5281/zenodo.18797357)`
+There are two ways to integrate Zenodo with a GitHub repository:
 
-## Repository and forks
+1. **Automatic** — connect Zenodo directly to the GitHub repository so releases are uploaded automatically
+2. **Manual** — upload the release ZIP to Zenodo yourself
 
-In case you work with a fork, prepare everything in the fork. Also include the DOI in your fork. Then offer a PR and merge into the original repository.
+This guide covers the **manual** approach.
 
-The last steps should be done from the original repository. These last steps are:
+The key insight is to reserve the DOI *before* publishing. Zenodo lets you reserve a DOI in advance so you can embed it in the document prior to uploading the ZIP. The DOI is only formally registered once you publish the Zenodo record.
 
-- create a git tag
-- create a GitHub Release
-- upload the GitHub Release ZIP file to Zenodo
-- Publish the Zenodo DOI
+**Example DOI:** `10.5281/zenodo.18797357`
 
-## Generate and use the Zenodo DOI
+**Example markdown link:**
+```markdown
+[https://doi.org/10.5281/zenodo.18797357](https://doi.org/10.5281/zenodo.18797357)
+```
+
+## Working with forks
+
+If you are working on a fork, complete all preparation steps — including embedding the DOI — on the fork. Open a pull request and merge into the upstream repository before proceeding with the release steps below.
+
+The following steps must be performed from the **upstream (original) repository**:
+
+- Create a Git tag
+- Create a GitHub Release
+- Upload the release ZIP to Zenodo
+- Publish the Zenodo record
+
+## Step-by-step guide
 
 :::info
 
-Overview of the next steps: first reserve a DOI, include it in your Spec-Up-T document, create a GitHub Release containing the document with the DOI, then upload the automatically generated ZIP file of that release to Zenodo.
+**Summary:** Reserve a DOI → embed it in the specification → create a GitHub Release containing that updated specification → upload the release ZIP to Zenodo → publish.
 
 :::
 
+### 1. Reserve a DOI on Zenodo
 
-- Go to https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/
-- Go to https://zenodo.org/uploads/new
+- Navigate to [https://zenodo.org/uploads/new](https://zenodo.org/uploads/new)
 
-  ![Alt text](/img/DOI/zenodo.org-uploads-new-1.png)
+  ![Zenodo new upload page](/img/DOI/zenodo.org-uploads-new-1.png)
 
-- Choose “No, I need one”
-  
-  The following text appears: “**Reserve a DOI by pressing the button (so it can be included in files prior to upload). The DOI is registered when your upload is published.**”
+- When asked whether you already have a DOI, choose **"No, I need one"**
 
-  ![Alt text](/img/DOI/zenodo.org-uploads-new-2.png)
+  Zenodo displays the message: *"Reserve a DOI by pressing the button (so it can be included in files prior to upload). The DOI is registered when your upload is published."*
 
-- Generate a DOI:
+  ![Reserve DOI option](/img/DOI/zenodo.org-uploads-new-2.png)
 
-  ![Alt text](/img/DOI/zenodo.org-uploads-new-3.png)
+- Click the button to reserve a DOI
 
-- Construct a working URL by prefixing the DOI with `https://doi.org/`, resulting in: `https://doi.org/10.5281/zenodo.18785919`
-- Paste this URL into your Spec-Up-T document (preferably near the top). Spec-Up-T will render it as a clickable link
-- In `spec-head.md` on https://github.com/kordwarshuis/kswg-acdc-specification  (toDOI) in the first line below the heading (“Authentic Chained Data Containers (ACDC)”) change `**Specification Status**: v1.0` to `**Specification Status**: v1.0 Draft`
-- Create a release named `v1.0-draft`: on the right side of https://github.com/kordwarshuis/kswg-acdc-specification, under "Releases", click "Create a new release"
-- Create a new tag: `v1.0-draft`, enter it in the modal, and confirm — you will be returned to the release page
-- Enter a release title: `v1.0-draft` (this can match the tag name, but it does not have to)
-- Check “Pre-release”
-- Results in: https://github.com/kordwarshuis/kswg-acdc-specification/releases/tag/v1.0-draft
-- Upload the automatically generated ZIP file of that release to Zenodo via the `Drag and drop files` / `Upload files` section on the Zenodo page, which is above the section where you can generate a DOI
+  ![Generated DOI](/img/DOI/zenodo.org-uploads-new-3.png)
+
+- Construct the full URL by prefixing the DOI with `https://doi.org/`
+
+  Example: `https://doi.org/10.5281/zenodo.18785919`
+
+### 2. Embed the DOI in the specification
+
+- Copy the markdown link with the DOI (example: `[https://doi.org/10.5281/zenodo.18797357](https://doi.org/10.5281/zenodo.18797357)`)
+- Paste it into your specification source (preferably near the top, e.g. in `spec-head.md`).
+
+### 3. Create a GitHub Release
+
+- In your repository on GitHub, go to the **Releases** section (right sidebar) and click **"Create a new release"**
+- Create a new tag (e.g. `v1.0-draft`) by typing it in the tag field and confirming
+- Enter a release title — this can match the tag name or be more descriptive
+- If this is a pre-release version, check the **"Pre-release"** checkbox
+- Publish the release
+
+GitHub automatically generates a ZIP archive of the repository at that tag.
+
+### 4. Upload the ZIP to Zenodo and publish
+
+- Return to the Zenodo upload page you opened in step 1
+- Upload the ZIP file generated by GitHub using the **"Drag and drop files"** or **"Upload files"** area (this appears above the DOI reservation section)
+- Fill in the required metadata (title, authors, description, etc.)
+- Click **Publish** — the reserved DOI is now formally registered and the record is live
+
+For more details on the DOI reservation process, see the [Zenodo documentation](https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/).

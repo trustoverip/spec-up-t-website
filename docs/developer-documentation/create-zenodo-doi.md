@@ -6,20 +6,36 @@ This page documents how to create a Zenodo DOI.
 
 A Zenodo DOI (Digital Object Identifier) is a persistent, universally recognized identifier assigned to research outputs and datasets hosted on Zenodo, an open-access repository developed by CERN. A DOI provides a permanent link to your work, ensuring it remains accessible even if the URL changes and allowing for proper attribution and citation across the scientific community. By creating a Zenodo DOI, you make your specification or research artifact citable, discoverable in academic databases, and ensure the long-term preservation of your work.
 
-The steps below describe a specific use case for https://github.com/trustoverip/kswg-acdc-specification and serve as the basis for a generic set of instructions.
+## What do we want to achieve
 
-## Step 1: Get the repo ready
+We want a link to a “Zenodo DOI” in the Spec-Up-T document. This link points to a page on https://zenodo.org that contains a full copy of the **repository** of the Spec-Up-T document. This full copy is uploaded as a **ZIP file**. This ZIP file is automatically created when a **GitHub Release** is created. A GitHub Release is created from a **Git Tag**.
 
-- Merge https://github.com/henkvancann/kswg-acdc-specification   (toDOI) into https://github.com/kordwarshuis/kswg-acdc-specification  (toDOI)
-- Run `npm run custom-update` on https://github.com/kordwarshuis/kswg-acdc-specification  (toDOI)
-- Run `npm run menu 4` on https://github.com/kordwarshuis/kswg-acdc-specification  (toDOI)
-- git fetch https://github.com/trustoverip/kswg-acdc-specification  (main) 
-- git merge https://github.com/trustoverip/kswg-acdc-specification  (main) into https://github.com/kordwarshuis/kswg-acdc-specification  (toDOI) as follows: `git merge -X ours toip/main`
-- push to remote https://github.com/kordwarshuis/kswg-acdc-specification  (toDOI)
-- Create PR: https://github.com/kordwarshuis/kswg-acdc-specification  (toDOI) offers a PR to https://github.com/trustoverip/kswg-acdc-specification  (main)
-- Accept PR and merge
+## Important to know
 
-## Step 2: Generate and use the Zenodo DOI
+There are two ways of achieving this.
+1. By connecting Zenodo to the GitHub repository
+2. Manually
+
+We will use option 2.
+
+The trick is to first reserve a DOI, add this to your Spec-Up-T document, and then get this document into Zenodo.
+
+Example of a DOI: `10.5281/zenodo.18797357`
+
+Example of a markdown link to this DOI: `[https://doi.org/10.5281/zenodo.18797357](https://doi.org/10.5281/zenodo.18797357)`
+
+## Repository and forks
+
+In case you work with a fork, prepare everything in the fork. Also include the DOI in your fork. Then offer a PR and merge into the original repository.
+
+The last steps should be done from the original repository. These last steps are:
+
+- create a git tag
+- create a GitHub Release
+- upload the GitHub Release ZIP file to Zenodo
+- Publish the Zenodo DOI
+
+## Generate and use the Zenodo DOI
 
 :::info
 

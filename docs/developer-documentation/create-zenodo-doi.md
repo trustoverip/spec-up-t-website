@@ -104,7 +104,7 @@ This step must be performed on the **original (upstream) repository**, not on a 
 :::
 
 - In the original repository on GitHub, go to the **Releases** section (right sidebar) and click **"Create a new release"**
-- Create a new tag (e.g. `v1.0-draft`) by typing it in the tag field and confirming
+- Create a new tag (e.g. `v1.0`) by typing it in the tag field and confirming
 - Enter a release title — this can match the tag name or be more descriptive
 - If this is a pre-release version, check the **"Pre-release"** checkbox
 - Publish the release

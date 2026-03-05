@@ -82,7 +82,7 @@ const config = {
           { to: '/docs/cheat-sheets/cheat-sheet', label: 'Cheat Sheet', position: 'left' },
           { to: '/docs/getting-started/github-token', label: 'GitHub token', position: 'left' },
           {
-            href: 'https://blockchainbird.org/spec-up-t-web-editor/',
+            href: 'https://app.blockchainbird.org',
             label: '🌐 Web Editor',
             position: 'left',
           },

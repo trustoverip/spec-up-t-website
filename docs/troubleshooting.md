@@ -67,3 +67,17 @@ Solution: Remove the `.cache` directory and rerender the site.
 If using the terminal command `rm -rf`, be cautious as it is powerful and irreversible. For safer options, use your system's file explorer or manager.
 
 :::
+
+## GitHub Pages does not work
+
+If your site is not appearing on GitHub Pages, ensure the Pages settings are configured to use the `gh-pages` branch:
+
+1. Go to your repository on GitHub.
+2. Click **Settings**.
+3. In the left sidebar, click **Pages**.
+4. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+5. Select the **gh-pages** branch and **/** (root) folder.
+6. Click **Save**.
+
+Give it a minute for the site to deploy, then refresh your GitHub Pages URL.
+

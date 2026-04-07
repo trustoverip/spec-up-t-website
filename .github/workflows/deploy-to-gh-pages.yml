@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '21'  # Set to your project's node version
+          node-version: '22'  # Set to your project's node version
 
       - name: Install and Build
         run: |

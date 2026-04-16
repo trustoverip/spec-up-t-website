@@ -5,6 +5,9 @@
   "resolutions": {
     "dompurify": "3.1.6"
   },
+  "overrides": {
+    "webpack": "~5.98.0"
+  },
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

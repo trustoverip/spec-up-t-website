@@ -1,4 +1,10 @@
-# Create a Zenodo DOI
+# Create a Zenodo DOI – The Spec-Up-T way
+
+:::info
+
+We still have to align this with [the ToIP way](./create-zenodo-doi-toip-approved.md).
+
+:::
 
 This page explains how to assign a Zenodo DOI to a Spec-Up-T specification.
 

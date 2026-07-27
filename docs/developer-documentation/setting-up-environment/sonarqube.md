@@ -28,7 +28,7 @@ Replace the placeholders with your actual SonarCloud organization, project key, 
 
 Add a `sonar-project.properties` file to your project with the following configuration:
 
-```
+```js
 sonar.projectKey=<your-project-key>
 sonar.organization=<your-organization>
 sonar.host.url=https://sonarcloud.io
@@ -85,7 +85,7 @@ When you run `npx sonarqube-scanner`, your local analysis results are uploaded t
 
 Add .scannerwork to your `.gitignore` file to ensure it is not tracked by git:
 
-```
+```bash
 .scannerwork/
 ```
 
@@ -119,7 +119,7 @@ How to fix:
 
 If you want to disable local analysis, then comment out the lines in `sonar-project.properties`:
 
-```
+```js
 # sonar.projectKey=<your-project-key>
 # sonar.organization=<your-organization>
 # sonar.host.url=https://sonarcloud.io
@@ -127,6 +127,6 @@ If you want to disable local analysis, then comment out the lines in `sonar-proj
 # sonar.exclusions=<comma-separated-list-of-paths-to-exclude>
 ```
 
-:::warn
+:::warning
 Renaming `sonar-project.properties` to `sonar-project.properties.old` did not work for me.
 :::

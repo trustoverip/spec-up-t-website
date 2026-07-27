@@ -261,8 +261,7 @@ If the `git clone` command is not recognized:
 After successfully cloning and setting up the repository:
 
 1. Familiarize yourself with the [Command Line Menu](../../user-interface-overview/command-line-menu.md)
-2. Learn about [editing specifications](../../spec-up-t-editor/intro.md)
-3. Understand how to [push changes to GitHub](push-to-github.md)
+2. Understand how to [push changes to GitHub](push-to-github.md)
 
 ## Alternative: Fork Instead of Clone
 

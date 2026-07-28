@@ -10,13 +10,13 @@ If you just want to create or update, jump to the section you need:
 
 <p>
   <a className="button button--primary margin-right--sm" href="#first-time">First time</a>
-  <a className="button button--secondary" href="#later-adjustment-update">Later adjustment / update</a>
+  <a className="button button--secondary" href="#update">Update</a>
 </p>
 
 | Case                          | When                           | What you do on Zenodo                                                    |
 | ----------------------------- | ------------------------------ | ------------------------------------------------------------------------ |
 | **First time**                | No Zenodo record exists yet    | Create a new upload, reserve a DOI, publish                              |
-| **Later adjustment / update** | A Zenodo record already exists | Open that record → **New version** → publish (new sub-ID; main ID stays) |
+| **Update** | A Zenodo record already exists | Open that record → **New version** → publish (new sub-ID; main ID stays) |
 
 </div>
 
@@ -62,7 +62,7 @@ Do **all** of the following there:
 | Case | When | What you do on Zenodo |
 | --- | --- | --- |
 | **First time** | No Zenodo record exists yet | Create a new upload, reserve a DOI, publish |
-| **Later adjustment / update** | A Zenodo record already exists | Open that record → **New version** → publish (new sub-ID; main ID stays) |
+| **Update** | A Zenodo record already exists | Open that record → **New version** → publish (new sub-ID; main ID stays) |
 
 This guide uses the **manual** approach (you upload the GitHub Release ZIP yourself). That is required if you need the DOI **before** the ZIP is published — Zenodo’s automatic GitHub integration cannot reserve a DOI in advance.
 
@@ -128,13 +128,13 @@ You now have:
 - a **sub-ID** for this first snapshot (the DOI you reserved)
 - a **main ID** for the work as a whole (shown on the Zenodo record; never changes)
 
-If the specification still embeds the reserved sub-ID, update it to the **main ID** when convenient (that update is a later adjustment / update below).
+If the specification still embeds the reserved sub-ID, update it to the **main ID** when convenient (that update is an Update below).
 
 Details: [Zenodo — reserve a DOI](https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/).
 
 ---
 
-## Later adjustment / update {#later-adjustment-update}
+## Update {#update}
 
 Goal: publish an updated ZIP **without** creating a second, unrelated Zenodo record. The **main ID stays**. Zenodo issues a **new sub-ID** for the new snapshot.
 
@@ -190,4 +190,4 @@ git tag v1.0
 git push origin v1.0
 ```
 
-Then download the regenerated release ZIP and upload it as a Zenodo **New version** (later adjustment / update), not as a brand-new unrelated record.
+Then download the regenerated release ZIP and upload it as a Zenodo **New version** (update), not as a brand-new unrelated record.

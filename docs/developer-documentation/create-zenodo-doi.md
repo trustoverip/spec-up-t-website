@@ -1,9 +1,21 @@
 # Create a Zenodo DOI
 
+## TL;DR
+
+---
+
+<div style={{textAlign: 'center'}}>
+
+If you just want to create or update, jump to the section you need:
+
 <p>
   <a className="button button--primary margin-right--sm" href="#first-time">First time</a>
   <a className="button button--secondary" href="#later-adjustment-update">Later adjustment / update</a>
 </p>
+
+</div>
+
+---
 
 :::info
 

@@ -16,8 +16,8 @@ If you just want to create or update, jump to the section you need:
 
 | Case                          | When                           | What you do on Zenodo                                                    |
 | ----------------------------- | ------------------------------ | ------------------------------------------------------------------------ |
-| **First time**                | No Zenodo record exists yet    | Create a new upload, reserve a DOI, publish                              |
-| **Update** | A Zenodo record already exists | Open that record → **New version** → publish (new sub-ID; main ID stays) |
+| **First time** | No Zenodo record exists yet    | Create a new upload, reserve a DOI, publish                              |
+| **Update**     | A Zenodo record already exists | Open that record → **New version** → publish (new sub-ID; main ID stays) |
 
 </div>
 
@@ -38,23 +38,25 @@ A DOI is a permanent, citable link. Zenodo stores a ZIP copy of your specificati
 - **Main ID** (Zenodo calls this the *Concept DOI*) — one ID for the work as a whole. It **never changes**. It always resolves to the latest published version.
 - **Sub-ID** (Zenodo calls this a *Version DOI*) — one ID per published snapshot. Each new published version gets a **new** sub-ID.
 
-Embed the **main ID** in the specification once you have it (after the first publish). That keeps one stable link in the document forever.
+Prefer embedding the **main ID** in the specification once you have it (after the first publish). That keeps one stable link in the document forever. Until then, embed the reserved **sub-ID** so the first release ZIP already contains a DOI.
 
-**Example DOI:** `10.5281/zenodo.18797357`
+**Example main ID** (Concept DOI): `10.5281/zenodo.18792085`
 
-**Example markdown link:**
+**Example sub-ID** (Version DOI): `10.5281/zenodo.18797357`
+
+**Example markdown link** (use the main ID when available):
 
 ```markdown
-[https://doi.org/10.5281/zenodo.18797357](https://doi.org/10.5281/zenodo.18797357)
+[https://doi.org/10.5281/zenodo.18792085](https://doi.org/10.5281/zenodo.18792085)
 ```
 
 ## Where you must do this
 
 Zenodo itself does not care which GitHub branch or repository you use. Here we will do this on the **`main` branch** of the **original repository**, to keep it simple.
 
-Do **all** of the following there:
+Do the following there:
 
-- Embed the DOI in the specification source (and merge that change to `main` first)
+- Embed or update the DOI in the specification source when needed (and merge that change to `main` first)
 - Create the Git tag and GitHub Release
 - Upload the release ZIP to Zenodo and publish
 
@@ -69,7 +71,7 @@ This guide uses the **manual** approach (you upload the GitHub Release ZIP yours
 
 :::note
 
-Reserve the DOI *before* you publish. Zenodo lets you reserve it so you can put it in the document first. It becomes official only when you click Publish.
+For a first publish, reserve the DOI *before* you publish. Zenodo lets you reserve it so you can put it in the document first. It becomes official only when you click Publish. After that, prefer the **main ID** in the specification; later updates usually do not need a new reserved DOI in the source.
 
 :::
 
@@ -99,7 +101,7 @@ Goal:
 
   ![Generated DOI](/img/DOI/zenodo.org-uploads-new-3.png)
 
-- Build the URL: `https://doi.org/` + the DOI  
+- Build the URL: `https://doi.org/` + the reserved DOI (this is the first **sub-ID**; the screenshot above shows `10.5281/zenodo.18785919`)  
   Example: `https://doi.org/10.5281/zenodo.18785919`
 
 Keep this Zenodo draft open. You will return to it in step 4.
@@ -133,7 +135,7 @@ You now have:
 - a **sub-ID** for this first snapshot (the DOI you reserved)
 - a **main ID** for the work as a whole (shown on the Zenodo record; never changes)
 
-If the specification still embeds the reserved sub-ID, update it to the **main ID** when convenient (that update is an Update below).
+If the specification still embeds the reserved sub-ID, update it to the **main ID** when convenient (follow [Update](#update) below).
 
 Details: [Zenodo — reserve a DOI](https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/).
 
@@ -183,16 +185,14 @@ Minor file fixes are only allowed briefly after publish (Zenodo’s own grace wi
 
 ### Wrong ZIP or missing DOI in the release
 
-The release ZIP is generated from the commit the tag points to. Fix the source on **`main`**, retarget or recreate the tag at the corrected commit, confirm the release ZIP contents, then publish a Zenodo **New version** with that ZIP.
+The release ZIP is generated from the commit the tag points to. Fix the source on **`main`**, create a **new** tag at the corrected commit (same as [Update](#update) step 2), confirm the release ZIP contents, then publish a Zenodo **New version** with that ZIP.
 
 ```sh
 git checkout main
 git pull
 # ... commit fixes on main ...
-git tag -d v1.0
-git push origin :refs/tags/v1.0
-git tag v1.0
-git push origin v1.0
+git tag v1.0.1
+git push origin v1.0.1
 ```
 
-Then download the regenerated release ZIP and upload it as a Zenodo **New version** (update), not as a brand-new unrelated record.
+Then download the new release ZIP and upload it as a Zenodo **New version** (update), not as a brand-new unrelated record. If the bad tag was never published to Zenodo, you may instead delete and recreate that same tag; once a Zenodo version exists for it, prefer a new tag and **New version**.

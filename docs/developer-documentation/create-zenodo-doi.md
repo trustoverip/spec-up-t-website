@@ -44,17 +44,13 @@ Embed the **main ID** in the specification once you have it (after the first pub
 
 ## Where you must do this
 
-Zenodo itself does not care which GitHub branch or repository you use.
-
-Here we will do this on the **`main` branch** of the **original repository**, to keep it simple.
+Zenodo itself does not care which GitHub branch or repository you use. Here we will do this on the **`main` branch** of the **original repository**, to keep it simple.
 
 Do **all** of the following there:
 
 - Embed the DOI in the specification source (and merge that change to `main` first)
 - Create the Git tag and GitHub Release
 - Upload the release ZIP to Zenodo and publish
-
-Do not create the GitHub Release or the Zenodo record from a non-`main` branch or from a non-original repository.
 
 ## Two cases only
 

@@ -6,85 +6,67 @@ The Zenodo DOI workflow fits into [the broader Trust over IP process for publish
 
 :::
 
-This page explains how to assign a Zenodo DOI to a Spec-Up-T specification.
+This page explains how to assign a Zenodo DOI to a Spec-Up-T specification. It is written for people who need a permanent citation link and do not want to learn Zenodo in depth.
 
-## What is a Zenodo DOI?
+## What you get
 
-A DOI (Digital Object Identifier) is a persistent, universally recognized identifier for digital resources. Zenodo, an open-access repository developed by CERN, assigns DOIs to research outputs, datasets, and other artifacts. A Zenodo DOI provides a permanent, citable link to your work — ensuring accessibility even if the hosting URL changes, and enabling proper attribution in academic and technical references.
+A DOI is a permanent, citable link. Zenodo stores a ZIP copy of your specification repository and gives you:
 
-By minting a Zenodo DOI for your specification, you make it:
+- **Main ID** (Zenodo calls this the *Concept DOI*) — one ID for the work as a whole. It **never changes**. It always resolves to the latest published version.
+- **Sub-ID** (Zenodo calls this a *Version DOI*) — one ID per published snapshot. Each new published version gets a **new** sub-ID.
 
-- **Citable** — others can reference it in papers and standards work
-- **Discoverable** — it appears in academic databases and search indexes
-- **Preserved** — Zenodo stores a full copy of the repository for long-term archival
-
-## What we want to achieve
-
-The goal is to embed a Zenodo DOI link directly in the Spec-Up-T document. This link points to a Zenodo record that holds a full copy of the specification repository, uploaded as a **ZIP file**.
-
-The ZIP file is generated automatically when a **GitHub Release** is published. A GitHub Release is created from a **Git tag**. The workflow is therefore:
-
-1. Reserve a DOI on Zenodo
-2. Embed the DOI URL in the specification source
-3. Create a GitHub Release (which generates the ZIP)
-4. Upload that ZIP to Zenodo and publish the record
-
-## Two approaches
-
-There are two ways to integrate Zenodo with a GitHub repository:
-
-1. **Automatic** — connect Zenodo directly to the GitHub repository so releases are uploaded automatically
-2. **Manual** — upload the release ZIP to Zenodo yourself
-
-This guide covers the **manual** approach.
-
-:::note
-
-The **key insight** is to reserve the DOI *before* publishing. Zenodo lets you reserve a DOI in advance so you can embed it in the document prior to uploading the ZIP. The DOI is only formally registered once you publish the Zenodo record.
-
-:::
+Embed the **main ID** in the specification once you have it (after the first publish). That keeps one stable link in the document forever.
 
 **Example DOI:** `10.5281/zenodo.18797357`
 
 **Example markdown link:**
+
 ```markdown
 [https://doi.org/10.5281/zenodo.18797357](https://doi.org/10.5281/zenodo.18797357)
 ```
 
-## Working with forks
+## Where you must do this
 
-If you are working on a fork, complete all preparation steps — including embedding the DOI — on the fork. Open a pull request and merge into the upstream repository before proceeding with the release steps below.
+Zenodo itself does not care which GitHub branch or repository you use. For Spec-Up-T, the DOI must cite the **authoritative** source.
 
-The following steps must be performed from the **upstream (original) repository**:
+Do **all** of the following on the **original repository**, on its **`main` branch**:
 
-- Create a Git tag
-- Create a GitHub Release
-- Upload the release ZIP to Zenodo
-- Publish the Zenodo record
+- Embed the DOI in the specification source (and merge that change to `main` first)
+- Create the Git tag and GitHub Release
+- Upload the release ZIP to Zenodo and publish
 
-## Step-by-step guide
+Do not create the GitHub Release or the Zenodo record from a non-`main` branch or from a non-original repository.
 
-:::info
+## Two cases only
 
-**Summary:** Reserve a DOI → embed it in the specification → create a GitHub Release containing that updated specification → upload the release ZIP to Zenodo → publish.
+| Case | When | What you do on Zenodo |
+| --- | --- | --- |
+| **Inception event** (first time) | No Zenodo record exists yet | Create a new upload, reserve a DOI, publish |
+| **Establishment event** (later adjustment / update) | A Zenodo record already exists | Open that record → **New version** → publish (new sub-ID; main ID stays) |
 
-Steps 1 and 2 can be done while working on a fork. Steps 3 and 4 must be done on the **original (upstream) repository**, after the fork's changes have been merged.
+This guide uses the **manual** approach (you upload the GitHub Release ZIP yourself). That is required if you need the DOI **before** the ZIP is published — Zenodo’s automatic GitHub integration cannot reserve a DOI in advance.
+
+:::note
+
+Reserve the DOI *before* you publish. Zenodo lets you reserve it so you can put it in the document first. It becomes official only when you click Publish.
 
 :::
+
+---
+
+## Inception event (first time)
+
+Goal: create the Zenodo record, get the main ID + first sub-ID, and put a DOI link in the specification.
 
 ### 1. Reserve a DOI on Zenodo
 
-:::note Fork or original
-This step is done entirely on the Zenodo website and is independent of any repository. You can do it at any point before creating the release.
-:::
-
-- Navigate to [https://zenodo.org/uploads/new](https://zenodo.org/uploads/new)
+- Go to [https://zenodo.org/uploads/new](https://zenodo.org/uploads/new)
 
   ![Zenodo new upload page](/img/DOI/zenodo.org-uploads-new-1.png)
 
 - When asked whether you already have a DOI, choose **"No, I need one"**
 
-  Zenodo displays the message: *"Reserve a DOI by pressing the button (so it can be included in files prior to upload). The DOI is registered when your upload is published."*
+  Zenodo shows: *"Reserve a DOI by pressing the button (so it can be included in files prior to upload). The DOI is registered when your upload is published."*
 
   ![Reserve DOI option](/img/DOI/zenodo.org-uploads-new-2.png)
 
@@ -92,83 +74,100 @@ This step is done entirely on the Zenodo website and is independent of any repos
 
   ![Generated DOI](/img/DOI/zenodo.org-uploads-new-3.png)
 
-- Construct the full URL by prefixing the DOI with `https://doi.org/`
-
+- Build the URL: `https://doi.org/` + the DOI  
   Example: `https://doi.org/10.5281/zenodo.18785919`
 
-### 2. Embed the DOI in the specification
+Keep this Zenodo draft open. You will return to it in step 4.
 
-:::note Fork or original
-Do this step on your **fork** (or directly on the original if you are not using a fork). The DOI must be present in the source before the release is created in step 3.
+### 2. Put the DOI in the specification on `main`
+
+- Paste a markdown link with the reserved DOI near the top of the source (for example in `spec-head.md`)
+- Commit and push so the change lands on the original repository’s **`main`** branch
+
+The reserved DOI is the **first sub-ID**. After you publish (step 4), Zenodo also shows the **main ID**. Prefer updating the specification to the **main ID** once it is available, so the link in the document stays stable forever.
+
+### 3. Create a GitHub Release from `main`
+
+On the **original repository**:
+
+- Open **Releases** → **Create a new release**
+- Create a new tag from **`main`** (for example `v1.0`)
+- Enter a title, publish the release
+
+GitHub builds a ZIP of the repository at that tag. Download that ZIP.
+
+### 4. Upload the ZIP and publish
+
+- Return to the Zenodo draft from step 1
+- Upload the GitHub Release ZIP
+- Fill in the required metadata (title, creators, description, …)
+- Click **Publish**
+
+You now have:
+
+- a **sub-ID** for this first snapshot (the DOI you reserved)
+- a **main ID** for the work as a whole (shown on the Zenodo record; never changes)
+
+If the specification still embeds the reserved sub-ID, update it to the **main ID** when convenient (that update is an Establishment event below).
+
+Details: [Zenodo — reserve a DOI](https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/).
+
+---
+
+## Establishment event (later adjustment / update)
+
+Goal: publish an updated ZIP **without** creating a second, unrelated Zenodo record. The **main ID stays**. Zenodo issues a **new sub-ID** for the new snapshot.
+
+Do **not** start a fresh upload at `/uploads/new` for the same specification. Use **New version** on the existing record.
+
+### 1. Update the specification on `main` (if needed)
+
+- Make source changes on the original repository’s **`main`** branch
+- If you are switching the embedded link from the first sub-ID to the **main ID**, do that here and merge to `main` before releasing
+
+### 2. Create a new GitHub Release from `main`
+
+Same as Inception step 3: new tag on **`main`**, new release on the original repository, download the new ZIP.
+
+### 3. Create a new Zenodo version (new sub-ID)
+
+- Open the existing Zenodo record
+- Click **New version**
+- Upload the new GitHub Release ZIP (and adjust metadata if needed)
+- Click **Publish**
+
+Result:
+
+- **Main ID** — unchanged
+- **New sub-ID** — for this snapshot only
+
+If the specification already embeds the **main ID**, you usually do not need to change the DOI text again.
+
+Details: [Zenodo — manage versions](https://help.zenodo.org/docs/deposit/manage-versions/).
+
+:::warning
+
+Do not overwrite a published Zenodo record’s files as the normal update path. Zenodo treats published files as fixed. For real updates, use **New version**.  
+Minor file fixes are only allowed briefly after publish (Zenodo’s own grace window); prefer **New version** unless Zenodo’s UI explicitly offers a minor file correction and you are still within that window.
+
 :::
 
-- Copy the markdown link with the DOI (example: `[https://doi.org/10.5281/zenodo.18797357](https://doi.org/10.5281/zenodo.18797357)`)
-- Paste it into your specification source (preferably near the top, e.g. in `spec-head.md`)
-- Commit and push
-- If working on a fork: open a pull request and merge into the original repository before continuing
+---
 
-### 3. Create a GitHub Release
+## Quick troubleshooting
 
-:::warning Original repository only
-This step must be performed on the **original (upstream) repository**, not on a fork. The DOI is meant to be a permanent citation pointing to the authoritative source. A Zenodo record built from a fork's release would not represent the canonical version.
-:::
+### Wrong ZIP or missing DOI in the release
 
-- In the original repository on GitHub, go to the **Releases** section (right sidebar) and click **"Create a new release"**
-- Create a new tag (e.g. `v1.0`) by typing it in the tag field and confirming
-- Enter a release title — this can match the tag name or be more descriptive
-- If this is a pre-release version, check the **"Pre-release"** checkbox
-- Publish the release
-
-GitHub automatically generates a ZIP archive of the repository at that tag.
-
-### 4. Upload the ZIP to Zenodo and publish
-
-:::warning Original repository only
-Use the ZIP generated by the original repository's release in the previous step.
-:::
-
-- Return to the Zenodo upload page you opened in step 1
-- Upload the ZIP file generated by GitHub using the **"Drag and drop files"** or **"Upload files"** area (this appears above the DOI reservation section)
-- Fill in the required metadata (title, authors, description, etc.)
-- Click **Publish** — the reserved DOI is now formally registered and the record is live
-
-For more details on the DOI reservation process, see the [Zenodo documentation](https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/).
-
-## Troubleshooting
-
-### How to edit a GitHub Release
-
-If you need to make changes to a published GitHub Release (for example, to update the specification source after building, or to embed a corrected Zenodo DOI), you must move the existing tag to point to a new commit. This causes GitHub to automatically regenerate the release archives from the updated code.
-
-:::warning Original repository only
-These steps must be performed on the **original (upstream) repository**, not on a fork.
-:::
-
-#### Step 1: Commit your changes
-
-Make your changes to the specification source files and commit them to the `main` branch:
+The release ZIP is generated from the commit the tag points to. Fix the source on **`main`**, retarget or recreate the tag at the corrected commit, confirm the release ZIP contents, then publish a Zenodo **New version** with that ZIP.
 
 ```sh
-git add .
-git commit -m "Update specification source"
-git push origin main
+git checkout main
+git pull
+# ... commit fixes on main ...
+git tag -d v1.0
+git push origin :refs/tags/v1.0
+git tag v1.0
+git push origin v1.0
 ```
 
-#### Step 2: Move the existing tag
-
-Update the existing tag (e.g., `v1.0`) to point to the new commit. Git tags are immutable and point to specific commits, so you must delete the tag locally and remotely, then recreate it at the new commit:
-
-```sh
-git tag -d v1.0                  # delete the local tag
-git push origin :refs/tags/v1.0  # delete the remote tag
-git tag v1.0                     # recreate tag at current HEAD
-git push origin v1.0             # push the updated tag to GitHub
-```
-
-#### Step 3: Verify the release archives were regenerated
-
-Navigate to the **Releases** section of your repository and confirm that the source ZIP and tar.gz archives have been updated. These are not stored as assets — GitHub generates them on-the-fly from whatever commit the tag points to. You can verify they are new by checking the file timestamps or downloading and inspecting the contents.
-
-#### Step 4: If you updated the Zenodo link
-
-If the changes include an updated Zenodo DOI reference, download the new release ZIP and re-upload it to your Zenodo record, then publish the updated record.
+Then download the regenerated release ZIP and upload it as a Zenodo **New version** (Establishment), not as a brand-new unrelated record.

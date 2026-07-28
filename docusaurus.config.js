@@ -128,17 +128,17 @@ const config = {
         highlightSearchTermsOnTargetPage: true
       },
     ],
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: [
-          {
-            from: '/docs/developer-documentation/create-zenodo-doi',
-            to: '/docs/developer-documentation/zenodo/create-zenodo-doi',
-          },
-        ],
-      },
-    ],
+    // [
+    //   '@docusaurus/plugin-client-redirects',
+    //   {
+    //     redirects: [
+    //       {
+    //         from: '/docs/developer-documentation/create-zenodo-doi',
+    //         to: '/docs/developer-documentation/zenodo/create-zenodo-doi',
+    //       },
+    //     ],
+    //   },
+    // ],
   ],
 };
 

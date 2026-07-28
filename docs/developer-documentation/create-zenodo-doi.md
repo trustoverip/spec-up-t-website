@@ -1,8 +1,8 @@
-# Create a Zenodo DOI – The Spec-Up-T way
+# Create a Zenodo DOI
 
 :::info
 
-We still have to align this with [the ToIP way](./create-zenodo-doi-toip-approved.md).
+The Zenodo DOI workflow fits into [the broader Trust over IP process for publishing a Spec-Up-T specification as a ToIP Approved Deliverable](https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/767787009/ToIP+Approved+Deliverable+Process).
 
 :::
 

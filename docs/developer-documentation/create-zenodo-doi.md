@@ -41,8 +41,8 @@ Do not create the GitHub Release or the Zenodo record from a non-`main` branch o
 
 | Case | When | What you do on Zenodo |
 | --- | --- | --- |
-| **Inception event** (first time) | No Zenodo record exists yet | Create a new upload, reserve a DOI, publish |
-| **Establishment event** (later adjustment / update) | A Zenodo record already exists | Open that record → **New version** → publish (new sub-ID; main ID stays) |
+| **First time** | No Zenodo record exists yet | Create a new upload, reserve a DOI, publish |
+| **Later adjustment / update** | A Zenodo record already exists | Open that record → **New version** → publish (new sub-ID; main ID stays) |
 
 This guide uses the **manual** approach (you upload the GitHub Release ZIP yourself). That is required if you need the DOI **before** the ZIP is published — Zenodo’s automatic GitHub integration cannot reserve a DOI in advance.
 
@@ -54,7 +54,7 @@ Reserve the DOI *before* you publish. Zenodo lets you reserve it so you can put 
 
 ---
 
-## Inception event (first time)
+## First time
 
 Goal: create the Zenodo record, get the main ID + first sub-ID, and put a DOI link in the specification.
 
@@ -108,13 +108,13 @@ You now have:
 - a **sub-ID** for this first snapshot (the DOI you reserved)
 - a **main ID** for the work as a whole (shown on the Zenodo record; never changes)
 
-If the specification still embeds the reserved sub-ID, update it to the **main ID** when convenient (that update is an Establishment event below).
+If the specification still embeds the reserved sub-ID, update it to the **main ID** when convenient (that update is a later adjustment / update below).
 
 Details: [Zenodo — reserve a DOI](https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/).
 
 ---
 
-## Establishment event (later adjustment / update)
+## Later adjustment / update
 
 Goal: publish an updated ZIP **without** creating a second, unrelated Zenodo record. The **main ID stays**. Zenodo issues a **new sub-ID** for the new snapshot.
 
@@ -127,7 +127,7 @@ Do **not** start a fresh upload at `/uploads/new` for the same specification. Us
 
 ### 2. Create a new GitHub Release from `main`
 
-Same as Inception step 3: new tag on **`main`**, new release on the original repository, download the new ZIP.
+Same as First time step 3: new tag on **`main`**, new release on the original repository, download the new ZIP.
 
 ### 3. Create a new Zenodo version (new sub-ID)
 
@@ -170,4 +170,4 @@ git tag v1.0
 git push origin v1.0
 ```
 
-Then download the regenerated release ZIP and upload it as a Zenodo **New version** (Establishment), not as a brand-new unrelated record.
+Then download the regenerated release ZIP and upload it as a Zenodo **New version** (later adjustment / update), not as a brand-new unrelated record.

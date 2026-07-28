@@ -27,9 +27,11 @@ Embed the **main ID** in the specification once you have it (after the first pub
 
 ## Where you must do this
 
-Zenodo itself does not care which GitHub branch or repository you use. For Spec-Up-T, the DOI must cite the **authoritative** source.
+Zenodo itself does not care which GitHub branch or repository you use.
 
-Do **all** of the following on the **original repository**, on its **`main` branch**:
+Here we will do this on the **`main` branch** of the **original repository**, to keep it simple.
+
+Do **all** of the following there:
 
 - Embed the DOI in the specification source (and merge that change to `main` first)
 - Create the Git tag and GitHub Release

@@ -38,7 +38,11 @@ There are two ways to integrate Zenodo with a GitHub repository:
 
 This guide covers the **manual** approach.
 
-The key insight is to reserve the DOI *before* publishing. Zenodo lets you reserve a DOI in advance so you can embed it in the document prior to uploading the ZIP. The DOI is only formally registered once you publish the Zenodo record.
+:::note
+
+The **key insight** is to reserve the DOI *before* publishing. Zenodo lets you reserve a DOI in advance so you can embed it in the document prior to uploading the ZIP. The DOI is only formally registered once you publish the Zenodo record.
+
+:::
 
 **Example DOI:** `10.5281/zenodo.18797357`
 

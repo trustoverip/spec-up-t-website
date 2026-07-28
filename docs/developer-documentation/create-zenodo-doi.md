@@ -75,6 +75,16 @@ For a first publish, reserve the DOI *before* you publish. Zenodo lets you reser
 
 :::
 
+## Grant yourself manage access
+
+If a Zenodo record already exists and is owned by an organization account, grant yourself manage access on that record before you try to publish updates. Repeat the steps below for **every** repository (and its Zenodo record) you need to work on.
+
+1. Create an account on [zenodo.org](https://zenodo.org) if you do not have one.
+   - An institutional email address is preferred. A personal or custom-domain address can also work.
+2. After you create the account, your username may not appear in Zenodo’s user search right away. Waiting overnight has been enough in practice for the account to become findable.
+3. Someone who already has manage rights — typically while logged in with the organization Zenodo account — must add you with **Can manage** rights on the relevant record (or community).
+4. When searching for users in Zenodo’s share/access UI, the search is not debounced. Type the name and let the search finish before assuming there is no match.
+
 ---
 
 ## First time {#first-time}

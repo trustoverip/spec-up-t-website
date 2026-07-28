@@ -1,5 +1,10 @@
 # Create a Zenodo DOI
 
+<p>
+  <a className="button button--primary margin-right--sm" href="#first-time">First time</a>
+  <a className="button button--secondary" href="#later-adjustment-update">Later adjustment / update</a>
+</p>
+
 :::info
 
 The Zenodo DOI workflow fits into [the broader Trust over IP process for publishing a Spec-Up-T specification as a ToIP Approved Deliverable](https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/767787009/ToIP+Approved+Deliverable+Process).
@@ -56,7 +61,7 @@ Reserve the DOI *before* you publish. Zenodo lets you reserve it so you can put 
 
 ---
 
-## First time
+## First time {#first-time}
 
 Goal: create the Zenodo record, get the main ID + first sub-ID, and put a DOI link in the specification.
 
@@ -116,7 +121,7 @@ Details: [Zenodo — reserve a DOI](https://help.zenodo.org/docs/deposit/describ
 
 ---
 
-## Later adjustment / update
+## Later adjustment / update {#later-adjustment-update}
 
 Goal: publish an updated ZIP **without** creating a second, unrelated Zenodo record. The **main ID stays**. Zenodo issues a **new sub-ID** for the new snapshot.
 

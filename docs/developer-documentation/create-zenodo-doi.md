@@ -77,7 +77,11 @@ Reserve the DOI *before* you publish. Zenodo lets you reserve it so you can put 
 
 ## First time {#first-time}
 
-Goal: create the Zenodo record, get the main ID + first sub-ID, and put a DOI link in the specification.
+Goal:
+
+- create the Zenodo record
+- get the main ID + first sub-ID
+- put a DOI link in the specification.
 
 ### 1. Reserve a DOI on Zenodo
 

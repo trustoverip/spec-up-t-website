@@ -164,7 +164,15 @@ Do **not** start a fresh upload at `/uploads/new` for the same specification. Us
 
 ### 2. Create a new GitHub Release from `main`
 
-Same as First time step 3: new tag on **`main`**, new release on the original repository, download the new ZIP.
+(same as [First time](#first-time) step 3)
+
+On the **original repository**:
+
+- Open **Releases** → **Create a new release**
+- Create a new tag from **`main`** (for example `v1.0`)
+- Enter a title, publish the release
+
+GitHub builds a ZIP of the repository at that tag. Download that ZIP.
 
 ### 3. Create a new Zenodo version (new sub-ID)
 

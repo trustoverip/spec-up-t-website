@@ -1,10 +1,11 @@
 # Create a Zenodo DOI
 
-## TL;DR
 
 ---
 
 <div style={{textAlign: 'center'}}>
+
+## TL;DR
 
 If you just want to create or update, jump to the section you need:
 
@@ -57,12 +58,12 @@ Do **all** of the following there:
 - Create the Git tag and GitHub Release
 - Upload the release ZIP to Zenodo and publish
 
-## Two cases only
+## Automatic versus Manual
 
-| Case | When | What you do on Zenodo |
-| --- | --- | --- |
-| **First time** | No Zenodo record exists yet | Create a new upload, reserve a DOI, publish |
-| **Update** | A Zenodo record already exists | Open that record → **New version** → publish (new sub-ID; main ID stays) |
+There are two ways to integrate Zenodo with a GitHub repository:
+
+- Automatic — connect Zenodo directly to the GitHub repository so releases are uploaded automatically
+- Manual — upload the release ZIP to Zenodo yourself
 
 This guide uses the **manual** approach (you upload the GitHub Release ZIP yourself). That is required if you need the DOI **before** the ZIP is published — Zenodo’s automatic GitHub integration cannot reserve a DOI in advance.
 

@@ -13,6 +13,11 @@ If you just want to create or update, jump to the section you need:
   <a className="button button--secondary" href="#later-adjustment-update">Later adjustment / update</a>
 </p>
 
+| Case                          | When                           | What you do on Zenodo                                                    |
+| ----------------------------- | ------------------------------ | ------------------------------------------------------------------------ |
+| **First time**                | No Zenodo record exists yet    | Create a new upload, reserve a DOI, publish                              |
+| **Later adjustment / update** | A Zenodo record already exists | Open that record → **New version** → publish (new sub-ID; main ID stays) |
+
 </div>
 
 ---

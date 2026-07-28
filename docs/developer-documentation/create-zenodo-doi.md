@@ -52,7 +52,11 @@ Prefer embedding the **main ID** in the specification once you have it (after th
 
 ## Where you must do this
 
+:::note
+
 Zenodo itself does not care which GitHub branch or repository you use. Here we will do this on the **`main` branch** of the **original repository**, to keep it simple.
+
+:::
 
 Do the following there:
 
@@ -118,6 +122,12 @@ Keep this Zenodo draft open. You will return to it in step 4.
 
 ### 2. Put the DOI in the specification on `main`
 
+:::note
+
+Zenodo itself does not care which GitHub branch or repository you use. Here we will do this on the **`main` branch** of the **original repository**, to keep it simple.
+
+:::
+
 - Paste a markdown link with the reserved DOI near the top of the source (for example in `spec-head.md`)
 - Commit and push so the change lands on the original repository’s **`main`** branch
 
@@ -158,6 +168,12 @@ Goal: publish an updated ZIP **without** creating a second, unrelated Zenodo rec
 Do **not** start a fresh upload at `/uploads/new` for the same specification. Use **New version** on the existing record.
 
 ### 1. Update the specification on `main` (if needed)
+
+:::note
+
+Zenodo itself does not care which GitHub branch or repository you use. Here we will do this on the **`main` branch** of the **original repository**, to keep it simple.
+
+:::
 
 - Make source changes on the original repository’s **`main`** branch
 - If you are switching the embedded link from the first sub-ID to the **main ID**, do that here and merge to `main` before releasing
@@ -202,6 +218,12 @@ Minor file fixes are only allowed briefly after publish (Zenodo’s own grace wi
 ## Quick troubleshooting
 
 ### Wrong ZIP or missing DOI in the release
+
+:::note
+
+Zenodo itself does not care which GitHub branch or repository you use. Here we will do this on the **`main` branch** of the **original repository**, to keep it simple.
+
+:::
 
 The release ZIP is generated from the commit the tag points to. Fix the source on **`main`**, create a **new** tag at the corrected commit (same as [Update](#update) step 2), confirm the release ZIP contents, then publish a Zenodo **New version** with that ZIP.
 

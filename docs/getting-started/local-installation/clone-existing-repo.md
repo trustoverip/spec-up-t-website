@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 import CommandLineMenu from '../../_shared-content/command-line-menu.md';
@@ -17,7 +17,7 @@ If you want to work with an existing Spec-Up-T repository (either your own or so
 
 Before cloning a repository, ensure you have:
 
-- [Git installed](system-requirements.md) on your system
+- [Node.js, npm, and Git installed](install-prerequisites.md) on your system
 - Basic familiarity with the command line
 
 ## Steps to Clone a Repository
@@ -253,7 +253,7 @@ If you get a "repository not found" error:
 
 If the `git clone` command is not recognized:
 
-- Install Git on your system (see [System Requirements](system-requirements.md))
+- Install Git on your system (see [Install prerequisites](install-prerequisites.md))
 - Restart your terminal after installation
 
 ## Next Steps

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 6
 ---
 
 # From local to remote (GitHub)
@@ -20,7 +20,7 @@ Before starting, ensure the following:
    git --version
    ```
 
-   If not installed, download and install Git from [git-scm.com](https://git-scm.com).
+   If not installed, follow [Install Node.js, npm, Git, and PowerShell](install-prerequisites.md).
 
 2. **GitHub Account:** Create a GitHub account if you don’t already have one.
 

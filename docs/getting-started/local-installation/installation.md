@@ -1,12 +1,12 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 # Local Installation
 
 Get started by **creating a new Spec-Up-T installation**.
 
-
+Before you begin, make sure [Node.js, npm, and Git are installed](install-prerequisites.md).
 
 ## Create a new Spec-Up-T installation
 
@@ -34,7 +34,7 @@ Sometimes, you want to force the latest version to be installed. Then you can do
 npx create-spec-up-t@latest my-spec-up-t-website
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor. It should work on any operating system (not tested yet).
+You can type this command into Terminal (macOS/Linux), PowerShell (Windows), or the integrated terminal of your code editor. The command is the same on every operating system.
 
 ### Result
 

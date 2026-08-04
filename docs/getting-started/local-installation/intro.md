@@ -12,7 +12,7 @@ Local Installation means installing Spec-Up-T directly on your computer and runn
 
 With local installation, you:
 
-1. **Install Node.js and Git** on your computer (if not already installed)
+1. **Install Node.js, npm, and Git** on your computer (if not already installed) — see [Install prerequisites](install-prerequisites.md)
 2. **Clone or create** a Spec-Up-T repository on your local machine
 3. **Use command line tools** to run Spec-Up-T commands
 4. **Edit files** using your preferred text editor (like Visual Studio Code)
@@ -61,7 +61,7 @@ If you're creating a new specification project:
 - 🎯 Best for heavy development work
 
 **Requirements:**
-- 💻 Need to install Node.js and Git
+- 💻 Need to [install Node.js, npm, and Git](install-prerequisites.md)
 - 📚 Requires some command line knowledge
 - ⚙️ Initial setup takes more time
 

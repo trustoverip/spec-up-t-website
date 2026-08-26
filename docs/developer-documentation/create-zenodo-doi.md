@@ -184,23 +184,23 @@ Do this once per specification repository, **after** the first Zenodo publish ex
 
 1. Copy [`.github/workflows/zenodo-update.yml`](https://github.com/blockchainbird/test-zenodo/blob/main/.github/workflows/zenodo-update.yml) **unchanged**. It has no hardcoded repository name or DOI.
 2. Create a Zenodo API token at [https://zenodo.org/account/settings/applications/tokens/new/](https://zenodo.org/account/settings/applications/tokens/new/). Enable **both** `deposit:write` and `deposit:actions`. Copy it once; do **not** commit it to git.
-3. In **that** GitHub repo: **Settings → Secrets and variables → Actions** (`https://github.com/OWNER/REPO/settings/secrets/actions`). Under **Repository secrets**, click **New repository secret**. Do **not** use Environment secrets or Organization secrets — this workflow only reads **repository secrets**.
+3. In **that** GitHub repo: **Settings → Secrets and variables → Actions** (`https://github.com/OWNER/REPO/settings/secrets/actions`). Use **repository** secrets and **repository** variables only. Do **not** use Environment or Organization secrets/variables — this workflow only reads the repository ones.
 
 :::warning
 
 `ZENODO_USER_API_TOKEN` must be a **repository secret**. If you store it as an Environment secret or an Organization secret, the Action will not see it.
 
-`ZENODO_SPEC_MAIN_DOI` is a **variable**, not a secret. If you create it as a secret, the Action will not see it and will fail with “Set variable ZENODO_SPEC_MAIN_DOI”.
+`ZENODO_SPEC_MAIN_DOI` must be a **repository variable**, not a secret. If you create it as a secret, or as an Environment or Organization variable, the Action will not see it and will fail with “Set variable ZENODO_SPEC_MAIN_DOI”.
 
 :::
 
-**Repository secret** (required) — bound to a **Zenodo user**:
+**Repository secret** (required) — bound to a **Zenodo user**. On the **Secrets** tab, under **Repository secrets**, click **New repository secret**:
 
 | Name | Value |
 | ---- | ----- |
 | `ZENODO_USER_API_TOKEN` | The token from step 2 (full string, no spaces). The same token may be reused in other spec repos **if** that Zenodo user can manage those records. |
 
-**Variable** (required in practice) — bound to **this specification**. Open the **Variables** tab → **New repository variable**:
+**Repository variable** (required in practice) — bound to **this specification**. Open the **Variables** tab → under **Repository variables**, click **New repository variable**:
 
 | Name | Value |
 | ---- | ----- |
@@ -225,7 +225,7 @@ There is also `GITHUB_TOKEN`: GitHub creates it automatically for each workflow 
 | Name | What it is | Bound to a Zenodo user? | Bound to this GitHub repo? | Same value in every spec repo? |
 | ---- | ---------- | ----------------------- | -------------------------- | ------------------------------ |
 | `ZENODO_USER_API_TOKEN` | Zenodo personal access token | **Yes** — belongs to whoever created it | **Stored** as a **repository secret** in each repo; the token itself is not owned by GitHub | **Can be** — one org/service token may be pasted into many repos |
-| `ZENODO_SPEC_MAIN_DOI` | Main ID of one specification | **No** — identifies **this spec** | **Yes** — each spec repo gets its own variable | **No** |
+| `ZENODO_SPEC_MAIN_DOI` | Main ID of one specification | **No** — identifies **this spec** | **Stored** as a **repository variable** in each spec repo | **No** |
 | `ZENODO_SPEC_LATEST_DEPOSITION_ID` | Numeric id of one published Zenodo version | **No** | **Yes** (optional if main ID is set) | **No** |
 
 What actually runs when someone publishes a GitHub Release:
@@ -236,7 +236,7 @@ GitHub user clicks “Publish release”
 GitHub Action starts in THAT repo
         ↓
 Uses repository secret ZENODO_USER_API_TOKEN  ← Zenodo account that created the token
-Uses repo variable for THAT spec’s main ID
+Uses repository variable for THAT spec’s main ID
         ↓
 Zenodo API: new version → upload ZIP → publish
 ```
@@ -297,10 +297,10 @@ Recommended layout (simplest for releasers):
 1. **One Zenodo account** used for automation (an org account, or a dedicated “github-actions” Zenodo user — not each releaser’s personal account unless you want that).
 2. **One API token** from that account (`ZENODO_USER_API_TOKEN`).
 3. On Zenodo, that account **owns** each record **or** has **Can manage** on each of them ([grant access](#grant-yourself-manage-access) if records live under another login).
-4. In **each** GitHub repo, under **Settings → Secrets and variables → Actions**, add a **repository secret** (not an Environment or Organization secret):
+4. In **each** GitHub repo, under **Settings → Secrets and variables → Actions**, add a **repository secret** and a **repository variable** (not Environment or Organization):
 
-   | Repo | Repository secret `ZENODO_USER_API_TOKEN` | Variable `ZENODO_SPEC_MAIN_DOI` |
-   | ---- | ----------------------------------------- | -------------------------------- |
+   | Repo | Repository secret `ZENODO_USER_API_TOKEN` | Repository variable `ZENODO_SPEC_MAIN_DOI` |
+   | ---- | ----------------------------------------- | ------------------------------------------ |
    | `kswg-acdc-specification` | same shared token | ACDC main ID only |
    | `kswg-cesr-specification` | same shared token | CESR main ID only |
    | `kswg-keri-specification` | same shared token | KERI main ID only |
@@ -315,7 +315,7 @@ After that, anyone with GitHub Release permission on the repo: merge to `main` �
 - Use one main ID for all three specs — each repo must point at its **own** Zenodo main ID.
 - Assume “I released on GitHub” implies Zenodo updated — check the Actions tab if the DOI version did not move.
 - Store `ZENODO_USER_API_TOKEN` as an **Environment secret** or **Organization secret**. It must be a **repository secret**.
-- Put `ZENODO_SPEC_MAIN_DOI` in **Secrets**. It must be a **Variable**.
+- Store `ZENODO_SPEC_MAIN_DOI` as a **secret**, or as an **Environment** or **Organization variable**. It must be a **repository variable**.
 - Put a new sub-ID into the spec on every release if the main ID is already there.
 
 ### Manual fallback: New version in the Zenodo UI {#manual-update}
@@ -355,7 +355,7 @@ Minor file fixes are only allowed briefly after publish (Zenodo’s own grace wi
 The error mentions `ZENODO_USER_API_TOKEN`, `ZENODO_SPEC_MAIN_DOI`, or a deposition id.
 
 - Re-do [Enable automatic updates](#enable-automatic-updates). Token scopes must include `deposit:write` and `deposit:actions`. `ZENODO_USER_API_TOKEN` must be a **repository secret** (**Settings → Secrets and variables → Actions → Repository secrets**), not an Environment or Organization secret.
-- If you see “Set variable `ZENODO_SPEC_MAIN_DOI`”: the main ID was stored as a **secret**, or the variable name is misspelled. Use **Settings → Secrets and variables → Actions → Variables** (not Secrets). Name must be exactly `ZENODO_SPEC_MAIN_DOI`. Value like `10.5281/zenodo.18792085`.
+- If you see “Set variable `ZENODO_SPEC_MAIN_DOI`”: the main ID was stored as a **secret**, as an Environment or Organization variable, or the name is misspelled. Use **Settings → Secrets and variables → Actions → Variables → Repository variables** (not Secrets). Name must be exactly `ZENODO_SPEC_MAIN_DOI`. Value like `10.5281/zenodo.18792085`.
 
 ### Action fails: leftover draft / “Please remove all files first”
 
@@ -377,7 +377,7 @@ On Zenodo, grant that user **Can manage** on the record, or replace the **reposi
 
 ### Wrong spec updated on Zenodo
 
-`ZENODO_SPEC_MAIN_DOI` in that repo’s settings points at another specification. Fix the variable; it must be **that** spec’s main ID.
+`ZENODO_SPEC_MAIN_DOI` in that repo’s **repository variables** points at another specification. Fix the **repository variable**; it must be **that** spec’s main ID.
 
 ### Wrong ZIP or missing DOI in the release
 

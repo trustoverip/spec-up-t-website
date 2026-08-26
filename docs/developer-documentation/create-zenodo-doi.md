@@ -184,15 +184,17 @@ Do this once per specification repository, **after** the first Zenodo publish ex
 
 1. Copy [`.github/workflows/zenodo-update.yml`](https://github.com/blockchainbird/test-zenodo/blob/main/.github/workflows/zenodo-update.yml) **unchanged**. It has no hardcoded repository name or DOI.
 2. Create a Zenodo API token at [https://zenodo.org/account/settings/applications/tokens/new/](https://zenodo.org/account/settings/applications/tokens/new/). Enable **both** `deposit:write` and `deposit:actions`. Copy it once; do **not** commit it to git.
-3. In **that** GitHub repo: **Settings → Secrets and variables → Actions** (`https://github.com/OWNER/REPO/settings/secrets/actions`).
+3. In **that** GitHub repo: **Settings → Secrets and variables → Actions** (`https://github.com/OWNER/REPO/settings/secrets/actions`). Under **Repository secrets**, click **New repository secret**. Do **not** use Environment secrets or Organization secrets — this workflow only reads **repository secrets**.
 
 :::warning
+
+`ZENODO_USER_API_TOKEN` must be a **repository secret**. If you store it as an Environment secret or an Organization secret, the Action will not see it.
 
 `ZENODO_SPEC_MAIN_DOI` is a **variable**, not a secret. If you create it as a secret, the Action will not see it and will fail with “Set variable ZENODO_SPEC_MAIN_DOI”.
 
 :::
 
-**Secret** (required) — bound to a **Zenodo user**:
+**Repository secret** (required) — bound to a **Zenodo user**:
 
 | Name | Value |
 | ---- | ----- |
@@ -204,7 +206,7 @@ Do this once per specification repository, **after** the first Zenodo publish ex
 | ---- | ----- |
 | `ZENODO_SPEC_MAIN_DOI` | **This repo’s** main ID only, e.g. `10.5281/zenodo.18792085`. One main ID per specification — do not share it across ACDC / CESR / KERI. |
 
-**Secret** (optional if the main ID variable is set):
+**Repository secret** (optional if the main ID variable is set):
 
 | Name | Value |
 | ---- | ----- |
@@ -222,7 +224,7 @@ There is also `GITHUB_TOKEN`: GitHub creates it automatically for each workflow 
 
 | Name | What it is | Bound to a Zenodo user? | Bound to this GitHub repo? | Same value in every spec repo? |
 | ---- | ---------- | ----------------------- | -------------------------- | ------------------------------ |
-| `ZENODO_USER_API_TOKEN` | Zenodo personal access token | **Yes** — belongs to whoever created it | **Stored** per repo, but the token itself is not owned by GitHub | **Can be** — one org/service token may be pasted into many repos |
+| `ZENODO_USER_API_TOKEN` | Zenodo personal access token | **Yes** — belongs to whoever created it | **Stored** as a **repository secret** in each repo; the token itself is not owned by GitHub | **Can be** — one org/service token may be pasted into many repos |
 | `ZENODO_SPEC_MAIN_DOI` | Main ID of one specification | **No** — identifies **this spec** | **Yes** — each spec repo gets its own variable | **No** |
 | `ZENODO_SPEC_LATEST_DEPOSITION_ID` | Numeric id of one published Zenodo version | **No** | **Yes** (optional if main ID is set) | **No** |
 
@@ -233,7 +235,7 @@ GitHub user clicks “Publish release”
         ↓
 GitHub Action starts in THAT repo
         ↓
-Uses repo secret ZENODO_USER_API_TOKEN  ← Zenodo account that created the token
+Uses repository secret ZENODO_USER_API_TOKEN  ← Zenodo account that created the token
 Uses repo variable for THAT spec’s main ID
         ↓
 Zenodo API: new version → upload ZIP → publish
@@ -245,8 +247,8 @@ Consequences:
 2. **The Action always uses the repo’s** `ZENODO_USER_API_TOKEN`, not the releasing user’s GitHub or Zenodo identity. If that Zenodo user cannot manage the record, the Action fails — even if the GitHub release succeeded.
 3. Reusing the **same token string** in several repos is fine **only if** that Zenodo user has **Can manage** on all of those records (or owns them).
 4. Each specification repo must store **its own** main ID. Do not copy one spec’s DOI into another repo.
-5. **Rotating the token:** create a new token on Zenodo, update the GitHub secret in **every repo** that used the old one, revoke the old token.
-6. **Revoking a Zenodo user’s access** on a record does not remove the GitHub secret — the next release will fail until someone fixes the token or Zenodo permissions.
+5. **Rotating the token:** create a new token on Zenodo, update the GitHub **repository secret** in **every repo** that used the old one, revoke the old token.
+6. **Revoking a Zenodo user’s access** on a record does not remove the GitHub repository secret — the next release will fail until someone fixes the token or Zenodo permissions.
 
 ### Publish an update {#publish-an-update}
 
@@ -295,10 +297,10 @@ Recommended layout (simplest for releasers):
 1. **One Zenodo account** used for automation (an org account, or a dedicated “github-actions” Zenodo user — not each releaser’s personal account unless you want that).
 2. **One API token** from that account (`ZENODO_USER_API_TOKEN`).
 3. On Zenodo, that account **owns** each record **or** has **Can manage** on each of them ([grant access](#grant-yourself-manage-access) if records live under another login).
-4. In **each** GitHub repo, under **Settings → Secrets and variables → Actions**:
+4. In **each** GitHub repo, under **Settings → Secrets and variables → Actions**, add a **repository secret** (not an Environment or Organization secret):
 
-   | Repo | Secret `ZENODO_USER_API_TOKEN` | Variable `ZENODO_SPEC_MAIN_DOI` |
-   | ---- | ------------------------------ | -------------------------------- |
+   | Repo | Repository secret `ZENODO_USER_API_TOKEN` | Variable `ZENODO_SPEC_MAIN_DOI` |
+   | ---- | ----------------------------------------- | -------------------------------- |
    | `kswg-acdc-specification` | same shared token | ACDC main ID only |
    | `kswg-cesr-specification` | same shared token | CESR main ID only |
    | `kswg-keri-specification` | same shared token | KERI main ID only |
@@ -312,6 +314,7 @@ After that, anyone with GitHub Release permission on the repo: merge to `main` �
 - Expect each releaser to paste their **personal** Zenodo token into GitHub — brittle, and most personal tokens will lack manage rights on org-owned records.
 - Use one main ID for all three specs — each repo must point at its **own** Zenodo main ID.
 - Assume “I released on GitHub” implies Zenodo updated — check the Actions tab if the DOI version did not move.
+- Store `ZENODO_USER_API_TOKEN` as an **Environment secret** or **Organization secret**. It must be a **repository secret**.
 - Put `ZENODO_SPEC_MAIN_DOI` in **Secrets**. It must be a **Variable**.
 - Put a new sub-ID into the spec on every release if the main ID is already there.
 
@@ -351,7 +354,7 @@ Minor file fixes are only allowed briefly after publish (Zenodo’s own grace wi
 
 The error mentions `ZENODO_USER_API_TOKEN`, `ZENODO_SPEC_MAIN_DOI`, or a deposition id.
 
-- Re-do [Enable automatic updates](#enable-automatic-updates). Token scopes must include `deposit:write` and `deposit:actions`.
+- Re-do [Enable automatic updates](#enable-automatic-updates). Token scopes must include `deposit:write` and `deposit:actions`. `ZENODO_USER_API_TOKEN` must be a **repository secret** (**Settings → Secrets and variables → Actions → Repository secrets**), not an Environment or Organization secret.
 - If you see “Set variable `ZENODO_SPEC_MAIN_DOI`”: the main ID was stored as a **secret**, or the variable name is misspelled. Use **Settings → Secrets and variables → Actions → Variables** (not Secrets). Name must be exactly `ZENODO_SPEC_MAIN_DOI`. Value like `10.5281/zenodo.18792085`.
 
 ### Action fails: leftover draft / “Please remove all files first”
@@ -370,7 +373,7 @@ This is **not** rate limiting. Rate limits return HTTP **429**.
 
 The repo’s `ZENODO_USER_API_TOKEN` is valid but the **Zenodo user who owns that token** cannot manage this spec’s record.
 
-On Zenodo, grant that user **Can manage** on the record, or replace the secret with a token from an account that already has access. Releasers on GitHub do not need to change anything.
+On Zenodo, grant that user **Can manage** on the record, or replace the **repository secret** with a token from an account that already has access. Releasers on GitHub do not need to change anything.
 
 ### Wrong spec updated on Zenodo
 
@@ -407,4 +410,4 @@ Stop. Use the **original** record’s main ID. Prefer fixing process over “mer
 
 1. Revoke it in Zenodo applications settings.
 2. Create a new token (same scopes as [Enable automatic updates](#enable-automatic-updates)).
-3. Update the GitHub secret `ZENODO_USER_API_TOKEN` in every repo that used the old token.
+3. Update the GitHub **repository secret** `ZENODO_USER_API_TOKEN` in every repo that used the old token.

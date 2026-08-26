@@ -1,4 +1,4 @@
-# Create a Zenodo DOIx
+# Create a Zenodo DOI
 
 
 ---

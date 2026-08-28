@@ -34,7 +34,7 @@ The starter pack uses **two `package.json` files** within the repository:
 ```json
 {
   "name": "create-spec-up-t",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "bin": {
     "create-spec-up-t": "create-spec-up-t-starterpack.js"
   },
@@ -51,10 +51,10 @@ This is the package that gets published to npm and downloaded when users run `np
 ```json
 {
   "name": "spec-up-t-starterpack",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "spec-up-t": "^1.6.0"
+    "spec-up-t": "1.7.0"
   }
 }
 ```
@@ -130,76 +130,82 @@ Keep both `package.json` and `package.spec-up-t.json` at the **same version numb
 
 ## How to Update the Starter Pack
 
+### Which package do you actually publish?
+
+`npx create-spec-up-t` downloads **`create-spec-up-t`**, not `spec-up-t`.
+
+| You changed… | Publish |
+|--------------|---------|
+| Starter-pack installer, messages, or `package.spec-up-t.json` (for example pinning a newer already-published `spec-up-t`) | **Only** `create-spec-up-t` |
+| Boilerplate or install logic inside the `spec-up-t` repo | Publish **`spec-up-t` first**, then pin that version in `package.spec-up-t.json`, then publish `create-spec-up-t` |
+
+You do **not** need a new `spec-up-t` release just because you bumped the starter-pack version. New projects already install whatever `spec-up-t` version is listed in `package.spec-up-t.json`. If that version is already on npm, skip publishing `spec-up-t`.
+
+You **do** need to bump **`package.json`** (not only `package.spec-up-t.json`). npm publishes `create-spec-up-t` from `package.json`. A version that already exists on npm cannot be published again.
+
 ### When to Update
 
-Update when:
-- The `spec-up-t` package has a new version with important features/fixes
-- Boilerplate files in `spec-up-t` have changed
+Update the starter pack when:
+- A new `spec-up-t` version is already on npm and new projects should use it
+- You changed the installer (`create-spec-up-t-starterpack.js`, `messages.js`)
 - You want to change default dependencies of new projects
 
-### Update Process
+### Update and publish `create-spec-up-t`
 
-#### Step 1: Update the spec-up-t dependency
+Do these steps in order. Do **not** use `npm version`: that command only updates `package.json` and would leave `package.spec-up-t.json` behind. Edit the three files by hand, then commit, tag, push, and publish.
 
-Edit `package.spec-up-t.json`:
-```json
-{
-  "dependencies": {
-    "spec-up-t": "^1.6.0"  // ← Update to latest
-  }
-}
-```
+Default branch is `main`. Replace `2.1.0` only when you later release a different version.
 
-#### Step 2: Bump both versions (synchronized)
+#### Step 1: Edit the three files
 
-Update **both** files to the same version:
-
-**In `package.json`:**
+In **both** `package.json` and `package.spec-up-t.json`, set the same version:
 
 ```json
-{
-  "version": "2.0.3"
-}
+"version": "2.1.0"
 ```
 
-**In `package.spec-up-t.json`:**
+In `package.spec-up-t.json`, also set the `spec-up-t` dependency to the version new projects should install (that version must already exist on npm):
 
 ```json
-{
-  "version": "2.0.3"
-}
+"spec-up-t": "1.7.0"
 ```
 
-#### Step 3: Test locally
+In `package-lock.json`, set the two `"version"` fields at the top of the file (the ones that belong to `create-spec-up-t`, not to `fs-extra`) to `2.1.0`.
+
+#### Step 2: Test locally (optional but recommended)
 
 ```bash
 cd /path/to/spec-up-t-starter-pack
-
-# Test installation
 node create-spec-up-t-starterpack.js test-project
-
-# Or use npx
-npx . test-project
-
-# Verify
 cd test-project
 npm run render
-
-# Clean up
 cd ..
 rm -rf test-project
 ```
 
-#### Step 4: Commit and push
-
-See [Publishing to GitHub and npm](./publishing-to-github-and-npm.md).
-
-#### Step 5: Test the published version
+#### Step 3: Commit, tag, push to GitHub, publish to npm
 
 ```bash
+cd /path/to/spec-up-t-starter-pack
+git checkout main
+
+npm whoami
+# Must print your npm username. If it errors, run: npm login
+
+git add package.json package.spec-up-t.json package-lock.json
+git commit -m "Bump version to 2.1.0"
+git tag v2.1.0
+git push origin main --tags
+npm publish
+```
+
+`npm publish` publishes **`create-spec-up-t@2.1.0`**. It does not publish `spec-up-t`.
+
+#### Step 4: Check that npm has the new version
+
+```bash
+npm view create-spec-up-t version
 npx create-spec-up-t@latest test-published
-cd test-published
-npm run render
 ```
 
 ## Testing Checklist
@@ -227,13 +233,17 @@ The installed project always gets:
 
 Users should manually update this to their actual project name after installation.
 
-### Two Packages Must Be Published
+### When boilerplate in spec-up-t changes
 
-When boilerplate changes are made:
-1. Publish new version of `spec-up-t`
-2. Update dependency and publish new version of `create-spec-up-t`
+Boilerplate files live in `spec-up-t`, not in this repo. `create-spec-up-t` copies them by installing the `spec-up-t` version pinned in `package.spec-up-t.json` and then running that package’s `install.js`.
 
-This ensures users always get the latest boilerplate when creating new projects.
+If you changed boilerplate or install logic in **`spec-up-t`**:
+
+1. Publish a new `spec-up-t` version first (see [Publishing to GitHub and npm](./publishing-to-github-and-npm.md)).
+2. Set that version in `package.spec-up-t.json`.
+3. Publish a new `create-spec-up-t` version using the steps above.
+
+If you did **not** change `spec-up-t`, skip steps 1–2 and publish only `create-spec-up-t`.
 
 ## Repository Files
 

@@ -6,6 +6,10 @@ sidebar_position: 10
 
 Some tips in case of problems:
 
+## `npm run menu` doesn't work after `npm update` (to spec-up-t version 1.6.26)
+
+Run `npm run custom-update`.
+
 ## There is no pdf and / or docx button
 
 This is normal behavior. The download buttons only appear when the corresponding PDF and/or DOCX files actually exist in your `docs/` folder.

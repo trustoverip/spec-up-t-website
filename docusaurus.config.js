@@ -82,6 +82,7 @@ const config = {
           { to: '/docs/introduction/intro/', label: 'Enter Documentation', position: 'left' },
           { to: '/docs/spec-up-t-demo-site', label: 'Demo', position: 'left' },
           { to: '/docs/cheat-sheets/cheat-sheet', label: 'Cheat Sheet', position: 'left' },
+          { to: '/docs/quicklinks', label: 'Quicklinks', position: 'left' },
           { to: '/docs/getting-started/github-token', label: 'GitHub token', position: 'left' },
           {
             href: 'https://app.blockchainbird.org',

@@ -7,7 +7,9 @@ sidebar_position: 2
 
 ## Introduction
 
-This guide provides step-by-step instructions to update your **Spec-Up-T** installation.
+This guide is for converting an older Spec-Up installation with `spec-up-migrate`.
+
+To bump the `spec-up-t` npm package in a repo that already uses Spec-Up-T (including 1.x → 2.x), see [Updating Spec-Up-T (custom-update)](./custom-update.md).
 
 ## Prerequisites
 

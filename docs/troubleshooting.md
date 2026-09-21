@@ -10,6 +10,8 @@ Some tips in case of problems:
 
 Run `npm run custom-update`.
 
+To jump a **major** (1.x → 2.x), do not rely on GitHubUi or `npm run custom-update` alone. See [Updating Spec-Up-T (custom-update)](./maintenance-tasks/custom-update.md).
+
 ## There is no pdf and / or docx button
 
 This is normal behavior. The download buttons only appear when the corresponding PDF and/or DOCX files actually exist in your `docs/` folder.

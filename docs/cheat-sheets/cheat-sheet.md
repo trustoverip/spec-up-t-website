@@ -398,6 +398,14 @@ cd my-spec-project
 npm run menu
 ```
 
+Upgrade an existing 1.x repo to Spec-Up-T 2.x (`npm update` / GitHubUi will not cross a major):
+
+```bash
+npx spec-up-t@2 custom-update
+```
+
+See [Updating Spec-Up-T (custom-update)](../maintenance-tasks/custom-update.md).
+
 ## Clone Existing Repository
 
 ```bash

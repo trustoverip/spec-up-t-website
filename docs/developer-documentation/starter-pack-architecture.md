@@ -152,11 +152,11 @@ Update the starter pack when:
 
 ### Update and publish `create-spec-up-t`
 
-Do these steps in order. Do **not** use `npm version`: that command only updates `package.json` and would leave `package.spec-up-t.json` behind. Edit the three files by hand, then commit, tag, push, and publish.
+Do these steps in order. Do **not** use `npm version`: that command only updates `package.json` and `package-lock.json`, and would leave `package.spec-up-t.json` behind. Edit the two JSON files, let `npm install` update the lockfile, then commit, tag, push, and publish.
 
 Default branch is `main`. Replace `2.1.0` only when you later release a different version.
 
-#### Step 1: Edit the three files
+#### Step 1: Edit the two JSON files, then refresh the lockfile
 
 In **both** `package.json` and `package.spec-up-t.json`, set the same version:
 
@@ -170,7 +170,13 @@ In `package.spec-up-t.json`, also set the `spec-up-t` dependency to the version 
 "spec-up-t": "1.7.0"
 ```
 
-In `package-lock.json`, set the two `"version"` fields at the top of the file (the ones that belong to `create-spec-up-t`, not to `fs-extra`) to `2.1.0`.
+Then, in the starter-pack repo, run:
+
+```bash
+npm install
+```
+
+`npm install` rewrites the `create-spec-up-t` version in `package-lock.json`. Do not edit that file by hand. It does not list `spec-up-t`; the new project installs `spec-up-t` later from `package.spec-up-t.json`.
 
 #### Step 2: Test locally (optional but recommended)
 

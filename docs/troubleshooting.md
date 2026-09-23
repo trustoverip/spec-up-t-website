@@ -10,7 +10,7 @@ Some tips in case of problems:
 
 Run `npm run custom-update`.
 
-To jump a **major** (1.x → 2.x), do not rely on GitHubUi or `npm run custom-update` alone. See [Updating Spec-Up-T (custom-update)](./maintenance-tasks/custom-update.md).
+To reach **2.1.0** from 1.x, or if `npm run custom-update` fails because the script is still `node -e "require('…/custom-update.js')"`, run `npx spec-up-t@latest custom-update`. You do not have to install 2.0.0 first. See [Updating Spec-Up-T (custom-update)](./maintenance-tasks/custom-update.md).
 
 ## There is no pdf and / or docx button
 

@@ -398,10 +398,10 @@ cd my-spec-project
 npm run menu
 ```
 
-Upgrade an existing 1.x repo to Spec-Up-T 2.x (`npm update` / GitHubUi will not cross a major):
+Upgrade an existing repo to Spec-Up-T 2.1.0. You do not have to install 2.0.0 first. `npm update` and GitHubUi will not cross from 1.x, and the old `node -e require()` script no longer runs the update:
 
 ```bash
-npx spec-up-t@2 custom-update
+npx spec-up-t@latest custom-update
 ```
 
 See [Updating Spec-Up-T (custom-update)](../maintenance-tasks/custom-update.md).

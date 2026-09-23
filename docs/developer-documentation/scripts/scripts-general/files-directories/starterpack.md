@@ -23,7 +23,9 @@ This script is called via NPX and starts the installation process. What it does:
 3. Initialize npm
     1. copy `package.spec-up-t.json` to the target directory
     2. rename to `package.json`
-    3. install the `spec-up-t` npm package
+    3. install the `spec-up-t` version pinned in that file
+
+New projects stay on the pinned version until you change it and publish `create-spec-up-t` again. After `spec-up-t` 2.1.0 is published, the pin must be `"spec-up-t": "2.1.0"`, and the same for each later release. See [Starter Pack Architecture](../../../starter-pack-architecture.md).
 4. Hand over to `install.js` in the now available `spec-up-t` package.
 
 ## `messages.js`

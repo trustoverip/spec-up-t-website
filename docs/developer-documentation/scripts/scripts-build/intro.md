@@ -34,12 +34,12 @@ In the `scripts` section of the `package.json` file for your Spec-Up-T installat
     "addremovexrefsource": "node --no-warnings -e \"require('spec-up-t/src/add-remove-xref-source.js')\"",
     "configure": "node --no-warnings -e \"require('spec-up-t/src/configure.js')\"",
     "healthCheck": "node --no-warnings -e \"require('spec-up-t/src/health-check.js')\"",
-    "custom-update": "npm update && node -e \"require('spec-up-t/src/install-from-boilerplate/custom-update.js')\""
+    "custom-update": "spec-up-t custom-update"
   }
 }
 ```
 
-These are Node.js commands that directly require and execute specific modules from the `spec-up-t` package in `node_modules`. Each script serves a different purpose in the build and maintenance process.
+Most of these are Node.js commands that require a module from the installed `spec-up-t` package. From 2.1.0, `custom-update` is the local `spec-up-t` command. The old `node -e "require('…/custom-update.js')"` script no longer runs the update. See [Updating Spec-Up-T (custom-update)](../../../maintenance-tasks/custom-update.md).
 
 ### Build Process Architecture
 

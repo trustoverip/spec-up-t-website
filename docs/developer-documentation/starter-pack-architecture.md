@@ -34,7 +34,7 @@ The starter pack uses **two `package.json` files** within the repository:
 ```json
 {
   "name": "create-spec-up-t",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "bin": {
     "create-spec-up-t": "create-spec-up-t-starterpack.js"
   },
@@ -51,15 +51,20 @@ This is the package that gets published to npm and downloaded when users run `np
 ```json
 {
   "name": "spec-up-t-starterpack",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "spec-up-t": "1.7.0"
+    "spec-up-t": "2.1.0"
   }
 }
 ```
 
 This file becomes the `package.json` of the newly created project.
+
+- `"version"` is the **starter pack** (`create-spec-up-t`). That is currently `2.2.0`.
+- `"spec-up-t"` is the **tool** `npm install` will fetch. After you publish `spec-up-t` 2.1.0, set this pin to `"2.1.0"` (today it is still `"2.0.0"`).
+
+Those two numbers are independent. The starter pack can be `2.2.0` or `2.3.0` while the tool pin is `2.1.0`. `custom-update` on existing repos does not read this file.
 
 ## Installation Flow
 
@@ -122,11 +127,33 @@ The starter pack is a **thin wrapper** that delegates most functionality to the 
 
 3. **The tool itself**: The installed project uses spec-up-t as a dependency
 
+## Pin `spec-up-t` for new projects
+
+`npx create-spec-up-t` copies `package.spec-up-t.json` to the new repo as `package.json`. New projects therefore install **exactly** the `spec-up-t` version listed there.
+
+After `spec-up-t` **2.1.0** is on npm, that pin must be:
+
+```json
+"spec-up-t": "2.1.0"
+```
+
+Then publish a new `create-spec-up-t`. Until you do, `npx create-spec-up-t` keeps creating projects on the previous pin (currently 2.0.0).
+
+Do the same for every later `spec-up-t` release that new projects should start on (`2.1.1`, `2.2.0`, and so on):
+
+1. Publish `spec-up-t` first. The pin must name a version that already exists on npm.
+2. Set `"spec-up-t"` in `package.spec-up-t.json` to that version.
+3. Bump and publish `create-spec-up-t`.
+
+The starter-pack version (`create-spec-up-t`) does not have to match the `spec-up-t` version. Keep `package.json` and `package.spec-up-t.json` at the **same starter-pack version**. Only the `dependencies.spec-up-t` field tracks the tool.
+
+Existing repos do not pick up this pin. They update with [custom-update](../maintenance-tasks/custom-update.md).
+
 ## Version Numbering Strategy
 
 ### Recommended Approach: Synchronized Versions
 
-Keep both `package.json` and `package.spec-up-t.json` at the **same version number**.
+Keep both `package.json` and `package.spec-up-t.json` at the **same starter-pack version number**. The `spec-up-t` dependency inside `package.spec-up-t.json` is a separate pin, described above.
 
 ## How to Update the Starter Pack
 
@@ -154,20 +181,20 @@ Update the starter pack when:
 
 Do these steps in order. Do **not** use `npm version`: that command only updates `package.json` and `package-lock.json`, and would leave `package.spec-up-t.json` behind. Edit the two JSON files, let `npm install` update the lockfile, then commit, tag, push, and publish.
 
-Default branch is `main`. Replace `2.1.0` only when you later release a different version.
+Default branch is `main`. `create-spec-up-t` is currently `2.2.0`, so the next starter-pack publish is a new unused version (for example `2.3.0`). That is not the same number as the `spec-up-t` pin.
 
 #### Step 1: Edit the two JSON files, then refresh the lockfile
 
-In **both** `package.json` and `package.spec-up-t.json`, set the same version:
+In **both** `package.json` and `package.spec-up-t.json`, set the same **starter-pack** version (next unused `create-spec-up-t` version, for example `2.3.0`):
 
 ```json
-"version": "2.1.0"
+"version": "2.3.0"
 ```
 
-In `package.spec-up-t.json`, also set the `spec-up-t` dependency to the version new projects should install (that version must already exist on npm):
+In `package.spec-up-t.json`, also set the `spec-up-t` dependency to the tool version new projects should install. After `spec-up-t` 2.1.0 is on npm, that is `"2.1.0"`. For a later tool release, set that later version. It must already exist on npm:
 
 ```json
-"spec-up-t": "1.7.0"
+"spec-up-t": "2.1.0"
 ```
 
 Then, in the starter-pack repo, run:
@@ -199,13 +226,13 @@ npm whoami
 # Must print your npm username. If it errors, run: npm login
 
 git add package.json package.spec-up-t.json package-lock.json
-git commit -m "Bump version to 2.1.0"
-git tag v2.1.0
+git commit -m "Bump version to 2.3.0"
+git tag v2.3.0
 git push origin main --tags
 npm publish
 ```
 
-`npm publish` publishes **`create-spec-up-t@2.1.0`**. It does not publish `spec-up-t`.
+`npm publish` publishes **`create-spec-up-t@2.3.0`**. It does not publish `spec-up-t`. The new projects it creates will install whatever `"spec-up-t"` is pinned in `package.spec-up-t.json` (for this release, `2.1.0`).
 
 #### Step 4: Check that npm has the new version
 

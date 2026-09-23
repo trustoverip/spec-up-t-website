@@ -31,7 +31,7 @@ This guide shows you how to use the "Menu" workflow in the `trustoverip/spec-up-
        - **Convert to PDF**: Generates a PDF from your specification
        - **Freeze specification**: Freezes the specification state
        - **List references**: Lists all references in the specification
-       - **Custom update**: Updates your installation. This does **not** jump 1.x → 2.x; use `npx spec-up-t@2 custom-update` instead. See [Updating Spec-Up-T (custom-update)](../../maintenance-tasks/custom-update.md).
+       - **Custom update**: Updates your installation when `package.json` already has a working 2.x script. It does **not** jump 1.x → 2.1.0, and it does not repair the old `node -e require()` script. Use `npx spec-up-t@latest custom-update` for that. See [Updating Spec-Up-T (custom-update)](../../maintenance-tasks/custom-update.md).
      - Default: "Render specification"
    - Click the green "Run workflow" button at the bottom of the form.
 
@@ -46,7 +46,7 @@ This guide shows you how to use the "Menu" workflow in the `trustoverip/spec-up-
    - **For "Custom update"**:
      - Changes are committed to your repository’s `main` branch.
      - Check the repo’s commit history (e.g., `https://github.com/your-username/my-spec-project/commits/main`) for a commit like "Custom update: Copy files from spec-up-t".
-     - On a **1.x** repo this will not install Spec-Up-T 2.x. See [Updating Spec-Up-T (custom-update)](../../maintenance-tasks/custom-update.md).
+     - On a **1.x** repo, or a repo whose script is still `node -e "require('…/custom-update.js')"`, this will not install Spec-Up-T 2.1.0. Run `npx spec-up-t@latest custom-update` locally. See [Updating Spec-Up-T (custom-update)](../../maintenance-tasks/custom-update.md).
    - **For "Show help" or "Show menu"**:
      - Output appears in the workflow logs—no deployment occurs.
      - Click the run, expand "Run selected script," and read the text output.

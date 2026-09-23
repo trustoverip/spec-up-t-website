@@ -18,6 +18,8 @@ After 2.1.0:
 npm run custom-update
 ```
 
+The command prints a plan and asks before it writes. `--yes` applies the plan without asking. `--dry-run` prints the plan only.
+
 Commit the changes.
 
 :::
@@ -89,8 +91,45 @@ Always the package from npm, not the local install:
 npx spec-up-t@latest custom-update
 ```
 
+## Preview and apply
+
+`custom-update` prints a plan before it writes. The plan lists script changes, file changes, and dependency changes.
+
+On your machine it then asks `Apply this plan? [y/N]`.
+
+```bash
+npx spec-up-t@latest custom-update --dry-run
+npx spec-up-t@latest custom-update --yes
+npm run custom-update -- --yes
+```
+
+`--dry-run` prints the plan and leaves the repo as it is. `--yes` applies the plan without asking.
+
+GitHub Actions has no prompt. The boilerplate `menu.yml` runs:
+
+```bash
+npm run custom-update -- --yes
+```
+
+That is what the GitHubUi “Custom Update” button runs, once this repo’s `menu.yml` is the boilerplate copy. An older `menu.yml` that runs `npm run custom-update` with no `--yes` prints the plan and stops. Apply once locally with `--yes`, then commit. The updated `menu.yml` passes `--yes`, and later button runs apply the plan.
+
+## Workflow files
+
+Known boilerplate workflows are copied over the files already in the repo:
+
+- `.github/workflows/menu.yml` (this file keeps the **custom-update** choice)
+- `.github/workflows/render-and-deploy.yml`
+- `.github/workflows/zenodo-update.yml`
+
+Known stale files are removed, including `.github/workflows/set-gh-pages.yml`. Any other file under `.github/workflows` stays.
+
+## When to run it
+
+For a Trust over IP specification, the working group decides when to take a Spec-Up-T release. The command applies an update; it does not schedule one. See [When to run custom-update](./when-to-update.md).
+
 ## What custom-update does not do
 
 - It does not create a git commit. `menu.yml` or you commit the result.
 - It does not read dependency versions from the starter-pack repository. Those versions are shipped inside `spec-up-t`.
-- GitHubUi does not need a code change. It still dispatches `menu.yml`, which runs `npm run custom-update`.
+- It does not delete extra GitHub Actions workflows. It replaces the known boilerplate workflows listed above.
+- GitHubUi does not need a code change. It still dispatches `menu.yml`. That workflow passes `--yes`.

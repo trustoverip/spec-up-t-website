@@ -402,9 +402,11 @@ Upgrade an existing repo to Spec-Up-T 2.1.0. You do not have to install 2.0.0 fi
 
 ```bash
 npx spec-up-t@latest custom-update
+npx spec-up-t@latest custom-update --dry-run
+npx spec-up-t@latest custom-update --yes
 ```
 
-See [Updating Spec-Up-T (custom-update)](../maintenance-tasks/custom-update.md).
+`--dry-run` prints the plan. `--yes` applies it. With neither flag, the command prints the plan and asks. When a ToIP repo should take a release is a working-group decision. See [Updating Spec-Up-T (custom-update)](../maintenance-tasks/custom-update.md) and [When to run custom-update](../maintenance-tasks/when-to-update.md).
 
 ## Clone Existing Repository
 

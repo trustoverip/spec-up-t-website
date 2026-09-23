@@ -39,7 +39,7 @@ In the `scripts` section of the `package.json` file for your Spec-Up-T installat
 }
 ```
 
-Most of these are Node.js commands that require a module from the installed `spec-up-t` package. From 2.1.0, `custom-update` is the local `spec-up-t` command. The old `node -e "require('…/custom-update.js')"` script no longer runs the update. See [Updating Spec-Up-T (custom-update)](../../../maintenance-tasks/custom-update.md).
+Most of these are Node.js commands that require a module from the installed `spec-up-t` package. From 2.1.0, `custom-update` is the local `spec-up-t` command. It prints a plan and asks before writing. GitHub Actions passes `--yes`. The old `node -e "require('…/custom-update.js')"` script no longer runs the update. When a ToIP repository should take an update is a working-group decision. See [Updating Spec-Up-T (custom-update)](../../../maintenance-tasks/custom-update.md) and [When to run custom-update](../../../maintenance-tasks/when-to-update.md).
 
 ### Build Process Architecture
 

@@ -12,6 +12,20 @@ Run `npm run custom-update`.
 
 To reach **2.1.0** from 1.x, or if `npm run custom-update` fails because the script is still `node -e "require('…/custom-update.js')"`, run `npx spec-up-t@latest custom-update`. You do not have to install 2.0.0 first. See [Updating Spec-Up-T (custom-update)](./maintenance-tasks/custom-update.md).
 
+## Custom update stops with “Refusing to write without --yes”
+
+The command printed a plan and wrote nothing, because this run has no terminal and did not pass `--yes`.
+
+Apply it:
+
+```bash
+npx spec-up-t@latest custom-update --yes
+```
+
+In GitHub Actions, `menu.yml` should contain `npm run custom-update -- --yes`. After one successful `--yes` run, that line is in the boilerplate `menu.yml`. Commit it. Later Custom Update runs from the button apply the plan.
+
+See [When to run custom-update](./maintenance-tasks/when-to-update.md).
+
 ## There is no pdf and / or docx button
 
 This is normal behavior. The download buttons only appear when the corresponding PDF and/or DOCX files actually exist in your `docs/` folder.

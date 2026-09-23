@@ -91,9 +91,31 @@ Always the package from npm, not the local install:
 npx spec-up-t@latest custom-update
 ```
 
+## Upgrading to 2.2.0
+
+From 2.2.0, `custom-update` prints a plan and does not write unless you confirm on a terminal or pass `--yes`. GitHub Actions has no prompt.
+
+The GitHubUi Custom Update button runs whatever `menu.yml` is already in the repo. Until the custom-update case is:
+
+```bash
+npm run custom-update -- --yes
+```
+
+the button prints the plan and the job fails. Nothing is written.
+
+Do one of these once, then commit:
+
+```bash
+npx spec-up-t@latest custom-update --yes
+```
+
+or edit `.github/workflows/menu.yml` so that case is the line above.
+
+The `--yes` command rewrites `menu.yml`. After the commit, the button applies the plan.
+
 ## Preview and apply
 
-`custom-update` prints a plan before it writes. The plan lists script changes, file changes, and dependency changes.
+`custom-update` prints a plan before it writes. The plan lists script changes, file changes, dependency changes, `.gitignore` patterns to add, `npm install`, and per-spec snapshot copies or tracked build-dir renames.
 
 On your machine it then asks `Apply this plan? [y/N]`.
 
@@ -103,15 +125,7 @@ npx spec-up-t@latest custom-update --yes
 npm run custom-update -- --yes
 ```
 
-`--dry-run` prints the plan and leaves the repo as it is. `--yes` applies the plan without asking.
-
-GitHub Actions has no prompt. The boilerplate `menu.yml` runs:
-
-```bash
-npm run custom-update -- --yes
-```
-
-That is what the GitHubUi “Custom Update” button runs, once this repo’s `menu.yml` is the boilerplate copy. An older `menu.yml` that runs `npm run custom-update` with no `--yes` prints the plan and stops. Apply once locally with `--yes`, then commit. The updated `menu.yml` passes `--yes`, and later button runs apply the plan.
+`--dry-run` prints the plan and leaves the repo as it is. `--yes` applies the plan without asking. The boilerplate `menu.yml` passes `--yes`. See [Upgrading to 2.2.0](#upgrading-to-220) when the button still runs the old line.
 
 ## Workflow files
 

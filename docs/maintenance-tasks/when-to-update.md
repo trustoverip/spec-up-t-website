@@ -30,7 +30,7 @@ Apply the release before the next regular meeting when the release notes say thi
 
 The Custom Update button runs the update on the repository you select. Start it after the decision above.
 
-In GitHub Actions, `menu.yml` passes `--yes`. The job prints the plan and writes it in the same run. The approval is the decision to start the workflow. To see the plan with no write, run this locally:
+In GitHub Actions, `menu.yml` passes `--yes`. The job prints the plan and writes it in the same run. The approval is the decision to start the workflow. On the first move to 2.2.0, an older `menu.yml` does not pass `--yes`, so the button prints the plan and the job fails. Run `npx spec-up-t@latest custom-update --yes` locally once, or add `npm run custom-update -- --yes` to `menu.yml`, and commit. See [Updating Spec-Up-T (custom-update)](./custom-update.md). To see the plan with no write, run this locally:
 
 ```bash
 npx spec-up-t@latest custom-update --dry-run

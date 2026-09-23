@@ -4,6 +4,24 @@ sidebar_position: 3
 
 # Updating Spec-Up-T (custom-update)
 
+:::tip Steps
+
+From 1.x:
+
+```bash
+npx spec-up-t@latest custom-update
+```
+
+After 2.1.0:
+
+```bash
+npm run custom-update
+```
+
+Commit the changes.
+
+:::
+
 Use this when your spec repo already runs Spec-Up-T and you want a newer `spec-up-t` package (scripts, boilerplate files, recommended dependencies).
 
 This is not the same as [migrating an old Spec-Up install](./updating.md).

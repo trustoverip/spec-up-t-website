@@ -6,4 +6,4 @@ The [compare-spec-up-t-specs tool](https://github.com/kordwarshuis/compare-spec-
 npx compare-spec-up-t-specs
 ```
 
-Also see [Updating Spec-Up-T](../maintenance-tasks/updating.md) for more details on updating your installation.
+Also see [Migrating from Spec-Up](../maintenance-tasks/updating.md) when converting a classic Spec-Up install. For bumping `spec-up-t` in a repo that already uses Spec-Up-T, see [Updating Spec-Up-T (custom-update)](../maintenance-tasks/custom-update.md).

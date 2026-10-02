@@ -4,6 +4,14 @@ sidebar_position: 3
 
 # Updating Spec-Up-T (custom-update)
 
+## Introduction
+
+Use this page when the repo **already runs Spec-Up-T** and you want a newer `spec-up-t` package (scripts, boilerplate files, recommended dependencies). That includes normal version upgrades such as 1.x → 2.1.0.
+
+If the repo still runs **classic Spec-Up** and has not been converted yet, use [Migrating from Spec-Up](./migrating-from-spec-up.md) instead. Migration is a one-time conversion with `spec-up-migrate`; this page is for upgrades after that.
+
+New projects are a separate path. `npx create-spec-up-t` installs whatever `spec-up-t` version the starter pack pins. See [Starter Pack Architecture](../developer-documentation/starter-pack-architecture.md).
+
 :::tip Steps
 
 From 1.x:
@@ -23,12 +31,6 @@ The command prints a plan and asks before it writes. `--yes` applies the plan wi
 Commit the changes.
 
 :::
-
-Use this when your spec repo already runs Spec-Up-T and you want a newer `spec-up-t` package (scripts, boilerplate files, recommended dependencies).
-
-This is not the same as [migrating an old Spec-Up install](./updating.md).
-
-New projects are a separate path. `npx create-spec-up-t` installs whatever `spec-up-t` version the starter pack pins. See [Starter Pack Architecture](../developer-documentation/starter-pack-architecture.md).
 
 ## From 1.x, or from the old `node -e` script, to 2.1.0
 

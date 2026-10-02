@@ -406,7 +406,7 @@ npx spec-up-t@latest custom-update --dry-run
 npx spec-up-t@latest custom-update --yes
 ```
 
-`--dry-run` prints the plan. `--yes` applies it. With neither flag, the command prints the plan and asks. When a ToIP repo should take a release is a working-group decision. See [Updating Spec-Up-T (custom-update)](../maintenance-tasks/custom-update.md) and [When to run custom-update](../maintenance-tasks/when-to-update.md).
+`--dry-run` prints the plan. `--yes` applies it. With neither flag, the command prints the plan and asks. When a ToIP repo should take a release is a working-group decision. See [Updating Spec-Up-T (custom-update)](../maintenance-tasks/custom-update.md) and [When to run custom-update](../maintenance-tasks/when-to-custom-update.md).
 
 ## Clone Existing Repository
 

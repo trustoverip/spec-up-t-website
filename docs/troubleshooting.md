@@ -24,7 +24,7 @@ npx spec-up-t@latest custom-update --yes
 
 In GitHub Actions, `menu.yml` should contain `npm run custom-update -- --yes`. After one successful `--yes` run, that line is in the boilerplate `menu.yml`. Commit it. Later Custom Update runs from the button apply the plan.
 
-See [When to run custom-update](./maintenance-tasks/when-to-update.md).
+See [When to run custom-update](./maintenance-tasks/when-to-custom-update.md).
 
 ## There is no pdf and / or docx button
 

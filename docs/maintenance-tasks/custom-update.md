@@ -141,7 +141,7 @@ Known stale files are removed, including `.github/workflows/set-gh-pages.yml`. A
 
 ## When to run it
 
-For a Trust over IP specification, the working group decides when to take a Spec-Up-T release. The command applies an update; it does not schedule one. See [When to run custom-update](./when-to-update.md).
+For a Trust over IP specification, the working group decides when to take a Spec-Up-T release. The command applies an update; it does not schedule one. See [When to run custom-update](./when-to-custom-update.md).
 
 ## What custom-update does not do
 

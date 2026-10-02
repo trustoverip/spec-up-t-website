@@ -24,7 +24,7 @@ An Admin role is a supporting role in Spec-Up-T.
 Use cases 2 and 3 are covered by [Updating Spec-Up-T (custom-update)](../../maintenance-tasks/custom-update.md).
 
 ### Add 5. Migrate from classic Spec-Up
-Use case 5 is covered by [Migrating from Spec-Up](../../maintenance-tasks/updating.md).
+Use case 5 is covered by [Migrating from Spec-Up](../../maintenance-tasks/migrating-from-spec-up.md).
 
 ### Add 4. Languages
 _Not yet operational!_ However, The design is:

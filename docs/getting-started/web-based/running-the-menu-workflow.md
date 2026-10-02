@@ -31,7 +31,7 @@ This guide shows you how to use the "Menu" workflow in the `trustoverip/spec-up-
        - **Convert to PDF**: Generates a PDF from your specification
        - **Freeze specification**: Freezes the specification state
        - **List references**: Lists all references in the specification
-       - **Custom update**: Updates your installation when `package.json` already has a working 2.x script. It does **not** jump 1.x → 2.1.0, and it does not repair the old `node -e require()` script. Use `npx spec-up-t@latest custom-update` for that. The workflow passes `--yes`, so it prints the plan and applies it in the same run. See [Updating Spec-Up-T (custom-update)](../../maintenance-tasks/custom-update.md) and [When to run custom-update](../../maintenance-tasks/when-to-update.md).
+       - **Custom update**: Updates your installation when `package.json` already has a working 2.x script. It does **not** jump 1.x → 2.1.0, and it does not repair the old `node -e require()` script. Use `npx spec-up-t@latest custom-update` for that. The workflow passes `--yes`, so it prints the plan and applies it in the same run. See [Updating Spec-Up-T (custom-update)](../../maintenance-tasks/custom-update.md) and [When to run custom-update](../../maintenance-tasks/when-to-custom-update.md).
      - Default: "Render specification"
    - Click the green "Run workflow" button at the bottom of the form.
 

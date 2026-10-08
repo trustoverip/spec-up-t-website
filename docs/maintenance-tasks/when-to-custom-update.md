@@ -17,7 +17,7 @@ Each repository is updated on its own, by someone who runs the command in that r
 After the group agrees, one maintainer runs the update and opens a pull request. Reviewers read the printed plan and the diff, including:
 
 - `package.json` scripts and dependency versions
-- `.github/workflows/menu.yml`, `render-and-deploy.yml`, and `zenodo-update.yml` (these files are replaced, and `menu.yml` keeps the custom-update choice)
+- `.github/workflows/menu.yml`, `render-and-deploy.yml`, and `zenodo-update.yml` (these stay when they differ from the boilerplate; `--force-workflows` replaces them)
 - every other file under `.github/workflows` (those stay; confirm the pull request leaves them)
 
 Merge after that review.

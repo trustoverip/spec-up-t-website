@@ -113,7 +113,13 @@ npx spec-up-t@latest custom-update --yes
 
 or edit `.github/workflows/menu.yml` so that case is the line above.
 
-The `--yes` command rewrites `menu.yml`. After the commit, the button applies the plan.
+From 2.4.0, `--yes` does not replace a `menu.yml` that differs from the boilerplate. To pick up the line above in an older menu, run this locally and commit:
+
+```bash
+npx spec-up-t@latest custom-update --yes --force-workflows
+```
+
+After that commit, the button applies the plan. It still does not pass `--force-workflows`.
 
 ## Preview and apply
 
@@ -131,13 +137,23 @@ npm run custom-update -- --yes
 
 ## Workflow files
 
-Known boilerplate workflows are copied over the files already in the repo:
+These boilerplate workflows are copied when the file is missing:
 
 - `.github/workflows/menu.yml` (this file keeps the **custom-update** choice)
 - `.github/workflows/render-and-deploy.yml`
 - `.github/workflows/zenodo-update.yml`
 
-Known stale files are removed, including `.github/workflows/set-gh-pages.yml`. Any other file under `.github/workflows` stays.
+If one of those files already exists and differs from the boilerplate, custom-update leaves it and the plan says `keep`. Repo-specific edits, such as an `npm ci` install step or a comment about an API token, are not overwritten.
+
+Replace them only when you mean to:
+
+```bash
+npx spec-up-t@latest custom-update --force-workflows
+```
+
+Run that locally and commit the workflow diff. The GitHubUi Custom Update button does not pass `--force-workflows`. `GITHUB_TOKEN` cannot push changes under `.github/workflows/`, so that button cannot land a workflow edit.
+
+Known stale files are still removed, including `.github/workflows/set-gh-pages.yml`. Any other file under `.github/workflows` stays.
 
 ## When to run it
 
@@ -147,5 +163,5 @@ For a Trust over IP specification, the working group decides when to take a Spec
 
 - It does not create a git commit. `menu.yml` or you commit the result.
 - It does not read dependency versions from the starter-pack repository. Those versions are shipped inside `spec-up-t`.
-- It does not delete extra GitHub Actions workflows. It replaces the known boilerplate workflows listed above.
+- It does not delete extra GitHub Actions workflows. It does not overwrite the known boilerplate workflows listed above when they differ, unless you pass `--force-workflows`.
 - GitHubUi does not need a code change. It still dispatches `menu.yml`. That workflow passes `--yes`.

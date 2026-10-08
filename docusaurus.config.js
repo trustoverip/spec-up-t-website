@@ -91,6 +91,11 @@ const config = {
           },
           // { to: '/docs/admins-guide', label: 'Admin section', position: 'left' },
           {
+            href: 'https://github.com/trustoverip/spec-up-t',
+            label: 'spec-up-t',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/trustoverip/spec-up-t-website',
             label: 'GitHub',
             position: 'right',

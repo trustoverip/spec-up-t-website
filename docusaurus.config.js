@@ -127,11 +127,9 @@ const config = {
     }),
   plugins: [
     [
-      require.resolve('@easyops-cn/docusaurus-search-local'),// https://github.com/easyops-cn/docusaurus-search-local
+      require.resolve('docusaurus-lunr-search'), // https://github.com/praveenn77/docusaurus-lunr-search
       {
-        // options here
-        hashed: true,
-        highlightSearchTermsOnTargetPage: true
+        highlightResult: true,
       },
     ],
     // [

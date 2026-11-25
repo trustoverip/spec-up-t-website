@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[8122],{38122:(e,s,c)=>{c.d(s,{createPacketServices:()=>t.$});var t=c(58484);c(80184)}}]);
